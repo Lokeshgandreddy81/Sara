@@ -8,11 +8,16 @@ import BackToTopButton from './componets/BackToTopButton';
 import { useEffect, useState } from 'react';
 import './index.css';
 import TeamPortfolio from './componets/TeamPortfolio';
-import HomePage from './Dumb_comp/HomePage';
+// import HomePage from './Dumb_comp/HomePage';
 import NavBar from './componets/NavBar';
 import Home2Page from './pages/Home2Page';
 import ChatPage from './Dumb_comp/ChatPage';
 import FeaturesPage from './pages/FeaturesPage';
+import PrivacyPolicy from './componets/Footer_Components/PrivacyPolicy';
+import TermsConditions from './componets/Footer_Components/TermsConditions';
+import Disclaimer from './componets/Footer_Components/Disclaimer';
+import ScrollToTop from './componets/ScrollToTop';
+import Service from './componets/Footer_Components/Service';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,11 +44,16 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <HomePage />
+      <ScrollToTop />
+      {/* <HomePage /> */}
       <Routes>
         <Route path="/" element={<Home2Page />} />
         <Route path="/About_us" element={<TeamPortfolio />} />
         <Route path="/Features" element={<FeaturesPage />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/TermsConditions" element={<TermsConditions />} />
+        <Route path="/Disclaimer" element={<Disclaimer />} />
+        <Route path="/Service" element={<Service />} />
       </Routes>
       {/* <TeamPortfolio /> */}
 

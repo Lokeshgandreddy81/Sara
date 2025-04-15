@@ -3,10 +3,10 @@ import { Lightbulb, Clock, Heart, Globe, Pencil } from "lucide-react";
 const Features: React.FC = () => {
     return (
         <>
-            <div className="bg-white dark:bg-[#1f1f1f] py-16 md:py-24 relative" id='Features'>
+            <div className="bg-white dark:bg-[#1f1f1f] duration-300 ease-in-out py-16 md:py-24 relative" id='Features'>
                 {/* Decorative elements - adjust positioning for responsiveness */}
                 <div className="absolute left-5 top-10 md:left-10 md:top-20 bg-white dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
-                    <Lightbulb className="w-8 h-8 md:w-12 md:h-12 text-orange-400 animate-float hover:text-transparent duration-200 ease-in-out" />
+                    <Lightbulb className="w-8 h-8 md:w-12 md:h-12 text-orange-400 animate-float hover:text-transparent duration-300 ease-in-out" />
                 </div>
                 <div className="absolute right-5 top-20 md:right-10 md:top-40">
                     <svg className="w-10 h-10 md:w-16 md:h-16 text-blue-400 animate-float hover:text-transparent duration-200 ease-in-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -121,7 +121,7 @@ const Features: React.FC = () => {
                                 <br /><br />
                             </div>
                             <a href='#'>
-                                <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105  dark:bg-[#8494e9] dark:text-[#000000] dark:hover:bg-orange-500">
+                                <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105  dark:bg-[#8494e9] dark:text-[#000000] dark:hover:bg-orange-500 hover:bg-orange-500">
                                     Get Started
                                     <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M5 12h14M12 5l7 7-7 7" />
@@ -145,7 +145,7 @@ const Features: React.FC = () => {
                             </div>
                             <br /><br />
                             <a href='#'>
-                                <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105 hover:text-[#000000] dark:hover:bg-[#8494e9] dark:text-black dark:bg-orange-500">
+                                <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105 hover:text-[#ffffff] dark:hover:bg-[#8494e9] dark:text-black dark:bg-orange-500 hover:bg-[#8494e9]">
                                     Get Started
                                     <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M5 12h14M12 5l7 7-7 7" />
@@ -165,7 +165,7 @@ const Features: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </div><div className="py-16 md:py-24  dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out" id='Details_Mental_Health_Support'>
+            </div><div className="py-16 md:py-24 bg-[#FDF8f6] dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out" id='Details_Mental_Health_Support'>
                 <div className="container mx-auto px-6">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="relative">
@@ -187,7 +187,7 @@ const Features: React.FC = () => {
                                 <br /><br />
                             </div>
                             <a href='#'>
-                                <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105  dark:bg-[#8494e9] dark:text-[#000000] dark:hover:bg-orange-500">
+                                <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105  dark:bg-[#8494e9] dark:text-[#000000] dark:hover:bg-orange-500 hover:bg-orange-500">
                                     Get Started
                                     <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M5 12h14M12 5l7 7-7 7" />

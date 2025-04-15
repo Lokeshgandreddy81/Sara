@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     return (<footer className="bg-[#FDF8F3] dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out pt-6 pb-8">
@@ -10,19 +11,19 @@ const Footer: React.FC = () => {
     <div>
       <h3 className="font-bold text-lg mb-4 dark:text-white">Company</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="text-gray-600 hover:text-gray-900  dark:text-[#d4d4d4] dark:hover:text-white">About Us</a></li>
+        <li><Link to='/About_us' className="text-gray-600 hover:text-gray-900  dark:text-[#d4d4d4] dark:hover:text-white">About Us</Link></li>
         <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">How to work?</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Popular Course</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Service</a></li>
+        {/* <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Popular Course</a></li> */}
+        <li><Link to='/Service' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Service</Link></li>
       </ul>
     </div>
 
     <div>
-      <h3 className="font-bold text-lg mb-4 dark:text-white">Courses</h3>
+      <h3 className="font-bold text-lg mb-4 dark:text-white">Legal & Privacy</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Categories</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Offline Course</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Video Course</a></li>
+        <li><Link to='/PrivacyPolicy' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Privacy Policy</Link></li>
+        <li><Link to='/TermsConditions' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Terms & Conditions</Link></li>
+        <li><Link to='/Disclaimer' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Disclaimer</Link></li>
       </ul>
     </div>
 
@@ -30,9 +31,9 @@ const Footer: React.FC = () => {
       <h3 className="font-bold text-lg mb-4 dark:text-white">Support</h3>
       <ul className="space-y-2">
         <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">FAQ</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Help Center</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Career</a></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Privacy</a></li>
+        {/* <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Help Center</a></li> */}
+        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Feedback</a></li>
+        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Report an Issue</a></li>
       </ul>
     </div>
 
@@ -45,7 +46,7 @@ const Footer: React.FC = () => {
         </li>
         <li className="flex items-center space-x-3">
           <Mail className="w-5 h-5 text-gray-600 dark:text-[#d4d4d4]" />
-          <span className="text-gray-600 dark:text-[#d4d4d4]">sarachatbot21@gmail.com</span>
+          <a href='mailto:sarachatbot21@gmail.com<'><span className="text-gray-600 dark:text-[#d4d4d4]">sarachatbot21@gmail.com</span></a>
         </li>
         <li className="flex items-start space-x-3">
           <MapPin className="w-5 h-5 mt-1 text-gray-600 dark:text-[#d4d4d4]" />
@@ -57,7 +58,7 @@ const Footer: React.FC = () => {
     </div>
   </div>
 
-  <div className="border-t border-gray-200 pt-8 text-center bg-white dark:bg-[#1f1f1f] transition-colors duration-300">
+  <div className="border-t border-gray-800 dark:border-gray-200 pt-8 text-center  dark:bg-[#1f1f1f] transition-colors duration-300">
     <p className="text-black dark:text-white mt-4">© Sara_AI All Right Reserved, 2023-2025</p>
   </div>
 </div>

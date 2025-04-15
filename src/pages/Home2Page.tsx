@@ -102,7 +102,7 @@ function Home2Page() {
             
 
             {/* Features Section */}
-            {/* <Features /> */}
+            <Features />
 
             {/* Testimonials Section */}
             <div className="py-16 md:py-24 bg-white dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
