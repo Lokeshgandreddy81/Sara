@@ -52,7 +52,7 @@ export const membersData: Member[] = [
   {
     id: 5,
     name: '- Gopal Reddy .B',
-    photoUrl: '/images/ethan.jpg',
+    photoUrl: 'Public/Gopal.png',
     role: 'Back-end Developer & Database Management',
     details: [
       '>  Database Design and Management',

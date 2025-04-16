@@ -7,7 +7,7 @@ import BackToTopButton from './componets/BackToTopButton';
 // import Chat from './pages/ChatPage';
 import { useEffect, useState } from 'react';
 import './index.css';
-import TeamPortfolio from './pages/Footer_Pages/TeamPortfolio';
+import TeamPortfolio from './pages/TeamPortfolio';
 // import HomePage from './Dumb_comp/HomePage';
 import NavBar from './componets/NavBar';
 import Home2Page from './pages/Home2Page';

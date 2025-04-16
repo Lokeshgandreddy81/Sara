@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
                             <br />
                             <li className="flex  flex justify-center space-x-3 text-gray-600 dark:text-[#d4d4d4] hover:text-black dark:hover:text-white">
                                 <Mail className="w-5 h-5 " />
-                                <a href='mailto:sarachatbot21@gmail.com<'><span >sarachatbot21@gmail.com</span></a>
+                                <a href='mailto:saraaiweb21@gmail.com<'><span >saraaiweb21@gmail.com</span></a>
                             </li><br />
                             <li className="flex flex justify-center space-x-3">
                                 <MapPin className="w-5 h-5 mt-1 text-gray-600 dark:text-[#d4d4d4]" />

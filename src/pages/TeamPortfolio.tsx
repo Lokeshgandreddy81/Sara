@@ -1,8 +1,8 @@
 import React from 'react';
-import { membersData } from '../../data/members';
-import '../../componets/TeamPortfolio.css'; // Import CSS for styling
-import  Footer  from '../../componets/Footer_FIn';
-import AbtSara from '../../componets/AbtSara'
+import { membersData } from '../data/members';
+import '../componets/TeamPortfolio.css'; // Import CSS for styling
+import  Footer  from '../componets/Footer_FIn';
+import AbtSara from '../componets/AbtSara'
 
 interface TeamPortfolioProps { }
 
