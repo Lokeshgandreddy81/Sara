@@ -4,7 +4,7 @@ const AbtSara: React.FC = () => {
   return (
     <section className="bg-white py-12 px-6 md:px-16 lg:px-24 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out" id="about">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-6 dark:text-[#ffffff] transition-all duration-300 ease-in-out">
+        <h2 className="text-3xl font-bold text-gray-800 text-center mb-6 dark:text-orange-500 transition-all duration-300 ease-in-out">
           About Us
         </h2>
         <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-10 dark:text-[#d4d4d4] transition-all duration-300 ease-in-out">

@@ -44,7 +44,7 @@ const OurServices :React.FC = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
     <section className="bg-gray-100 py-12 px-6 lg:px-24 bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-ou" id="services">
       <div className="text-center mb-10 bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-ou">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white">Our Services</h2>
+        <h2 className="text-3xl font-bold text-orange-500 dark:text-orange-500">Our Services</h2>
         <p className="text-gray-600 dark:text-gray-300 mt-2">AI-powered support for smarter learning and student well-being</p>
       </div>
 
@@ -52,7 +52,7 @@ const OurServices :React.FC = () => {
         {services.map((service, index) => (
           <div key={index} className="bg-[#f0f0f0] dark:bg-[#262626] rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
             <div className="mb-4">{service.icon}</div>
-            <h3 className="text-gray-900 dark:text-white mt-4">{service.title}</h3>
+            <h3 className="text-gray-900 dark:text-orange-500 mt-4">{service.title}</h3>
             <p className="text-gray-600 dark:text-gray-400 mt-2">{service.description}</p>
           </div>
         ))}

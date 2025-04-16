@@ -8,7 +8,7 @@ const ContactUs: React.FC = () => {
         <div className=" dark:bg-[#1f1f1f]"><br /><br />
                 <div className="text-center ">
                     <div id='Contact us'>
-                        <h3 className="font-bold text-lg mb-4 dark:text-white">Contact Info</h3><br />
+                        <h3 className="font-bold text-lg mb-4 dark:text-orange-500">Contact Info</h3><br />
                         <ul className="space-y-4">
                             <li className="flex  flex justify-center space-x-3 text-gray-600 dark:text-[#d4d4d4] hover:text-black dark:hover:text-white">
                                 <Phone className="w-5 h-5 text-gray-600 dark:text-[#d4d4d4]" />
@@ -36,7 +36,7 @@ const ContactUs: React.FC = () => {
 
 
                         <div>
-                            <h3 className="font-bold text-lg mb-4 dark:text-white">Company</h3>
+                            <h3 className="font-bold text-lg mb-4 text-orange-500">Company</h3>
                             <ul className="space-y-2">
                                 <li><Link to='/About_us' className="text-gray-600 hover:text-gray-900  dark:text-[#d4d4d4] dark:hover:text-white">About Us</Link></li>
                                 <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">How to work?</a></li>
@@ -46,7 +46,7 @@ const ContactUs: React.FC = () => {
                         </div>
 
                         <div>
-                            <h3 className="font-bold text-lg mb-4 dark:text-white">Legal & Privacy</h3>
+                            <h3 className="font-bold text-lg mb-4 text-orange-500">Legal & Privacy</h3>
                             <ul className="space-y-2">
                                 <li><Link to='/PrivacyPolicy' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Privacy Policy</Link></li>
                                 <li><Link to='/TermsConditions' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Terms & Conditions</Link></li>
@@ -55,7 +55,7 @@ const ContactUs: React.FC = () => {
                         </div>
 
                         <div>
-                            <h3 className="font-bold text-lg mb-4 dark:text-white">Support</h3>
+                            <h3 className="font-bold text-lg mb-4 text-orange-500">Support</h3>
                             <ul className="space-y-2">
                                 <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">FAQ</a></li>
                                 {/* <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Help Center</a></li> */}

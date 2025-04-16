@@ -8,7 +8,7 @@ const Disclaimer: React.FC = () => {
       <NavBar />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
         <div className="p-6 max-w-5xl mx-auto text-gray-800 dark:text-[#d6d6d6] bg-white dark:bg-[#1f1f1f] rounded-lg shadow-md transition-all duration-300 ease-in-out">
-          <h1 className="text-3xl font-bold mb-4">Disclaimer</h1>
+          <div><h1 className="text-3xl font-bold mb-4 text:orange-500">Disclaimer</h1></div>
 
           <p className="mb-4">
             The information provided by <strong>SARA AI</strong> on this platform is for general educational and mental wellness purposes only. While we strive to offer accurate, updated, and supportive content, we make no guarantees about its completeness, reliability, or effectiveness.
