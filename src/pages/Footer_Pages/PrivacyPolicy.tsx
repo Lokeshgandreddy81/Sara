@@ -1,9 +1,12 @@
 import React from "react";
 import Footer from "../../componets/Footer_FIn";
+import NavBar from "../../componets/NavBar";
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <><div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
+    <>
+    <NavBar />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
     <div className="p-6 max-w-5xl mx-auto text-gray-800 dark:text-[#d6d6d6] bg-white dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
 

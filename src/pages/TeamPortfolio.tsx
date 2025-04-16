@@ -3,12 +3,16 @@ import { membersData } from '../data/members';
 import '../componets/TeamPortfolio.css'; // Import CSS for styling
 import  Footer  from '../componets/Footer_FIn';
 import AbtSara from '../componets/AbtSara'
+import NavBar from '../componets/NavBar';
+import NavBar2 from '../componets/NavBar2';
 
 interface TeamPortfolioProps { }
 
 const TeamPortfolio: React.FC<TeamPortfolioProps> = () => {
     return (
         <>
+        {/* <NavBar2 /> */}
+        <NavBar />
         <AbtSara />
         <div className="team-portfolio bg-[#fafafa] dark:bg-[#1f1f1f]">
             <h2 className='text-black dark:text-white text-3xl'>Meet Our Team</h2>

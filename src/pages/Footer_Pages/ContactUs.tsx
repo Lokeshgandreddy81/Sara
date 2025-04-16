@@ -1,8 +1,10 @@
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import NavBar from "../../componets/NavBar";
 const ContactUs: React.FC = () => {
-    return (
+    return (<>
+        <NavBar />
         <div className=" dark:bg-[#1f1f1f]"><br /><br />
                 <div className="text-center ">
                     <div id='Contact us'>
@@ -69,6 +71,7 @@ const ContactUs: React.FC = () => {
                 <br />
             </div>
         </div>
+        </>
                 );
 };
                 export default ContactUs;

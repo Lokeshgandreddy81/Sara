@@ -2,6 +2,7 @@ import React from 'react';
 import { BookOpen, Video, Brain, HeartPulse, ShieldCheck, Clock } from 'lucide-react';
 import Footer from '../../componets/Footer_FIn';
 import DoubleImg from '../../componets/DoubleImg'
+import NavBar from '../../componets/NavBar';
 
 const services = [
   {
@@ -38,7 +39,9 @@ const services = [
 
 const OurServices :React.FC = () => {
   return (
-    <><div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
+    <>
+    <NavBar />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
     <section className="bg-gray-100 py-12 px-6 lg:px-24 bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-ou" id="services">
       <div className="text-center mb-10 bg-gray-100 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-ou">
         <h2 className="text-3xl font-bold text-gray-800 dark:text-white">Our Services</h2>

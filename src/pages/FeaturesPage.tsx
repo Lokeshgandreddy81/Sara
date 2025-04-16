@@ -1,9 +1,12 @@
 import React from "react";
 import Features from "../componets/Features";
 import Footer from "../componets/Footer_FIn";
+import NavBar from "../componets/NavBar";
 const FeaturesPage = () => {
     return (
-        <><Features />
+        <>
+        <NavBar />
+        <Features />
         <Footer /></>
         
     );

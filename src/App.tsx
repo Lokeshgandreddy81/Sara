@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <RouteChangeProgress />
        <ScrollToTop />
       {/* <HomePage /> */}
