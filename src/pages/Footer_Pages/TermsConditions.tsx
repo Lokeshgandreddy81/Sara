@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "../Footer_FIn";
+import Footer from "../../componets/Footer_FIn";
 
 const TermsConditions: React.FC = () => {
   return (

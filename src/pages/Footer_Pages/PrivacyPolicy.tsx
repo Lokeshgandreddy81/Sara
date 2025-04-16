@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer_FIn";
+import Footer from "../../componets/Footer_FIn";
 
 const PrivacyPolicy: React.FC = () => {
   return (

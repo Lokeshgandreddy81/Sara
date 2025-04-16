@@ -7,17 +7,19 @@ import BackToTopButton from './componets/BackToTopButton';
 // import Chat from './pages/ChatPage';
 import { useEffect, useState } from 'react';
 import './index.css';
-import TeamPortfolio from './componets/TeamPortfolio';
+import TeamPortfolio from './pages/Footer_Pages/TeamPortfolio';
 // import HomePage from './Dumb_comp/HomePage';
 import NavBar from './componets/NavBar';
 import Home2Page from './pages/Home2Page';
 import ChatPage from './Dumb_comp/ChatPage';
 import FeaturesPage from './pages/FeaturesPage';
-import PrivacyPolicy from './componets/Footer_Components/PrivacyPolicy';
-import TermsConditions from './componets/Footer_Components/TermsConditions';
-import Disclaimer from './componets/Footer_Components/Disclaimer';
+import PrivacyPolicy from './pages/Footer_Pages/PrivacyPolicy';
+import TermsConditions from './pages/Footer_Pages/TermsConditions';
+import Disclaimer from './pages/Footer_Pages/Disclaimer';
 import ScrollToTop from './componets/ScrollToTop';
-import Service from './componets/Footer_Components/Service';
+import Service from './pages/Footer_Pages/Service';
+import ContactUs from './pages/Footer_Pages/ContactUs';
+import RouteChangeProgress from './componets/RouterChangeProgress';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -44,7 +46,8 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <ScrollToTop />
+      <RouteChangeProgress />
+       <ScrollToTop />
       {/* <HomePage /> */}
       <Routes>
         <Route path="/" element={<Home2Page />} />
@@ -54,6 +57,7 @@ function App() {
         <Route path="/TermsConditions" element={<TermsConditions />} />
         <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/Service" element={<Service />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
       {/* <TeamPortfolio /> */}
 

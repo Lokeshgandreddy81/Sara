@@ -46,13 +46,13 @@ function Home2Page() {
             {/* Hero Section */}
             <div className="bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out relative overflow-hidden">
                 {/* Floating icons */}
-                <FloatingIcon className="top-16 md:top-20 left-1/4 md:left-1/3 dark:text-[#4c5bd4]  hover:text-transparent duration-2 00 ease-in-out"><Book className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
-                <FloatingIcon className="bottom-24 md:bottom-32 left-1/4 dark:text-[#4c5bd4] hover:text-transparent duration-200 ease-in-out">
+                <FloatingIcon className="top-16 md:top-20 left-1/2 md:left-1/3 dark:text-[#000000]  hover:text-transparent dark:hover:text-transparent duration-2 00 ease-in-out"><Book className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
+                <FloatingIcon className="bottom-24 md:bottom-32 left-1/4 dark:text-[#000000] hover:text-transparent dark:hover:text-transparent duration-200 ease-in-out">
                     <Lightbulb className="w-10 h-10 md:w-12 md:h-12" />
                 </FloatingIcon>
-                <FloatingIcon className="bottom-0 md:bottom-1 left-8 md:left-32 dark:text-[#4c5bd4] hover:text-transparent duration-200 ease-in-out"><Atom className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
-                <FloatingIcon className="bottom-0 md:bottom-1 right-1/4 dark:text-[#4c5bd4] hover:text-transparent duration-200 ease-in-out"><Ruler className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
-                <FloatingIcon className="bottom-1/4 right-1/2 dark:text-[#4c5bd4] hover:text-transparent duration-200 ease-in-out"><Triangle className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
+                <FloatingIcon className="bottom-0 md:bottom-1 left-8 md:left-32 dark:text-[#000000] hover:text-transparent dark:hover:text-transparent duration-200 ease-in-out"><Atom className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
+                <FloatingIcon className="bottom-0 md:bottom-1 right-1/4 dark:text-[#000000] hover:text-transparent dark:hover:text-transparent duration-200 ease-in-out"><Ruler className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
+                <FloatingIcon className="bottom-1/4 right-1/2 dark:text-[#000000] hover:text-transparent dark:hover:text-transparent duration-200 ease-in-out"><Triangle className="w-10 h-10 md:w-12 md:h-12" /></FloatingIcon>
 
                 <div className="container mx-auto px-6 pt-16 md:pt-20 pb-24 md:pb-32 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     {/* Text content */}

@@ -4,7 +4,7 @@ export const membersData: Member[] = [
   {
     id: 1,
     name: '- Shesheer .Ch',
-    photoUrl: '/images/alice.jpg', // Ensure these image paths are correct in your `public` folder
+    photoUrl: '/Public/Shesheer.png', // Ensure these image paths are correct in your `public` folder
     role: 'Co-Founder. Product Designer & Team Lead',
     details: [
       '> Project Planning and Coordination',
@@ -16,7 +16,7 @@ export const membersData: Member[] = [
   {
     id: 2,
     name: '- Lokesh .G',
-    photoUrl: '/images/bob.jpg',
+    photoUrl: '/Public/Lokesh.png',
     role: 'Co-Founder. Web Designer',
     details: [
       '>  Collabration with UI/UX and Dev teams',
@@ -28,13 +28,13 @@ export const membersData: Member[] = [
   {
     id: 3,
     name: '- D. V. Yogeshwara Rao',
-    photoUrl: '/images/charlie.jpg',
+    photoUrl: '/Public/Yogesh.png',
     role: 'Full-Stack Developer & Project Manager',
     details: [
-      '>  Frontend and Back-end Development',
+      '>  Front-end and Back-end Development',
       '>  Deployment and Maintenance of Web Applications',
-      '>  Experience building scalable APIs',
-      '>  Server Side Logic'
+      '>  Building scalable APIs & Server Side Logic',
+      '>  Testing and Debugging'
     ],
   },
   {
@@ -53,7 +53,7 @@ export const membersData: Member[] = [
     id: 5,
     name: '- Gopal Reddy .B',
     photoUrl: '/images/ethan.jpg',
-    role: 'Web Developer & Database Management',
+    role: 'Back-end Developer & Database Management',
     details: [
       '>  Database Design and Management',
       '>  Backend Development',

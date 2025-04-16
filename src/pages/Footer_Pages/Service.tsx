@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen, Video, Brain, HeartPulse, ShieldCheck, Clock } from 'lucide-react';
-import Footer from '../Footer_FIn';
+import Footer from '../../componets/Footer_FIn';
+import DoubleImg from '../../componets/DoubleImg'
 
 const services = [
   {
@@ -54,6 +55,7 @@ const OurServices :React.FC = () => {
         ))}
       </div>
     </section>
+    {/* <DoubleImg /> */}
     </div>
     <Footer />
     </>

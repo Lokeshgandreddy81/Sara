@@ -8,19 +8,20 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
     gap: 30px;
     margin-top: 70px;
+
   }
   
   .member-card {
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     text-align: center;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
   }
   
   .member-photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border-radius: 49%;
     object-fit: cover;
     margin-bottom: 10px;
   }

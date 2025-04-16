@@ -47,16 +47,18 @@ const NavBar: React.FC = () => {
         {/* Mobile Navigation Dropdown */}
         {isOpen && (
           <div className="md:hidden px-6 pb-4 space-y-3">
-            <ThemeToggle />
+            <ThemeToggle /><br /><br />
+            <Link to="/" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
+              Home</Link>
             <Link to="/About_us" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               About us
             </Link>
-            <a href="#Features" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
+            <Link to="/Features" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               Features
-            </a>
-            <a href="#Contact us" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
+            </Link>
+            <Link to="/ContactUs" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               Contact us
-            </a>
+            </Link>
             <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300 w-full">
               Sign In
             </button>
