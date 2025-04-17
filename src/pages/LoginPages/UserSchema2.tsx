@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen } from 'lucide-react';
-import { Eye, EyeOff } from 'lucide-react';
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate ,Link} from 'react-router-dom';
+import ThemeToggle from '../../componets/ThemeToggle';
+import { Monitor, ArrowLeft ,Eye, EyeOff, ChevronLeft} from 'lucide-react';
 function UserSchema21() {
     const [formData, setFormData] = useState({
         firstName: '',
@@ -12,7 +11,7 @@ function UserSchema21() {
         branch: '',
         rollNo: '',
         email: '',
-        Persona:'',
+        Persona: '',
         password: '',
         confirmPassword: '',
         agreeToTerms: false,
@@ -47,9 +46,9 @@ function UserSchema21() {
         }
 
         // Validate password strength (example: minimum 8 characters, must contain one number, one lowercase, one uppercase letter)
-        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+        const passwordRegex = /^(?=.*[a-z])(?=.*\d).{8,}$/;
         if (!passwordRegex.test(formData.password)) {
-            errors.push('Password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, and one number.');
+            errors.push('Password must be at least 8 characters long, one lowercase letter, and one number.');
         }
 
         // If there are errors, display them and stop submission
@@ -69,8 +68,8 @@ function UserSchema21() {
             await sendEmailVerification(user);
 
             // Redirect to login page after verification email is sent
-            if (window.confirm('A verification email has been sent to your email address. Please check your inbox and verify it. Click "OK" once you’ve done that.')) {
-                navigate('/Login');
+            if (window.confirm(`A verification email has been sent to "${formData.email}". Please check your inbox and verify it,Before Sign in..`)) {
+                navigate('/Signin');
             }
 
         } catch (error) {
@@ -80,167 +79,183 @@ function UserSchema21() {
     };
 
     return (
-        <div className="min-h-screen bg-[#1e3a8a] p-4 flex items-center justify-center">
-            <div className="w-full max-w-4xl flex items-center justify-center ">
-                <div className="w-full lg:w-1/2 bg-white rounded-3xl p-8 shadow-xl">
-                    <div className="flex items-center gap-2 mb-6">
-                        <BookOpen className="w-8 h-8 text-[#4F46E5]" />
-                        <span className="text-[#4F46E5] text-xl font-bold">SARA</span>
+        <>
+            <nav className='bg-[#1e3a8a] dark:bg-[#1f1f1f] p-4 flex justify-between items-center transition-all duration-300 ease-in-out'>
+                <Link to="/" className="flex items-center space-x-2">
+                    <Monitor className="h-8 w-8 text-white dark:text-orange-600" />
+                    <span className="text-white dark:text-black text-xl font-bold dark:text-orange-600">Sara AI</span>
+                </Link>
+
+                <ThemeToggle />
+            </nav>
+
+
+            <div className="min-h-screen dark:bg-[#1f1f1f] bg-[#1e3a8a] p-4 flex items-center justify-center transition-all duration-300 ease-in-out">
+                <div className="w-full max-w-4xl flex items-center justify-center  ">
+                    <div className="w-full lg:w-1/2 bg-white rounded-3xl p-8 shadow-xl dark:bg-[#262626] transition-all duration-300 ease-in-out">
+                        <div className="flex items-center gap-2 mb-6 dark:text-orange-500 transition-all duration-300 ease-in-out">
+                            <Link to="/Signup" >
+                            <div className="flex items:center gap-2">
+                            <ChevronLeft className="w-8 h-8 text-[#4F46E5] dark:text-orange-500 transition-all duration-300 ease-in-out" />
+                            <span className="text-[#4F46E5] text-xl font-bold dark:text-orange-500 transition-all duration-300 ease-in-out">Back To Sign up</span></div></Link>
+                        </div>
+
+                        <h1 className="text-3xl font-bold text-gray-900 mb-2 dark:text-white transition-all duration-300 ease-in-out">Sign up with us</h1>
+                        <p className="text-gray-600 text-lg mb-8 dark:text-[#d6d6d6] transition-all duration-300 ease-in-out">Let's get you all set up so you can access your personal account.</p>
+
+                        {/* Display errors */}
+                        {formErrors.length > 0 && (
+                            <div className="bg-red-50 text-red-900 p-4 mb-6 rounded-lg dark:bg-red-800 dark:text-red-100 transition-all duration-300 ease-in-out">
+                                <ul>
+                                    {formErrors.map((error, index) => (
+                                        <li key={index}>{error}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        <form onSubmit={handleSubmit} className="space-y-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">First Name</label>
+                                    <input
+                                        type="text"
+                                        placeholder="Celestial"
+                                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                        value={formData.firstName}
+                                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">Last Name</label>
+                                    <input
+                                        type="text"
+                                        placeholder="Celunox"
+                                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                        value={formData.lastName}
+                                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">Branch</label>
+                                    <select
+                                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                        value={formData.branch}
+                                        onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
+                                    >
+                                        <option value="">Select Branch</option>
+                                        <option value="ai">AIML</option>
+                                        <option value="ci">Civil</option>
+                                        <option value="cse">CSE</option>
+                                        <option value="ec">Cyber Security</option>
+                                        <option value="ds">Data Science</option>
+                                        <option value="ece">ECE</option>
+                                        <option value="eee">EEE</option>
+                                        <option value="it">IT</option>
+                                        <option value="me">Mechanical</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">Year Of Study</label>
+                                    <select
+                                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                        value={formData.yearOfStudy}
+                                        onChange={(e) => setFormData({ ...formData, yearOfStudy: e.target.value })}
+                                    >
+                                        <option value="">Select Year</option>
+                                        <option value="1">1st-Year</option>
+                                        <option value="2">2nd-Year</option>
+                                        <option value="3">3rd-Year</option>
+                                        <option value="4">4th-Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">Roll No</label>
+                                <input
+                                    type="text" // Changed to text to allow any input
+                                    placeholder="Ex : 22102A040748"
+                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                    value={formData.rollNo}
+                                    onChange={(e) => setFormData({ ...formData, rollNo: e.target.value })}
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">Your Email</label>
+                                <input
+                                    type="email"
+                                    placeholder="Ex: celestialwave@gmail.com"
+                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                    value={formData.Persona}
+                                    onChange={(e) => setFormData({ ...formData, Persona: e.target.value })}
+                                />
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="relative">
+                                    <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">Password</label>
+                                    <input
+                                        type={showPassword ? 'text' : 'password'}
+                                        placeholder="Password"
+                                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                        value={formData.password}
+                                        onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                                    />
+                                    <button
+                                        type="button"
+                                        className="absolute right-3 top-[38px] text-gray-500 dark:text-gray-200 transition-all duration-300 ease-in-out"
+                                        onClick={() => setShowPassword(!showPassword)}
+                                    >
+                                        {showPassword ? <EyeOff size={25} /> : <Eye size={25} />}
+                                    </button>
+                                </div>
+                                <div>
+                                    <label className="block text-gray-700 mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out">Confirm Password</label>
+                                    <input
+                                        type={showPassword ? 'text' : 'password'}
+
+                                        placeholder='Confirm Password'
+                                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+                                        value={formData.confirmPassword}
+                                        onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
+                                    />
+
+                                </div>
+                            </div>
+
+                            <div className="flex items-center">
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    className="mr-2 "
+                                    checked={formData.agreeToTerms}
+                                    onChange={(e) => setFormData({ ...formData, agreeToTerms: e.target.checked })}
+                                />
+                                <label htmlFor="terms" className="text-gray-600 dark:text-gray-200 transition-all duration-300 ease-in-out">
+                                    I agree to {' '}
+                                    <a href="/TermsConditions" target='_blank' className="text-[#4F46E5] dark:text-orange-500 transition-all duration-300 ease-in-out">
+                                        Terms & Conditions
+                                    </a>{' '}
+
+                                </label>
+                            </div>
+
+                            <button
+                                type="submit"
+                                className="w-full bg-[#4F46E5] dark:bg-orange-500 text-white py-3 rounded-lg hover:bg-[#4338CA] hover:dark:bg-orange-700 transition-colors transition -all Duration-300 ease-in-out"
+                            >
+                                Create Account
+                            </button>
+                        </form>
                     </div>
-
-                    <h1 className="text-3xl font-bold text-gray-900 mb-2">Sign up with us</h1>
-                    <p className="text-gray-600 mb-8">Let's get you all set up so you can access your personal account.</p>
-
-                    {/* Display errors */}
-                    {formErrors.length > 0 && (
-                        <div className="bg-red-100 text-red-800 p-4 mb-6 rounded-lg">
-                            <ul>
-                                {formErrors.map((error, index) => (
-                                    <li key={index}>{error}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
-
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label className="block text-gray-700 mb-2">First Name</label>
-                                <input
-                                    type="text"
-                                    placeholder="David"
-                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                    value={formData.firstName}
-                                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-gray-700 mb-2">Last Name</label>
-                                <input
-                                    type="text"
-                                    placeholder="Goliath"
-                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                    value={formData.lastName}
-                                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                                />
-                            </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label className="block text-gray-700 mb-2">Branch</label>
-                                <select
-                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                    value={formData.branch}
-                                    onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
-                                >
-                                    <option value="">Select Branch</option>
-                                    <option value="ai">AIML</option>
-                                    <option value="ci">Civil</option>
-                                    <option value="cse">CSE</option>
-                                    <option value="ec">Cyber Security</option>
-                                    <option value="ds">Data Science</option>
-                                    <option value="ece">ECE</option>
-                                    <option value="eee">EEE</option>
-                                    <option value="it">IT</option>
-                                    <option value="me">Mechanical</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label className="block text-gray-700 mb-2">Year Of Study</label>
-                                <select
-                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                    value={formData.yearOfStudy}
-                                    onChange={(e) => setFormData({ ...formData, yearOfStudy: e.target.value })}
-                                >
-                                    <option value="">Select Year</option>
-                                    <option value="1">1st-Year</option>
-                                    <option value="2">2nd-Year</option>
-                                    <option value="3">3rd-Year</option>
-                                    <option value="4">4th-Year</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <label className="block text-gray-700 mb-2">Roll No</label>
-                            <input
-                                type="text" // Changed to text to allow any input
-                                placeholder="Ex : 22102A040748"
-                                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                value={formData.rollNo}
-                                onChange={(e) => setFormData({ ...formData, rollNo: e.target.value })}
-                            />
-                        </div>
-
-                        <div>
-                            <label className="block text-gray-700 mb-2">Email</label>
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                value={formData.Persona}
-                                onChange={(e) => setFormData({ ...formData, Persona: e.target.value })}
-                            />
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="relative">
-                                <label className="block text-gray-700 mb-2">Password</label>
-                                <input
-                                    type={showPassword ? 'text' : 'password'}
-                                    placeholder="Password"
-                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                    value={formData.password}
-                                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                                />
-                                <button
-                                    type="button"
-                                    className="absolute right-3 top-[38px] text-gray-500"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                >
-                                    {showPassword ? <EyeOff size={25} /> : <Eye size={25} />}
-                                </button>
-                            </div>
-                            <div>
-                                <label className="block text-gray-700 mb-2">Confirm Password</label>
-                                <input
-                                    type="password"
-                                    placeholder='Confirm Password'
-                                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                    value={formData.confirmPassword}
-                                    onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
-                                />
-                            </div>
-                        </div>
-
-                        <div className="flex items-center">
-                            <input
-                                type="checkbox"
-                                id="terms"
-                                className="mr-2"
-                                checked={formData.agreeToTerms}
-                                onChange={(e) => setFormData({ ...formData, agreeToTerms: e.target.checked })}
-                            />
-                            <label htmlFor="terms" className="text-gray-600">
-                                I agree to all the{' '}
-                                <a href="#" className="text-[#4F46E5]">
-                                    Terms & Conditions
-                                </a>{' '}
-
-                            </label>
-                        </div>
-
-                        <button
-                            type="submit"
-                            className="w-full bg-[#4F46E5] text-white py-3 rounded-lg hover:bg-[#4338CA] transition-colors"
-                        >
-                            Create Account
-                        </button>
-                    </form>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -47,7 +47,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">6. Contact Us</h2>
       <p className="mb-4">
-        If you have questions or concerns about our Privacy Policy, feel free to reach out at <a href="mailto:sarachatbot21@gmail.com" className="text-blue-600">sarachatbot21@gmail.com</a>.
+        If you have questions or concerns about our Privacy Policy, feel free to reach out at <a href="mailto:saraaiweb21@gmail.com" className="text-blue-600">saraaiweb21@gmail.com</a>.
       </p>
 
       <p className="text-sm text-gray-500 mt-8">

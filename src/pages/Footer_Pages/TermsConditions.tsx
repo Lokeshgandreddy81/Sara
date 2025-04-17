@@ -53,7 +53,7 @@ const TermsConditions: React.FC = () => {
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">8. Contact Information</h2>
       <p className="mb-4">
-        For any queries, reach out to us at <a href="mailto:sarachatbot21@gmail.com" className="text-blue-600">sarachatbot21@gmail.com</a>.
+        For any queries, reach out to us at <a href="mailto:saraaiweb21@gmail.com" className="text-blue-600">saraaiweb21@gmail.com</a>.
       </p>
 
       <p className="text-sm text-gray-500 mt-8">
