@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BookOpen } from 'lucide-react';
 import { Eye, EyeOff } from 'lucide-react';
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
-function UserSchema2() {
+function UserSchema21() {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -12,6 +12,7 @@ function UserSchema2() {
         branch: '',
         rollNo: '',
         email: '',
+        Persona:'',
         password: '',
         confirmPassword: '',
         agreeToTerms: false,
@@ -21,17 +22,27 @@ function UserSchema2() {
     const [formErrors, setFormErrors] = useState<string[]>([]);
     const navigate = useNavigate();
 
+    // **New useEffect to update email on rollNo change**
+    useEffect(() => {
+        if (formData.rollNo) {
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                email: `${prevFormData.rollNo}@mbu.asia`,
+            }));
+        }
+    }, [formData.rollNo]); // Only run when rollNo changes
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         const errors: string[] = [];
 
         // Validate form fields
-        if (!formData.firstName || !formData.lastName || !formData.email || !formData.password || formData.password !== formData.confirmPassword || !formData.agreeToTerms) {
+        if (!formData.firstName || !formData.lastName || !formData.password || formData.password !== formData.confirmPassword || !formData.agreeToTerms) {
             errors.push('Please fill in all fields correctly.');
         }
 
-        // Validate email format
-        if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        // Validate email format (Modified to allow the auto-generated format)
+        if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
             errors.push('Please enter a valid email address.');
         }
 
@@ -61,7 +72,7 @@ function UserSchema2() {
             if (window.confirm('A verification email has been sent to your email address. Please check your inbox and verify it. Click "OK" once you’ve done that.')) {
                 navigate('/Login');
             }
-            
+
         } catch (error) {
             console.error("Error creating user:", (error as any).message);
             setFormErrors([(error as any).message || 'An unknown error occurred.']);
@@ -154,21 +165,22 @@ function UserSchema2() {
                         <div>
                             <label className="block text-gray-700 mb-2">Roll No</label>
                             <input
-                                type="rollNo"
+                                type="text" // Changed to text to allow any input
                                 placeholder="Ex : 22102A040748"
                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
                                 value={formData.rollNo}
                                 onChange={(e) => setFormData({ ...formData, rollNo: e.target.value })}
                             />
                         </div>
+
                         <div>
                             <label className="block text-gray-700 mb-2">Email</label>
                             <input
                                 type="email"
-                                placeholder="DavidGoliath@gmail.com"
+                                placeholder="Email"
                                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
-                                value={formData.email}
-                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                value={formData.Persona}
+                                onChange={(e) => setFormData({ ...formData, Persona: e.target.value })}
                             />
                         </div>
 
@@ -232,4 +244,4 @@ function UserSchema2() {
     );
 }
 
-export default UserSchema2;
+export default UserSchema21;

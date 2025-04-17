@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-// Instead of this:
-// import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
-
-// Do this:
-import { createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import { auth } from '../../../firebase'; // adjust path based on your folder structure
 import { getAuth, fetchSignInMethodsForEmail } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
@@ -22,40 +17,38 @@ function Signup() {
   };
 
   const handleSignUp = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setEmailError(null);
-    setIsSubmitting(true);
-  
-    // ✅ Gmail-only check
-    const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-    if (!gmailRegex.test(email)) {
-      setEmailError('Only Mohan Babu University Mail addresses are allowed.');
+  e.preventDefault();
+  setEmailError(null);
+  setIsSubmitting(true);
+
+  const gmailRegex = /^[a-zA-Z0-9._%+-]+@mbu\.asia$/;
+  if (!gmailRegex.test(email)) {
+    setEmailError('Only MBU Mail addresses are allowed.');
+    setIsSubmitting(false);
+    return;
+  }
+
+  try {
+    const methods = await fetchSignInMethodsForEmail(auth, email);
+
+    if (methods.length > 0) {
+      // Email already exists
+      setEmailError('Email already in use. Please login.');
       setIsSubmitting(false);
       return;
     }
-  
-    try {
-      const methods = await fetchSignInMethodsForEmail(auth, email);
-  
-      if (methods.length > 0) {
-        setEmailError('Email already in use. Please login or verify your inbox.');
-        setIsSubmitting(false);
-        return;
-      }
-  
-      const tempPassword = Math.random().toString(36).slice(-8) + 'A1';
-      const userCredential = await createUserWithEmailAndPassword(auth, email, tempPassword);
-      await sendEmailVerification(userCredential.user);
-  
-      navigate('/UserSchema2');
-    } catch (error: any) {
-      console.error(error);
-      setEmailError(error.message || 'Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-  
+
+    // Email doesn't exist → proceed to next step
+    navigate('/UserSchema2'); // Or your route for setting password or profile
+  } catch (error: any) {
+    console.error(error);
+    setEmailError(error.message || 'Something went wrong. Please try again.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#1e4d8c]">
       <div className="w-full max-w-md p-6 bg-white rounded-3xl shadow-md">
@@ -81,11 +74,10 @@ function Signup() {
               value={email}
               onChange={handleEmailChange}
               placeholder="Enter your email address"
-              className={`mt-1 w-full p-2 rounded border focus:outline-none ${
-                emailError
-                  ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
-                  : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
-              }`}
+              className={`mt-1 w-full p-2 rounded border focus:outline-none ${emailError
+                ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
+                : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
+                }`}
               disabled={isSubmitting}
             />
             {emailError && (

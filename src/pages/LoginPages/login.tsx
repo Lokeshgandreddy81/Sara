@@ -28,7 +28,7 @@ const Login :React.FC = () => {
       }
 
       // ✅ Successful login
-      navigate('/'); // or wherever you want to redirect
+      navigate('/dashboard'); // or wherever you want to redirect
     } catch (error: any) {
       console.error(error);
       setLoginError(error.message || 'Login failed');
