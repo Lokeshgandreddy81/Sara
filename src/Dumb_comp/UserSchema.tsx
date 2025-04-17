@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BookOpen } from 'lucide-react';
 import {Eye, EyeOff} from 'lucide-react';
+import { Timestamp } from 'firebase/firestore';
 
 function UserSchema() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ function UserSchema() {
     email: '',
     password: '',
     confirmPassword: '',
+    createdAt:Timestamp.now(),  
     agreeToTerms: false
   });
 

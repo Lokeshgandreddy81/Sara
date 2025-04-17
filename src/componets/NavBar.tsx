@@ -31,9 +31,10 @@ const NavBar: React.FC = () => {
             <a href="#Contact us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               Contact us
             </a>
+            <Link to='/Signup'>
             <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
               Sign In
-            </button>
+            </button></Link>
           </div>
 
           {/* Mobile Menu Button */}
