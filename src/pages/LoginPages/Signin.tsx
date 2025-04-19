@@ -9,11 +9,11 @@ import { Monitor } from 'lucide-react';
 const Signin: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState<string | null>(null);
   const [password, setPassword] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loginError, setLoginError] = useState('');
   const navigate = useNavigate();
-
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,16 +26,32 @@ const Signin: React.FC = () => {
       const user = userCredential.user;
 
       if (!user.emailVerified) {
-        setLoginError('Please verify your email before Signing in.');
+        setLoginError('Please verify your email before signing in.');
+        setIsSubmitting(false);
+        return;
+      }
+      const mbuRegex = /^[a-zA-Z0-9._%+-]+@mbu\.asia$/;
+      if (!mbuRegex.test(email.trim().toLowerCase())) {
+        setEmailError('Only @mbu.asia email addresses are allowed.');
         setIsSubmitting(false);
         return;
       }
 
       // ✅ Successful login
-      navigate('/dashboard'); // or wherever you want to redirect
+      navigate('/Profile');
     } catch (error: any) {
       console.error(error);
-      setLoginError(error.message || 'Sign in failed');
+      const errorCode = error.code;
+
+      const errorMessages: Record<string, string> = {
+        'auth/invalid-credential': 'Invalid User Credentials. Please check again.',
+        'auth/user-not-found': 'No user found with this email.',
+        'auth/wrong-password': 'Incorrect password.',
+        'auth/too-many-requests': 'Too many login attempts. Please try again later.',
+        'auth/network-request-failed': 'Network error. Please check your connection.',
+      };
+
+      setLoginError(errorMessages[errorCode] || 'Sign in failed. Please try again.');
     } finally {
       setIsSubmitting(false);
     }

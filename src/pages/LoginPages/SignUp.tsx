@@ -23,6 +23,11 @@ function Signup() {
     e.preventDefault();
     setEmailError(null);
     setIsSubmitting(true);
+    if (!email) {
+      setEmailError('Email is required.');
+      setIsSubmitting(false);
+      return;
+    }
   
     // ✅ MBU email check
     const mbuRegex = /^[a-zA-Z0-9._%+-]+@mbu\.asia$/;
@@ -113,7 +118,7 @@ function Signup() {
         </form>
         
         <div className="mt-4 text-center">
-          <p className="text-gray-600 dark:text-gray-200 transition-all duration-300 ease-in-out">
+          <p className="text-gray-800 dark:text-gray-200 transition-all duration-300 ease-in-out">
             Already have an account?{' '}
             <a href="/Signin" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
               Sign in

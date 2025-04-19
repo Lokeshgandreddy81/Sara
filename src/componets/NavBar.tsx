@@ -31,10 +31,10 @@ const NavBar: React.FC = () => {
             <a href="#Contact us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               Contact us
             </a>
-            <Link to='/Signin'>
-              <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
-                Sign In
-              </button></Link>
+            <Link to='/Signup'>
+            <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
+              Sign In
+            </button></Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,11 +60,11 @@ const NavBar: React.FC = () => {
             <Link to="/ContactUs" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               Contact us
             </Link>
-            <br /><br />
-            <Link to='/Signin'>
-              <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-105 transition-all duration-300 w-full">
-                Sign In
-              </button></Link>
+            <br />
+            <Link to='/Signup'>
+            <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300 w-full">
+              Sign In
+            </button></Link>
           </div>
         )}
       </div>

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import { useNavigate ,Link} from 'react-router-dom';
 import ThemeToggle from '../../componets/ThemeToggle';
-import { Monitor, ArrowLeft ,Eye, EyeOff, ChevronLeft} from 'lucide-react';
+import { Monitor ,Eye, EyeOff, ChevronLeft} from 'lucide-react';
 import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
-function UserSchema21() {
+function USchemaWithAD() {
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -87,8 +87,8 @@ function UserSchema21() {
                 rollNo: formData.rollNo,
                 email: formData.email,
                 Persona: formData.Persona,
-                createdAt: serverTimestamp(),   
-            });
+                createdAt: serverTimestamp(),
+            }); 
    
             // Send email verification
             await sendEmailVerification(user);
@@ -300,4 +300,4 @@ function UserSchema21() {
     );
 }
 
-export default UserSchema21;
+export default USchemaWithAD;

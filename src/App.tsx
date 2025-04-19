@@ -23,6 +23,7 @@ import RouteChangeProgress from './componets/RouterChangeProgress';
 import Signup from './pages/LoginPages/SignUp';
 import Signin from './pages/LoginPages/Signin';
 import UserSchema2 from './pages/LoginPages/UserSchema2';
+import USchemaWithAD from './pages/LoginPages/USchemaWithAD';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -54,7 +55,7 @@ function App() {
       {/* <HomePage /> */}
       <Routes>
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/UserSchema2" element={<UserSchema2 />} />
+        <Route path="/UserSchema2" element={<USchemaWithAD />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/" element={<Home2Page />} />
         <Route path="/About_us" element={<TeamPortfolio />} />

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Monitor, Menu, X, CircleUserRound } from 'lucide-react';
+import { Monitor, Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import BackToTopButton from './BackToTopButton';
 import { Link } from 'react-router-dom';
 
-const NavBar2: React.FC = () => {
+const NavBarHome: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -22,18 +22,19 @@ const NavBar2: React.FC = () => {
             <ThemeToggle />
             <Link to="/" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               Home</Link>
-            {/* <Link to="/About_us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
+            <Link to="/About_us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               About us
-            </Link> */}
+            </Link>
             <Link to="/Features" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               Features
             </Link>
-            {/* <a href="#Contact us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
+            <a href="#Contact us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               Contact us
-            </a> */}
-            <button className="bg-white text-black dark:bg-black dark:text-white px-1 py-1 rounded-full shadow hover:scale-110 transition-all duration-300">
-              <CircleUserRound className="h-7 w-7" /> 
-            </button>
+            </a>
+            <Link to='/Signin'>
+              <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
+                Sign In
+              </button></Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,9 +60,11 @@ const NavBar2: React.FC = () => {
             <Link to="/ContactUs" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               Contact us
             </Link>
-            <button className="bg-white text-black dark:bg-black dark:text-white px-1 py-1 rounded-full shadow hover:scale-110 transition-all duration-300">
-              <CircleUserRound className="h-7 w-7" /> 
-            </button>
+            <br /><br />
+            <Link to='/Signin'>
+              <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-105 transition-all duration-300 w-full">
+                Sign In
+              </button></Link>
           </div>
         )}
       </div>
@@ -71,4 +74,4 @@ const NavBar2: React.FC = () => {
   );
 };
 
-export default NavBar2;
+export default NavBarHome;
