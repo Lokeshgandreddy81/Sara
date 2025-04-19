@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
-import { useNavigate ,Link} from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import ThemeToggle from '../../componets/ThemeToggle';
-import { Monitor ,Eye, EyeOff, ChevronLeft} from 'lucide-react';
+import { Monitor, Eye, EyeOff, ChevronLeft } from 'lucide-react';
 import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 function USchemaWithAD() {
 
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
+        name: '',
         yearOfStudy: '',
         branch: '',
         rollNo: '',
@@ -23,15 +24,15 @@ function USchemaWithAD() {
     const [formErrors, setFormErrors] = useState<string[]>([]);
     const navigate = useNavigate();
     const [isSubmitting, setIsSubmitting] = useState(false);
+
     const isValidRollNumber = (rollNumber: string) => {
-  const isCorrectLength = rollNumber.length === 12;
-  const isAlphabetAt6th = /^[A-Za-z]$/.test(rollNumber[5]);
+        const isCorrectLength = rollNumber.length === 12;
+        const isAlphabetAt6th = /^[A-Za-z]$/.test(rollNumber[5]);
 
-  return isCorrectLength && isAlphabetAt6th;
-};
+        return isCorrectLength && isAlphabetAt6th;
+    };
 
 
-    // **New useEffect to update email on rollNo change**
     useEffect(() => {
         if (formData.rollNo) {
             setFormData(prevFormData => ({
@@ -40,59 +41,82 @@ function USchemaWithAD() {
             }));
         }
     }, [formData.rollNo]); // Only run when rollNo changes
+    useEffect(() => {
+        if (formData.firstName || formData.lastName) {
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                name: `${prevFormData.firstName} ${prevFormData.lastName}`.trim(),
+            }));
+        }
+    }, [formData.firstName, formData.lastName]);
+     
+
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         const errors: string[] = [];
-        setIsSubmitting(true); 
-   
-        // Validate form fields
+        setIsSubmitting(true);
+
+        // if (formData.lastName.length < 3) {
+        //     errors.push('First name must be at least 3 characters long.');
+        //     setIsSubmitting(false);
+        // }
+        if (formData.password !== formData.confirmPassword) {
+            errors.push('Password and Confirm Password do not match.');
+            setIsSubmitting(false);
+        }
+
+       
         if (!formData.firstName || !formData.lastName || !formData.password || formData.password !== formData.confirmPassword || !formData.agreeToTerms) {
             errors.push('Please fill in all fields correctly.');
-            setIsSubmitting(false); 
+            setIsSubmitting(false);
         }
-   
-        // Validate email format
+
+        if (!isValidRollNumber(formData.rollNo)) {
+            errors.push('Roll number must be 12 characters long and the 6th character must be an alphabet.');
+            setIsSubmitting(false);
+        }
         if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
             errors.push('Please enter a valid email address.');
             setIsSubmitting(false);
         }
-   
+
         // Validate password strength
         const passwordRegex = /^(?=.*[a-z])(?=.*\d).{8,}$/;
         if (!passwordRegex.test(formData.password)) {
             errors.push('Password must be at least 8 characters long, one lowercase letter, and one number.');
         }
-   
+
         if (errors.length > 0) {
             setFormErrors(errors);
             return;
         }
-   
+
         const auth = getAuth();
         const db = getFirestore();  // Get Firestore instance
-   
+
         try {
             // Create user with email and password
             const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
             const user = userCredential.user;
-   
+
             // Store additional data in Firestore
-            const userDocRef = doc(db, 'users', user.uid); // Use user.uid as the document ID
+            const userDocRef = doc(db, 'users', user.uid); // Create a reference to the user document in Firestore
             await setDoc(userDocRef, {
                 firstName: formData.firstName,
                 lastName: formData.lastName,
+                name: formData.name,
                 yearOfStudy: formData.yearOfStudy,
                 branch: formData.branch,
                 rollNo: formData.rollNo,
                 email: formData.email,
                 Persona: formData.Persona,
                 createdAt: serverTimestamp(),
-            }); 
-   
+            });
+
             // Send email verification
             await sendEmailVerification(user);
-   
+
             if (window.confirm(`A verification email has been sent to "${formData.email}". Please check your inbox and verify it before signing in.`)) {
                 navigate('/Signin');
             }
@@ -128,9 +152,11 @@ function USchemaWithAD() {
                     <div className="w-full lg:w-1/2 bg-white rounded-3xl p-8 shadow-xl dark:bg-[#262626] transition-all duration-300 ease-in-out">
                         <div className="flex items-center gap-2 mb-6 dark:text-orange-500 transition-all duration-300 ease-in-out">
                             <Link to="/Signup" >
-                            <div className="flex items:center gap-2">
-                            <ChevronLeft className="w-8 h-8 text-[#4F46E5] dark:text-orange-500 transition-all duration-300 ease-in-out" />
-                            <span className="text-[#4F46E5] text-xl font-bold dark:text-orange-500 transition-all duration-300 ease-in-out">Back To Sign up</span></div></Link>
+                                <div className="flex items:center gap-2">
+                                    <ChevronLeft className="w-8 h-8 text-[#4F46E5] dark:text-orange-500 transition-all duration-300 ease-in-out" />
+                                    <span className="text-[#4F46E5] text-xl font-bold dark:text-orange-500 transition-all duration-300 ease-in-out">Back To Sign up</span>
+                                </div>
+                            </Link>
                         </div>
 
                         <h1 className="text-3xl font-bold text-gray-900 mb-2 dark:text-white transition-all duration-300 ease-in-out">Sign up with us</h1>
@@ -182,15 +208,15 @@ function USchemaWithAD() {
                                         onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
                                     >
                                         <option value="">Select Branch</option>
-                                        <option value="ai">AIML</option>
-                                        <option value="ci">Civil</option>
-                                        <option value="cse">CSE</option>
-                                        <option value="ec">Cyber Security</option>
-                                        <option value="ds">Data Science</option>
-                                        <option value="ece">ECE</option>
-                                        <option value="eee">EEE</option>
-                                        <option value="it">IT</option>
-                                        <option value="me">Mechanical</option>
+                                        <option value="Artificial Intelligence & Machine Learning">AIML</option>
+                                        <option value="Civil Engineering">Civil</option>
+                                        <option value="Computer Science and Engineering">CSE</option>
+                                        <option value="Cyber Security">Cyber Security</option>
+                                        <option value="Data Science">Data Science</option>
+                                        <option value="Electronics and Communication Engineering ">ECE</option>
+                                        <option value="Electrical and Electronics Engineering">EEE</option>
+                                        <option value="Information and Technology">IT</option>
+                                        <option value="Mechanical Engineering">Mechanical</option>
                                     </select>
                                 </div>
 
@@ -202,10 +228,10 @@ function USchemaWithAD() {
                                         onChange={(e) => setFormData({ ...formData, yearOfStudy: e.target.value })}
                                     >
                                         <option value="">Select Year</option>
-                                        <option value="1">1st-Year</option>
-                                        <option value="2">2nd-Year</option>
-                                        <option value="3">3rd-Year</option>
-                                        <option value="4">4th-Year</option>
+                                        <option value="1st Year">1st Year</option>
+                                        <option value="2nd Year">2nd Year</option>
+                                        <option value="3rd Year">3rd Year</option>
+                                        <option value="4th Year">4th Year</option>
                                     </select>
                                 </div>
                             </div>
@@ -290,7 +316,7 @@ function USchemaWithAD() {
                                 className="w-full bg-[#4F46E5] dark:bg-orange-500 text-white py-3 rounded-lg hover:bg-[#4338CA] hover:dark:bg-orange-700 transition-colors transition -all Duration-300 ease-in-out"
                                 disabled={isSubmitting}
                             >
-                               {isSubmitting ? 'Creating Account....':'Create Account'}
+                                {isSubmitting ? 'Creating Account....' : 'Create Account'}
                             </button>
                         </form>
                     </div>

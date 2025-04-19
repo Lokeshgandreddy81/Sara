@@ -1,27 +1,39 @@
-import React, { useState } from 'react';
-import { Monitor, Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Monitor, Menu, X ,CircleUserRound} from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import BackToTopButton from './BackToTopButton';
+import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const logo: string = '/public/S_title_logo.jpg';
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   return (
     <div className="bg-gradient-to-b from-[#8494e9] to-white dark:from-[#4c5bd4] transition-colors duration-300 ease-in-out">
       <div className="bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out relative overflow-hidden">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 ">
             <Monitor className="h-8 w-8 text-white dark:text-black" />
             <span className="text-white dark:text-black text-xl font-bold">Sara AI</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             <ThemeToggle />
             <Link to="/" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
-              Home</Link>
+              Home
+            </Link>
             <Link to="/About_us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               About us
             </Link>
@@ -31,10 +43,20 @@ const NavBar: React.FC = () => {
             <a href="#Contact us" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
               Contact us
             </a>
-            <Link to='/Signup'>
-            <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
-              Sign In
-            </button></Link>
+
+            {user ? (
+              <Link to="/Dashboard">
+                <button className="bg-white text-black dark:bg-black dark:text-white px-1 py-1 rounded-full shadow hover:scale-110 transition-all duration-300">
+                <CircleUserRound className=" inline-block h-9 w-9" />
+                </button>
+              </Link>
+            ) : (
+              <Link to="/Signin">
+                <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
+                  Sign In
+                </button>
+              </Link>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -45,12 +67,13 @@ const NavBar: React.FC = () => {
           </div>
         </nav>
 
-        {/* Mobile Navigation Dropdown */}
+        {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden px-6 pb-4 space-y-3">
-            <ThemeToggle /><br /><br />
-            <Link to="/" className="text-xl text-white dark:text-black hover:text-black dark:hover:text-white transition-all duration-300">
-              Home</Link>
+          <div className="md:hidden px-6 pb-6 space-y-4">
+            <ThemeToggle />
+            <Link to="/" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
+              Home
+            </Link>
             <Link to="/About_us" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               About us
             </Link>
@@ -60,11 +83,19 @@ const NavBar: React.FC = () => {
             <Link to="/ContactUs" className="block text-lg text-white dark:text-black hover:text-black dark:hover:text-white transition">
               Contact us
             </Link>
-            <br />
-            <Link to='/Signup'>
-            <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300 w-full">
-              Sign In
-            </button></Link>
+            {user ? (
+              <Link to="/Dashboard">
+                <button className="w-full bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-105 transition-all duration-300">
+                  Profile
+                </button>
+              </Link>
+            ) : (
+              <Link to="/Signin">
+                <button className="w-full bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-105 transition-all duration-300">
+                  Sign In
+                </button>
+              </Link>
+            )}
           </div>
         )}
       </div>

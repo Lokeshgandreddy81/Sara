@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import { useNavigate ,Link} from 'react-router-dom';
-import ThemeToggle from '../../componets/ThemeToggle';
+import ThemeToggle from '../componets/ThemeToggle';
 import { Monitor, ArrowLeft ,Eye, EyeOff, ChevronLeft} from 'lucide-react';
 import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 function UserSchema21() {
@@ -47,11 +47,14 @@ function UserSchema21() {
         setIsSubmitting(true); 
    
         // Validate form fields
-        if (!formData.firstName || !formData.lastName || !formData.password || formData.password !== formData.confirmPassword || !formData.agreeToTerms) {
+        if (!formData.firstName || !formData.lastName || !formData.password || !formData.agreeToTerms) {
             errors.push('Please fill in all fields correctly.');
             setIsSubmitting(false); 
         }
-   
+        if (!formData.password !== !formData.confirmPassword) {
+            errors.push('Passwords do not match.');
+            setIsSubmitting(false); 
+        }
         // Validate email format
         if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
             errors.push('Please enter a valid email address.');

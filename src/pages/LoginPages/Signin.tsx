@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
-import { Lock, Eye, EyeOff } from 'lucide-react';
+import { Lock, Eye, EyeOff, Monitor, ChevronLeft , ArrowLeft} from 'lucide-react';
 import ThemeToggle from '../../componets/ThemeToggle';
 import { Link } from 'react-router-dom';
-import { Monitor } from 'lucide-react';
 
 const Signin: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -38,7 +37,7 @@ const Signin: React.FC = () => {
       }
 
       // ✅ Successful login
-      navigate('/Profile');
+      navigate('/Dashboard');
     } catch (error: any) {
       console.error(error);
       const errorCode = error.code;
@@ -70,6 +69,14 @@ const Signin: React.FC = () => {
 
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#1e3a8a] dark:bg-[#1f1f1f]  transition-all duration-300 ease-in-out">
       <div className="w-full max-w-md p-6 bg-white rounded-3xl shadow-md dark:bg-[#262626] transition-all duration-300 ease-in-out">
+        <div className="flex items-center gap-2 mb-6 dark:text-orange-500 transition-all duration-300 ease-in-out">
+          <Link to="/" >
+            <div className="flex items:center gap-2">
+              <ArrowLeft className="w-8 h-8 text-[#4F46E5] dark:text-orange-500 transition-all duration-300 ease-in-out" />
+              {/* <span className="text-[#4F46E5] text-xl font-bold dark:text-orange-500 transition-all duration-300 ease-in-out">Back To Sign up</span> */}
+            </div>
+          </Link>
+        </div>
         <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center dark:text-orange-500 transition-all duration-300 ease-in-out">
           Welcome back
         </h2>
@@ -116,8 +123,8 @@ const Signin: React.FC = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className={`w-full px-4 py-2 pr-10 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out ${loginError
-                      ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
-                      : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
+                    ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
+                    : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
                     }`}
                   disabled={isSubmitting}
                   placeholder="Enter your password"
@@ -151,7 +158,7 @@ const Signin: React.FC = () => {
           <p className="text-gray-600 dark:text-gray-200 transition-all duration-300 ease-in-out">
             Don’t have an account?{' '}
             <a href="/signup" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
-              Sign up
+              Sign up here
             </a>
           </p>
         </div>

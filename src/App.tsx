@@ -1,17 +1,8 @@
-import React from 'react';
-import { Monitor } from 'lucide-react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ThemeToggle from './componets/ThemeToggle';
-// import { useEffect, useRef, useState } from 'react';
-import BackToTopButton from './componets/BackToTopButton';
-// import Chat from './pages/ChatPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './index.css';
 import TeamPortfolio from './pages/TeamPortfolio';
-// import HomePage from './Dumb_comp/HomePage';
-import NavBar from './componets/NavBar';
 import Home2Page from './pages/Home2Page';
-import ChatPage from './Dumb_comp/ChatPage';
 import FeaturesPage from './pages/FeaturesPage';
 import PrivacyPolicy from './pages/Footer_Pages/PrivacyPolicy';
 import TermsConditions from './pages/Footer_Pages/TermsConditions';
@@ -22,11 +13,22 @@ import ContactUs from './pages/Footer_Pages/ContactUs';
 import RouteChangeProgress from './componets/RouterChangeProgress';
 import Signup from './pages/LoginPages/SignUp';
 import Signin from './pages/LoginPages/Signin';
-import UserSchema2 from './pages/LoginPages/UserSchema2';
 import USchemaWithAD from './pages/LoginPages/USchemaWithAD';
+import NoInternetOverlay from './componets/NoInternet';
+import Dashboard from './pages/Dashboard';
+import UserList from './pages/AdminPgs/Userdata';
+import React from 'react';
+import { Monitor } from 'lucide-react';
+import UserSchema2 from './Dumb_comp/UserSchema2';
+import ChatPage from './Dumb_comp/ChatPage';
+import BackToTopButton from './componets/BackToTopButton';
+import NavBar from './componets/NavBar';
+import Footer from './componets/Footer_FIn';
+import ThemeToggle from './componets/ThemeToggle';
+import HomePage from './Dumb_comp/HomePage';
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
     // useEffect(() => {
     //   const checkMobile = () => {
@@ -50,6 +52,8 @@ function App() {
   return (
     <Router>
       {/* <NavBar /> */}
+      {/* <UserList /> */}
+      <NoInternetOverlay />
       <RouteChangeProgress />
        <ScrollToTop />
       {/* <HomePage /> */}
@@ -65,8 +69,9 @@ function App() {
         <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
-      {/* <TeamPortfolio /> */}
+      
 
 
 
