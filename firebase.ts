@@ -10,7 +10,7 @@ const firebaseConfig = {
   storageBucket: 'sara-ai-1413.firebasestorage.com',
   messagingSenderId: '882303803189',
   appId: '1:882303803189:web:8a4fca16dcbfc8fe78b67c',
-   measurementId: "G-RFWR90W0MZ"
+  measurementId: "G-RFWR90W0MZ"
 };
 
 const app = initializeApp(firebaseConfig);

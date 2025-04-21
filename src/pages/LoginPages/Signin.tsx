@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Lock, Eye, EyeOff, Monitor, ChevronLeft , ArrowLeft} from 'lucide-react';
 import ThemeToggle from '../../componets/ThemeToggle';
 import { Link } from 'react-router-dom';
+import FullPageLoader from '../../componets/FullpageLoader';
 
 const Signin: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -13,11 +14,14 @@ const Signin: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loginError, setLoginError] = useState('');
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoginError('');
     setIsSubmitting(true);
+    setLoading(true);
 
     const auth = getAuth();
     try {
@@ -53,6 +57,7 @@ const Signin: React.FC = () => {
       setLoginError(errorMessages[errorCode] || 'Sign in failed. Please try again.');
     } finally {
       setIsSubmitting(false);
+      setLoading(false);
     }
   };
 
@@ -103,6 +108,7 @@ const Signin: React.FC = () => {
                 : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
                 }`}
               disabled={isSubmitting}
+              
               placeholder="Enter your College Mail Address"
             />
           </div>

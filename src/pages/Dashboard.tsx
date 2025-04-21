@@ -4,6 +4,7 @@ import { doc, DocumentData, getDoc, getFirestore } from 'firebase/firestore';
 import { db } from '../../firebase';
 import NavBar from '../componets/NavBar';
 import { useNavigate } from 'react-router-dom';
+import ChangePassword from '../componets/Change_pass';
 
 
 interface UserProfile {
@@ -32,42 +33,64 @@ const Dashboard: React.FC = () => {
 
 
     useEffect(() => {
-        const fetchUserData = async () => {
-          const auth = getAuth();
-          const user = auth.currentUser;
-      
-          if (user) {
-            const docRef = doc(db, 'users', user.uid);
-            const docSnap = await getDoc(docRef);
-      
-            if (docSnap.exists()) {
-              setUserData(docSnap.data() as UserProfile);
+        const auth = getAuth();
+    
+        const unsubscribe = auth.onAuthStateChanged(async (user) => {
+            if (user) {
+                try {
+                    const docRef = doc(db, 'users', user.uid);
+                    const docSnap = await getDoc(docRef);
+    
+                    if (docSnap.exists()) {
+                        setUserData(docSnap.data() as UserProfile);
+                    } else {
+                        console.log("No such document!");
+                    }
+                } catch (error) {
+                    console.error("Error fetching profile:", error);
+                }
             } else {
-              console.log("No such document!");
+                // User is not signed in, redirect to login
+                navigate('/Signin');
             }
+    
             setLoading(false);
-          }
-        };
+        });
+    
+        return () => unsubscribe(); // cleanup
+    }, []);
+
       
-        fetchUserData();
-      }, []);
-      
-    if (loading) return <div className="p-8 text-lg">Loading your profile...</div>;
+    if (loading) {
+    return (
+        <div className="p-8 max-w-3xl mx-auto mt-10 animate-pulse">
+            <br /><br />    
+            <div className="h-8 bg-gray-300 dark:bg-gray-700 rounded w-1/2 mb-6"></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {Array.from({ length: 6 }).map((_, i) => (
+                    <div key={i} className="h-6 bg-gray-200 dark:bg-gray-800 rounded w-full"></div>
+                ))}
+                <div className="sm:col-span-2 h-6 bg-gray-200 dark:bg-gray-800 rounded w-full"></div>
+            </div>
+        </div>
+    );
+}
+
 
     if (!userData) return <div className="p-8 text-lg">No profile data found.</div>;
 
     return (
-        <>
+        <div className='bg-[#fafafa] dark:bg-[#1f1f1f] min-h-screen'>
             <NavBar />
-            <div className="p-8 max-w-3xl mx-auto bg-white dark:bg-black rounded-2xl shadow-lg mt-10">
-                <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">Your Profile</h2>
+            <div className="p-8 max-w-3xl mx-auto bg-gray-200 dark:bg-[#262626] rounded-2xl shadow-lg mt-10">
+                <h2 className="text-3xl font-bold text-center mb-8 dark:text-orange-500">Your Profile</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
-                    <div><strong>Name:</strong> {userData.name}</div>
-                    <div><strong>Year of Study:</strong> {userData.yearOfStudy}</div>
-                    <div><strong>Branch:</strong> {userData.branch}</div>
-                    <div><strong>Roll Number:</strong> {userData.rollNo}</div>
-                    <div><strong>College Mail:</strong> {userData.email}</div>
-                    <div className="sm:col-span-2"><strong>Email:</strong> {userData.Persona}</div>
+                    <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>Name:</strong> {userData.name}</div>
+                    <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>Year of Study:</strong> {userData.yearOfStudy}</div>
+                    <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>Branch:</strong> {userData.branch}</div>
+                    <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>Roll Number:</strong> {userData.rollNo}</div>
+                    <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>College Mail:</strong> {userData.email}</div>
+                    <div className="sm:col-span-2text-[#1f1f1f] dark:text-gray-200 "><strong>Email:</strong> {userData.Persona}</div>
                     <div className="flex justify-end mb-4">
                         <button
                             onClick={handleLogout}
@@ -85,10 +108,10 @@ const Dashboard: React.FC = () => {
                             Edit Profile
                         </button>
                         </div>
-
+                    <ChangePassword />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
