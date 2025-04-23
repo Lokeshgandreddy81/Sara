@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { getAuth, signOut } from 'firebase/auth';
 import { doc, DocumentData, getDoc, getFirestore } from 'firebase/firestore';
-import { db } from '../../firebase';
-import NavBar from '../componets/NavBar';
+import { db } from '../../../../firebase';
+import NavBar from '../../../componets/NavBar';
 import { useNavigate } from 'react-router-dom';
-import ChangePassword from '../componets/Change_pass';
+import ChangePassword from './Change_pass';
 
 
 interface UserProfile {
@@ -101,14 +101,15 @@ const Dashboard: React.FC = () => {
 
                     </div>
                     <div className="flex justify-end mb-4">
+                        
                         <button
-                            onClick={() => navigate('/EditProfile')}
+                            onClick={() => navigate('/ChangePass')}
                             className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all"
                         >
-                            Edit Profile
+                            Change Password
                         </button>
                         </div>
-                    <ChangePassword />
+                    
                 </div>
             </div>
         </div>
@@ -116,5 +117,6 @@ const Dashboard: React.FC = () => {
 };
 
 export default Dashboard;
+
 
 

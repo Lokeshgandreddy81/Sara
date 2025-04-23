@@ -1,4 +1,5 @@
 import { Lightbulb, Clock, Heart, Globe, Pencil } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Features: React.FC = () => {
     return (
@@ -24,7 +25,7 @@ const Features: React.FC = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 '>
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-2 transition-all duration-300 ease-in-out bg-white dark:bg-[#262626]  p-4 md:p-6 hover:shadow-xl transition-shadow">
                             <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300">
-                                <a href='{feature.Target}'>
+                                <Link to='/Sub_select'>
                                     <div className="relative">
                                         <img
                                             src='Public/Smart_Study_Guide_BGImage.png'
@@ -34,7 +35,7 @@ const Features: React.FC = () => {
                                             <h3 className="text-white text-xl md:text-2xl font-bold">Smart Study Guide</h3>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                             </div>
 
@@ -120,14 +121,14 @@ const Features: React.FC = () => {
                                 <p className='text-base md:text-xl dark:text-[#d4d4d4] transition-all duration-300 ease-in-out'><b>Smart Study Guide</b> is an AI-powered learning tool that summarizes PDFs instantly, saving students valuable time. It generates concise, easy-to-understand notes from textbooks, research papers, and study materials. Along with summaries, it provides real-time quiz questions based on the content to enhance active recall. Users can upload any document and get an interactive, question-based summary. This smart approach boosts comprehension, retention, and exam readiness efficiently.</p>
                                 <br /><br />
                             </div>
-                            <a href='#'>
+                            <Link to='/Sub_select'>
                                 <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105  dark:bg-[#8494e9] dark:text-[#000000] dark:hover:bg-orange-500 hover:bg-orange-500">
                                     Get Started
                                     <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M5 12h14M12 5l7 7-7 7" />
                                     </svg>
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

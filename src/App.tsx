@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+
 import './index.css';
 import TeamPortfolio from './pages/TeamPortfolio';
 import Home2Page from './pages/Home2Page';
@@ -15,7 +15,10 @@ import Signup from './pages/LoginPages/SignUp';
 import Signin from './pages/LoginPages/Signin';
 import USchemaWithAD from './pages/LoginPages/USchemaWithAD';
 import NoInternetOverlay from './componets/NoInternet';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/AdminPgs/Profile_pages/Dashboard';
+import ChangePassword from './pages/AdminPgs/Profile_pages/Change_pass';
+import Sub_select from './pages/Features/Feature_1/Sub_select';
+import ProtectedRoute from './componets/Protected_route';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
 import { Monitor } from 'lucide-react';
@@ -26,6 +29,7 @@ import NavBar from './componets/NavBar';
 import Footer from './componets/Footer_FIn';
 import ThemeToggle from './componets/ThemeToggle';
 import HomePage from './Dumb_comp/HomePage';
+import { useEffect, useState } from 'react';
 
 function App() {
   // const [isMobile, setIsMobile] = useState(false);
@@ -70,6 +74,16 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/ChangePass" element={<ChangePassword />} />
+        <Route path="/Sub_select" element={<Sub_select />} />
+        <Route
+          path="/select-sub"
+          element={
+            <ProtectedRoute>
+              <Sub_select />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
       
 
