@@ -63,9 +63,9 @@ export const membersData: Member[] = [
   },
   {
     id: 6,
-    name: '- Fiona Wilson',
-    photoUrl: '/images/fiona.jpg',
-    role: 'Marketing Specialist',
+    name: '- G ManiKanta',
+    photoUrl: 'Public/Mani.jpg',
+    role: 'Data & Marketing Specialist',
     details: [
       '>  Develops and executes marketing strategies',
       '>  Social media management and content creation',

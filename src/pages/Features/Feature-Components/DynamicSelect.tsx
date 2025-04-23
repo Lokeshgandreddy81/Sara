@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Sidebar from './SideBar';
 import Footer from '../../../componets/Footer_FIn';
+import ModuleDisplay from './ModuleDisplay';
+import MyJsx from '../Modules/AI_4th_m';
 
 // Full hierarchy: School → Branch → Semester → Subjects
 const schoolData: Record<
@@ -16,43 +18,43 @@ const schoolData: Record<
       '1st Sem': ['Maths I', 'Physics', 'Programming Basics'],
       '2nd Sem': ['Maths II', 'Data Structures', 'Digital Logic'],
       '3rd Sem': ['Algorithms', 'Computer Networks'],
-        '4th Sem': ['Database Management', 'Operating Systems'],
-        '5th Sem': ['Software Engineering', 'Web Development'],
-        '6th Sem': ['Object Oriented Modeling and Design', 'Artificial Neural Networks', 'Mobile Application Development', 'Cyber Security Essentials'],
-        '7th Sem': ['Artificial Intelligence', 'Data Mining'],
-        '8th Sem': ['Cyber Security', 'Big Data'],
+      '4th Sem': ['Database Management', 'Operating Systems'],
+      '5th Sem': ['Software Engineering', 'Web Development'],
+      '6th Sem': ['Object Oriented Modeling and Design', 'Artificial Neural Networks', 'Mobile Application Development', 'Cyber Security Essentials'],
+      '7th Sem': ['Artificial Intelligence', 'Data Mining'],
+      '8th Sem': ['Cyber Security', 'Big Data'],
     },
     IT: {
       '1st Sem': ['Discrete Maths', 'Introduction to IT'],
       '2nd Sem': ['Data Structures', 'Web Technologies'],
-        '3rd Sem': ['Database Systems', 'Software Engineering'],
-            '4th Sem': ['Computer Networks', 'Operating Systems'],
-            '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-            '6th Sem': ['Data Mining', 'Machine Learning'],
-            '7th Sem': ['Cyber Security', 'Big Data'],
-            '8th Sem': ['Artificial Intelligence', 'Web Development'],
+      '3rd Sem': ['Database Systems', 'Software Engineering'],
+      '4th Sem': ['Computer Networks', 'Operating Systems'],
+      '5th Sem': ['Mobile Computing', 'Cloud Computing'],
+      '6th Sem': ['Data Mining', 'Machine Learning'],
+      '7th Sem': ['Cyber Security', 'Big Data'],
+      '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
   },
   'School of Electronics': {
     ECE: {
       '1st Sem': ['Basic Electronics', 'Circuit Theory'],
       '2nd Sem': ['Signal Processing', 'Network Analysis'],
-        '3rd Sem': ['Microprocessors', 'Control Systems'],
-            '4th Sem': ['Digital Electronics', 'Communication Systems'],
-            '5th Sem': ['Embedded Systems', 'VLSI Design'],
-            '6th Sem': ['Wireless Communication', 'Optical Communication'],
-            '7th Sem': ['Digital Signal Processing', 'Image Processing'],
-            '8th Sem': ['IoT', 'Machine Learning'],
+      '3rd Sem': ['Microprocessors', 'Control Systems'],
+      '4th Sem': ['Digital Electronics', 'Communication Systems'],
+      '5th Sem': ['Embedded Systems', 'VLSI Design'],
+      '6th Sem': ['Wireless Communication', 'Optical Communication'],
+      '7th Sem': ['Digital Signal Processing', 'Image Processing'],
+      '8th Sem': ['IoT', 'Machine Learning'],
     },
     EEE: {
       '1st Sem': ['Electrical Machines I', 'Engineering Physics'],
       '2nd Sem': ['Power Systems', 'Analog Electronics'],
       '3rd Sem': ['Electrical Machines II', 'Control Systems Lab'],
-        '4th Sem': ['Power Electronics', 'Microcontrollers'],
-        '5th Sem': ['Renewable Energy', 'Electrical Drives'],   
-        '6th Sem': ['Power System Analysis', 'Electrical Measurements'],
-        '7th Sem': ['High Voltage Engineering', 'Electrical Safety'],
-        '8th Sem': ['Smart Grids', 'Electrical System Design'],
+      '4th Sem': ['Power Electronics', 'Microcontrollers'],
+      '5th Sem': ['Renewable Energy', 'Electrical Drives'],   
+      '6th Sem': ['Power System Analysis', 'Electrical Measurements'],
+      '7th Sem': ['High Voltage Engineering', 'Electrical Safety'],
+      '8th Sem': ['Smart Grids', 'Electrical System Design'],
     },
   },
   'School of Engineering': {
@@ -60,9 +62,9 @@ const schoolData: Record<
       '1st Sem': ['Applied Physics', 'Technical Drawing'],
       '2nd Sem': ['Engineering Maths', 'Workshop Practice'],   
       '3rd Sem': ['Engineering Mechanics', 'Thermodynamics'],
-        '4th Sem': ['Fluid Mechanics', 'Material Science'],
-        '5th Sem': ['Machine Design', 'Manufacturing Process'],
-        '6th Sem': ['Thermal Engineering', 'CAD/CAM'],
+      '4th Sem': ['Fluid Mechanics', 'Material Science'],
+      '5th Sem': ['Machine Design', 'Manufacturing Process'],
+      '6th Sem': ['Thermal Engineering', 'CAD/CAM'],
         
     },
   },
@@ -73,6 +75,7 @@ const DynamicSelect: React.FC = () => {
   const [selectedBranch, setSelectedBranch] = useState('');
   const [selectedSemester, setSelectedSemester] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
+  const [selectedModule, setSelectedModule]   = useState('');
 
   const branches = selectedSchool ? Object.keys(schoolData[selectedSchool]) : [];
   const semesters =
@@ -172,7 +175,11 @@ const DynamicSelect: React.FC = () => {
     </div>
     </div>
     <div className="flex min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
-      <Sidebar subject={selectedSubject} />
+      <Sidebar subject={selectedSubject}
+      onModuleClick={setSelectedModule} />
+       <div className="flex-grow overflow-auto p-4">
+    <ModuleDisplay moduleName={selectedModule} />
+  </div>
     </div>
     <Footer />
     </>

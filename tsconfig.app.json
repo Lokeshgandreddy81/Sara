@@ -18,7 +18,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,  
+    "allowJs": true,
+    "jsx": "react-jsx",   // or "react" if you're using React 17
+    "checkJs": false   
   },
   "include": ["src", "src/login.tsx"]
 }
