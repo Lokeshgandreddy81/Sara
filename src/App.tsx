@@ -75,7 +75,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/ChangePass" element={<ChangePassword />} />
-        <Route path="/Sub_select" element={<Sub_select />} />
+       
         <Route
           path="/select-sub"
           element={

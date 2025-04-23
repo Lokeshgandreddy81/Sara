@@ -41,7 +41,7 @@ const Signin: React.FC = () => {
       }
 
       // ✅ Successful login
-      navigate('/Dashboard');
+      navigate('/');
     } catch (error: any) {
       console.error(error);
       const errorCode = error.code;
