@@ -7,13 +7,16 @@ import React from 'react';
 // import OOMD_Module1 from '../modules/OOMD_Module1';
 // import OOMD_Module2 from '../modules/OOMD_Module2';
 // import ANN_Module1  from '../modules/ANN_Module1';
-// import ANN_Module2  from '../modules/ANN_Module2';   // later, etc.
+// import ANN_Module2  from '../modules/ANN_Module2';   
+import CSE_Module_1 from '../Modules/CSE_Module1';
 
 /* ---------------------------------------------------------
    2.  Map the sidebar label → the imported component
        Keep adding entries as you add new module files.
    --------------------------------------------------------- */
 const moduleMap: Record<string, React.FC> = {
+    'CSE_Module_1':CSE_Module_1
+    
 //   'OOMD_Module 1': OOMD_Module1,
 //   'OOMD_Module 2': OOMD_Module2,
 //   'ANN_Module 1' : ANN_Module1,
@@ -25,7 +28,7 @@ const moduleMap: Record<string, React.FC> = {
    --------------------------------------------------------- */
 const ModuleDisplay: React.FC<{ moduleName: string }> = ({ moduleName }) => {
   if (!moduleName) {
-    return <p className="p-6 italic text-gray-600">Select a subject &amp; module.</p>;
+    return <p className="p-6 italic text-gray-600">Select a subject &amp; module. (or) Search a Subject to Open </p>;
   }
 
   const Selected = moduleMap[moduleName];

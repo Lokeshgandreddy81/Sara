@@ -50,7 +50,7 @@ const Features: React.FC = () => {
 
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-2 transition-all duration-300 ease-in-out bg-white dark:bg-[#262626]  p-4 md:p-6 hover:shadow-xl transition-shadow">
                             <div className="bg-white rounded-xl shadow-lg overflow-hidden  transition-all duration-300">
-                                <a href='{feature.Target}'>
+                                <Link to='/VidSelect'>
                                     <div className="relative">
                                         <img
                                             src='Public/Youtube_Video_Tutorials_BGImage.png'
@@ -60,7 +60,7 @@ const Features: React.FC = () => {
                                             <h3 className="text-white text-xl md:text-2xl font-bold">YouTube Tutorials</h3>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
 
                             </div>
 
@@ -145,14 +145,14 @@ const Features: React.FC = () => {
                                 <p className='text-base md:text-xl dark:text-[#d4d4d4] transition-all duration-300 ease-in-out'><b>YouTube Interactive Tutorials</b> is a smart platform that curates top-rated courses and playlists from YouTube, organized by subject and difficulty level. It offers interactive learning with embedded quizzes, progress tracking, and suggested practice based on video content. Students can follow structured learning paths using handpicked playlists from popular educators. Real-time questions appear during videos to test understanding instantly. This tool turns passive YouTube watching into active, guided learning.</p>
                             </div>
                             <br /><br />
-                            <a href='#'>
+                            <Link to ='/VidSelect'>
                                 <button className="bg-[#000000] text-white px-6 md:px-8 py-2 md:py-3 rounded-full w-fit flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105 hover:text-[#ffffff] dark:hover:bg-[#8494e9] dark:text-black dark:bg-orange-500 hover:bg-[#8494e9]">
                                     Get Started
                                     <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M5 12h14M12 5l7 7-7 7" />
                                     </svg>
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                         <div className="relative">
                             <img

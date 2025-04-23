@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import Sidebar from './SideBar';
 import Footer from '../../../componets/Footer_FIn';
 import ModuleDisplay from './ModuleDisplay';
-import MyJsx from '../Modules/AI_4th_m';
+import CSE_Module1 from '../Modules/CSE_Module1';
 
 // Full hierarchy: School → Branch → Semester → Subjects
 const schoolData: Record<
@@ -35,7 +35,7 @@ const schoolData: Record<
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
   },
-  'School of Electronics': {
+  'School of Engineering': {
     ECE: {
       '1st Sem': ['Basic Electronics', 'Circuit Theory'],
       '2nd Sem': ['Signal Processing', 'Network Analysis'],
@@ -57,15 +57,28 @@ const schoolData: Record<
       '8th Sem': ['Smart Grids', 'Electrical System Design'],
     },
   },
-  'School of Engineering': {
-    Polytechnic: {
-      '1st Sem': ['Applied Physics', 'Technical Drawing'],
-      '2nd Sem': ['Engineering Maths', 'Workshop Practice'],   
-      '3rd Sem': ['Engineering Mechanics', 'Thermodynamics'],
-      '4th Sem': ['Fluid Mechanics', 'Material Science'],
-      '5th Sem': ['Machine Design', 'Manufacturing Process'],
-      '6th Sem': ['Thermal Engineering', 'CAD/CAM'],
-        
+  'School of Pharmaceutical Sciences': {
+      B_Pharm: {
+      '1st Sem': ['Pharmaceutical Chemistry', 'Pharmacognosy'],
+      '2nd Sem': ['Pharmaceutics', 'Pharmacology'],
+      '3rd Sem': ['Medicinal Chemistry', 'Pharmaceutical Analysis'],
+      '4th Sem': ['Biochemistry', 'Clinical Pharmacy'],
+      '5th Sem': ['Pharmaceutical Biotechnology', 'Quality Assurance'],
+      '6th Sem': ['Pharmacovigilance', 'Regulatory Affairs'],
+    },
+    M_Pharm: {
+      '1st Sem': ['Advanced Organic Chemistry', 'Pharmaceutical Formulations'],
+      '2nd Sem': ['Pharmacokinetics', 'Drug Design'],
+      '3rd Sem': ['Clinical Research', 'Pharmaceutical Marketing'],
+      '4th Sem': ['Pharmaceutical Technology', 'Biopharmaceutics'],
+    },
+    Pharm_D: {
+      '1st Sem': ['Pharmaceutical Chemistry', 'Pharmacognosy'],
+      '2nd Sem': ['Pharmaceutics', 'Pharmacology'],
+      '3rd Sem': ['Medicinal Chemistry', 'Pharmaceutical Analysis'],
+      '4th Sem': ['Biochemistry', 'Clinical Pharmacy'],
+      '5th Sem': ['Pharmaceutical Biotechnology', 'Quality Assurance'],
+      '6th Sem': ['Pharmacovigilance', 'Regulatory Affairs'],
     },
   },
 };

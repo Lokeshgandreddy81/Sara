@@ -11,8 +11,8 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   server: {
-    host: true, // Accept connections from your IP (e.g., 192.168.x.x)
-    port: 1413, // Or any port you prefer
+    host: true, 
+    port: 1413, 
   },
   
 });

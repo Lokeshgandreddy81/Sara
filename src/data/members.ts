@@ -29,9 +29,9 @@ export const membersData: Member[] = [
     id: 3,
     name: '- D. V. Yogeshwara Rao',
     photoUrl: '/Public/Yogesh.png',
-    role: 'Full-Stack Developer & Project Manager',
+    role: 'Full-Stack Developer & Technical Lead',
     details: [
-      '>  Front-end and Back-end Development',
+      '>  Full-Stack Development and Architecture',
       '>  Deployment and Maintenance of Web Applications',
       '>  Building scalable APIs & Server Side Logic',
       '>  Testing and Debugging'

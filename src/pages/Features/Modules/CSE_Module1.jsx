@@ -1,6 +1,6 @@
 import React from "react";
 import { jsxs } from "react/jsx-runtime";
-const MyJsx = () => {
+const CSE_Module_1 = () => {
   return (
     <>
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -1707,4 +1707,4 @@ const MyJsx = () => {
     </>
   );
 };
-export default MyJsx;
+export default CSE_Module_1;

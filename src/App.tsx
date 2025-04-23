@@ -19,6 +19,7 @@ import Dashboard from './pages/AdminPgs/Profile_pages/Dashboard';
 import ChangePassword from './pages/AdminPgs/Profile_pages/Change_pass';
 import Sub_select from './pages/Features/Feature_1/Sub_select';
 import ProtectedRoute from './componets/Protected_route';
+import VidSelect1 from './pages/Features/Feature_2/VidSelect';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
 import { Monitor } from 'lucide-react';
@@ -57,6 +58,7 @@ function App() {
     <Router>
       {/* <NavBar /> */}
       {/* <UserList /> */}
+      {/* <VidSelect1 /> */}
       <NoInternetOverlay />
       <RouteChangeProgress />
        <ScrollToTop />
@@ -81,6 +83,14 @@ function App() {
           element={
             <ProtectedRoute>
               <Sub_select />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/VidSelect"
+          element={
+            <ProtectedRoute>
+              <VidSelect1 />
             </ProtectedRoute>
           }
         />

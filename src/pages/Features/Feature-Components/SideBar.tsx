@@ -1,5 +1,6 @@
 // Sidebar.tsx
 import React from 'react';
+import CSE_Module_1 from '../Modules/CSE_Module1';
 
 interface SidebarProps {
   subject: string;
@@ -10,7 +11,7 @@ const moduleData: Record<string, string[]> = {
   'Object Oriented Modeling and Design': ['OOMD_Module 1', 'OOMD_Module 2', 'OOMD_Module 3', 'OOMD_Module 4', 'OOMD_Module 5'],
     'Artificial Neural Networks': ['ANN_Module 1', 'ANN_Module 2', 'ANN_Module 3', 'ANN_Module 4' , 'ANN_Module 5'],
     'Mobile Application Development': ['MAD_Module 1', 'MAD_Module 2', 'MAD_Module 3', 'MAD_Module 4', 'MAD_Module 5'],
-    'Cyber Security Essentials': ['CSE_Module 1', 'CSE_Module 2', 'CSE_Module 3', 'CSE_Module 4', 'CSE_Module 5'],
+    'Cyber Security Essentials': ['CSE_Module_1', 'CSE_Module 2', 'CSE_Module 3', 'CSE_Module 4', 'CSE_Module 5'],
 
   'Physics': ['Kinematics', 'Optics', 'Thermodynamics'],
   'Programming Basics': ['Variables', 'Loops', 'Functions'],
