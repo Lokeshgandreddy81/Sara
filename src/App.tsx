@@ -20,6 +20,8 @@ import ChangePassword from './pages/AdminPgs/Profile_pages/Change_pass';
 import Sub_select from './pages/Features/Feature_1/Sub_select';
 import ProtectedRoute from './componets/Protected_route';
 import VidSelect1 from './pages/Features/Feature_2/VidSelect';
+import ForgotPassword from './pages/LoginPages/ForgotPassword';
+import FeedbackPage from './pages/Footer_Pages/Feedback';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
 import { Monitor } from 'lucide-react';
@@ -77,6 +79,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/ChangePass" element={<ChangePassword />} />
+        <Route path="/ForgotPassword" element={<ForgotPassword />} />
        
         <Route
           path="/select-sub"
@@ -94,6 +97,13 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route 
+        path='/Feedback'
+        element={
+        <ProtectedRoute>
+        <FeedbackPage />
+        </ProtectedRoute>
+        } />
       </Routes>
       
 

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
-import { Lock, Eye, EyeOff, Monitor, ChevronLeft , ArrowLeft} from 'lucide-react';
+import { Lock, Eye, EyeOff, Monitor, ChevronLeft, ArrowLeft } from 'lucide-react';
 import ThemeToggle from '../../componets/ThemeToggle';
 import { Link } from 'react-router-dom';
+import ThemeImageLogin from '../../componets/ThemeImage_login';
 import FullPageLoader from '../../componets/FullpageLoader';
 
 const Signin: React.FC = () => {
@@ -64,8 +65,12 @@ const Signin: React.FC = () => {
   return (<>
     <nav className='bg-[#1e3a8a] dark:bg-[#1f1f1f] p-4 flex justify-between items-center transition-all duration-300 ease-in-out'>
       <Link to="/" className="flex items-center space-x-2">
-        <Monitor className="h-8 w-8 text-white dark:text-orange-600" />
-        <span className="text-white dark:text-black text-xl font-bold dark:text-orange-600">Sara AI</span>
+      <ThemeImageLogin />
+        {/* <Monitor className="h-8 w-8 text-white dark:text-orange-600" /> */}
+        {/* <img
+          src="/sara-dark-logo.png"
+          className="h-10 w-10"></img> */}
+        <span className="text-white text-xl font-bold  dark:text-orange-600">Sara AI</span>
       </Link>
 
       <ThemeToggle />
@@ -85,11 +90,11 @@ const Signin: React.FC = () => {
         <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center dark:text-orange-500 transition-all duration-300 ease-in-out">
           Welcome back
         </h2>
-        <p className="text-gray-600 mb-6 text-center dark:text-gray-300 transition-all duration-300 ease-in-out">
+        <p className="text-gray-800 mb-6 text-center dark:text-gray-200 transition-all duration-300 ease-in-out">
           Please Sign in to your account
         </p>
         <div className="flex justify-center mb-8">
-          <div className="bg-blue-100 p-4 rounded-xl dark:bg-orange-800 transition-all duration-300 ease-in-out">
+          <div className="bg-blue-200 p-4 rounded-xl dark:bg-orange-800 transition-all duration-300 ease-in-out">
             <Lock className="w-12 h-12 text-blue-500 dark:text-orange-200 transition-all duration-300 ease-in-out" />
           </div>
         </div>
@@ -108,8 +113,9 @@ const Signin: React.FC = () => {
                 : 'border-gray-300 focus:ring-blue-500 focus:border-blue-500'
                 }`}
               disabled={isSubmitting}
-              
+
               placeholder="Enter your College Mail Address"
+              required
             />
           </div>
 
@@ -134,14 +140,19 @@ const Signin: React.FC = () => {
                     }`}
                   disabled={isSubmitting}
                   placeholder="Enter your password"
+                  required
                 />
+                <div className='text-blue-500 dark:text-orange-500 hover:underline my-1'>
+                  <Link to='/ForgotPassword'>
+                    Forgot Password?</Link>
+                </div>
 
                 <button
                   type="button"
-                  className="absolute inset-y-0 right-3 flex items-center text-gray-500 dark:text-gray-200"
+                  className="absolute top-[12px] right-3 flex items-center text-gray-500 dark:text-gray-200"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                  {showPassword ? <EyeOff size={20} className='text-gray-700 dark:text-gray-100'/> : <Eye size={20} className='text-gray-700 dark:text-gray-100' />}
                 </button>
               </div>
             </div>

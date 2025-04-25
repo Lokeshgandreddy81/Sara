@@ -4,11 +4,12 @@ import ThemeToggle from './ThemeToggle';
 import BackToTopButton from './BackToTopButton';
 import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
 import { Link } from 'react-router-dom';
+import ThemeImage from './ThemeImage';
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
-  const logo: string = '/public/S_title_logo.jpg';
+  // const logo: string = '/public/S_title_logo.jpg';
 
   useEffect(() => {
     const auth = getAuth();
@@ -23,8 +24,12 @@ const NavBar: React.FC = () => {
     <div className="bg-gradient-to-b from-[#8494e9] to-white dark:from-[#4c5bd4] transition-colors duration-300 ease-in-out">
       <div className="bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out relative overflow-hidden">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2 ">
-            <Monitor className="h-8 w-8 text-white dark:text-black" />
+          <Link to="/" className="flex items-center space-x-1 ">
+          <ThemeImage />
+          {/* <img className='h-12 w-12'
+          src='/sara-logo.png'
+          alt='Logo'></img> */}
+            {/* <Monitor className="h-8 w-8 text-white dark:text-black" /> */}
             <span className="text-white dark:text-black text-xl font-bold">Sara AI</span>
           </Link>
 
@@ -46,14 +51,14 @@ const NavBar: React.FC = () => {
 
             {user ? (
               <Link to="/Dashboard">
-                <button className="bg-white text-black dark:bg-black dark:text-white px-1 py-1 rounded-full shadow hover:scale-110 transition-all duration-300">
+                <button className="bg-[#8494e9] text-black dark:bg-[#4c5bd4] dark:text-white px-1 py-1 rounded-full  hover:scale-110 transition-all duration-300">
                 <CircleUserRound className=" inline-block h-9 w-9" />
                 </button>
               </Link>
             ) : (
               <Link to="/Signin">
                 <button className="bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
-                  Sign In
+                  Log In
                 </button>
               </Link>
             )}
@@ -92,7 +97,7 @@ const NavBar: React.FC = () => {
             ) : (
               <Link to="/Signin">
                 <button className="w-full bg-white text-black dark:bg-black dark:text-white px-6 py-2 rounded-full shadow hover:scale-105 transition-all duration-300">
-                  Sign In
+                  Log In
                 </button>
               </Link>
             )}

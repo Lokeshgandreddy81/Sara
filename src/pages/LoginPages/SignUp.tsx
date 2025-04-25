@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 import ThemeToggle from '../../componets/ThemeToggle';
 import { Link } from 'react-router-dom';
-import { Monitor, ChevronLeft , ArrowLeft } from 'lucide-react';
+import { Monitor, ChevronLeft, ArrowLeft } from 'lucide-react';
+import ThemeImageLogin from '../../componets/ThemeImage_login';
 // Removed the import as the module '@/lib/utils' cannot be resolved
 
 function Signup() {
@@ -63,8 +64,12 @@ function Signup() {
     <>
       <nav className='bg-[#1e3a8a] dark:bg-[#1f1f1f] p-4 flex justify-between items-center transition-all duration-300 ease-in-out'>
         <Link to="/" className="flex items-center space-x-2">
-          <Monitor className="h-8 w-8 text-white dark:text-orange-600" />
-          <span className="text-white dark:text-black text-xl font-bold dark:text-orange-600">Sara AI</span>
+          <ThemeImageLogin />
+          {/* <Monitor className="h-8 w-8 text-white dark:text-orange-600" /> */}
+          {/* <img
+          src="/sara-dark-logo.png"
+          className="h-10 w-10"></img> */}
+          <span className="text-white text-xl font-bold  dark:text-orange-600">Sara AI</span>
         </Link>
 
         <ThemeToggle />
@@ -129,7 +134,7 @@ function Signup() {
             <p className="text-gray-800 dark:text-gray-200 transition-all duration-300 ease-in-out">
               Already have an account?{' '}
               <a href="/Signin" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
-                Sign in here
+                Log in here
               </a>
             </p>
           </div>

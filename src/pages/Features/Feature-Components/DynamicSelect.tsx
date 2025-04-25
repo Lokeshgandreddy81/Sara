@@ -34,6 +34,7 @@ const schoolData: Record<
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
+    
   },
   'School of Engineering': {
     ECE: {
