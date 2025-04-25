@@ -36,6 +36,9 @@ const Dashboard: React.FC = () => {
         const auth = getAuth();
     
         const unsubscribe = auth.onAuthStateChanged(async (user) => {
+            if(user && !user.emailVerified) {
+                signOut(auth);
+            }
             if (user) {
                 try {
                     const docRef = doc(db, 'users', user.uid);

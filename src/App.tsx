@@ -77,7 +77,7 @@ function App() {
         <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
         <Route path="/ChangePass" element={<ChangePassword />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
        
@@ -104,11 +104,18 @@ function App() {
         <FeedbackPage />
         </ProtectedRoute>
         } />
-      </Routes>
+
+<Route 
+        path='/Dashboard'
+        element={
+        <ProtectedRoute>
+        < Dashboard />
+        </ProtectedRoute>
+        } />
       
 
-
-
+      </Routes>
+      
 
     </Router>
 

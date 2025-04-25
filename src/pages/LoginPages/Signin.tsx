@@ -16,6 +16,7 @@ const Signin: React.FC = () => {
   const [loginError, setLoginError] = useState('');
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+  
 
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -31,15 +32,19 @@ const Signin: React.FC = () => {
 
       if (!user.emailVerified) {
         setLoginError('Please verify your email before signing in.');
+        await auth.signOut();
         setIsSubmitting(false);
+        setLoading(false);
         return;
       }
       const mbuRegex = /^[a-zA-Z0-9._%+-]+@mbu\.asia$/;
       if (!mbuRegex.test(email.trim().toLowerCase())) {
         setEmailError('Only @mbu.asia email addresses are allowed.');
         setIsSubmitting(false);
+        setLoading(false);
         return;
       }
+      
 
       // ✅ Successful login
       navigate('/');
@@ -77,7 +82,7 @@ const Signin: React.FC = () => {
     </nav>
 
 
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#1e3a8a] dark:bg-[#1f1f1f]  transition-all duration-300 ease-in-out">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#1e3a8a] dark:bg-[#1f1f1f]  transition-all duration-300 ease-in-out my:">
       <div className="w-full max-w-md p-6 bg-white rounded-3xl shadow-md dark:bg-[#262626] transition-all duration-300 ease-in-out">
         <div className="flex items-center gap-2 mb-6 dark:text-orange-500 transition-all duration-300 ease-in-out">
           <Link to="/" >
@@ -174,10 +179,12 @@ const Signin: React.FC = () => {
         <div className="mt-4 text-center">
           <p className="text-gray-600 dark:text-gray-200 transition-all duration-300 ease-in-out">
             Don’t have an account?{' '}
-            <a href="/signup" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
+            <Link to="/signup" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
               Sign up here
-            </a>
+            </Link>
           </p>
+          {loading && <FullPageLoader />}
+
         </div>
       </div>
     </div>

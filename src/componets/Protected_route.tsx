@@ -1,6 +1,5 @@
-// ProtectedRoute.tsx
 import React, { useEffect, useState } from "react";
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Navigate } from "react-router-dom";
 import { auth } from "../../firebase";
 
@@ -13,8 +12,19 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setIsAuthenticated(!!currentUser);
+    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+      if (currentUser) {
+        if (currentUser.emailVerified) {
+          setIsAuthenticated(true);
+        } else {
+          // ❌ User is unverified, auto-logout
+          await signOut(auth);
+          setIsAuthenticated(false);
+        }
+      } else {
+        setIsAuthenticated(false);
+      }
+
       setIsLoading(false);
     });
 

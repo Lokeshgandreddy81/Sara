@@ -94,7 +94,7 @@ function Signup() {
             Create an account and verify your details to start learning
           </p>
           <div className="flex justify-center mb-8">
-            <div className="bg-blue-100 p-4 rounded-xl dark:bg-orange-800 transition-all duration-300 ease-in-out">
+            <div className="bg-blue-1z00 p-4 rounded-xl dark:bg-orange-800 transition-all duration-300 ease-in-out">
               <Mail className="w-12 h-12 text-blue-500 dark:text-orange-200" />
             </div>
           </div>

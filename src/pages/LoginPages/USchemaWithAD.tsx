@@ -5,6 +5,8 @@ import ThemeToggle from '../../componets/ThemeToggle';
 import { Monitor, Eye, EyeOff, ChevronLeft } from 'lucide-react';
 import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import ThemeImageLogin from '../../componets/ThemeImage_login';
+import FullPageLoader from '../../componets/FullpageLoader';
+import {auth} from '../../../firebase';
 
 function USchemaWithAD() {
 
@@ -26,6 +28,7 @@ function USchemaWithAD() {
     const [formErrors, setFormErrors] = useState<string[]>([]);
     const navigate = useNavigate();
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const isValidRollNumber = (rollNumber: string) => {
         const isCorrectLength = rollNumber.length === 12;
@@ -51,6 +54,23 @@ function USchemaWithAD() {
             }));
         }
     }, [formData.firstName, formData.lastName]);
+    
+    
+
+
+    const getFriendlyFirebaseError = (errorCode: string): string => {
+        switch (errorCode) {
+          case 'auth/email-already-in-use':
+            return 'This email is already registered. Please log in or use another email.';
+          case 'auth/weak-password':
+            return 'Your password is too weak. Try something stronger.';
+          case 'auth/invalid-email':
+            return 'Please enter a valid institutional email.';
+          default:
+            return 'An unexpected error occurred. Please try again later.';
+        }
+      };
+      
 
 
 
@@ -58,6 +78,7 @@ function USchemaWithAD() {
         e.preventDefault();
         const errors: string[] = [];
         setIsSubmitting(true);
+        setLoading(true);
 
         // if (formData.lastName.length < 3) {
         //     errors.push('First name must be at least 3 characters long.');
@@ -66,32 +87,46 @@ function USchemaWithAD() {
         if (formData.password !== formData.confirmPassword) {
             errors.push('Password and Confirm Password do not match.');
             setIsSubmitting(false);
+            setLoading(false);
+        }
+        if(!formData.agreeToTerms){
+            errors.push('Please Agree to Terms and Conditions')
+            setIsSubmitting(false);
+            setLoading(false);
+
         }
 
-
-        if (!formData.firstName || !formData.lastName || !formData.password || formData.password !== formData.confirmPassword || !formData.agreeToTerms) {
+        if (!formData.firstName || !formData.lastName || !formData.password ) {
             errors.push('Please fill in all fields correctly.');
             setIsSubmitting(false);
+            setLoading(false);
         }
 
         if (!isValidRollNumber(formData.rollNo)) {
             errors.push('Roll number must be 12 characters long and the 6th character must be an alphabet.');
             setIsSubmitting(false);
+            setLoading(false);
         }
         if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
             errors.push('Please enter a valid email address.');
             setIsSubmitting(false);
+            setLoading(false);  
         }
 
         // Validate password strength
         const passwordRegex = /^(?=.*[a-z])(?=.*\d).{8,}$/;
         if (!passwordRegex.test(formData.password)) {
             errors.push('Password must be at least 8 characters long, one lowercase letter, and one number.');
+            setIsSubmitting(false);
+            setLoading(false);
         }
 
         if (errors.length > 0) {
             setFormErrors(errors);
+            setIsSubmitting(false);
+            setLoading(false);
             return;
+            
         }
 
         const auth = getAuth();
@@ -133,12 +168,14 @@ function USchemaWithAD() {
             } else {
                 setFormErrors(['An unknown error occurred.']);
             }
+            
         } finally {
             setIsSubmitting(false);
         }
     };
     return (
         <>
+        {loading && <FullPageLoader />}
             <nav className='bg-[#1e3a8a] dark:bg-[#1f1f1f] p-4 flex justify-between items-center transition-all duration-300 ease-in-out'>
                 <Link to="/" className="flex items-center space-x-2">
                     <ThemeImageLogin />

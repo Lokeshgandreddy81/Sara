@@ -19,6 +19,7 @@ const indexCss = () => {
 };
 indexCss();
 
+
 function Home2Page() {
     // Testimonial data
     const testimonials = [
@@ -89,7 +90,7 @@ function Home2Page() {
                         </div>
                         {/* Image */}
                         <div className="relative">
-                            <div className="bg-[#8494e9] dark:bg-[#4c5bd4] ">
+                            <div className="bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out  ">
                                 <img
                                     src="Public/har.png"
                                     alt="AI Education Illustration"
