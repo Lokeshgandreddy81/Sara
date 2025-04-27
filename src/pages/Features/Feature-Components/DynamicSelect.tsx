@@ -34,6 +34,36 @@ const schoolData: Record<
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
+    DS: {
+      '1st Sem': ['Discrete Maths', 'Introduction to IT'],
+      '2nd Sem': ['Data Structures', 'Web Technologies'],
+      '3rd Sem': ['Database Systems', 'Software Engineering'],
+      '4th Sem': ['Computer Networks', 'Operating Systems'],
+      '5th Sem': ['Mobile Computing', 'Cloud Computing'],
+      '6th Sem': ['Data Mining', 'Machine Learning'],
+      '7th Sem': ['Cyber Security', 'Big Data'],
+      '8th Sem': ['Artificial Intelligence', 'Web Development'],
+    },
+    AIML: {
+      '1st Sem': ['Discrete Maths', 'Introduction to IT'],
+      '2nd Sem': ['Data Structures', 'Web Technologies'],
+      '3rd Sem': ['Database Systems', 'Software Engineering'],
+      '4th Sem': ['Computer Networks', 'Operating Systems'],
+      '5th Sem': ['Mobile Computing', 'Cloud Computing'],
+      '6th Sem': ['Data Mining', 'Machine Learning'],
+      '7th Sem': ['Cyber Security', 'Big Data'],
+      '8th Sem': ['Artificial Intelligence', 'Web Development'],
+    },
+    CS: {
+      '1st Sem': ['Discrete Maths', 'Introduction to IT'],
+      '2nd Sem': ['Data Structures', 'Web Technologies'],
+      '3rd Sem': ['Database Systems', 'Software Engineering'],
+      '4th Sem': ['Computer Networks', 'Operating Systems'],
+      '5th Sem': ['Mobile Computing', 'Cloud Computing'],
+      '6th Sem': ['Data Mining', 'Machine Learning'],
+      '7th Sem': ['Cyber Security', 'Big Data'],
+      '8th Sem': ['Artificial Intelligence', 'Web Development'],
+    },
     
   },
   'School of Engineering': {
@@ -58,30 +88,30 @@ const schoolData: Record<
       '8th Sem': ['Smart Grids', 'Electrical System Design'],
     },
   },
-  'School of Pharmaceutical Sciences': {
-      B_Pharm: {
-      '1st Sem': ['Pharmaceutical Chemistry', 'Pharmacognosy'],
-      '2nd Sem': ['Pharmaceutics', 'Pharmacology'],
-      '3rd Sem': ['Medicinal Chemistry', 'Pharmaceutical Analysis'],
-      '4th Sem': ['Biochemistry', 'Clinical Pharmacy'],
-      '5th Sem': ['Pharmaceutical Biotechnology', 'Quality Assurance'],
-      '6th Sem': ['Pharmacovigilance', 'Regulatory Affairs'],
-    },
-    M_Pharm: {
-      '1st Sem': ['Advanced Organic Chemistry', 'Pharmaceutical Formulations'],
-      '2nd Sem': ['Pharmacokinetics', 'Drug Design'],
-      '3rd Sem': ['Clinical Research', 'Pharmaceutical Marketing'],
-      '4th Sem': ['Pharmaceutical Technology', 'Biopharmaceutics'],
-    },
-    Pharm_D: {
-      '1st Sem': ['Pharmaceutical Chemistry', 'Pharmacognosy'],
-      '2nd Sem': ['Pharmaceutics', 'Pharmacology'],
-      '3rd Sem': ['Medicinal Chemistry', 'Pharmaceutical Analysis'],
-      '4th Sem': ['Biochemistry', 'Clinical Pharmacy'],
-      '5th Sem': ['Pharmaceutical Biotechnology', 'Quality Assurance'],
-      '6th Sem': ['Pharmacovigilance', 'Regulatory Affairs'],
-    },
-  },
+  // 'School of Pharmaceutical Sciences': {
+  //     B_Pharm: {
+  //     '1st Sem': ['Pharmaceutical Chemistry', 'Pharmacognosy'],
+  //     '2nd Sem': ['Pharmaceutics', 'Pharmacology'],
+  //     '3rd Sem': ['Medicinal Chemistry', 'Pharmaceutical Analysis'],
+  //     '4th Sem': ['Biochemistry', 'Clinical Pharmacy'],
+  //     '5th Sem': ['Pharmaceutical Biotechnology', 'Quality Assurance'],
+  //     '6th Sem': ['Pharmacovigilance', 'Regulatory Affairs'],
+  //   },
+  //   M_Pharm: {
+  //     '1st Sem': ['Advanced Organic Chemistry', 'Pharmaceutical Formulations'],
+  //     '2nd Sem': ['Pharmacokinetics', 'Drug Design'],
+  //     '3rd Sem': ['Clinical Research', 'Pharmaceutical Marketing'],
+  //     '4th Sem': ['Pharmaceutical Technology', 'Biopharmaceutics'],
+  //   },
+  //   Pharm_D: {
+  //     '1st Sem': ['Pharmaceutical Chemistry', 'Pharmacognosy'],
+  //     '2nd Sem': ['Pharmaceutics', 'Pharmacology'],
+  //     '3rd Sem': ['Medicinal Chemistry', 'Pharmaceutical Analysis'],
+  //     '4th Sem': ['Biochemistry', 'Clinical Pharmacy'],
+  //     '5th Sem': ['Pharmaceutical Biotechnology', 'Quality Assurance'],
+  //     '6th Sem': ['Pharmacovigilance', 'Regulatory Affairs'],
+  //   },
+  // },
 };
 
 const DynamicSelect: React.FC = () => {

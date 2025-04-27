@@ -7,26 +7,32 @@ import ThemeToggle from '../../componets/ThemeToggle';
 import { Link } from 'react-router-dom';
 import { Monitor, ChevronLeft, ArrowLeft } from 'lucide-react';
 import ThemeImageLogin from '../../componets/ThemeImage_login';
+import FullPageLoader from '../../componets/FullpageLoader';
 // Removed the import as the module '@/lib/utils' cannot be resolved
 
 function Signup() {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [loading,setLoading] = useState(false)
   const navigate = useNavigate();
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
     setEmailError(null);
+   
   };
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
     setEmailError(null);
     setIsSubmitting(true);
+    setLoading(true);
+
     if (!email) {
       setEmailError('Email is required.');
       setIsSubmitting(false);
+      setLoading(false);
       return;
     }
 
@@ -35,6 +41,7 @@ function Signup() {
     if (!mbuRegex.test(email.trim().toLowerCase())) {
       setEmailError('Only @mbu.asia email addresses are allowed.');
       setIsSubmitting(false);
+      setLoading(false);
       return;
     }
 
@@ -94,7 +101,7 @@ function Signup() {
             Create an account and verify your details to start learning
           </p>
           <div className="flex justify-center mb-8">
-            <div className="bg-blue-1z00 p-4 rounded-xl dark:bg-orange-800 transition-all duration-300 ease-in-out">
+            <div className="bg-blue-100 p-4 rounded-xl dark:bg-orange-800 transition-all duration-300 ease-in-out">
               <Mail className="w-12 h-12 text-blue-500 dark:text-orange-200" />
             </div>
           </div>
@@ -133,13 +140,14 @@ function Signup() {
           <div className="mt-4 text-center">
             <p className="text-gray-800 dark:text-gray-200 transition-all duration-300 ease-in-out">
               Already have an account?{' '}
-              <a href="/Signin" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
+              <Link to="/Signin" className="text-blue-500 hover:underline dark:text-orange-500 transition-all duration-300 ease-in-out">
                 Log in here
-              </a>
+              </Link>
             </p>
           </div>
         </div>
       </div>
+      {loading && <FullPageLoader />}
     </>
   );
 }

@@ -80,3 +80,9 @@ html {
   }
 }
 
+/* Example CSS */
+iframe {
+  width: 100%;
+  height: 80vh; /* Adjust as needed */
+  border: none;
+}

@@ -1,47 +1,38 @@
+// ModuleDisplay.tsx
 import React from 'react';
 
-/* ---------------------------------------------------------
-   1.  IMPORT every module component you want to show here
-       (One import per real module file you have created)
-   --------------------------------------------------------- */
-// import OOMD_Module1 from '../modules/OOMD_Module1';
-// import OOMD_Module2 from '../modules/OOMD_Module2';
-// import ANN_Module1  from '../modules/ANN_Module1';
-// import ANN_Module2  from '../modules/ANN_Module2';   
-import CSE_Module_1 from '../Modules/CSE_Module1';
-
-/* ---------------------------------------------------------
-   2.  Map the sidebar label → the imported component
-       Keep adding entries as you add new module files.
-   --------------------------------------------------------- */
-const moduleMap: Record<string, React.FC> = {
-    'CSE_Module_1':CSE_Module_1
-    
-//   'OOMD_Module 1': OOMD_Module1,
-//   'OOMD_Module 2': OOMD_Module2,
-//   'ANN_Module 1' : ANN_Module1,
-  // 'ANN_Module 2': ANN_Module2,
+// Map each module to the PDF URL
+const moduleMap: Record<string, string> = {
+  'ANN_Module_2': '/pdfs/',
+  'CSE_Module_1': '/pdfs/CSE_Module_1.pdf',
+  'ANN_Module_1': '/pdfs/ANN_Module_1.pdf',   
+  // Add more mappings for other modules as needed
 };
 
-/* ---------------------------------------------------------
-   3.  Component that chooses what to render
-   --------------------------------------------------------- */
 const ModuleDisplay: React.FC<{ moduleName: string }> = ({ moduleName }) => {
   if (!moduleName) {
-    return <p className="p-6 italic text-gray-600">Select a subject &amp; module. (or) Search a Subject to Open </p>;
+    return <p className="p-6 italic text-gray-600">Select a subject &amp; module to view.</p>;
   }
 
-  const Selected = moduleMap[moduleName];
+  const pdfUrl = moduleMap[moduleName];
 
-  if (!Selected) {
+  if (!pdfUrl) {
     return (
       <p className="p-6 text-red-600">
-        No component registered for “{moduleName}”.
+        No PDF available for “{moduleName}”.
       </p>
     );
   }
 
-  return <Selected />;
+  return (
+    <div className="w-full h-screen">
+      <iframe
+        src={pdfUrl}
+        title={moduleName}
+        className="w-full h-full border-none"
+      />
+    </div>
+  );
 };
 
 export default ModuleDisplay;
