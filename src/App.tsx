@@ -33,7 +33,8 @@ import Footer from './componets/Footer_FIn';
 import ThemeToggle from './componets/ThemeToggle';
 import HomePage from './Dumb_comp/HomePage';
 import { useEffect, useState } from 'react';
-
+import NavBarHome from './componets/NavBarFeatures';
+import NavBarFeatures from './componets/NavBarFeatures';
 function App() {
   // const [isMobile, setIsMobile] = useState(false);
 
@@ -61,7 +62,8 @@ function App() {
       {/* <NavBar /> */}
       {/* <UserList /> */}
       {/* <VidSelect1 /> */}
-      <NoInternetOverlay />
+      {/* <NoInternetOverlay /> */}
+      {/* <NavBarFeatures /> */}
       <RouteChangeProgress />
        <ScrollToTop />
       {/* <HomePage /> */}

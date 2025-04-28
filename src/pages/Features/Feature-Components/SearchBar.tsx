@@ -5,7 +5,8 @@ interface SearchBarProps {
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSubjectSelect }) => {
-  const subjects = ['Object-Oriented-Modeling-and-Design', 'Artificial-Neural-Networks', 'Mobile-Application-Development', 'Cyber-Security-Essentials',
+  const subjects = ['Object-Oriented-Modeling-and-Design[OOMD]', 'Artificial-Neural-Networks[ANN]', 'Mobile-Application-Development[MAD]', 'Cyber-Security-Essentials[CSE]',
+    'Cloud-Computing[CC]', 'Compiler-Design[CD]', 'Deep-Learning[DL]', 'Software-Systems[SS]','Disturbuted-Systems[DS]', 'Computer-Architecture[CA]', 'Artificial-Intelligence[AI]',
     
   ];
   const [searchQuery, setSearchQuery] = useState('');

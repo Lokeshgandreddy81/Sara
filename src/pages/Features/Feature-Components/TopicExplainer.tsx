@@ -12,6 +12,7 @@ const TopicExplainer: React.FC<TopicExplainerProps> = ({ topic, module, subject 
   const [explanation, setExplanation] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
 
   useEffect(() => {
     if (!topic || !module || !subject) return; // Don't fetch if missing info

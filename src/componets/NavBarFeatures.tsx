@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 import BackToTopButton from './BackToTopButton';
 import { Link } from 'react-router-dom';
 
-const NavBarHome: React.FC = () => {
+const NavBarFeatures: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -74,4 +74,4 @@ const NavBarHome: React.FC = () => {
   );
 };
 
-export default NavBarHome;
+export default NavBarFeatures;

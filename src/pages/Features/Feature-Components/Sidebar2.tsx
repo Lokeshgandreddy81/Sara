@@ -1,9 +1,8 @@
-// Sidebar2.tsx
 import React, { useState } from 'react';
 
 interface Sidebar2Props {
   subject: string;
-  onTopicClick: (topicName: string) => void;
+  onTopicClick: (topicName: string, moduleName: string, subjectName: string) => void;
 }
 
 const moduleData: Record<string, Record<string, string[]>> = {
@@ -64,7 +63,7 @@ const Sidebar2: React.FC<Sidebar2Props> = ({ subject, onTopicClick }) => {
                 {topics.map((topic) => (
                   <button
                     key={topic}
-                    onClick={() => onTopicClick(topic)}
+                    onClick={() => onTopicClick(topic, module, subject)}
                     className="w-full text-left px-2 py-1 rounded hover:bg-indigo-200 dark:hover:bg-orange-900 mb-1 dark:text-gray-300"
                   >
                     {topic}
