@@ -35,6 +35,11 @@ const moduleMap: Record<string, string> = {
   'DL-Module-3': 'Public/pdfs/School-of-Computing/AIML/SEM6/DL/DL(MODULE-III).pdf',
   'DL-Module-4': 'Public/pdfs/School-of-Computing/AIML/SEM6/DL/DL(MODULE-IV).pdf',
   'DL-Module-5': 'Public/pdfs/School-of-Computing/AIML/SEM6/DL/DL(MODULE-V).pdf',
+  'CD-Module-1': 'Public/pdfs/School-of-Computing/AIML/SEM6/CD/CD-1.pdf',
+  'CD-Module-2': 'Public/pdfs/School-of-Computing/AIML/SEM6/CD/CD-2.pdf',
+  'CD-Module-3': 'Public/pdfs/School-of-Computing/AIML/SEM6/CD/CD-3.pdf',
+  'CD-Module-4': 'Public/pdfs/School-of-Computing/AIML/SEM6/CD/CD-4.pdf',
+  'CD-Module-5': 'Public/pdfs/School-of-Computing/AIML/SEM6/CD/CD-5.pdf',
   //DS SEM6
   'DiS-Module-1': 'Public/pdfs/School-of-Computing/DS/SEM6/Distributed-systems/Module-1.pdf',
   'DiS-Module-2': 'Public/pdfs/School-of-Computing/DS/SEM6/Distributed-systems/Module-2.pdf',
@@ -46,18 +51,29 @@ const moduleMap: Record<string, string> = {
   'SS-Module-2': 'Public/pdfs/School-of-Computing/DS/SEM6/Software-Systems/Module3.pdf',
   'SS-Module-3': 'Public/pdfs/School-of-Computing/DS/SEM6/Software-Systems/Module4.pdf',
   'SS-Module-4': 'Public/pdfs/School-of-Computing/DS/SEM6/Software-Systems/Module5.pdf',
-  'AI-Module-1': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/',
-  'AI-Module-2': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/',
-  'AI-Module-3': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/',
-  'AI-Module-4': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/',
-  'AI-Module-5': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/',
-  'CA-Module-1': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/',
-  'CA-Module-2': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/',
-  'CA-Module-3': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/',
-  'CA-Module-4': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/',
-  'CA-Module-5': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/',
+  'AI-Module-1': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/Module1.pdf',
+  'AI-Module-2': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/Module2.pdf',
+  'AI-Module-3': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/Module3.pdf',
+  'AI-Module-4': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/Module4.pdf',
+  'AI-Module-5': 'Public/pdfs/School-of-Computing/DS/SEM6/AI/Module5.pdf',
+  'CA-Module-1': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA1.pdf',
+  'CA-Module-2': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA2.pdf',
+  'CA-Module-3': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA3.pdf',
+  'CA-Module-4': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA4.pdf',
+  'CA-Module-5': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA5.pdf',
+  // Deep learning[DL] is in AIML SEM 6
+  //CY S SEM6
+  'CAO-Module-1':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO1.pdf',
+  'CAO-Module-2':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO2.pdf',
+  'CAO-Module-3':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO3.pdf',
+  'CAO-Module-4':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO4.pdf',
+  'CAO-Module-5':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO5.pdf',
+  'CNS-Module-1':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-1Notes.pdf',
+  'CNS-Module-2':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-2Notes.pdf',
+  'CNS-Module-3':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-3Notes.pdf',
+  'CNS-Module-4':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-4Notes.pdf',
+  'CNS-Module-5':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-5Notes.pdf'
 
-  // Add more mappings for other modules as needed
 };
 
 const ModuleDisplay: React.FC<{ moduleName: string }> = ({ moduleName }) => {

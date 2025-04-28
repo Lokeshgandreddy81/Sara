@@ -5,9 +5,21 @@ interface SearchBarProps {
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSubjectSelect }) => {
-  const subjects = ['Object-Oriented-Modeling-and-Design[OOMD]', 'Artificial-Neural-Networks[ANN]', 'Mobile-Application-Development[MAD]', 'Cyber-Security-Essentials[CSE]',
-    'Cloud-Computing[CC]', 'Compiler-Design[CD]', 'Deep-Learning[DL]', 'Software-Systems[SS]','Disturbuted-Systems[DS]', 'Computer-Architecture[CA]', 'Artificial-Intelligence[AI]',
-    
+  const subjects = [
+    //CSE SEM6
+    'Object-Oriented-Modeling-and-Design[OOMD]', 'Artificial-Neural-Networks[ANN]', 'Mobile-Application-Development[MAD]', 'Cyber-Security-Essentials[CSE]',
+
+    //AIML SEM6
+    'Cloud-Computing[CC]', 'Compiler-Design[CD]', 'Deep-Learning[DL]',
+
+    //DS SEM6
+    'Software-Systems[SS]', 'Disturbuted-Systems[DS]', 'Computer-Architecture[CA]', 'Artificial-Intelligence[AI]',
+    // Deep learning[DL] is in AIML SEM 6
+
+    //CYBER SEM6
+    'Computer-Architecture-and-Organization[CAO]', 'Cryptography-and-Network-Security[CNS]', 'Ethical-Hacking[EH]', 'Web-Application-Security[WAS]',
+
+
   ];
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredSubjects, setFilteredSubjects] = useState<string[]>([]);

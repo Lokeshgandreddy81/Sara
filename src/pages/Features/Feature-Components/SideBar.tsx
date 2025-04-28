@@ -22,6 +22,13 @@ const moduleData: Record<string, string[]> = {
   'Computer-Architecture[CA]':['CA-Module-1', 'CA-Module-2', 'CA-Module-3', 'CA-Module-4', 'CA-Module-5'],
   'Artificial-Intelligence[AI]':['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5'],
    // Deep learning[DL] is in AIML SEM 6
+   //CY S SEM6
+   'Computer-Architecture-and-Organization[CAO]':['CAO-Module-1','CAO-Module-2','CAO-Module-3','CAO-Module-4','CAO-Module-5'],
+   'Cryptography-and-Network-Security[CNS]':['CNS-Module-1','CNS-Module-2','CNS-Module-3','CNS-Module-4','CNS-Module-5'],
+   'Ethical-Hacking[EH]':['EH-Module-1','EH-Module-2','EH-Module-3','EH-Module-4','EH-Module-5'], 
+   'Web-Application-Security[WAS]':['WAS-Module-1','WAS-Module-2','WAS-Module-3','WAS-Module-4','WAS-Module-5']
+
+
 };
 
 const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {

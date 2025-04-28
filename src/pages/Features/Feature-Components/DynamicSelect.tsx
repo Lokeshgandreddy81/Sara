@@ -61,7 +61,7 @@ const schoolData: Record<
       '3rd Sem': ['Database Systems', 'Software Engineering'],
       '4th Sem': ['Computer Networks', 'Operating Systems'],
       '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-      '6th Sem': ['Data Mining', 'Machine Learning'],
+      '6th Sem': ['Computer-Architecture-and-Organization[CAO]','Cryptography-and-Network-Security[CNS]','Ethical-Hacking[EH]', 'Web-Application-Security[WAS]'],
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
