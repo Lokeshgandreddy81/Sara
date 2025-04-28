@@ -34,7 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
             <li key={module}>
               <button
                 onClick={() => onModuleClick(module)}
-                className="w-full text-left px-2 py-1 rounded hover:bg-indigo-200 dark:hover:bg-indigo-700"
+                className="w-full text-left px-2 py-1 rounded hover:bg-indigo-200 dark:hover:bg-orange-800"
               >
                 {module}
               </button>

@@ -4,13 +4,15 @@ import Sidebar from './SideBar';
 import Footer from '../../../componets/Footer_FIn';
 import ModuleDisplay from './ModuleDisplay';
 import CSE_Module1 from '../Modules/CSE_Module1';
+import Sidebar2 from './Sidebar2';
+import TopicExplainer from './Gemini';
 
 // Full hierarchy: School → Branch → Semester → Subjects
 const schoolData: Record<
   string,
   Record<
     string,
-    Record<string, string[]>  
+    Record<string, string[]>
   >
 > = {
   'School of Computing': {
@@ -20,7 +22,7 @@ const schoolData: Record<
       '3rd Sem': ['Algorithms', 'Computer Networks'],
       '4th Sem': ['Database Management', 'Operating Systems'],
       '5th Sem': ['Software Engineering', 'Web Development'],
-      '6th Sem': ['Object Oriented Modeling and Design', 'Artificial Neural Networks', 'Mobile Application Development', 'Cyber Security Essentials'],
+      '6th Sem': ['Object-Oriented-Modeling-and-Design', 'Artificial-Neural-Networks', 'Mobile-Application-Development', 'Cyber-Security-Essentials'],
       '7th Sem': ['Artificial Intelligence', 'Data Mining'],
       '8th Sem': ['Cyber Security', 'Big Data'],
     },
@@ -64,7 +66,7 @@ const schoolData: Record<
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
-    
+
   },
   'School of Engineering': {
     ECE: {
@@ -82,7 +84,7 @@ const schoolData: Record<
       '2nd Sem': ['Power Systems', 'Analog Electronics'],
       '3rd Sem': ['Electrical Machines II', 'Control Systems Lab'],
       '4th Sem': ['Power Electronics', 'Microcontrollers'],
-      '5th Sem': ['Renewable Energy', 'Electrical Drives'],   
+      '5th Sem': ['Renewable Energy', 'Electrical Drives'],
       '6th Sem': ['Power System Analysis', 'Electrical Measurements'],
       '7th Sem': ['High Voltage Engineering', 'Electrical Safety'],
       '8th Sem': ['Smart Grids', 'Electrical System Design'],
@@ -119,7 +121,7 @@ const DynamicSelect: React.FC = () => {
   const [selectedBranch, setSelectedBranch] = useState('');
   const [selectedSemester, setSelectedSemester] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
-  const [selectedModule, setSelectedModule]   = useState('');
+  const [selectedModule, setSelectedModule] = useState('');
 
   const branches = selectedSchool ? Object.keys(schoolData[selectedSchool]) : [];
   const semesters =
@@ -132,101 +134,124 @@ const DynamicSelect: React.FC = () => {
       : [];
 
   return (
-    <>
-    <div className='flex max-h-full bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out'>
-    <div className="flex  gap-4 max-w-full p-4 mx-auto bg-gray-200 shadow-md dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
-      {/* School Select */}
-      <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
-        Select School
-        <select className=" px-2 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out" 
-          value={selectedSchool}
-          onChange={(e) => {
-            setSelectedSchool(e.target.value);
-            setSelectedBranch('');
-            setSelectedSemester('');
-            setSelectedSubject('');
-          }}
-          
-        >
-          <option value="">-- Select School --</option>
-          {Object.keys(schoolData).map((school) => (
-            <option key={school} value={school}>
-              {school}
-            </option>
-          ))}
-        </select>
-      </label>
+    < div className='bg-black dark:bg-[#000000] transition-all duration-300 ease-in-out'>
+      <div className='flex max-h-full bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out'>
+        <div className="flex  gap-4 max-w-full p-4 mx-auto bg-gray-200 shadow-md dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
+          {/* School Select */}
+          <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
+            Select School
+            <select className=" px-2 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+              value={selectedSchool}
+              onChange={(e) => {
+                setSelectedSchool(e.target.value);
+                setSelectedBranch('');
+                setSelectedSemester('');
+                setSelectedSubject('');
+              }}
 
-      {/* Branch Select */}
-      <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
-        Select Branch
-        <select className=" px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
-          value={selectedBranch}
-          onChange={(e) => {
-            setSelectedBranch(e.target.value);
-            setSelectedSemester('');
-            setSelectedSubject('');
-          }}
-          disabled={!selectedSchool}
-       
-        >
-          <option value="">-- Select Branch --</option>
-          {branches.map((branch) => (
-            <option key={branch} value={branch}>
-              {branch}
-            </option>
-          ))}
-        </select>
-      </label>
+            >
+              <option value="">-- Select School --</option>
+              {Object.keys(schoolData).map((school) => (
+                <option key={school} value={school}>
+                  {school}
+                </option>
+              ))}
+            </select>
+          </label>
 
-      {/* Semester Select */}
-      <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
-        Select Semester
-        <select className=" px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
-          value={selectedSemester}
-          onChange={(e) => {
-            setSelectedSemester(e.target.value);
-            setSelectedSubject('');
-          }}
-          disabled={!selectedBranch}
-        >
-          <option value="">-- Select Semester --</option>
-          {semesters.map((sem) => (
-            <option key={sem} value={sem}>
-              {sem}
-            </option>
-          ))}
-        </select>
-      </label>
+          {/* Branch Select */}
+          <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
+            Select Branch
+            <select className=" px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+              value={selectedBranch}
+              onChange={(e) => {
+                setSelectedBranch(e.target.value);
+                setSelectedSemester('');
+                setSelectedSubject('');
+              }}
+              disabled={!selectedSchool}
 
-      {/* Subject Select */}
-      <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out justify-center">
-        Select Subject
-        <select className=" px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
-          value={selectedSubject}
-          onChange={(e) => setSelectedSubject(e.target.value)}
-          disabled={!selectedSemester}
-        >
-          <option value="">-- Select Subject --</option>
-          {subjects.map((subj) => (
-            <option key={subj} value={subj}>
-              {subj}
-            </option>
-          ))}
-        </select>
-      </label>
-        <SearchBar />
+            >
+              <option value="">-- Select Branch --</option>
+              {branches.map((branch) => (
+                <option key={branch} value={branch}>
+                  {branch}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          {/* Semester Select */}
+          <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
+            Select Semester
+            <select className=" px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+              value={selectedSemester}
+              onChange={(e) => {
+                setSelectedSemester(e.target.value);
+                setSelectedSubject('');
+              }}
+              disabled={!selectedBranch}
+            >
+              <option value="">-- Select Semester --</option>
+              {semesters.map((sem) => (
+                <option key={sem} value={sem}>
+                  {sem}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          {/* Subject Select */}
+          <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out justify-center">
+            Select Subject
+            <select className=" px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+              value={selectedSubject}
+              onChange={(e) => setSelectedSubject(e.target.value)}
+              disabled={!selectedSemester}
+            >
+              <option value="">-- Select Subject --</option>
+              {subjects.map((subj) => (
+                <option key={subj} value={subj}>
+                  {subj}
+                </option>
+              ))}
+            </select>
+          </label>
+          <div className='items-center'>
+            <SearchBar
+              onSubjectSelect={(subject: string) => {
+                setSelectedSubject(subject); // Update the selected subject when one is clicked
+              }}
+            />
+          </div>
+
+
+        </div>
+      </div>
+      <div className="flex min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
+        <Sidebar subject={selectedSubject}
+          onModuleClick={setSelectedModule} />
+        <div className="flex-grow overflow-auto mx-1.5">
+          <ModuleDisplay moduleName={selectedModule} />
+        </div>
+      </div>
+      <div>
+
+        <div className='min-h-screen w-relative my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out'>
+          <Sidebar2 subject={selectedSubject}
+            onModuleClick={setSelectedModule} />
+        </div>
+        <div>
+          <TopicExplainer
+            topic="Convolutional Neural Networks"
+            module={selectedModule}
+            subject={selectedSubject}
+          />
+
+        </div>
+      </div>
+      <Footer />
     </div>
-    </div>
-    <div className="flex min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
-      <Sidebar subject={selectedSubject}
-      onModuleClick={setSelectedModule} />
-       <div className="flex-grow overflow-auto p-4">
-    <ModuleDisplay moduleName={selectedModule} />
-  </div>
-    </div>
-    <Footer />
-    </>
   );
 };
 

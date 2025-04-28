@@ -1,31 +1,69 @@
 import React, { useState } from 'react';
-import { Search } from 'lucide-react';
 
-const SearchBar: React.FC = () => {
+interface SearchBarProps {
+  onSubjectSelect: (subject: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ onSubjectSelect }) => {
+  const subjects = ['Object-Oriented-Modeling-and-Design', 'Artificial-Neural-Networks', 'Mobile-Application-Development', 'Cyber-Security-Essentials',
+    
+  ];
   const [searchQuery, setSearchQuery] = useState('');
+  const [filteredSubjects, setFilteredSubjects] = useState<string[]>([]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(event.target.value);
+    const query = event.target.value;
+    setSearchQuery(query);
+
+    if (query.length > 0) {
+      const filtered = subjects.filter(subject =>
+        subject.toLowerCase().includes(query.toLowerCase())
+      );
+      setFilteredSubjects(filtered);
+    } else {
+      setFilteredSubjects([]); // Hide suggestions when search is cleared
+    }
   };
 
   const handleSearchSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log('Search query submitted:', searchQuery);
-    // You can add logic here to perform a search or filter data
+    if (searchQuery.trim() !== '') {
+      onSubjectSelect(searchQuery.trim());
+      setFilteredSubjects([]); // Hide suggestions after selection
+    }
+  };
+
+  const handleSuggestionClick = (subject: string) => {
+    setSearchQuery(subject);
+    onSubjectSelect(subject);
+    setFilteredSubjects([]); // Hide suggestions after selection
   };
 
   return (
-    <div className='space-x-5 flex items-center justify-center  px-10 mx-auto bg-gray-200  dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out'>
-      <form onSubmit={handleSearchSubmit}>
+    <div className="relative w-full max-w-md mx-auto">
+      <form onSubmit={handleSearchSubmit} className="flex space-x-2">
         <input
-        className="px-10 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
           type="text"
           placeholder="Search Subject..."
           value={searchQuery}
           onChange={handleSearchChange}
         />
-        {/* <button type="submit"><Search className='items justify-center text-black dark:text-white' /></button> */}
       </form>
+
+      {filteredSubjects.length > 0 && (
+        <ul className="absolute z-10 w-full bg-white dark:bg-[#2a2a2a] border rounded-lg mt-2 max-h-60 overflow-y-auto shadow-md dark:text-white">
+          {filteredSubjects.map((subject, index) => (
+            <li
+              key={index}
+              className="px-4 py-2 cursor-pointer text-blue hover:bg-gray-100 dark:hover:bg-gray-700"
+              onClick={() => handleSuggestionClick(subject)}
+            >
+              {subject}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
