@@ -6,21 +6,21 @@ interface Sidebar2Props {
 }
 
 const moduleData: Record<string, Record<string, string[]>> = {
-  'Object-Oriented-Modeling-and-Design': {
+  'Object-Oriented-Modeling-and-Design[OOMD]': {
     'MODULE 1(INTRODUCTION TO UML AND BASIC STRUCTURAL MODELING)': ['Importance of modeling', 'Principles of modeling', 'Object oriented modeling','An overview of UML', 'Conceptual model of the UML', 'Architecture', 'Software development lifecycle','Classes-Terms and concepts', 'Common modeling techniques','Relationships-Modeling simple dependencies', 'Single inheritance and structural relationships','Common mechanisms', 'Diagrams'],
     'MODULE 2( ADVANCED STRUCTURAL MODELING, CLASS AND OBJECT DIAGRAMS)': ['Advanced classes', 'Advanced relationships', 'Interfaces', 'Types and roles', 'Packages', 'Instances', 'Class and Object Diagrams' ,'Terms and concepts', 'Modeling techniques for class diagram-Modeling simple collaboration', 'Logical database schema', 'Introduction to object diagrams'],
     'MODULE 3(BASIC BEHAVIORAL MODELING )': ['Interactions-Terms and concepts', 'Modeling a flow of control' ,'Interaction diagramsTerms and concepts', 'Modeling flows of control by time ordering and control by organization', 'Forward and reverse engineering','Use cases Terms and concepts', 'Modeling the behavior of the element', ' Use cases Diagrams Terms and concepts', 'Modeling the context of a system', 'Requirement of a system', 'Forward and reverse engineering','Activity Diagrams-Terms and concepts', 'Modeling a workflow', 'modeling an operation'],
     'MODULE 4(ADVANCED BEHAVIORAL MODELING )': ['Events and signals-Modeling a family of signals & exceptions;', 'State machines-Modeling the lifetime of an object','Introduction to processes and threads, Time and space-Modeling timing constraints, Distribution of objects and objects that migrate;','State chart diagrams-Modeling reactive objects, Forward and reverse engineering. '],
     'MODULE 5(ARCHITECTURAL MODELING )': ['Component-Terms and concepts, Modeling executables and libraries, Modeling tables, Files and documents, Modeling an API','Deployment-Modeling processors and devices, Modeling the distribution of components','Component diagrams-Modeling source code, Executable release, Physical database, Adaptable systems, Forward and reverse engineering','Deployment diagramsModeling an embedded systems, Client/Server system, Fully distributed systems, Forward and reverse engineering','Probability Density Estimation- Parametric methods, Maximum likelihood, Bayesian inference'],
   },
-  'Artificial-Neural-Networks': {
+  'Artificial-Neural-Networks[ANN]': {
     'MODULE 1(FUNDAMENTALS OF NEURAL LEARNING)': ['Fundamentals of Neural Learning - Classification and regression, Pre-processing and feature extraction', 'The curse of dimensionality, Polynomial curve fitting, Model complexity, Multivariate non-linear functions','Bayes theorem, Decision boundaries, Minimizing risk','Probability Density Estimation- Parametric methods, Maximum likelihood, Bayesian inference' ],
     'MODULE 2(SINGLE LAYER NETWORKS)': ['Linear discriminant functions, Linear separability, Generalized linear discriminants, Leastsquares techniques', 'The perceptron, Fishers linear discriminant.','Gradient based Strategies: Learning Rate Decay, Momentum-Based Learning, ParameterSpecific Learning Rates', 'Cliffs and Higher-Order Instability, Gradient Clipping', 'Second-Order Derivatives, Polyak Averaging, Local and Spurious Minima'],
     'MODULE 3(MULTI-LAYER PERCEPTRON & RADIAL BASIS FUNCTIONS)': ['ANN-Topic-6'],
     'MODULE 4(ERROR FUNCTIONS)': ['ANN-Topic-7', 'ANN-Topic-8'],
     'MODULE 5(LEARNING AND GENERALIZATION)': ['ANN-Topic-9'],   
   },
-  'Mobile-Application-Development':{
+  'Mobile-Application-Development[MAD]':{
     'MODULE 1()':[''],
     'MODULE 2()':['sd'],
     'MODULE 3()':['ds'],

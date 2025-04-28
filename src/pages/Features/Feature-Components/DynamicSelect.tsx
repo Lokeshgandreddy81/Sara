@@ -41,7 +41,7 @@ const schoolData: Record<
       '3rd Sem': ['Database Systems', 'Software Engineering'],
       '4th Sem': ['Computer Networks', 'Operating Systems'],
       '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-      '6th Sem': ['Artificial-Intelligence[AI]','Distributed-Systems[DS]', 'Deep-Learning[DL]','Software-Systems[SS]','Computer-Architecture[CA]'],
+      '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Systems[SS]', 'Computer-Architecture[CA]'],
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
@@ -51,7 +51,7 @@ const schoolData: Record<
       '3rd Sem': ['Database Systems', 'Software Engineering'],
       '4th Sem': ['Computer Networks', 'Operating Systems'],
       '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-      '6th Sem': ['Cloud-Computing[CC]', 'Deep-Learning[DL]','Compiler-Design[CD]'],
+      '6th Sem': ['Cloud-Computing[CC]', 'Deep-Learning[DL]', 'Compiler-Design[CD]'],
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
@@ -61,7 +61,7 @@ const schoolData: Record<
       '3rd Sem': ['Database Systems', 'Software Engineering'],
       '4th Sem': ['Computer Networks', 'Operating Systems'],
       '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-      '6th Sem': ['Computer-Architecture-and-Organization[CAO]','Cryptography-and-Network-Security[CNS]','Ethical-Hacking[EH]', 'Web-Application-Security[WAS]'],
+      '6th Sem': ['Computer-Architecture-and-Organization[CAO]', 'Cryptography-and-Network-Security[CNS]', 'Ethical-Hacking[EH]', 'Web-Application-Security[WAS]'],
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
@@ -134,10 +134,10 @@ const DynamicSelect: React.FC = () => {
       ? schoolData[selectedSchool][selectedBranch][selectedSemester]
       : [];
 
-  function sendToGemini(message: string) {
-    console.log("Sending message to Gemini:", message);
-    // later you can replace this with actual API calling logic
-  }
+  // function sendToGemini(message: string) {
+  //   console.log("Sending message to Gemini:", message);
+  //   // later you can replace this with actual API calling logic
+  // }
 
 
   return (
@@ -244,26 +244,35 @@ const DynamicSelect: React.FC = () => {
       </div>
       <div>
 
-        <div className='min-h-screen w-relative my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out'>
-          <Sidebar2
-            subject={selectedSubject}
-            onTopicClick={(topicName, moduleName, subjectName) => {
-              console.log("Topic:", topicName);
-              console.log("Module:", moduleName);
-              console.log("Subject:", subjectName);
-              setSelectedTopic(topicName); // << SET TOPIC
-            }}
-          />
+        <div className="flex min-h-screen w-full my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
+          {/* Sidebar (Fixed Width) */}
+          <div className="w-64 bg-gray-300 dark:bg-[#2a2a2a] p-2">
+            <Sidebar2
+              subject={selectedSubject}
+              onTopicClick={(topicName, moduleName, subjectName) => {
+                console.log("Topic:", topicName);
+                console.log("Module:", moduleName);
+                console.log("Subject:", subjectName);
 
-        </div>
-        <div>
-          <TopicExplainer
-            topic={selectedTopic}
-            module={selectedModule}
-            subject={selectedSubject}
-          />
+                setSelectedTopic(topicName);
+                setSelectedModule(moduleName);
+                setSelectedSubject(subjectName);
+              }}
+            />
+          </div>
 
+          {/* Content Area (Flexible Width) */}
+          <div className="flex-grow p-4">
+            {selectedTopic && selectedModule && selectedSubject && (
+              <TopicExplainer
+                topic={selectedTopic}
+                module={selectedModule}
+                subject={selectedSubject}
+              />
+            )}
+          </div>
         </div>
+
       </div>
       <Footer />
     </div>

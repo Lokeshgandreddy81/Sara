@@ -6,7 +6,8 @@ import {
   EmailAuthProvider,
 } from 'firebase/auth';
 import NavBar from '../../../componets/NavBar';
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, ChevronLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ChangePassword: React.FC = () => {
   const auth = getAuth(); // assumes Firebase is initialized
@@ -60,27 +61,30 @@ const ChangePassword: React.FC = () => {
     <div className='bg-white dark:bg-[#1f1f1f] min-h-screen flex items-center justify-center transition-all duration-300 ease-in-out'>
 
       <div className="max-w-md mx-auto p-6 bg-gray-200 dark:bg-[#262626] rounded-xl shadow-md transition-all duration-300 ease-in-out">
-        <h2 className="text-3xl font-semibold mb-4 text-center text-black dark:text-[#4c5bd4] transition-all duration-300 ease-in-out">Change Password</h2>
+        <Link to='/Dashboard'>
+          <ChevronLeft className='h-8 w-8 text-indigo-700 dark:text-orange-600' />
+        </Link>
+        <h2 className="text-3xl font-semibold mb-4 text-center text-indigo-800 dark:text-orange-600 transition-all duration-300 ease-in-out">Change Password</h2>
         <form onSubmit={handleChangePassword} className="space-y-5">
           <div className="relative">
-  <input
-    type={showPassword ? 'text' : 'password'}
-    placeholder="Current Password"
-    value={currentPassword}
-    onChange={(e) => setCurrentPassword(e.target.value)}
-    className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out"
-    required
-  />
-  <button
-    type="button"
-    aria-label={showPassword ? "Hide password" : "Show password"}
-    title={showPassword ? "Hide password" : "Show password"}
-    className="absolute inset-y-0 right-3 my-auto text-gray-500 dark:text-gray-200 transition-all duration-300 ease-in-out cursor-pointer"
-    onClick={() => setShowPassword(!showPassword)}
-  >
-    {showPassword ? <EyeOff size={25} /> : <Eye size={25} />}
-  </button>
-</div>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              placeholder="Current Password"
+              value={currentPassword}
+              onChange={(e) => setCurrentPassword(e.target.value)}
+              className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out"
+              required
+            />
+            <button
+              type="button"
+              aria-label={showPassword ? "Hide password" : "Show password"}
+              title={showPassword ? "Hide password" : "Show password"}
+              className="absolute inset-y-0 right-3 my-auto text-gray-500 dark:text-gray-200 transition-all duration-300 ease-in-out cursor-pointer"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <EyeOff size={25} /> : <Eye size={25} />}
+            </button>
+          </div>
 
           <div className="relative">
             <input
@@ -91,10 +95,10 @@ const ChangePassword: React.FC = () => {
               className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out"
               required
             />
-            </div>
+          </div>
 
           <input
-            type={showPassword ? 'text' : 'password'} 
+            type={showPassword ? 'text' : 'password'}
             placeholder="Confirm New Password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}

@@ -63,16 +63,26 @@ const moduleMap: Record<string, string> = {
   'CA-Module-5': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA5.pdf',
   // Deep learning[DL] is in AIML SEM 6
   //CY S SEM6
-  'CAO-Module-1':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO1.pdf',
-  'CAO-Module-2':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO2.pdf',
-  'CAO-Module-3':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO3.pdf',
-  'CAO-Module-4':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO4.pdf',
-  'CAO-Module-5':'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO5.pdf',
-  'CNS-Module-1':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-1Notes.pdf',
-  'CNS-Module-2':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-2Notes.pdf',
-  'CNS-Module-3':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-3Notes.pdf',
-  'CNS-Module-4':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-4Notes.pdf',
-  'CNS-Module-5':'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-5Notes.pdf'
+  'CAO-Module-1': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO1.pdf',
+  'CAO-Module-2': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO2.pdf',
+  'CAO-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO3.pdf',
+  'CAO-Module-4': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO4.pdf',
+  'CAO-Module-5': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO5.pdf',
+  'CNS-Module-1': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-1Notes.pdf',
+  'CNS-Module-2': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-2Notes.pdf',
+  'CNS-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-3Notes.pdf',
+  'CNS-Module-4': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-4Notes.pdf',
+  'CNS-Module-5': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-5Notes.pdf',
+  'EH-Module-1': 'Public/pdfs/School-of-Computing/CYBER/SEM6/ETHICAL-HACKING/EthicalHackingModule1.pdf',
+  'EH-Module-2': 'Public/pdfs/School-of-Computing/CYBER/SEM6/ETHICAL-HACKING/EthicalHackingModule2.pdf',
+  'EH-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/ETHICAL-HACKING/EthicalHackingModule3.pdf',
+  'EH-Module-4': 'Public/pdfs/School-of-Computing/CYBER/SEM6/ETHICAL-HACKING/EthicalHackingModule4.pdf',
+  'EH-Module-5': 'Public/pdfs/School-of-Computing/CYBER/SEM6/ETHICAL-HACKING/EthicalHackingModule5.pdf',
+  'WAS-Module-1':'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
+  'WAS-Module-2':'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
+  'WAS-Module-3':'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
+  'WAS-Module-4':'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
+  'WAS-Module-5':'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
 
 };
 
