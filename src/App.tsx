@@ -22,6 +22,7 @@ import ProtectedRoute from './componets/Protected_route';
 import VidSelect1 from './pages/Features/Feature_2/VidSelect';
 import ForgotPassword from './pages/LoginPages/ForgotPassword';
 import FeedbackPage from './pages/Footer_Pages/Feedback';
+import { useEffect, useState } from 'react';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
 import { Monitor } from 'lucide-react';
@@ -32,40 +33,40 @@ import NavBar from './componets/NavBar';
 import Footer from './componets/Footer_FIn';
 import ThemeToggle from './componets/ThemeToggle';
 import HomePage from './Dumb_comp/HomePage';
-import { useEffect, useState } from 'react';
 import NavBarHome from './componets/NavBarFeatures';
 import NavBarFeatures from './componets/NavBarFeatures';
 function App() {
-  // const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-    // useEffect(() => {
-    //   const checkMobile = () => {
-    //     const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    //     setIsMobile(isMobileDevice);
-    //   };
-    //   checkMobile();
-    // }, []);
+  useEffect(() => {
+    const checkMobile = () => {
+      const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      setIsMobile(isMobileDevice);
+    };
+    checkMobile();
+  }, []);
 
-    // if (isMobile) {
-    //   return (
-    //     <div style={{ textAlign: 'center', padding: '1rem', backgroundColor: '#f8f8f8', }}>
-    //       <h1 className='text-red' >Use a Laptop or Desktop to Access this Website</h1>
-    //       <h2 className='text-red' style={{ color: 'red' }}>This website is not optimized for Mobile Devices</h2>
-    //       <h2>If you are using Mobile Device use Desktop mode to Access this website</h2>
-    //       <h2>😊</h2>
-    //     </div>
-    //   );
-    // }
+  if (isMobile) {
+    return (
+      <div style={{ textAlign: 'center', padding: '1rem', backgroundColor: '#f8f8f8', }}>
+        <h1 className='text-red' >Use a Laptop or Desktop to Access this Website</h1>
+        <h2 className='text-red' style={{ color: 'red' }}>This website is not optimized for Mobile Devices</h2>
+        <h2>If you are using Mobile Device use Desktop mode to Access this website</h2>
+        <h2>Use Landscape Orientation For Better Experience</h2>
+        <h2>😊</h2>
+      </div>
+    );
+  }
 
   return (
     <Router>
       {/* <NavBar /> */}
       {/* <UserList /> */}
       {/* <VidSelect1 /> */}
-      {/* <NoInternetOverlay /> */}
+      <NoInternetOverlay />
       {/* <NavBarFeatures /> */}
       <RouteChangeProgress />
-       <ScrollToTop />
+      <ScrollToTop />
       {/* <HomePage /> */}
       <Routes>
         <Route path="/Signup" element={<Signup />} />
@@ -82,7 +83,7 @@ function App() {
         {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
         <Route path="/ChangePass" element={<ChangePassword />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
-       
+
         <Route
           path="/select-sub"
           element={
@@ -99,25 +100,25 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route 
-        path='/Feedback'
-        element={
-        <ProtectedRoute>
-        <FeedbackPage />
-        </ProtectedRoute>
-        } />
+        <Route
+          path='/Feedback'
+          element={
+            <ProtectedRoute>
+              <FeedbackPage />
+            </ProtectedRoute>
+          } />
 
-<Route 
-        path='/Dashboard'
-        element={
-        <ProtectedRoute>
-        < Dashboard />
-        </ProtectedRoute>
-        } />
-      
+        <Route
+          path='/Dashboard'
+          element={
+            <ProtectedRoute>
+              < Dashboard />
+            </ProtectedRoute>
+          } />
+
 
       </Routes>
-      
+
 
     </Router>
 

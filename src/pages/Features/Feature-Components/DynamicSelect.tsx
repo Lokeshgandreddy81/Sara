@@ -17,9 +17,9 @@ const schoolData: Record<
   'School of Computing': {
     CSE: {
       '1st Sem': ['Maths I', 'Physics', 'Programming Basics'],
-      '2nd Sem': ['Maths II', 'Data Structures', 'Digital Logic'],
+      '2nd Sem': ['Basic-EEE[BEEE]', 'Calculus-T&T[CTT]', 'Discrete-Math-Structures[DMS]','JAVA[OOPJ]','Professional-Ethics&HV[PEHV]'],
       '3rd Sem': ['Algorithms', 'Computer Networks'],
-      '4th Sem': ['Database Management', 'Operating Systems'],
+      '4th Sem': ['Artificial-Intelligence[AI]', 'Computer-Networks[CN]','Design-Analysis&Algorithms[DAA]','Software Engineering[SE]'],
       '5th Sem': ['Software Engineering', 'Web Development'],
       '6th Sem': ['Object-Oriented-Modeling-and-Design[OOMD]', 'Artificial-Neural-Networks[ANN]', 'Mobile-Application-Development[MAD]', 'Cyber-Security-Essentials[CSE]'],
       '7th Sem': ['Artificial Intelligence', 'Data Mining'],
@@ -41,7 +41,7 @@ const schoolData: Record<
       '3rd Sem': ['Database Systems', 'Software Engineering'],
       '4th Sem': ['Computer Networks', 'Operating Systems'],
       '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-      '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Systems[SS]', 'Computer-Architecture[CA]'],
+      '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Testing&QS[STQS]', 'Computer-Architecture&Organization[CAO]'],
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },
@@ -246,7 +246,7 @@ const DynamicSelect: React.FC = () => {
 
         <div className="flex min-h-screen w-full my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
           {/* Sidebar (Fixed Width) */}
-          <div className="w-64 bg-gray-300 dark:bg-[#2a2a2a] p-2">
+          <div className="w-64 bg-gray-300 dark:bg-[#2a2a2a] ">
             <Sidebar2
               subject={selectedSubject}
               onTopicClick={(topicName, moduleName, subjectName) => {

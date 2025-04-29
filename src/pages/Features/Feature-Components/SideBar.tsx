@@ -14,20 +14,30 @@ const moduleData: Record<string, string[]> = {
   'Cyber-Security-Essentials[CSE]': ['CSE-Module-1', 'CSE-Module-2', 'CSE-Module-3', 'CSE-Module-4', 'CSE-Module-5'],
   //  AIML SEM6
   'Cloud-Computing[CC]': ['CC-Module-1', 'CC-Module-2', 'CC-Module-3', 'CC-Module-4', 'CC-Module-5'],
-  'Compiler-Design[CD]':['CD-Module-1', 'CD-Module-2', 'CD-Module-3', 'CD-Module-4', 'CD-Module-5'],
-  'Deep-Learning[DL]':['DL-Module-1', 'DL-Module-2', 'DL-Module-3', 'DL-Module-4', 'DL-Module-5'],
+  'Compiler-Design[CD]': ['CD-Module-1', 'CD-Module-2', 'CD-Module-3', 'CD-Module-4', 'CD-Module-5'],
+  'Deep-Learning[DL]': ['DL-Module-1', 'DL-Module-2', 'DL-Module-3', 'DL-Module-4', 'DL-Module-5'],
   // DS SEM6
-  'Software-Systems[SS]':['SS-Module-1', 'SS-Module-2', 'SS-Module-3', 'SS-Module-4', 'SS-Module-5'],
-  'Distributed-Systems[DS]':['DiS-Module-1', 'DiS-Module-2', 'DiS-Module-3', 'DiS-Module-4', 'DiS-Module-5'],
-  'Computer-Architecture[CA]':['CA-Module-1', 'CA-Module-2', 'CA-Module-3', 'CA-Module-4', 'CA-Module-5'],
-  'Artificial-Intelligence[AI]':['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5'],
-   // Deep learning[DL] is in AIML SEM 6
-   //CY S SEM6
-   'Computer-Architecture-and-Organization[CAO]':['CAO-Module-1','CAO-Module-2','CAO-Module-3','CAO-Module-4','CAO-Module-5'],
-   'Cryptography-and-Network-Security[CNS]':['CNS-Module-1','CNS-Module-2','CNS-Module-3','CNS-Module-4','CNS-Module-5'],
-   'Ethical-Hacking[EH]':['EH-Module-1','EH-Module-2','EH-Module-3','EH-Module-4','EH-Module-5'], 
-   'Web-Application-Security[WAS]':['WAS-Module-1','WAS-Module-2','WAS-Module-3','WAS-Module-4','WAS-Module-5']
-
+  'Software-Testing&QS[STQS]': ['STQS-Module-1', 'STQS-Module-2', 'STQS-Module-3', 'STQS-Module-4', 'STQS-Module-5'],
+  'Distributed-Systems[DS]': ['DiS-Module-1', 'DiS-Module-2', 'DiS-Module-3', 'DiS-Module-4', 'DiS-Module-5'],
+  'Computer-Architecture[CA]': ['CA-Module-1', 'CA-Module-2', 'CA-Module-3', 'CA-Module-4', 'CA-Module-5'],
+  'Artificial-Intelligence[AI]': ['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5'],
+  // Deep learning[DL] is in AIML SEM 6
+  //CY S SEM6
+  'Computer-Architecture&Organization[CAO]': ['CAO-Module-1', 'CAO-Module-2', 'CAO-Module-3', 'CAO-Module-4', 'CAO-Module-5'],
+  'Cryptography-and-Network-Security[CNS]': ['CNS-Module-1', 'CNS-Module-2', 'CNS-Module-3', 'CNS-Module-4', 'CNS-Module-5'],
+  'Ethical-Hacking[EH]': ['EH-Module-1', 'EH-Module-2', 'EH-Module-3', 'EH-Module-4', 'EH-Module-5'],
+  'Web-Application-Security[WAS]': ['WAS-Module-1', 'WAS-Module-2', 'WAS-Module-3', 'WAS-Module-4', 'WAS-Module-5'],
+  //CSE SEM2
+  'Basic-EEE[BEEE]': ['BEEE-MODULE-1', 'BEEE-MODULE-2', 'BEEE-MODULE-3', 'BEEE-MODULE-4', 'BEEE-MODULE-5'],
+  'Calculus-T&T[CTT]': ['CTT-MODULE-1', 'CTT-MODULE-2', 'CTT-MODULE-3', 'CTT-MODULE-4', 'CTT-MODULE-5'],
+  'Discrete-Math-Structures[DMS]': ['DMS-MODULE-1', 'DMS-MODULE-2', 'DMS-MODULE-3', 'DMS-MODULE-4', 'DMS-MODULE-5'],
+  'JAVA[OOPJ]': ['OOPJ-MODULE-1', 'OOPJ-MODULE-2', 'OOPJ-MODULE-3', 'OOPJ-MODULE-4', 'OOPJ-MODULE-5'],
+  'Professional-Ethics&HV[PEHV]': ['PHEV-MODULE-1', 'PHEV-MODULE-2', 'PHEV-MODULE-3', 'PHEV-MODULE-4', 'PHEV-MODULE-5'],
+  //CSE SEM4
+  'Computer-Networks[CN]': [''],
+  'Design-Analysis&Algorithms[DAA]': [''],
+  'Software Engineering[SE]': [''],
+  //Artificial-Intelligence[AI] is in DS SEM 6
 
 };
 

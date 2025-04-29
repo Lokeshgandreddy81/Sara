@@ -25,7 +25,7 @@ const TopicExplainer: React.FC<GeminiProps> = ({ topic, module, subject }) => {
 
     try {
       const apiKey = 'AIzaSyAmKd2Bm9K_3LhirWi1qydY6LhsQitqGkw'; // <-- Replace with your API key
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
       const prompt = `Explain the following topic: "${topic}" in module "${module}" in the subject "${subject}" in ${contentSize} form.`; // 👈 dynamically insert contentSize
 
