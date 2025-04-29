@@ -23,7 +23,7 @@ const moduleData: Record<string, string[]> = {
   'Artificial-Intelligence[AI]': ['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5'],
   // Deep learning[DL] is in AIML SEM 6
   //CY S SEM6
-  'Computer-Architecture&Organization[CAO]': ['CAO-Module-1', 'CAO-Module-2', 'CAO-Module-3', 'CAO-Module-4', 'CAO-Module-5'],
+  'Computer-Organization&Architecture[COA]': ['COA-Module-1', 'COA-Module-2', 'COA-Module-3', 'COA-Module-4', 'COA-Module-5'],
   'Cryptography-and-Network-Security[CNS]': ['CNS-Module-1', 'CNS-Module-2', 'CNS-Module-3', 'CNS-Module-4', 'CNS-Module-5'],
   'Ethical-Hacking[EH]': ['EH-Module-1', 'EH-Module-2', 'EH-Module-3', 'EH-Module-4', 'EH-Module-5'],
   'Web-Application-Security[WAS]': ['WAS-Module-1', 'WAS-Module-2', 'WAS-Module-3', 'WAS-Module-4', 'WAS-Module-5'],
@@ -34,9 +34,9 @@ const moduleData: Record<string, string[]> = {
   'JAVA[OOPJ]': ['OOPJ-MODULE-1', 'OOPJ-MODULE-2', 'OOPJ-MODULE-3', 'OOPJ-MODULE-4', 'OOPJ-MODULE-5'],
   'Professional-Ethics&HV[PEHV]': ['PHEV-MODULE-1', 'PHEV-MODULE-2', 'PHEV-MODULE-3', 'PHEV-MODULE-4', 'PHEV-MODULE-5'],
   //CSE SEM4
-  'Computer-Networks[CN]': [''],
-  'Design-Analysis&Algorithms[DAA]': [''],
-  'Software Engineering[SE]': [''],
+  'Computer-Networks[CN]': ['CN-MODULE-1','CN-MODULE-2','CN-MODULE-3','CN-MODULE-4','CN-MODULE-5'],
+  'Design-Analysis&Algorithms[DAA]': ['DAA-MODULE-1','DAA-MODULE-2','DAA-MODULE-3','DAA-MODULE-4','DAA-MODULE-5'],
+  'Software Engineering[SE]': ['SE-MODULE-1','SE-MODULE-2','SE-MODULE-3','SE-MODULE-4','SE-MODULE-5'],
   //Artificial-Intelligence[AI] is in DS SEM 6
 
 };

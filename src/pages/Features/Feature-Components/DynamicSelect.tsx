@@ -41,7 +41,7 @@ const schoolData: Record<
       '3rd Sem': ['Database Systems', 'Software Engineering'],
       '4th Sem': ['Computer Networks', 'Operating Systems'],
       '5th Sem': ['Mobile Computing', 'Cloud Computing'],
-      '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Testing&QS[STQS]', 'Computer-Architecture&Organization[CAO]'],
+      '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Testing&QS[STQS]', 'Computer-Organization&Architecture[COA]'],
       '7th Sem': ['Cyber Security', 'Big Data'],
       '8th Sem': ['Artificial Intelligence', 'Web Development'],
     },

@@ -35,6 +35,150 @@ const moduleData: Record<string, Record<string, string[]>> = {
     'MODULE 4(Malicious Code)': ['Worms, viruses', 'Evading detection and elevating privileges: obfuscation, Virtual Machine obfuscation Persistent software techniques', 'Token kidnapping, Virtual machine Detection, Rootkits, Spyware', 'Attacks against privileged user accounts and escalation of privileges, Stealing information and Exploitation.'],
     'MODULE 5(Defense And Analysis Techniques)': ['Importance of memory forensics, Capabilities of memory forensics, Memory analysis frameworks, Dumping physical memory', 'Installing and using volatility, Finding hidden processes, Volatality analyst pack', 'Honeypots, Malicious code naming, Automated malicious code analysis systems, Intrusion detection techniques.']
   },
+
+  // AIML SEM 6
+  'Cloud-Computing[CC]': {
+    'MODULE-1(fundamental cloud Computing and Virtualization)': ['Cloud Computing: Origin and influences, Basic concepts and terminology',
+      'Goals and benefits, Risks and challenges, Roles and boundaries and Cloud characteristics',
+      'Introduction to Virtualization: Characteristics, Taxonomy of virtualization technologies',
+      'Pros and cons of virtualization, Virtualization Technologies:Xen, VMware and Hyper-V',
+    ],
+    'MODULE-2(understanding cloud models and architecture)': ['Cloud Models: NIST model, Cloud Cube model, Deployment models: Public, Private, Hybrid and Community',
+      'Service models: IaaS, PaaS and SaaS, Understanding Cloud Architecture: Exploring the Cloud Computing Stack: Composability',
+      'Infrastructure, Platforms, Virtual Appliances, Communication Protocols, Applications',
+      'Connecting to the Cloud: The Jolicloud Netbook OS and Chromium OS - The Browser as an Operating System',
+    ],
+    'MODULE-3(understanding cloud services, application and capacity planning)': ['Understanding Cloud Services and ApplicationsInfrastructure as a Service (IaaS): IaaS workloads, Pods, aggregation, and silos',
+      'Platform as a Service (PaaS), Software as a Service (SaaS): SaaS characteristics, Open SaaS and SOA',
+      'Salesforce.com and CRM SaaS; Identity as a Service (IDaaS): Identity, Networked identity service classes',
+      'Identity system codes of conduct, IDaaS interoperability; Compliance as a Service (CaaS)',
+      'CapacityPlanning: Defining Baseline and Metrics: Baseline measurements, System metrics',
+      'Load Testing, Resource ceilings, Server and instance types; Network Capacity and Scaling',
+    ],
+    'MODULE-4(Exploring platform as a service(paSs)': ['PaaS Application Frameworks: Drupal, Eccentex AppBase 3.0, LongJump, Square space, WaveMaker and Wolf Frameworks',
+      'Exploring Platform as a Service using Google Web Services:Surveying the Google Application Portfolio',
+      'Google Toolkit and Working with the Google App Engine',
+      'Exploring Platform as a Service usingMicrosoft Cloud Services: Exploring Microsoft Cloud Services',
+      'Defining the Windows Azure Platform, Windows Live: Windows Live Essentials',
+      'Windows Live Home and Windows Live for Mobile',
+    ],
+    'MODULE-5(Exploring infrastructure as a service (iaas)': ['Understanding Amazon Web Services, Amazon Web Service Components and Services',
+      'Working with the Elastic Compute Cloud (EC2): Amazon Machine Images, Pricing models',
+      'System images and software, Creating an account and instance on EC2',
+      'Working with Amazon Storage Systems: Amazon Simple Storage System (S3)',
+      'Amazon Elastic Block Store (EBS) and CloudFront,  Understanding Amazon Database Services: Amazon SimpleDB',
+      'Amazon Relational Database Service (RDS) and Choosing a database for AWS',
+    ],
+  },
+  'Deep-Learning[DL]': {
+    'MODULE-1(machine learning with shallow neural networks)': ['Neural Architectures for Binary Classification Models',
+      'Neural Architectures for Multiclass Models',
+      'Backpropagated Saliency for Feature Selection, Autoencoders- Basic Principles',
+      'Nonlinear Activations, Deep Autoencoders, Application to Outlier Detection',
+    ],
+    'MODULE-2(training deep neural networks)': ['Backpropagation: Backpropagation with the Computational Graph Abstraction, Dynamic Programming',
+      'Backpropagation with Post-Activation and Pre-Activation variables, Examples of Updates for Various Activations',
+      'Loss Functions on Multiple Output Nodes and Hidden Nodes, Backpropagation Tricks for Handling Shared Weights',
+      'Setup and Initialization Issues, Gradient based Strategies: Learning Rate Decay, Momentum-Based Learning',
+      'Parameter-Specific Learning Rates, Cliffs and Higher-Order Instability, Gradient Clipping',
+      'Second-Order Derivatives, Polyak Averaging, Local and Spurious Minima',
+    ],
+    'MODULE-3(genetic algorithms)': ['The Bias-Variance Trade-Off, Generalization Issues in Model Tuning and Evaluation',
+      'Penalty-Based Regularization, Ensemble Methods, Early Stopping',
+      'Unsupervised Pretraining, Regularization in Unsupervised Applications.',
+    ],
+    'MODULE-4(recurrent neural networks)': ['Recurrent Neural Networks: Expressiveness of Recurrent Networks, The Architecture of Recurrent Neural Networks',
+      'The Challenges of Training Recurrent Networks. Long Short-Term Memory (LSTM)',
+      'Gated Recurrent Units (GRUs), Applications of Recurrent Neural Networks: Automatic Image Captioning',
+      'Sequence-to Sequence Learning and Machine Translation, Sentence-Level Classification',
+      'Time-Series Forecasting and Prediction, End-to-End Speech Recognition',
+    ],
+    'MODULE-5(Convolutional neural networks)': ['The Basic Structure of a Convolutional Network, Training a Convolutional Network',
+      'Convolutional Architectures-AlexNet,VGG,GoogleNet,ResNet, Visualizing the Features of a Trained Network',
+      'Convolutional Autoencoders, Applications of Convolutional Neural Networks- Content-Based Image Retrieval',
+      'Object Detection, Natural Language and Sequence Learning.',
+    ],
+  },
+  'Compiler-Design[CD]': {
+    'MODULE-1(introduction to compiler and lexical analysis)': ['Structure of a compiler, Interpretation- Interpreters',
+      'Recursive interpreters, Iterative interpreters',
+      'Lexical Analysis: The Role of the Lexical Analyzer, Input Buffering',
+      'Specification of Tokens, The Lexical-Analyzer Generator LEX',
+    ],
+    'MODULE-2(syntax analysis)': ['The Role of the Parser, Eliminating Ambiguity, Eliminating of Left Recursion and Left Factoring Top-Down Parsing: Recursive descent parsing',
+      'Non Recursive Predictive parsing, LL(1) Grammars, A traditional top-down parser generator—YACC',
+      'Bottom-Up Parsing: Shift reduce parsing, LR parsers – Simple LR parser',
+      'Canonical LR parser, LALR parser, Using Ambiguous Grammars',
+    ],
+    'MODULE-3(syntax directed translation and  type checking)': ['Syntax directed definition, S-attributed and L-attributed definitions',
+      'Construction of syntax trees, Type Checking: Type Expressions, Type Equivalence',
+      'Rules for Type Checking, Type Conversions, Overloading of Functions and Operators',
+    ],
+    'MODULE-4(intermediate code generator and run time environments)': ['Preprocessing the intermediate code, Preprocessing of expressions, Preprocessing of if statements and goto statements',
+      'Preprocessing of routines, Variants of Syntax Trees, Three Address Code',
+      'Boolean expressions, Flow-of-Control Statements, Control- Flow Translation of Boolean Expressions',
+      'Run time Environments: Storage organization, Stack Allocation of Space, Access to Nonlocal Data on the Stack',
+    ],
+    'MODULE-5(code optimization and code generator)': ['Basic Blocks and Flow Graphs, Optimization of Basic Blocks, The principal sources of optimization',
+      'Introduction to data flow analysis. Code Generation: Issues in the Design of a Code Generator',
+      'The Target Language, Simple Code Generator, Peephole optimization',
+      'Register allocation and assignment',
+    ],
+  },
+
+
+//DS SEM6
+
+'Artificial-Intelligence[AI]':{
+  'MODULE-1()':[],
+  'MODULE-2()':[],
+  'MODULE-3()':[],
+  'MODULE-4()':[],
+  'MODULE-5()':[],
+
+},
+ 'Distributed-Systems[DS]':{
+  'MODULE-1(introduction)':['Relation to parallel multiprocessor/multicomputer systems - Message-passing systems versus shared memory systems - Synchronous versus asynchronous executions',
+'Design issues and challenges - A model of distributed executions - Models of communication networks - Past and future cones of an event - Models of process communications'
+ ],
+  'MODULE-2(logical time)':[
+    'A framework for a system of logical clocks - Scalar time - Vector time - Efficient implementations of vector clocks',
+    ' Jard–Jourdan’s adaptive technique - Matrix time - Virtual time - Physical clock synchronization: NTP',
+   ],
+  'MODULE-3(global state and snapshot recording algorithms)':['Global state and snapshot recording algorithms - Snapshot algorithms for FIFO channels - ariations of the Chandy–Lamport algorithm',
+ 'Snapshot algorithms for non-FIFO channels - Snapshots in a causal delivery system - Monitoring global state'
+],
+  'MODULE-4(Distributed mutual exclusion algorithms)':[ 'Lamport’s algorithm - Ricart–Agrawala algorithm - Singhal’s dynamic information-structure algorithm - Lodha and Kshemkalyani’s fair mutual exclusion algorithm',
+    'Quorum-based mutual exclusion algorithms - Maekawa’s algorithm - Agarwal–El Abbadi quorum-based algorithm',
+    'Token-based algorithms - Suzuki–Kasami’s broadcast algorithm - Raymond’s tree-based algorithm'
+   ],
+  'MODULE-5(Deadlock detection in distributed systems )':[ 'System model - Models of deadlocks - Knapp’s classification of distributed deadlock detection algorithms',
+    'Mitchell and Merritt’s algorithm for the singleresource model - Chandy–Misra–Haas algorithm for the AND model',
+    'Chandy–Misra–Haas algorithm for the OR model - Distributed shared memory - Abstraction and advantages - Memory consistency models'
+   ],
+
+ },
+ 'Software-Testing&QS[STQS]':{
+  'MODULE-1(Intro)':['Agile Testing – Traditional vs agile testing - Principles for agile testers – Mind set- Applying principles and values –Adding value'
+],
+  'MODULE-2(Team logistics)':['Team Structure - Independent QA Teams - Integration of Testers into an Agile Project - Agile Project Teams - Physical Logistics',
+'Resources - Tester-Developer Ratio - Hiring an Agile Tester - Building a Team - Self-Organizing Team',
+'Involving Other Teams - Every Team Member Has Equal Value - Performance and Rewards'
+],
+  'MODULE-3(Transitioning Typical processes)':['Lightweight Processes - Metrics Defect Tracking – Tracking tools - Test Planning - Test Strategy vs Test Planning',
+'Traceability - Existing Processes and Models - Audits - Frameworks, Models, and Standards'
+],
+  'MODULE-4(Test Tool strategy)':['Tools to Elicit Examples and Requirements - Checklists - Mind Maps - Spreadsheets - Mock-Ups - Flow Diagrams',
+'Software-Based Tools - Tools for Automating Tests Based on Examples - Tools to Test below the GUI and API Level',
+'Tools for Testing through the GUI - Strategies for Writing Tests - Testability - Code Design and Test Design'
+],
+  'MODULE-5(Test That critique That product)':['Introduction to Quadrant 3 - Demonstrations - Scenario Testing - Exploratory Testing - Usability Testing',
+'Behind the GUI - Testing Documents and Documentation - User Documentation - Reports - Tools to Assist with Exploratory Testing'
+],
+
+ },
+
+
   //CSE SEM2
   'Calculus-T&T[CTT]': {
     'MODULE-1()': ['Rolle’s Theorem',
@@ -88,6 +232,7 @@ const moduleData: Record<string, Record<string, string[]>> = {
       'Transducers -Basic requirements of transducers, Passive transducers, Strain gauge',
       'Hall-Effect transducer, LVDT and Active transducers- Piezoelectric and Thermocouple',
       'Data acquisition system (overview and concept only)',],
+
     'MODULE-5()': ['Half wave and full wave rectifier, Zener diode, characteristics, application – Regulator, BJT—operation',
       'Introduction to Operational amplifier: Inverting and non-inverting amplifier',
       'Application—Adder, Comparator, Integrator and Differentiator',
@@ -99,12 +244,14 @@ const moduleData: Record<string, Record<string, string[]>> = {
     'MODULE-1()': ['Graph as models, Matrices and Isomorphism',
       'Decomposition and special graphs',
       'Paths, cycles and Trails, Vertex degree and counting',
-      'Directed graphs, vertex degrees, Eulerian digraph'],
+      'Directed graphs, vertex degrees, Eulerian digraph'
+    ],
+
     'MODULE-2()': ['Properties of trees, Distance in Trees and graphs',
       'Disjoint spanning trees, Spanning Trees and Enumeration',
       'Optimization and Trees, Maximum matching, Hall’s matching condition',
       'Min-Max Theorems, Independent sets and covers',
-      'Maximimum & Weighted bipartite matching, Tutte’s 1-factor theorem'
+      'Maximum & Weighted bipartite matching, Tutte’s 1-factor theorem'
     ],
     'MODULE-3()': ['Cuts and connectivity, connectivity, edge connectivity',
       'blocks, 2- connected graphs, connectivity of digraphs',
@@ -114,7 +261,7 @@ const moduleData: Record<string, Record<string, string[]>> = {
     ],
     'MODULE-4()': ['Vertex coloring and upper bounds: Definition and examples, Upper bounds',
       'Brook’s Theorem; Structure of K-chromatic Graphs: Graphs with large chromatic number',
-      'Extremal problems and Turan’s theorem, color-critical graphs',
+      'External problems and Turan’s theorem, color-critical graphs',
       'Enumerative aspects: Counting proper colorings, Chordal graphs',
       'Planar graphs: Embedding and Euler’s formula',
       'Characterization of planar graphs, Parameters of planarity'
@@ -136,7 +283,7 @@ const moduleData: Record<string, Record<string, string[]>> = {
     'MODULE-2()': ['Introduction-JDBC drivers, JDBC architecture',
       'JDBC classes and interfaces',
       'loading drivers, making a connection, execute SQL statement',
-      'SQL statements, retrieving result, scrollable and updatable resultset',
+      'SQL statements, retrieving result, scrollable and updatable result set',
     ],
     'MODULE-3()': ['Server-side Java, Advantages over applets',
       'servlet architecture, life cycle',
@@ -147,7 +294,7 @@ const moduleData: Record<string, Record<string, string[]>> = {
     ],
     'MODULE-4()': ['Processing Regular Expression, Pattern, Matcher, Syntax, Two pattern matching option.',
       'Remote Method Invocation: A Simple Client/Server Application Using RMI',
-      'Networking:Basics, java.net, InetAddress, TCP/IP client sockets, TCP/IP server sockets, Datagrams',
+      'Networking:Basics, java.net, InetAddress, TCP/IP client sockets, TCP/IP server sockets, Datagram',
     ],
     'MODULE-5()': ['Concurrent API packages',
       'Synchronization objects',
@@ -186,8 +333,32 @@ const moduleData: Record<string, Record<string, string[]>> = {
       'technologists and managers - enriching institutions and organizations',]
 
   },
-// CSE SEM 4
 
+  // CSE SEM 4
+  'Computer-Networks[CN]': {
+    'MODULE-1()': [''],
+    'MODULE-2()': [''],
+    'MODULE-3()': [''],
+    'MODULE-4()': [''],
+    'MODULE-5()': [''],
+  },
+  'Design-Analysis&Algorithms[DAA]': {
+    'MODULE-1()': [''],
+    'MODULE-2()': [''],
+    'MODULE-3()': [''],
+    'MODULE-4()': [''],
+    'MODULE-5()': [''],
+  },
+  'Software Engineering[SE]': {
+    'MODULE-1()': [''],
+    'MODULE-2()': [''],
+    'MODULE-3()': [''],
+    'MODULE-4()': [''],
+    'MODULE-5()': [''],
+  },
+  //Artificial-Intelligence[AI] is in DS SEM 6
+
+  //
 };
 
 const Sidebar2: React.FC<Sidebar2Props> = ({ subject, onTopicClick }) => {
