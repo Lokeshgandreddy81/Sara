@@ -3,6 +3,8 @@ import React from 'react';
 
 // Map each module to the PDF URL
 const moduleMap: Record<string, string> = {
+  //SCHOOL OF COMPUTING
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //CSE SEM 6
   'CSE-Module-1': 'Public/pdfs/School-of-Computing/CSE/SEM6/CSE/CSE-MODULE-1.pdf',
   'CSE-Module-2': 'Public/pdfs/School-of-Computing/CSE/SEM6/CSE/CSE-MODULE-2.pdf',
@@ -62,12 +64,26 @@ const moduleMap: Record<string, string> = {
   'CA-Module-4': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA4.pdf',
   'CA-Module-5': 'Public/pdfs/School-of-Computing/DS/SEM6/Computer-Architecture/CA5.pdf',
   // Deep learning[DL] is in AIML SEM 6
+  //Computer Organization&Architecture[COA] IS IN CYS SEM6
+
+  //IT SEM6
+  'STQA-MODULE-1': 'Public/pdfs/School-of-Computing/IT/SEM6/SOFTWARE TESTINGQA/Module1.pdf',
+  'STQA-MODULE-2': 'Public/pdfs/School-of-Computing/IT/SEM6/SOFTWARE TESTINGQA/Module2.pdf',
+  'STQA-MODULE-3': 'Public/pdfs/School-of-Computing/IT/SEM6/SOFTWARE TESTINGQA/Module3.pdf',
+  'STQA-MODULE-4': 'Public/pdfs/School-of-Computing/IT/SEM6/SOFTWARE TESTINGQA/Module4.pdf',
+  'STQA-MODULE-5': 'Public/pdfs/School-of-Computing/IT/SEM6/SOFTWARE TESTINGQA/Module5.pdf',
+  //Computer-Organization&Architecture[CAO] IS IN CYS SEM6
+  // Artificial-Intelligence [AI] IS IN DS SEM6
+  // Deep-Learning[DL] IS IN AIML SEM6
+  // Distributed-Systems[DS] IS IN DS SEM6
+
+
   //CY S SEM6
-  'COA-Module-1': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO1.pdf',
-  'COA-Module-2': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO2.pdf',
-  'COA-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO3.pdf',
-  'COA-Module-4': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO4.pdf',
-  'COA-Module-5': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/CAO5.pdf',
+  'COA-Module-1': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/COA1.pdf',
+  'COA-Module-2': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/COA2.pdf',
+  'COA-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/COA3.pdf',
+  'COA-Module-4': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/COA4.pdf',
+  'COA-Module-5': 'Public/pdfs/School-of-Computing/CYBER/SEM6/COMPUTER-ARCHITECTURE-AND-ORGANIZATION/COA5.pdf',
   'CNS-Module-1': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-1Notes.pdf',
   'CNS-Module-2': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-2Notes.pdf',
   'CNS-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/CRYPTOGRAPHY-AND-NETWORK/MODULE-3Notes.pdf',
@@ -83,6 +99,7 @@ const moduleMap: Record<string, string> = {
   'WAS-Module-3': 'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
   'WAS-Module-4': 'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
   'WAS-Module-5': 'Public/pdfs/School-of-Computing/CYBER/SEM6/WEB-APPLICATION-SECURITY/',
+  //------------------------------------------------------------------------------------------------------------------------------------------------
   //  CSE SEM2
   'BEEE-MODULE-1': 'Public/pdfs/School-of-Computing/CSE/SEM2/BEEE/BEEE-1.pdf',
   'BEEE-MODULE-2': 'Public/pdfs/School-of-Computing/CSE/SEM2/BEEE/BEEE-2.pdf',
@@ -110,7 +127,7 @@ const moduleMap: Record<string, string> = {
   'PHEV-MODULE-3': 'Public/pdfs/School-of-Computing/CSE/SEM2/PE-&-HV/PE & HV-Module-3.pdf',
   'PHEV-MODULE-4': 'Public/pdfs/School-of-Computing/CSE/SEM2/PE-&-HV/PE & HV-Module-4.pdf',
   'PHEV-MODULE-5': 'Public/pdfs/School-of-Computing/CSE/SEM2/PE-&-HV/PE & HV-Module-5.pdf',
-
+//----------------------------------------------------------------------------------------------------------------------------------------------
   //CSE SEM4
   'CN-MODULE-1': 'Public/pdfs/School-of-Computing/CSE/SEM4/CN/MODULE1.pdf',
   'CN-MODULE-2': 'Public/pdfs/School-of-Computing/CSE/SEM4/CN/MODULE2.pdf',

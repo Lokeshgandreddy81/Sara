@@ -7,37 +7,54 @@ interface SidebarProps {
 }
 
 const moduleData: Record<string, string[]> = {
+  //SCHOOL OF COMPUTING
   //CSE SEM6
   'Object-Oriented-Modeling-and-Design[OOMD]': ['OOMD-Module-1', 'OOMD-Module-2', 'OOMD-Module-3', 'OOMD-Module-4', 'OOMD-Module-5'],
   'Artificial-Neural-Networks[ANN]': ['ANN-Module-1', 'ANN-Module-2', 'ANN-Module-3', 'ANN-Module-4', 'ANN-Module-5'],
   'Mobile-Application-Development[MAD]': ['MAD-Module-1', 'MAD-Module-2', 'MAD-Module-3', 'MAD-Module-4', 'MAD-Module-5'],
   'Cyber-Security-Essentials[CSE]': ['CSE-Module-1', 'CSE-Module-2', 'CSE-Module-3', 'CSE-Module-4', 'CSE-Module-5'],
+
   //  AIML SEM6
   'Cloud-Computing[CC]': ['CC-Module-1', 'CC-Module-2', 'CC-Module-3', 'CC-Module-4', 'CC-Module-5'],
   'Compiler-Design[CD]': ['CD-Module-1', 'CD-Module-2', 'CD-Module-3', 'CD-Module-4', 'CD-Module-5'],
   'Deep-Learning[DL]': ['DL-Module-1', 'DL-Module-2', 'DL-Module-3', 'DL-Module-4', 'DL-Module-5'],
+
   // DS SEM6
   'Software-Testing&QS[STQS]': ['STQS-Module-1', 'STQS-Module-2', 'STQS-Module-3', 'STQS-Module-4', 'STQS-Module-5'],
   'Distributed-Systems[DS]': ['DiS-Module-1', 'DiS-Module-2', 'DiS-Module-3', 'DiS-Module-4', 'DiS-Module-5'],
-  'Computer-Architecture[CA]': ['CA-Module-1', 'CA-Module-2', 'CA-Module-3', 'CA-Module-4', 'CA-Module-5'],
   'Artificial-Intelligence[AI]': ['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5'],
   // Deep learning[DL] is in AIML SEM 6
-  //CY S SEM6
-  'Computer-Organization&Architecture[COA]': ['COA-Module-1', 'COA-Module-2', 'COA-Module-3', 'COA-Module-4', 'COA-Module-5'],
+  //Computer-Organization&Architecture[CAO] IS IN CYS SEM6
+
+  //IT SEM6
+
+'Software-Testing&QA[STQA]':['STQA-MODULE-1','STQA-MODULE-2','STQA-MODULE-3','STQA-MODULE-4','STQA-MODULE-5',],
+//Computer-Organization&Architecture[CAO] IS IN CYS SEM6
+// Artificial-Intelligence [AI] IS IN DS SEM6
+// Deep-Learning[DL] IS IN AIML SEM6
+// Distributed-Systems[DS] IS IN DS SEM6
+  
+
+
+  //CYS SEM6
+  'Computer-Architecture&Organization[CAO]': ['CAO-Module-1', 'CAO-Module-2', 'CAO-Module-3', 'CAO-Module-4', 'CAO-Module-5'],
   'Cryptography-and-Network-Security[CNS]': ['CNS-Module-1', 'CNS-Module-2', 'CNS-Module-3', 'CNS-Module-4', 'CNS-Module-5'],
   'Ethical-Hacking[EH]': ['EH-Module-1', 'EH-Module-2', 'EH-Module-3', 'EH-Module-4', 'EH-Module-5'],
   'Web-Application-Security[WAS]': ['WAS-Module-1', 'WAS-Module-2', 'WAS-Module-3', 'WAS-Module-4', 'WAS-Module-5'],
+  
+  //CSE SEM4
+  'Computer-Networks[CN]': ['CN-MODULE-1','CN-MODULE-2','CN-MODULE-3','CN-MODULE-4','CN-MODULE-5'],
+  'Design-Analysis&Algorithms[DAA]': ['DAA-MODULE-1','DAA-MODULE-2','DAA-MODULE-3','DAA-MODULE-4','DAA-MODULE-5'],
+  'Software Engineering[SE]': ['SE-MODULE-1','SE-MODULE-2','SE-MODULE-3','SE-MODULE-4','SE-MODULE-5'],
+  //Artificial-Intelligence[AI] is in DS SEM 6
+
+
   //CSE SEM2
   'Basic-EEE[BEEE]': ['BEEE-MODULE-1', 'BEEE-MODULE-2', 'BEEE-MODULE-3', 'BEEE-MODULE-4', 'BEEE-MODULE-5'],
   'Calculus-T&T[CTT]': ['CTT-MODULE-1', 'CTT-MODULE-2', 'CTT-MODULE-3', 'CTT-MODULE-4', 'CTT-MODULE-5'],
   'Discrete-Math-Structures[DMS]': ['DMS-MODULE-1', 'DMS-MODULE-2', 'DMS-MODULE-3', 'DMS-MODULE-4', 'DMS-MODULE-5'],
   'JAVA[OOPJ]': ['OOPJ-MODULE-1', 'OOPJ-MODULE-2', 'OOPJ-MODULE-3', 'OOPJ-MODULE-4', 'OOPJ-MODULE-5'],
   'Professional-Ethics&HV[PEHV]': ['PHEV-MODULE-1', 'PHEV-MODULE-2', 'PHEV-MODULE-3', 'PHEV-MODULE-4', 'PHEV-MODULE-5'],
-  //CSE SEM4
-  'Computer-Networks[CN]': ['CN-MODULE-1','CN-MODULE-2','CN-MODULE-3','CN-MODULE-4','CN-MODULE-5'],
-  'Design-Analysis&Algorithms[DAA]': ['DAA-MODULE-1','DAA-MODULE-2','DAA-MODULE-3','DAA-MODULE-4','DAA-MODULE-5'],
-  'Software Engineering[SE]': ['SE-MODULE-1','SE-MODULE-2','SE-MODULE-3','SE-MODULE-4','SE-MODULE-5'],
-  //Artificial-Intelligence[AI] is in DS SEM 6
 
 };
 
