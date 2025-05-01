@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import ReactMarkdown from "react-markdown";
 
 interface GeminiProps {
   topic: string;
@@ -51,10 +52,10 @@ const TopicExplainer: React.FC<GeminiProps> = ({ topic, module, subject }) => {
 
   const formatOutput = (text: string) => {
     const lines = text.split('\n').filter(line => line.trim() !== '');
-  
+
     return lines.map((line, index) => {
       const cleanLine = line.replace(/^\*+/, '').replace(/^\-+/, '').trim(); // Remove * or - from beginning
-  
+
       if (line.startsWith('*')) {
         // Optional: If you still want big headings when line started with *, keep this
         return (
@@ -79,7 +80,7 @@ const TopicExplainer: React.FC<GeminiProps> = ({ topic, module, subject }) => {
       }
     });
   };
-  
+
 
   return (
     <div className="min-h-screen max-w-4xl mx-auto p-6">
@@ -87,29 +88,29 @@ const TopicExplainer: React.FC<GeminiProps> = ({ topic, module, subject }) => {
         <button
           onClick={() => setContentSize('short')}
           disabled={loading} // 👈 Disable when loading
-          className={`px-4 py-2 rounded-md font-semibold transition ${
-            contentSize === 'short' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
-          } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // 👈 Button disabled style
+          className={`px-4 py-2 rounded-md font-semibold transition ${contentSize === 'short' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
+            } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // 👈 Button disabled style
         >
-          Short
+          Summary
         </button>
 
         <button
           onClick={() => setContentSize('medium')}
           disabled={loading} // 👈 Disable when loading
-          className={`px-4 py-2 rounded-md font-semibold transition ${
-            contentSize === 'medium' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
-          } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // 👈 Button disabled style
+          className={`px-4 py-2 rounded-md font-semibold transition ${contentSize === 'medium' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
+            } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // 👈 Button disabled style
         >
-          Medium
+          Explanation
         </button>
       </div>
 
       {loading && <p className="text-blue-500">Loading from SARA AI...</p>}
       {error && <p className="text-red-500">{error}</p>}
       {output && (
-        <div className="prose dark:prose-invert max-w-none text-black dark:text-white">
-          {formatOutput(output)}
+        <div className="prose dark:prose-invert max-w-none text-black dark:text-gray-300">
+          <ReactMarkdown>
+            {(output)}
+          </ReactMarkdown>
         </div>
       )}
     </div>

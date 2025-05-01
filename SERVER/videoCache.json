@@ -1,0 +1,1343 @@
+{
+  "Fundamentals of Neural Learning - Classification and regression, Pre-processing and feature extraction": [
+    {
+      "title": "Introduction to Neural Networks with Example in HINDI | Artificial Intelligence",
+      "videoId": "EYeF2e2IKEo",
+      "thumbnail": "https://i.ytimg.com/vi/EYeF2e2IKEo/mqdefault.jpg",
+      "channel": "Gate Smashers"
+    },
+    {
+      "title": "What is Data Preprocessing &amp; Data Cleaning | Various Techniques with Example",
+      "videoId": "tDu_KIlXaB0",
+      "thumbnail": "https://i.ytimg.com/vi/tDu_KIlXaB0/mqdefault.jpg",
+      "channel": "Gate Smashers"
+    },
+    {
+      "title": "All Machine Learning Models Explained in 5 Minutes | Types of ML Models Basics",
+      "videoId": "yN7ypxC7838",
+      "thumbnail": "https://i.ytimg.com/vi/yN7ypxC7838/mqdefault.jpg",
+      "channel": "Learn with Whiteboard"
+    },
+    {
+      "title": "Feature Extraction in Data preprocessing | Machine Learning",
+      "videoId": "lzWcVVCXMfo",
+      "thumbnail": "https://i.ytimg.com/vi/lzWcVVCXMfo/mqdefault.jpg",
+      "channel": "Gate Smashers"
+    },
+    {
+      "title": "Simple explanation of convolutional neural network | Deep Learning Tutorial 23 (Tensorflow &amp; Python)",
+      "videoId": "zfiSAzpy9NM",
+      "thumbnail": "https://i.ytimg.com/vi/zfiSAzpy9NM/mqdefault.jpg",
+      "channel": "codebasics"
+    },
+    {
+      "title": "Lec-3: Introduction to Regression with Real Life Examples",
+      "videoId": "cHT-qLnRm0E",
+      "thumbnail": "https://i.ytimg.com/vi/cHT-qLnRm0E/mqdefault.jpg",
+      "channel": "Gate Smashers"
+    },
+    {
+      "title": "All Machine Learning algorithms explained in 17 min",
+      "videoId": "E0Hmnixke2g",
+      "thumbnail": "https://i.ytimg.com/vi/E0Hmnixke2g/mqdefault.jpg",
+      "channel": "Infinite Codes"
+    },
+    {
+      "title": "Basics Of Principal Component Analysis Part-1 Explained in Hindi ll Machine Learning Course",
+      "videoId": "83x5X66uWK0",
+      "thumbnail": "https://i.ytimg.com/vi/83x5X66uWK0/mqdefault.jpg",
+      "channel": "5 Minutes Engineering"
+    },
+    {
+      "title": "What are Convolutional Neural Networks (CNNs)?",
+      "videoId": "QzY57FaENXg",
+      "thumbnail": "https://i.ytimg.com/vi/QzY57FaENXg/mqdefault.jpg",
+      "channel": "IBM Technology"
+    },
+    {
+      "title": "3.2 Practical Aspects of Neural Network Training [Feature Preprocessing, Initialization, Tuning]",
+      "videoId": "dnoHyUji29A",
+      "thumbnail": "https://i.ytimg.com/vi/dnoHyUji29A/mqdefault.jpg",
+      "channel": "Charu Aggarwal"
+    }
+  ],
+  "The curse of dimensionality, Polynomial curve fitting, Model complexity, Multivariate non-linear functions": [
+    {
+      "title": "This chapter closes now, for the next one to begin. 🥂✨.#iitbombay #convocation",
+      "videoId": "coLatCMnXbw",
+      "thumbnail": "https://i.ytimg.com/vi/coLatCMnXbw/mqdefault.jpg",
+      "channel": "Anjali Sohal"
+    },
+    {
+      "title": "Solving Non-linear Multivariate Equations",
+      "videoId": "q31uQTeqTHk",
+      "thumbnail": "https://i.ytimg.com/vi/q31uQTeqTHk/mqdefault.jpg",
+      "channel": "Michael Griffis"
+    },
+    {
+      "title": "Linear Regression Explained in Hindi ll Machine Learning Course",
+      "videoId": "lzGKRSvs5HM",
+      "thumbnail": "https://i.ytimg.com/vi/lzGKRSvs5HM/mqdefault.jpg",
+      "channel": "5 Minutes Engineering"
+    },
+    {
+      "title": "Multilevel weighted least squares polynomial approximation – Sören Wolfers, KAUST",
+      "videoId": "JOo-GabaiRY",
+      "thumbnail": "https://i.ytimg.com/vi/JOo-GabaiRY/mqdefault.jpg",
+      "channel": "The Alan Turing Institute"
+    },
+    {
+      "title": "Lecture 3, Pre-Lecture Video 2: Coefficients and Overfitting",
+      "videoId": "VMKs6WHbr0E",
+      "thumbnail": "https://i.ytimg.com/vi/VMKs6WHbr0E/mqdefault.jpg",
+      "channel": "Hunter Schafer"
+    },
+    {
+      "title": "Lecture 4. Robbins-Monro Algorithm, Curse of Dimensionality, Conditional Gaussian Distributions",
+      "videoId": "Ioz7H9ofSng",
+      "thumbnail": "https://i.ytimg.com/vi/Ioz7H9ofSng/mqdefault.jpg",
+      "channel": "Scientific Computing and Artificial Intelligence"
+    },
+    {
+      "title": "GLM vs. GAM - Generalized Additive Models",
+      "videoId": "wVGvhT151lg",
+      "thumbnail": "https://i.ytimg.com/vi/wVGvhT151lg/mqdefault.jpg",
+      "channel": "Meerkat Statistics"
+    },
+    {
+      "title": "PR Module 2 Part1",
+      "videoId": "nh7AqoQhuEQ",
+      "thumbnail": "https://i.ytimg.com/vi/nh7AqoQhuEQ/mqdefault.jpg",
+      "channel": "Rajagiri School of Engineering & Technology "
+    },
+    {
+      "title": "Optimal sampling in weighted least-squares methods: Application to high-dimensional approximation",
+      "videoId": "GSzkxD64Cic",
+      "thumbnail": "https://i.ytimg.com/vi/GSzkxD64Cic/mqdefault.jpg",
+      "channel": "The Alan Turing Institute"
+    },
+    {
+      "title": "Dr. Ben Adcock | Optimal approximation of infinite-dimensional, Banach-valued, holomorphic...",
+      "videoId": "y8SpG8eD7z4",
+      "thumbnail": "https://i.ytimg.com/vi/y8SpG8eD7z4/mqdefault.jpg",
+      "channel": "INI Seminar Room 1"
+    }
+  ],
+  "Bayes theorem, Decision boundaries, Minimizing risk": [
+    {
+      "title": "Risk Minimization (1/4): Introduction- Revisit Bayes Rule/Classifier",
+      "videoId": "auN5qUD2Ae0",
+      "thumbnail": "https://i.ytimg.com/vi/auN5qUD2Ae0/mqdefault.jpg",
+      "channel": "Project Rhea"
+    },
+    {
+      "title": "Bayesian Decision Theory: Error Bounds 01: Upper Limit",
+      "videoId": "pFmM69OBLak",
+      "thumbnail": "https://i.ytimg.com/vi/pFmM69OBLak/mqdefault.jpg",
+      "channel": "Anish Turlapaty"
+    },
+    {
+      "title": "Risk Minimization (2/4): The concept of Risk/Cost Minimization",
+      "videoId": "6AW_Ofv1PvY",
+      "thumbnail": "https://i.ytimg.com/vi/6AW_Ofv1PvY/mqdefault.jpg",
+      "channel": "Project Rhea"
+    },
+    {
+      "title": "ML-3-Bayesian Decision Theory (Lecture)",
+      "videoId": "fz_EQYeKje4",
+      "thumbnail": "https://i.ytimg.com/vi/fz_EQYeKje4/mqdefault.jpg",
+      "channel": "SHALA 2020"
+    },
+    {
+      "title": "Lec 6: Bayesian Decision Theory",
+      "videoId": "5I7pZFNaiRw",
+      "thumbnail": "https://i.ytimg.com/vi/5I7pZFNaiRw/mqdefault.jpg",
+      "channel": "NPTEL IIT Guwahati"
+    },
+    {
+      "title": "Bayes function example  with prior parameter changing",
+      "videoId": "A9JuZlNKCCE",
+      "thumbnail": "https://i.ytimg.com/vi/A9JuZlNKCCE/mqdefault.jpg",
+      "channel": "Paul bjohny (cpisolution)"
+    },
+    {
+      "title": "Bayes Decision Theory - Classifier and Discriminant Function",
+      "videoId": "Bpat0WsCLSg",
+      "thumbnail": "https://i.ytimg.com/vi/Bpat0WsCLSg/mqdefault.jpg",
+      "channel": "Masayu Leylia Khodra"
+    },
+    {
+      "title": "Bayesian Decision Theory: Decision Rules 01: Simple Loss vs MAP",
+      "videoId": "Dgl1trNEpGY",
+      "thumbnail": "https://i.ytimg.com/vi/Dgl1trNEpGY/mqdefault.jpg",
+      "channel": "Anish Turlapaty"
+    },
+    {
+      "title": "2.2 Bayesian decision theory",
+      "videoId": "UwZXDdfyiOE",
+      "thumbnail": "https://i.ytimg.com/vi/UwZXDdfyiOE/mqdefault.jpg",
+      "channel": "Intro à l'apprentissage automatique - ULaval"
+    },
+    {
+      "title": "Bayes Decision Theory (Contd.)",
+      "videoId": "gVl3F-Lg_AM",
+      "thumbnail": "https://i.ytimg.com/vi/gVl3F-Lg_AM/mqdefault.jpg",
+      "channel": "CH 19: IIT BOMBAY 03: Electrical Engineering"
+    }
+  ],
+  "Radial Basis Functions - Radial basis function networks, Network training": [
+    {
+      "title": "Radial Basis Function RBF | Gaussian RBF Multiquadratic RBF Artificial Neural Network Mahesh Huddar",
+      "videoId": "rF4m6g46p-g",
+      "thumbnail": "https://i.ytimg.com/vi/rF4m6g46p-g/mqdefault.jpg",
+      "channel": "Mahesh Huddar"
+    },
+    {
+      "title": "#50 Radial Basis Functions with Example  |ML|",
+      "videoId": "pAJSisdFpeI",
+      "thumbnail": "https://i.ytimg.com/vi/pAJSisdFpeI/mqdefault.jpg",
+      "channel": "Trouble- Free"
+    },
+    {
+      "title": "RBF Networks",
+      "videoId": "1Cw45yNm6VA",
+      "thumbnail": "https://i.ytimg.com/vi/1Cw45yNm6VA/mqdefault.jpg",
+      "channel": "macheads101"
+    },
+    {
+      "title": "Radial Basis Function Neural Network Solved Example | XOR Function Gaussian RBF by Mahesh Huddar",
+      "videoId": "iPLNYoxTDEA",
+      "thumbnail": "https://i.ytimg.com/vi/iPLNYoxTDEA/mqdefault.jpg",
+      "channel": "Mahesh Huddar"
+    },
+    {
+      "title": "Module 1 lecture 6 Radial Basis function networks",
+      "videoId": "aYREcqjQXwc",
+      "thumbnail": "https://i.ytimg.com/vi/aYREcqjQXwc/mqdefault.jpg",
+      "channel": "nptelhrd"
+    },
+    {
+      "title": "Mod-01 Lec-27 RBF Neural Network",
+      "videoId": "KiVJkqac82Q",
+      "thumbnail": "https://i.ytimg.com/vi/KiVJkqac82Q/mqdefault.jpg",
+      "channel": "nptelhrd"
+    },
+    {
+      "title": "5.1  Radial Basis Function Networks",
+      "videoId": "Wzu2xwK-WnE",
+      "thumbnail": "https://i.ytimg.com/vi/Wzu2xwK-WnE/mqdefault.jpg",
+      "channel": "Charu Aggarwal"
+    },
+    {
+      "title": "Neural Network - Radial Basis Function Networks",
+      "videoId": "j6lhPMOPgsQ",
+      "thumbnail": "https://i.ytimg.com/vi/j6lhPMOPgsQ/mqdefault.jpg",
+      "channel": "Atta Kodalla Vantillu"
+    },
+    {
+      "title": "#12 Introduction to Radial basis function(RBF)",
+      "videoId": "MwAG5uEp32E",
+      "thumbnail": "https://i.ytimg.com/vi/MwAG5uEp32E/mqdefault.jpg",
+      "channel": "Aamer's Simplified Learning Studio"
+    },
+    {
+      "title": "Lecture 3.6 | Radial basis function network | Neural Network in machine learning | #aktu #mlt #ml",
+      "videoId": "5tzuJ1e5MFQ",
+      "thumbnail": "https://i.ytimg.com/vi/5tzuJ1e5MFQ/mqdefault.jpg",
+      "channel": "Tech Master Edu"
+    }
+  ],
+  "Gradient based Strategies: Learning Rate Decay, Momentum-Based Learning, ParameterSpecific Learning Rates": [
+    {
+      "title": "Tutorial 15- Adagrad Optimizers in Neural Network",
+      "videoId": "GSmW59dM0-o",
+      "thumbnail": "https://i.ytimg.com/vi/GSmW59dM0-o/mqdefault.jpg",
+      "channel": "Krish Naik"
+    },
+    {
+      "title": "SIAM@Purdue: TensorFlow Workshop 2018 - Understanding Neural Networks (Part 1)",
+      "videoId": "5Rwhj1AIbLM",
+      "thumbnail": "https://i.ytimg.com/vi/5Rwhj1AIbLM/mqdefault.jpg",
+      "channel": "Nick Winovich"
+    }
+  ],
+  "Cliffs and Higher-Order Instability, Gradient Clipping": [
+    {
+      "title": "The Missing Signal",
+      "videoId": "DfJeaa--xO0",
+      "thumbnail": "https://i.ytimg.com/vi/DfJeaa--xO0/mqdefault.jpg",
+      "channel": "Simons Institute"
+    }
+  ],
+  "Second-Order Derivatives, Polyak Averaging, Local and Spurious Minima": [
+    {
+      "title": "Dealing with spurious minima 51 Machine Learning",
+      "videoId": "aw_Wdh4dC80",
+      "thumbnail": "https://i.ytimg.com/vi/aw_Wdh4dC80/mqdefault.jpg",
+      "channel": "Professor tutorials"
+    }
+  ],
+  "Linear discriminant functions, Linear separability, Generalized linear discriminants, Leastsquares techniques": [
+    {
+      "title": "Linear Discriminant Analysis | LDA | Fisher Discriminant Analysis | FDA Explained by Mahesh Huddar",
+      "videoId": "wvz_aJA_mfs",
+      "thumbnail": "https://i.ytimg.com/vi/wvz_aJA_mfs/mqdefault.jpg",
+      "channel": "Mahesh Huddar"
+    },
+    {
+      "title": "StatQuest: Linear Discriminant Analysis (LDA) clearly explained.",
+      "videoId": "azXCzI57Yfc",
+      "thumbnail": "https://i.ytimg.com/vi/azXCzI57Yfc/mqdefault.jpg",
+      "channel": "StatQuest with Josh Starmer"
+    },
+    {
+      "title": "Lecture 12: Linear Models of Classification: Discriminant Functions",
+      "videoId": "jC2QMo-O5sk",
+      "thumbnail": "https://i.ytimg.com/vi/jC2QMo-O5sk/mqdefault.jpg",
+      "channel": "Scientific Computing and Artificial Intelligence"
+    },
+    {
+      "title": "08 Linear Classification, pt 1/3   Linear Discriminant Functions",
+      "videoId": "EnIjJlZM_bk",
+      "thumbnail": "https://i.ytimg.com/vi/EnIjJlZM_bk/mqdefault.jpg",
+      "channel": "Patrick van der Smagt"
+    },
+    {
+      "title": "Mod-06 Lec-13 Linear Discriminant Functions; Perceptron -- Learning Algorithm and convergence proof",
+      "videoId": "JHxK4i4QHKU",
+      "thumbnail": "https://i.ytimg.com/vi/JHxK4i4QHKU/mqdefault.jpg",
+      "channel": "nptelhrd"
+    },
+    {
+      "title": "Linear Models of Classification",
+      "videoId": "GWF1MBtc6F8",
+      "thumbnail": "https://i.ytimg.com/vi/GWF1MBtc6F8/mqdefault.jpg",
+      "channel": "Scientific Computing and Artificial Intelligence"
+    },
+    {
+      "title": "Machine Learning | Linear Discriminant Analysis",
+      "videoId": "hgajbDa325E",
+      "thumbnail": "https://i.ytimg.com/vi/hgajbDa325E/mqdefault.jpg",
+      "channel": "RANJI RAJ"
+    },
+    {
+      "title": "Linear Models for Claassification",
+      "videoId": "GnDaW8tQu7U",
+      "thumbnail": "https://i.ytimg.com/vi/GnDaW8tQu7U/mqdefault.jpg",
+      "channel": "NPTEL-NOC IITM"
+    },
+    {
+      "title": "08 Linear Classification, pt 2/3   Linear Discriminant Models",
+      "videoId": "YrousOY3o4o",
+      "thumbnail": "https://i.ytimg.com/vi/YrousOY3o4o/mqdefault.jpg",
+      "channel": "Patrick van der Smagt"
+    },
+    {
+      "title": "5.3 Least squares method",
+      "videoId": "tCC6bN9pVmE",
+      "thumbnail": "https://i.ytimg.com/vi/tCC6bN9pVmE/mqdefault.jpg",
+      "channel": "Intro à l'apprentissage automatique - ULaval"
+    }
+  ],
+  "Modelling conditional distributions, Estimating posterior probabilities": [
+    {
+      "title": "Prior And Posterior - Intro to Statistics",
+      "videoId": "o2Tpws5C2Eg",
+      "thumbnail": "https://i.ytimg.com/vi/o2Tpws5C2Eg/mqdefault.jpg",
+      "channel": "Udacity"
+    },
+    {
+      "title": "Intro to Conditional Probability",
+      "videoId": "ibINrxJLvlM",
+      "thumbnail": "https://i.ytimg.com/vi/ibINrxJLvlM/mqdefault.jpg",
+      "channel": "Dr. Trefor Bazett"
+    },
+    {
+      "title": "Bayes&#39; Theorem - The Simplest Case",
+      "videoId": "XQoLVl31ZfQ",
+      "thumbnail": "https://i.ytimg.com/vi/XQoLVl31ZfQ/mqdefault.jpg",
+      "channel": "Dr. Trefor Bazett"
+    },
+    {
+      "title": "Conditional Probability with Easiest Explanation &amp; Example",
+      "videoId": "dQ6RL8qe320",
+      "thumbnail": "https://i.ytimg.com/vi/dQ6RL8qe320/mqdefault.jpg",
+      "channel": "Gate Smashers"
+    },
+    {
+      "title": "Conditional &amp; Marginal Likelihood",
+      "videoId": "TNtaKtPMgDs",
+      "thumbnail": "https://i.ytimg.com/vi/TNtaKtPMgDs/mqdefault.jpg",
+      "channel": "Vidya-mitra"
+    },
+    {
+      "title": "Bayes&#39; Theorem EXPLAINED with Examples",
+      "videoId": "cqTwHnNbc8g",
+      "thumbnail": "https://i.ytimg.com/vi/cqTwHnNbc8g/mqdefault.jpg",
+      "channel": "Ace Tutors"
+    },
+    {
+      "title": "19. Bayesian Conditional Probability Models",
+      "videoId": "Mo4p2B37LwY",
+      "thumbnail": "https://i.ytimg.com/vi/Mo4p2B37LwY/mqdefault.jpg",
+      "channel": "Inside Bloomberg"
+    },
+    {
+      "title": "Introduction to Bayesian statistics, part 1: The basic concepts",
+      "videoId": "0F0QoMCSKJ4",
+      "thumbnail": "https://i.ytimg.com/vi/0F0QoMCSKJ4/mqdefault.jpg",
+      "channel": "StataCorp LLC"
+    },
+    {
+      "title": "Prior and Posterior Distributions",
+      "videoId": "IdrEHo6J-6s",
+      "thumbnail": "https://i.ytimg.com/vi/IdrEHo6J-6s/mqdefault.jpg",
+      "channel": "statisticsmatt"
+    },
+    {
+      "title": "Bayesian Statistics Explained #BSI #brokenscience",
+      "videoId": "ij6og9C1cZ4",
+      "thumbnail": "https://i.ytimg.com/vi/ij6og9C1cZ4/mqdefault.jpg",
+      "channel": "The Broken Science Initiative"
+    }
+  ],
+  "Tunneling techniques: HTTP, DNS, ICMP, Intermediaries": [
+    {
+      "title": "IPv6, DNSSEC &amp; HTTP/2 Development and Deployment, by Martin Levy, Network Strategy, Cloudflare",
+      "videoId": "29bNeA2mvXQ",
+      "thumbnail": "https://i.ytimg.com/vi/29bNeA2mvXQ/mqdefault.jpg",
+      "channel": "CiscoFrance"
+    },
+    {
+      "title": "CCT 150: Unraveling Multi-Layer Protocols and Data Encapsulation for the CISSP (Domain 4.1.4&amp;4.1.5)",
+      "videoId": "oYnoPprDvLU",
+      "thumbnail": "https://i.ytimg.com/vi/oYnoPprDvLU/mqdefault.jpg",
+      "channel": "CISSP Cyber Training - Shon Gerber"
+    },
+    {
+      "title": "70+ Cloud &amp; Network Security Questions Asked in Accenture #accenture_exam_questions #fresherhiring",
+      "videoId": "Phl6o5ZicRU",
+      "thumbnail": "https://i.ytimg.com/vi/Phl6o5ZicRU/mqdefault.jpg",
+      "channel": " Techie CodeBuddy"
+    },
+    {
+      "title": "Computer Networks Viva Question and Answer | Most important questions of Computer networks.",
+      "videoId": "yvtR-ma6kQE",
+      "thumbnail": "https://i.ytimg.com/vi/yvtR-ma6kQE/mqdefault.jpg",
+      "channel": "Tech Student Support"
+    },
+    {
+      "title": "Microsoft 98 366 Networking Fundamentals",
+      "videoId": "dq642-oN-98",
+      "thumbnail": "https://i.ytimg.com/vi/dq642-oN-98/mqdefault.jpg",
+      "channel": "Certdemy"
+    },
+    {
+      "title": "ITS 164 - Network Fund.  Chapter 15",
+      "videoId": "ao0sNx8W-3M",
+      "thumbnail": "https://i.ytimg.com/vi/ao0sNx8W-3M/mqdefault.jpg",
+      "channel": "CVSimpson"
+    },
+    {
+      "title": "CISSP Domain 4 - Communication and Network Security (CISSP IT-Tutorial)",
+      "videoId": "_mcPUaN3F8o",
+      "thumbnail": "https://i.ytimg.com/vi/_mcPUaN3F8o/mqdefault.jpg",
+      "channel": "sumon infosec"
+    },
+    {
+      "title": "Network and Server Security Essentials",
+      "videoId": "3S6Vo6Ygl9w",
+      "thumbnail": "https://i.ytimg.com/vi/3S6Vo6Ygl9w/mqdefault.jpg",
+      "channel": "SJSU Infosec"
+    },
+    {
+      "title": "Network Programming -Unit I (7th Sem CSE)",
+      "videoId": "DYedDOnimJQ",
+      "thumbnail": "https://i.ytimg.com/vi/DYedDOnimJQ/mqdefault.jpg",
+      "channel": "Mahamrityunjay"
+    },
+    {
+      "title": "Proxy Server in Hindi - प्रॉक्सी सर्वर ट्यूटोरियल - Video 1",
+      "videoId": "dW9_g42gNNU",
+      "thumbnail": "https://i.ytimg.com/vi/dW9_g42gNNU/mqdefault.jpg",
+      "channel": "JagvinderThind"
+    }
+  ],
+  "Threat infrastructure: Botnets, Fast Flux, Advanced Fast Flux.": [
+    {
+      "title": "What Is Botnet? | What Is Botnet And How It Works? | Botnet Explained | Botnet Tutorial |Simplilearn",
+      "videoId": "NbvBQRXL7WQ",
+      "thumbnail": "https://i.ytimg.com/vi/NbvBQRXL7WQ/mqdefault.jpg",
+      "channel": "Simplilearn"
+    },
+    {
+      "title": "How to Block botnets, malware and APT&#39;s at DNS level",
+      "videoId": "GKkJ5JRxIUs",
+      "thumbnail": "https://i.ytimg.com/vi/GKkJ5JRxIUs/mqdefault.jpg",
+      "channel": "GreatRoads"
+    },
+    {
+      "title": "Phishing Explained In 6 Minutes | What Is A Phishing Attack? | Phishing Attack | Simplilearn",
+      "videoId": "XBkzBrXlle0",
+      "thumbnail": "https://i.ytimg.com/vi/XBkzBrXlle0/mqdefault.jpg",
+      "channel": "Simplilearn"
+    },
+    {
+      "title": "Harnessing the power of Big Data to predict unknown malware, botnet and phishing threats",
+      "videoId": "wd58EISojh8",
+      "thumbnail": "https://i.ytimg.com/vi/wd58EISojh8/mqdefault.jpg",
+      "channel": "Cisco Umbrella"
+    },
+    {
+      "title": "Network Security Tutorial Course for Beginners",
+      "videoId": "rkXg-aH6ZfA",
+      "thumbnail": "https://i.ytimg.com/vi/rkXg-aH6ZfA/mqdefault.jpg",
+      "channel": "Creative Common lisence"
+    },
+    {
+      "title": "Guarding Your Network Against Security Breaches and Botnets",
+      "videoId": "8AX5QonJkrw",
+      "thumbnail": "https://i.ytimg.com/vi/8AX5QonJkrw/mqdefault.jpg",
+      "channel": "Cloudmark"
+    },
+    {
+      "title": "24C3: Cybercrime 2.0",
+      "videoId": "_IHr9HvoEgM",
+      "thumbnail": "https://i.ytimg.com/vi/_IHr9HvoEgM/mqdefault.jpg",
+      "channel": "Christiaan008"
+    },
+    {
+      "title": "Detecting Advanced Threats and Malware with SIEM Webcast",
+      "videoId": "Bm121MjFaA0",
+      "thumbnail": "https://i.ytimg.com/vi/Bm121MjFaA0/mqdefault.jpg",
+      "channel": "NitroSecurity"
+    },
+    {
+      "title": "What&#39;s New in Arbor&#39;s Peakflow 7.0",
+      "videoId": "eavZL0yxfFQ",
+      "thumbnail": "https://i.ytimg.com/vi/eavZL0yxfFQ/mqdefault.jpg",
+      "channel": "ArborNetworks"
+    },
+    {
+      "title": "18 Cyber Attack Mitigation Christopher Elisan",
+      "videoId": "G9WNNMODiAY",
+      "thumbnail": "https://i.ytimg.com/vi/G9WNNMODiAY/mqdefault.jpg",
+      "channel": "Adrian Crenshaw"
+    }
+  ],
+  "Network Security Concepts: Information assurance fundamentals, Basic cryptography,Symmetric encryption, Public key encryption": [
+    {
+      "title": "What is Cryptography | Cryptography Explained | Cryptography Basics | Intellipaat",
+      "videoId": "GQvu49c0ZZc",
+      "thumbnail": "https://i.ytimg.com/vi/GQvu49c0ZZc/mqdefault.jpg",
+      "channel": "Intellipaat"
+    },
+    {
+      "title": "Caesar Cipher (Part 1)",
+      "videoId": "JtbKh_12ctg",
+      "thumbnail": "https://i.ytimg.com/vi/JtbKh_12ctg/mqdefault.jpg",
+      "channel": "Neso Academy"
+    },
+    {
+      "title": "Module 7 Cryptography",
+      "videoId": "glGPfvm8rJ8",
+      "thumbnail": "https://i.ytimg.com/vi/glGPfvm8rJ8/mqdefault.jpg",
+      "channel": "Dr. Asadi Srinivasulu"
+    },
+    {
+      "title": "Cryptography Basics: Intro to Cybersecurity",
+      "videoId": "2oXKjPwBSUk",
+      "thumbnail": "https://i.ytimg.com/vi/2oXKjPwBSUk/mqdefault.jpg",
+      "channel": "WhiteboardDoodles"
+    },
+    {
+      "title": "BT502-Information Assurance &amp; Security (TP) | Cryptography (Caesar Cipher)",
+      "videoId": "XTqFdoRNfXM",
+      "thumbnail": "https://i.ytimg.com/vi/XTqFdoRNfXM/mqdefault.jpg",
+      "channel": "jessa mendoza"
+    },
+    {
+      "title": "Overview of Cryptography topics (Symmetric ciphers, hash functions, Asymmetric encryption, PRGs)",
+      "videoId": "vB70IjJqByE",
+      "thumbnail": "https://i.ytimg.com/vi/vB70IjJqByE/mqdefault.jpg",
+      "channel": "Ricardo Calix"
+    },
+    {
+      "title": "concept of cryptography, public key cryptography, and digital signature",
+      "videoId": "Xn4-P6RCigc",
+      "thumbnail": "https://i.ytimg.com/vi/Xn4-P6RCigc/mqdefault.jpg",
+      "channel": "Premagyan IT solution"
+    },
+    {
+      "title": "Key fundamentals principles of security",
+      "videoId": "bVJDVxtcmT0",
+      "thumbnail": "https://i.ytimg.com/vi/bVJDVxtcmT0/mqdefault.jpg",
+      "channel": "SkillGate"
+    },
+    {
+      "title": "INS: Unit-1 Introduction to Information and Network Security",
+      "videoId": "6vdJjYZpqcE",
+      "thumbnail": "https://i.ytimg.com/vi/6vdJjYZpqcE/mqdefault.jpg",
+      "channel": "Twinkal Patel"
+    },
+    {
+      "title": "Encryption and Security Explanation",
+      "videoId": "Z8p0_huj9hQ",
+      "thumbnail": "https://i.ytimg.com/vi/Z8p0_huj9hQ/mqdefault.jpg",
+      "channel": "Mohamed Radwan - DevOps"
+    }
+  ],
+  " The Domain Name System(DNS), Firewalls,Virtualization, Radio-Frequency Identification.": [
+    {
+      "title": "Security + CE into the Domains &amp; Concept of Network Security",
+      "videoId": "_P_LI7ZULMM",
+      "thumbnail": "https://i.ytimg.com/vi/_P_LI7ZULMM/mqdefault.jpg",
+      "channel": "Right IT Tools for Right Job by Noor Ali"
+    },
+    {
+      "title": "Master the Basics of Computer Networking in 25 MINS! CCNA Basics, Computer Networking, High Quality",
+      "videoId": "DYgRqIeuwVQ",
+      "thumbnail": "https://i.ytimg.com/vi/DYgRqIeuwVQ/mqdefault.jpg",
+      "channel": "KnowledgeCatch"
+    },
+    {
+      "title": "#iot rgpv iot unit 3 part 5",
+      "videoId": "Xx1xqvSlNYE",
+      "thumbnail": "https://i.ytimg.com/vi/Xx1xqvSlNYE/mqdefault.jpg",
+      "channel": "taking knowledge"
+    },
+    {
+      "title": "NETACAD IT Essentials 7, ✔️ Chapter 5: Networking Concepts",
+      "videoId": "g44Dyt_x5P0",
+      "thumbnail": "https://i.ytimg.com/vi/g44Dyt_x5P0/mqdefault.jpg",
+      "channel": "Grumpy_Grampy / JasonEJohnson31"
+    },
+    {
+      "title": "Wireless Networking Explained | Cisco CCNA 200-301",
+      "videoId": "Uz-RTurph3c",
+      "thumbnail": "https://i.ytimg.com/vi/Uz-RTurph3c/mqdefault.jpg",
+      "channel": "CertBros"
+    },
+    {
+      "title": "CISSP Domain 4 - Communication and Network Security (CISSP IT-Tutorial)",
+      "videoId": "_mcPUaN3F8o",
+      "thumbnail": "https://i.ytimg.com/vi/_mcPUaN3F8o/mqdefault.jpg",
+      "channel": "sumon infosec"
+    },
+    {
+      "title": "Computer Networking Network Administration and Networking Essentials",
+      "videoId": "ATU_DEqBANE",
+      "thumbnail": "https://i.ytimg.com/vi/ATU_DEqBANE/mqdefault.jpg",
+      "channel": "MANA: The TechCast Podcast"
+    },
+    {
+      "title": "Learn About the Five Penetration Testing Phases  || Cyber Security",
+      "videoId": "zr-VIBr_yyg",
+      "thumbnail": "https://i.ytimg.com/vi/zr-VIBr_yyg/mqdefault.jpg",
+      "channel": "Network Kings"
+    },
+    {
+      "title": "Network Administrator -  Kerala Administrative Tribunal Department Provisional Answer Key 19-10-2022",
+      "videoId": "Y6YrSsQKOTw",
+      "thumbnail": "https://i.ytimg.com/vi/Y6YrSsQKOTw/mqdefault.jpg",
+      "channel": "QW WINNER PSC"
+    },
+    {
+      "title": "Training: CompTIA Security+ Virtual Class - Session 6",
+      "videoId": "4HpVH-h8xwI",
+      "thumbnail": "https://i.ytimg.com/vi/4HpVH-h8xwI/mqdefault.jpg",
+      "channel": "Semi Yulianto"
+    }
+  ],
+  "Attacker techniques and motivations: Anti forensics, proxy usage": [
+    {
+      "title": "Anti Forensics | SWAYAM",
+      "videoId": "8LSijWkvcvE",
+      "thumbnail": "https://i.ytimg.com/vi/8LSijWkvcvE/mqdefault.jpg",
+      "channel": "CIALFOR India"
+    },
+    {
+      "title": "What is Botnet || Detailed Video in Hindi",
+      "videoId": "cQCTNhv5-NE",
+      "thumbnail": "https://i.ytimg.com/vi/cQCTNhv5-NE/mqdefault.jpg",
+      "channel": "Cyberwings Security"
+    },
+    {
+      "title": "Advanced Linux Server-Side Threats: How they work and what you can do about them",
+      "videoId": "L9tjcB_ij-0",
+      "thumbnail": "https://i.ytimg.com/vi/L9tjcB_ij-0/mqdefault.jpg",
+      "channel": "Linux.conf.au 2015 -- Auckland, New Zealand"
+    },
+    {
+      "title": "Introduction to Threats, Vulnerabilities and Countermeasures",
+      "videoId": "Jx4kkAhTvYE",
+      "thumbnail": "https://i.ytimg.com/vi/Jx4kkAhTvYE/mqdefault.jpg",
+      "channel": "Information Security Awareness"
+    },
+    {
+      "title": "Ethical Hacking 101: What Is Pen Testing?",
+      "videoId": "hmyNmmTk2bY",
+      "thumbnail": "https://i.ytimg.com/vi/hmyNmmTk2bY/mqdefault.jpg",
+      "channel": "EC-Council University"
+    },
+    {
+      "title": "APT cases exploiting vulnerabilities in region-specific software",
+      "videoId": "Lg3eYpsszZ8",
+      "thumbnail": "https://i.ytimg.com/vi/Lg3eYpsszZ8/mqdefault.jpg",
+      "channel": "Virus Bulletin"
+    },
+    {
+      "title": "Lec-76: Domain Name System (DNS) in computer Networks",
+      "videoId": "vhfRArT11jc",
+      "thumbnail": "https://i.ytimg.com/vi/vhfRArT11jc/mqdefault.jpg",
+      "channel": "Gate Smashers"
+    },
+    {
+      "title": "Security Topics in Open Cloud: Advanced Threats, 2015&#39;s Vulnerabilities ...",
+      "videoId": "4JEbENQYZPY",
+      "thumbnail": "https://i.ytimg.com/vi/4JEbENQYZPY/mqdefault.jpg",
+      "channel": "Linux.conf.au 2016 -- Geelong, Australia"
+    },
+    {
+      "title": "Cybersecurity and Ransomware: Strategies to Prevent, Protect and Prevail",
+      "videoId": "Dp_GIQof67M",
+      "thumbnail": "https://i.ytimg.com/vi/Dp_GIQof67M/mqdefault.jpg",
+      "channel": "Veeam Animal"
+    },
+    {
+      "title": "Top 50 Cyber Security Interview Questions And Answers 2025 | Cyber Security Interview | Simplilearn",
+      "videoId": "K8cha7gqK00",
+      "thumbnail": "https://i.ytimg.com/vi/K8cha7gqK00/mqdefault.jpg",
+      "channel": "Simplilearn"
+    }
+  ],
+  "Steganography and other concepts, Detection and prevention": [
+    {
+      "title": "What Is The Difference Between Cryptography And Steganography? - SecurityFirstCorp.com",
+      "videoId": "3njiRxSK1eI",
+      "thumbnail": "https://i.ytimg.com/vi/3njiRxSK1eI/mqdefault.jpg",
+      "channel": "SecurityFirstCorp"
+    },
+    {
+      "title": "Steganography 101: How to Hide Data Within Other Data and Protect Your Information",
+      "videoId": "P6SAXQXzfBs",
+      "thumbnail": "https://i.ytimg.com/vi/P6SAXQXzfBs/mqdefault.jpg",
+      "channel": "Digistic Solutions"
+    },
+    {
+      "title": "Fundamentals of Computer Hacking | System Hacking |Steganography",
+      "videoId": "JeKQnCKxmN8",
+      "thumbnail": "https://i.ytimg.com/vi/JeKQnCKxmN8/mqdefault.jpg",
+      "channel": "WITS (WINGERS IT SERVICES)"
+    },
+    {
+      "title": "Christo Ananth - Image Security, Steganography,Watermarking - Technological Innovation and New Media",
+      "videoId": "La8vELJ1O_w",
+      "thumbnail": "https://i.ytimg.com/vi/La8vELJ1O_w/mqdefault.jpg",
+      "channel": "Christo Ananth"
+    },
+    {
+      "title": "How To Learn Steganography? - SecurityFirstCorp.com",
+      "videoId": "gveLg6GyGRY",
+      "thumbnail": "https://i.ytimg.com/vi/gveLg6GyGRY/mqdefault.jpg",
+      "channel": "SecurityFirstCorp"
+    },
+    {
+      "title": "What Is Steganography In Image Forensics? - SecurityFirstCorp.com",
+      "videoId": "U5p8wHC62WM",
+      "thumbnail": "https://i.ytimg.com/vi/U5p8wHC62WM/mqdefault.jpg",
+      "channel": "SecurityFirstCorp"
+    },
+    {
+      "title": "What is steganography",
+      "videoId": "ym9GJbJEDcg",
+      "thumbnail": "https://i.ytimg.com/vi/ym9GJbJEDcg/mqdefault.jpg",
+      "channel": "Learn Python"
+    },
+    {
+      "title": "What is Steganography ? Introduction to Steganography || Shiva Ram Tech",
+      "videoId": "Q4stvGR68wY",
+      "thumbnail": "https://i.ytimg.com/vi/Q4stvGR68wY/mqdefault.jpg",
+      "channel": "Shiva Ram Tech"
+    },
+    {
+      "title": "How Is Steganography Used In Anti-forensics? - SecurityFirstCorp.com",
+      "videoId": "qFo7tBHlwDc",
+      "thumbnail": "https://i.ytimg.com/vi/qFo7tBHlwDc/mqdefault.jpg",
+      "channel": "SecurityFirstCorp"
+    },
+    {
+      "title": "Steganography: How Hackers Hide Secret Data in Files! – FULL TUTORIAL 🔥",
+      "videoId": "iCD6GzCecks",
+      "thumbnail": "https://i.ytimg.com/vi/iCD6GzCecks/mqdefault.jpg",
+      "channel": "Cyber Ryan | Cyber Security"
+    }
+  ],
+  "Fraud techniques: Phishing, smishing, vishing and mobile malicious code, rogue antivirus,click fraud": [
+    {
+      "title": "Phishing Explained In 6 Minutes | What Is A Phishing Attack? | Phishing Attack | Simplilearn",
+      "videoId": "XBkzBrXlle0",
+      "thumbnail": "https://i.ytimg.com/vi/XBkzBrXlle0/mqdefault.jpg",
+      "channel": "Simplilearn"
+    },
+    {
+      "title": "Phishing Explained – What is Phishing? How it works &amp; How to prevent | Attack techniques &amp; Examples",
+      "videoId": "FsuVU4zu_kc",
+      "thumbnail": "https://i.ytimg.com/vi/FsuVU4zu_kc/mqdefault.jpg",
+      "channel": "CSI digital"
+    },
+    {
+      "title": "Phishing Attacks Explained: How to Spot, Avoid, and Protect Yourself",
+      "videoId": "YztuRjc-my0",
+      "thumbnail": "https://i.ytimg.com/vi/YztuRjc-my0/mqdefault.jpg",
+      "channel": "Fortified Tech"
+    },
+    {
+      "title": "Setting Up Phishing Infra &amp; Unleash The Campaign | Red Teaming //TryHackMe",
+      "videoId": "29hoEHQk7ec",
+      "thumbnail": "https://i.ytimg.com/vi/29hoEHQk7ec/mqdefault.jpg",
+      "channel": "Perumal Jegan"
+    },
+    {
+      "title": "CDAC | PG-DITISS | CCEE MCQ&#39;s | SC | Overview of Mobile Malware &amp; Android App Analysis | Part 36",
+      "videoId": "beXLHcy9Ze0",
+      "thumbnail": "https://i.ytimg.com/vi/beXLHcy9Ze0/mqdefault.jpg",
+      "channel": "KnowNet Peak"
+    },
+    {
+      "title": "CYBER WELLNESS/CYBER SAFETY/LEARN ABOUT CYBER CRIMES , HOW TO BE SAVED AND WHERE TO REPORT.",
+      "videoId": "zr6fLif5MM0",
+      "thumbnail": "https://i.ytimg.com/vi/zr6fLif5MM0/mqdefault.jpg",
+      "channel": "B Laxmi"
+    },
+    {
+      "title": "Cyber Frauds  and  Security",
+      "videoId": "sVK9hDEm4Jc",
+      "thumbnail": "https://i.ytimg.com/vi/sVK9hDEm4Jc/mqdefault.jpg",
+      "channel": "CA Nitin Pathak"
+    },
+    {
+      "title": "Cyber Crime",
+      "videoId": "sBk4Nn5jfIU",
+      "thumbnail": "https://i.ytimg.com/vi/sBk4Nn5jfIU/mqdefault.jpg",
+      "channel": "uoulive"
+    },
+    {
+      "title": "Social Engineering - Concept , Methods , Misconceptions and it&#39;s Prevention",
+      "videoId": "8X6jkP8t6-s",
+      "thumbnail": "https://i.ytimg.com/vi/8X6jkP8t6-s/mqdefault.jpg",
+      "channel": "Secure Your Hacks"
+    },
+    {
+      "title": "Online Quiz On &quot;Cyber Crime Awareness&quot; | Free Quiz Certificate | Free Certificate | Quiz Certificate",
+      "videoId": "oWZXZCtHGyo",
+      "thumbnail": "https://i.ytimg.com/vi/oWZXZCtHGyo/mqdefault.jpg",
+      "channel": "CS Tech"
+    }
+  ],
+  "Shellcode, Integer overflow vulnerabilities, Stack based buffer overflows, Format string vulnerabilities": [
+    {
+      "title": "Buffer Overflow",
+      "videoId": "AD-iXWANggo",
+      "thumbnail": "https://i.ytimg.com/vi/AD-iXWANggo/mqdefault.jpg",
+      "channel": "Aaron Yoo"
+    },
+    {
+      "title": "A deep look at Stack Buffer Overflows and Format String Vulnerabilities",
+      "videoId": "qsvPK0VqUsI",
+      "thumbnail": "https://i.ytimg.com/vi/qsvPK0VqUsI/mqdefault.jpg",
+      "channel": "SecureWV"
+    },
+    {
+      "title": "A simple Format String exploit example - bin 0x11",
+      "videoId": "0WvrSfcdq1I",
+      "thumbnail": "https://i.ytimg.com/vi/0WvrSfcdq1I/mqdefault.jpg",
+      "channel": "LiveOverflow"
+    },
+    {
+      "title": "How to Bypass Canary, PIE, NX Protection Utilizing Format String Vulnerability",
+      "videoId": "AyTUgCGPXKc",
+      "thumbnail": "https://i.ytimg.com/vi/AyTUgCGPXKc/mqdefault.jpg",
+      "channel": "HackRich"
+    },
+    {
+      "title": "Exploiting a pre_authentication memcpy based stack buffer overflow vulnerability by ./RendySec07",
+      "videoId": "ZkT6z64KZug",
+      "thumbnail": "https://i.ytimg.com/vi/ZkT6z64KZug/mqdefault.jpg",
+      "channel": "Attacker Whatsapp Crew"
+    },
+    {
+      "title": "Class 2 02 A deep look at Stack Buffer Overflows and Format String Vulnerabilities Philip Polstra",
+      "videoId": "LtoYDHK8zIk",
+      "thumbnail": "https://i.ytimg.com/vi/LtoYDHK8zIk/mqdefault.jpg",
+      "channel": "Adrian Crenshaw"
+    },
+    {
+      "title": "Understanding Stack Overflow Vulnerability  || Binary Exploitation - 0x4",
+      "videoId": "oMG9eiA9lVU",
+      "thumbnail": "https://i.ytimg.com/vi/oMG9eiA9lVU/mqdefault.jpg",
+      "channel": "The Cyber Expert"
+    },
+    {
+      "title": "How to exploit a buffer overflow vulnerability - Practical",
+      "videoId": "hJ8IwyhqzD4",
+      "thumbnail": "https://i.ytimg.com/vi/hJ8IwyhqzD4/mqdefault.jpg",
+      "channel": "Daniel Slater"
+    },
+    {
+      "title": "Buffer Overflows Part 7 - String Format Attacks",
+      "videoId": "VMLRqqLK_XE",
+      "thumbnail": "https://i.ytimg.com/vi/VMLRqqLK_XE/mqdefault.jpg",
+      "channel": "Code with Nick"
+    },
+    {
+      "title": "10: Bypassing Stack Canaries (leak + write) - Buffer Overflows - Intro to Binary Exploitation (Pwn)",
+      "videoId": "TOImpHQvmpo",
+      "thumbnail": "https://i.ytimg.com/vi/TOImpHQvmpo/mqdefault.jpg",
+      "channel": "CryptoCat"
+    }
+  ],
+  " SQL injection, Malicious PDF files, Race conditions, Web exploit tools": [
+    {
+      "title": "Racing the Web (Aaron Hnatiw)",
+      "videoId": "4T99v957I0o",
+      "thumbnail": "https://i.ytimg.com/vi/4T99v957I0o/mqdefault.jpg",
+      "channel": "Hackfest Communication"
+    },
+    {
+      "title": "Hacking Websites by Uploading files (With symlinks)",
+      "videoId": "mnUaDCNaYwg",
+      "thumbnail": "https://i.ytimg.com/vi/mnUaDCNaYwg/mqdefault.jpg",
+      "channel": "Tech Raj"
+    },
+    {
+      "title": "File Upload to RCE on DVWA lab Practical Tutorial || File upload lab || BUG BOUNTY #7",
+      "videoId": "ZVdZWkk3ioA",
+      "thumbnail": "https://i.ytimg.com/vi/ZVdZWkk3ioA/mqdefault.jpg",
+      "channel": "Linux by Vikku"
+    },
+    {
+      "title": "Arbitrary File Upload(RCE) on Gajah Tunggal.",
+      "videoId": "3p46ffhyoBs",
+      "thumbnail": "https://i.ytimg.com/vi/3p46ffhyoBs/mqdefault.jpg",
+      "channel": "Nizar Miftahu Sayyida"
+    },
+    {
+      "title": "DVWA - Kerentanan Pada File Upload ( Low, Medium, High, Impossible )",
+      "videoId": "mwHn9mCaMBM",
+      "thumbnail": "https://i.ytimg.com/vi/mwHn9mCaMBM/mqdefault.jpg",
+      "channel": "Rion REFF [ 404 ]"
+    },
+    {
+      "title": "PHP Injection Through Image Upload | Overthewire | Natas Challenges",
+      "videoId": "baIoBDvaoqo",
+      "thumbnail": "https://i.ytimg.com/vi/baIoBDvaoqo/mqdefault.jpg",
+      "channel": "Joey Melo"
+    },
+    {
+      "title": "CompTIA CySA+ Full Course Part 23: Mitigating Attacks: Integer Overflow, XSS, SQL &amp; XML Injection",
+      "videoId": "krEtUQoeSuY",
+      "thumbnail": "https://i.ytimg.com/vi/krEtUQoeSuY/mqdefault.jpg",
+      "channel": "Certify Breakfast"
+    },
+    {
+      "title": "Patching Loopholes: Finding Backdoors in Applications",
+      "videoId": "KY3ESomgmtI",
+      "thumbnail": "https://i.ytimg.com/vi/KY3ESomgmtI/mqdefault.jpg",
+      "channel": "Black Hat"
+    },
+    {
+      "title": "A Brief Intro to Ethical Hacking -  Pavel Přibyl, Salsita Software",
+      "videoId": "zHHAHRJKCuo",
+      "thumbnail": "https://i.ytimg.com/vi/zHHAHRJKCuo/mqdefault.jpg",
+      "channel": "Salsita Software"
+    },
+    {
+      "title": "047 - Fingerprinting Exploit Devs, BLURtooth and Punking Punkbuster",
+      "videoId": "hLLfZOHFw4k",
+      "thumbnail": "https://i.ytimg.com/vi/hLLfZOHFw4k/mqdefault.jpg",
+      "channel": "DAY[0]"
+    }
+  ],
+  "DoS conditions, Brute force and dictionary attacks.": [
+    {
+      "title": "Brute Force Attack Explained in Hindi l Information and Cyber Security",
+      "videoId": "OHUps89pDns",
+      "thumbnail": "https://i.ytimg.com/vi/OHUps89pDns/mqdefault.jpg",
+      "channel": "5 Minutes Engineering"
+    },
+    {
+      "title": "What is Brute Force Attack | Cyber Security | Short Intro",
+      "videoId": "J9q3Y79Cp4M",
+      "thumbnail": "https://i.ytimg.com/vi/J9q3Y79Cp4M/mqdefault.jpg",
+      "channel": "Techie AB"
+    },
+    {
+      "title": "Dictionary attack",
+      "videoId": "T0_wwPxLkhI",
+      "thumbnail": "https://i.ytimg.com/vi/T0_wwPxLkhI/mqdefault.jpg",
+      "channel": "Audiopedia"
+    },
+    {
+      "title": "PART 5 - 2023 Kapasa Makasa University Cryptography CYS110 Test 1 (Types of Active Attacks)",
+      "videoId": "xnyswm_WyU4",
+      "thumbnail": "https://i.ytimg.com/vi/xnyswm_WyU4/mqdefault.jpg",
+      "channel": "KMU Cyber Security Tutorials"
+    },
+    {
+      "title": "CIS27B Unit 9 Lecture: Web Server and Web Application Attacks",
+      "videoId": "opZIRTCYMOg",
+      "thumbnail": "https://i.ytimg.com/vi/opZIRTCYMOg/mqdefault.jpg",
+      "channel": "Kasey Nguyen"
+    },
+    {
+      "title": "8 Most Common Cybersecurity Threats | Types of Cyber Attacks | Cybersecurity for Beginners | Edureka",
+      "videoId": "Dk-ZqQ-bfy4",
+      "thumbnail": "https://i.ytimg.com/vi/Dk-ZqQ-bfy4/mqdefault.jpg",
+      "channel": "edureka!"
+    },
+    {
+      "title": "How to HACK Website Login Pages | Brute Forcing with Hydra",
+      "videoId": "-CMBoJ60K1A",
+      "thumbnail": "https://i.ytimg.com/vi/-CMBoJ60K1A/mqdefault.jpg",
+      "channel": "CertBros"
+    },
+    {
+      "title": "Unit 7: Webserver Hacking : Web Applications and Database Attacks",
+      "videoId": "cri_KF0u6ZY",
+      "thumbnail": "https://i.ytimg.com/vi/cri_KF0u6ZY/mqdefault.jpg",
+      "channel": "Defence Cyber School"
+    },
+    {
+      "title": "38  Reconnaissance Attacks (CCNA SEC 210-260)",
+      "videoId": "kOzfdplj9N0",
+      "thumbnail": "https://i.ytimg.com/vi/kOzfdplj9N0/mqdefault.jpg",
+      "channel": "Yamen Mehdizade"
+    },
+    {
+      "title": "Proxy Servers and Anonymizers | Phishing | Password Cracking | Keyloggers and Spywares |  AKTU",
+      "videoId": "ZRYPhYVoLQY",
+      "thumbnail": "https://i.ytimg.com/vi/ZRYPhYVoLQY/mqdefault.jpg",
+      "channel": "Edu Desire"
+    }
+  ],
+  "Worms, viruses": [
+    {
+      "title": "Viruses and Worms - CompTIA Security+ SY0-701 - 2.4",
+      "videoId": "Su8ANmAoerU",
+      "thumbnail": "https://i.ytimg.com/vi/Su8ANmAoerU/mqdefault.jpg",
+      "channel": "Professor Messer"
+    },
+    {
+      "title": "Every Type of Computer Virus Explained in 8 Minutes",
+      "videoId": "VJFaO2-zsCU",
+      "thumbnail": "https://i.ytimg.com/vi/VJFaO2-zsCU/mqdefault.jpg",
+      "channel": "The Paint Explainer"
+    },
+    {
+      "title": "Malware: Difference Between Computer Viruses, Worms and Trojans",
+      "videoId": "n8mbzU0X2nQ",
+      "thumbnail": "https://i.ytimg.com/vi/n8mbzU0X2nQ/mqdefault.jpg",
+      "channel": "Kaspersky"
+    },
+    {
+      "title": "The Most Dangerous Computer Worm",
+      "videoId": "17XtfG47ILQ",
+      "thumbnail": "https://i.ytimg.com/vi/17XtfG47ILQ/mqdefault.jpg",
+      "channel": "Pezle"
+    },
+    {
+      "title": "The Worst Computer Virus of All Time",
+      "videoId": "nvFEDxo9y3c",
+      "thumbnail": "https://i.ytimg.com/vi/nvFEDxo9y3c/mqdefault.jpg",
+      "channel": "Thomas Mulligan"
+    },
+    {
+      "title": "Virus vs Worm | UGC NET Paper 1 ICT #shorts #shortsfeed #ugcnet2024 #ugcnetjune2024",
+      "videoId": "-43tE9K5wqQ",
+      "thumbnail": "https://i.ytimg.com/vi/-43tE9K5wqQ/mqdefault.jpg",
+      "channel": "JRFAdda"
+    },
+    {
+      "title": "Malware and its types l Virus, Worms, Trojan, Ransomware, Adware and Spyware Explained in Hindi",
+      "videoId": "eaVBvrhwbk0",
+      "thumbnail": "https://i.ytimg.com/vi/eaVBvrhwbk0/mqdefault.jpg",
+      "channel": "5 Minutes Engineering"
+    },
+    {
+      "title": "The Worst Computer Virus in History",
+      "videoId": "rergT_iw2Rs",
+      "thumbnail": "https://i.ytimg.com/vi/rergT_iw2Rs/mqdefault.jpg",
+      "channel": "Danno Cal Drawings"
+    },
+    {
+      "title": "Concurso PF Administrativo 2025 | Programas de navegação | Concurso Policia Federal 2025 #concursopf",
+      "videoId": "PRTJq8FP_gE",
+      "thumbnail": "https://i.ytimg.com/vi/PRTJq8FP_gE/mqdefault.jpg",
+      "channel": "ROMILTON JÚNIOR"
+    },
+    {
+      "title": "Does Your Computer Have A VIRUS? | What Is A Computer Virus? | The Dr Binocs Show | Peekaboo Kidz",
+      "videoId": "PM9O7rk69Cw",
+      "thumbnail": "https://i.ytimg.com/vi/PM9O7rk69Cw/mqdefault.jpg",
+      "channel": "Peekaboo Kidz"
+    }
+  ],
+  "Evading detection and elevating privileges: obfuscation, Virtual Machine obfuscation Persistent software techniques": [
+    {
+      "title": "cg01 evading code emulation writing ridiculously obvious malware that bypasses av kyle adams",
+      "videoId": "tkOtBkvS9xY",
+      "thumbnail": "https://i.ytimg.com/vi/tkOtBkvS9xY/mqdefault.jpg",
+      "channel": "Adrian Crenshaw"
+    },
+    {
+      "title": "Windows Red Team Persistence Techniques | Red Team Series 5-13",
+      "videoId": "W1pMH_h2dHA",
+      "thumbnail": "https://i.ytimg.com/vi/W1pMH_h2dHA/mqdefault.jpg",
+      "channel": "Akamai Developer"
+    },
+    {
+      "title": "CG - Evading Code Emulation: Writing Ridiculously Obvious Malware That Bypasses AV - Kyle Adams",
+      "videoId": "GDqyGI8fbX4",
+      "thumbnail": "https://i.ytimg.com/vi/GDqyGI8fbX4/mqdefault.jpg",
+      "channel": "BSidesLV"
+    },
+    {
+      "title": "HAVOC C2 - Demon Bypasses Windows 11 Defender",
+      "videoId": "ErPKP4Ms28s",
+      "thumbnail": "https://i.ytimg.com/vi/ErPKP4Ms28s/mqdefault.jpg",
+      "channel": "John Hammond"
+    },
+    {
+      "title": "INF322 - Fundamentals of Cyber Threats",
+      "videoId": "E0QoM9P9voI",
+      "thumbnail": "https://i.ytimg.com/vi/E0QoM9P9voI/mqdefault.jpg",
+      "channel": "Jason Zeller"
+    },
+    {
+      "title": "BHIS | Getting Started in Covert .NET Tradecraft for Post-Exploitation – Kyle Avery",
+      "videoId": "g27DorVva3M",
+      "thumbnail": "https://i.ytimg.com/vi/g27DorVva3M/mqdefault.jpg",
+      "channel": "Black Hills Information Security"
+    },
+    {
+      "title": "C2 Matrix | SANS@MIC Talk",
+      "videoId": "VVSoUWnrWuw",
+      "thumbnail": "https://i.ytimg.com/vi/VVSoUWnrWuw/mqdefault.jpg",
+      "channel": "SANS Institute"
+    },
+    {
+      "title": "(Live Stream)Using Mitre Att&amp;ck for Threat Intel and Incident Response.",
+      "videoId": "6Wf4YyOvpZY",
+      "thumbnail": "https://i.ytimg.com/vi/6Wf4YyOvpZY/mqdefault.jpg",
+      "channel": "Sh1katagana1"
+    },
+    {
+      "title": "TryHackMe : Metasploit Walkthrough | Hindi",
+      "videoId": "f5tBKQWyscE",
+      "thumbnail": "https://i.ytimg.com/vi/f5tBKQWyscE/mqdefault.jpg",
+      "channel": "Let's Hack Together"
+    },
+    {
+      "title": "redteam online class | day 2",
+      "videoId": "9FHChnlNi6Y",
+      "thumbnail": "https://i.ytimg.com/vi/9FHChnlNi6Y/mqdefault.jpg",
+      "channel": "HackSudo"
+    }
+  ],
+  "Token kidnapping, Virtual machine Detection, Rootkits, Spyware": [
+    {
+      "title": "Black Hat USA 2010: dirtbox: A Highly Scalable x86  Windows Emulator 1/5",
+      "videoId": "6um4tgmMdOk",
+      "thumbnail": "https://i.ytimg.com/vi/6um4tgmMdOk/mqdefault.jpg",
+      "channel": "Christiaan008"
+    }
+  ],
+  "Attacks against privileged user accounts and escalation of privileges, Stealing information and Exploitation.": [
+    {
+      "title": "What Is Privilege Escalation?",
+      "videoId": "7PpYavvu-6k",
+      "thumbnail": "https://i.ytimg.com/vi/7PpYavvu-6k/mqdefault.jpg",
+      "channel": "Netwrix"
+    },
+    {
+      "title": "What is Escalation Of Privilege? #cybersecurity",
+      "videoId": "DqsMeKYCse0",
+      "thumbnail": "https://i.ytimg.com/vi/DqsMeKYCse0/mqdefault.jpg",
+      "channel": "Doc Does Security"
+    },
+    {
+      "title": "What is Privilege Escalation | Ethical Hacking and Penetration Testing | Meterpreters",
+      "videoId": "rJ3XfQbN56k",
+      "thumbnail": "https://i.ytimg.com/vi/rJ3XfQbN56k/mqdefault.jpg",
+      "channel": "COMET TECHZONE"
+    },
+    {
+      "title": "Privilege Escalation in Operating Systems | Types, Methods &amp; Prevention",
+      "videoId": "kgQEzokx1Yk",
+      "thumbnail": "https://i.ytimg.com/vi/kgQEzokx1Yk/mqdefault.jpg",
+      "channel": "Coding theory "
+    },
+    {
+      "title": "Privilege Escalation Explained: Types And Security Measures",
+      "videoId": "QxQfqfxPlsQ",
+      "thumbnail": "https://i.ytimg.com/vi/QxQfqfxPlsQ/mqdefault.jpg",
+      "channel": "Shree Learning Academy"
+    },
+    {
+      "title": "What Is Privilege Escalation? - SecurityFirstCorp.com",
+      "videoId": "uC0KX3YfYLI",
+      "thumbnail": "https://i.ytimg.com/vi/uC0KX3YfYLI/mqdefault.jpg",
+      "channel": "SecurityFirstCorp"
+    },
+    {
+      "title": "What is Privilege Escalation #privilegeescalation #cybersecurity",
+      "videoId": "wKOGFb8OOgs",
+      "thumbnail": "https://i.ytimg.com/vi/wKOGFb8OOgs/mqdefault.jpg",
+      "channel": "Cyber Technical knowledge"
+    },
+    {
+      "title": "Windows Privilege Escalation: A Comprehensive Overview",
+      "videoId": "To0J_ZPCTao",
+      "thumbnail": "https://i.ytimg.com/vi/To0J_ZPCTao/mqdefault.jpg",
+      "channel": "ThetechCrime"
+    },
+    {
+      "title": "11 - MetasploitAllTheThings - The Exploits (Privilege Escalation)",
+      "videoId": "n8L2kc1geeI",
+      "thumbnail": "https://i.ytimg.com/vi/n8L2kc1geeI/mqdefault.jpg",
+      "channel": "Robensive"
+    },
+    {
+      "title": "CCNA-Security-210-260-Common Network Attacks-(Privilege Escalation)",
+      "videoId": "2a1s2-DgRE4",
+      "thumbnail": "https://i.ytimg.com/vi/2a1s2-DgRE4/mqdefault.jpg",
+      "channel": "AA NetSec"
+    }
+  ],
+  "Importance of memory forensics, Capabilities of memory forensics, Memory analysis frameworks, Dumping physical memory": [
+    {
+      "title": "WHAT IS MEMORY FORENSICS | EXPLAINED MEMORY FORENSICS |",
+      "videoId": "vGbTqkM0d2w",
+      "thumbnail": "https://i.ytimg.com/vi/vGbTqkM0d2w/mqdefault.jpg",
+      "channel": "FORnSEC Solutions"
+    },
+    {
+      "title": "8 - Memory Forensics Analysis",
+      "videoId": "lJTNWEcaO7U",
+      "thumbnail": "https://i.ytimg.com/vi/lJTNWEcaO7U/mqdefault.jpg",
+      "channel": "CyberForge Academy"
+    },
+    {
+      "title": "Memory Forensics On Unix Systems | Unix Systems Memory Forensics Using Volatility",
+      "videoId": "exHMCLUfwzs",
+      "thumbnail": "https://i.ytimg.com/vi/exHMCLUfwzs/mqdefault.jpg",
+      "channel": "GISPP ACADEMY"
+    },
+    {
+      "title": "Class 3: Memory Forensics",
+      "videoId": "1c8DvkAB70U",
+      "thumbnail": "https://i.ytimg.com/vi/1c8DvkAB70U/mqdefault.jpg",
+      "channel": "CyberForge Academy"
+    },
+    {
+      "title": "BT107 Building aMuscle Memory with Rekall Memory Forensic Framework Alissa Torres",
+      "videoId": "4rXMKRi_DBg",
+      "thumbnail": "https://i.ytimg.com/vi/4rXMKRi_DBg/mqdefault.jpg",
+      "channel": "Adrian Crenshaw"
+    },
+    {
+      "title": "Memory Forensic Analysis of a Programmable Logic Controller in Industrial Control Systems",
+      "videoId": "F2CGdi8b6-g",
+      "thumbnail": "https://i.ytimg.com/vi/F2CGdi8b6-g/mqdefault.jpg",
+      "channel": "Forensic Focus: Digital Forensics & DFIR Talk"
+    },
+    {
+      "title": "Practical Memory Forensics Books (For Beginners &amp; Experts) | Volatility",
+      "videoId": "NY9bkfwz6P8",
+      "thumbnail": "https://i.ytimg.com/vi/NY9bkfwz6P8/mqdefault.jpg",
+      "channel": "CyDig Cyber Security Digital Forensics Education "
+    },
+    {
+      "title": "Presentation on Memory Forensics with Volatility by Yaswanth Kumar | Batch R27 | #MemoryForensics",
+      "videoId": "YnEeuNmPCbE",
+      "thumbnail": "https://i.ytimg.com/vi/YnEeuNmPCbE/mqdefault.jpg",
+      "channel": "CyberSapiens"
+    },
+    {
+      "title": "Memory Forensic Analysis of a Programmable Logic Controller in Industrial Control Systems DFRWS EU22",
+      "videoId": "RqFW8krPAic",
+      "thumbnail": "https://i.ytimg.com/vi/RqFW8krPAic/mqdefault.jpg",
+      "channel": "DFRWS"
+    },
+    {
+      "title": "Windows Memory Attacks and Forensics",
+      "videoId": "I-JeMXFpcOU",
+      "thumbnail": "https://i.ytimg.com/vi/I-JeMXFpcOU/mqdefault.jpg",
+      "channel": "Dr. Erdal OZKAYA"
+    }
+  ],
+  "Installing and using volatility, Finding hidden processes, Volatality analyst pack": [],
+  "Honeypots, Malicious code naming, Automated malicious code analysis systems, Intrusion detection techniques.": [
+    {
+      "title": "Intrusion Detection System (IDS) ll Types Of Intruder Explained in Hindi",
+      "videoId": "R1mF7Mxfynk",
+      "thumbnail": "https://i.ytimg.com/vi/R1mF7Mxfynk/mqdefault.jpg",
+      "channel": "5 Minutes Engineering"
+    },
+    {
+      "title": "Black Hat USA 2012 - Flowers for Automated Malware Analysis",
+      "videoId": "f2TRDtgwWy8",
+      "thumbnail": "https://i.ytimg.com/vi/f2TRDtgwWy8/mqdefault.jpg",
+      "channel": "Black Hat"
+    },
+    {
+      "title": "CEHv10 Module 12_1 Evading IDS, Firewalls, and Honeypots",
+      "videoId": "TwySuNqP1yQ",
+      "thumbnail": "https://i.ytimg.com/vi/TwySuNqP1yQ/mqdefault.jpg",
+      "channel": "Artificial Intelligence -Research & Development"
+    },
+    {
+      "title": "DEFCON 15: CaffeineMonkey: Automated Collection, Detection and Analysis of Malicious JavaScript",
+      "videoId": "ECwkHfg0lhM",
+      "thumbnail": "https://i.ytimg.com/vi/ECwkHfg0lhM/mqdefault.jpg",
+      "channel": "Christiaan008"
+    },
+    {
+      "title": "IoT Malware: Comprehensive Survey, Analysis Framework and Case Studies",
+      "videoId": "j_DRFWg1arw",
+      "thumbnail": "https://i.ytimg.com/vi/j_DRFWg1arw/mqdefault.jpg",
+      "channel": "Black Hat"
+    },
+    {
+      "title": "Security technology Intrusion Detection and Prevention Systems and Other Tools Part III",
+      "videoId": "rDUlWzAAIx0",
+      "thumbnail": "https://i.ytimg.com/vi/rDUlWzAAIx0/mqdefault.jpg",
+      "channel": "Dr. Yousef"
+    },
+    {
+      "title": "Detecting Obfuscated Malware",
+      "videoId": "1vByRAWMD10",
+      "thumbnail": "https://i.ytimg.com/vi/1vByRAWMD10/mqdefault.jpg",
+      "channel": "BitNinja"
+    },
+    {
+      "title": "Senior Project by Marcus Bailey &quot;Deception Techniques In Computer Security Using Honeypots&quot;",
+      "videoId": "s_oRnmbk2Ig",
+      "thumbnail": "https://i.ytimg.com/vi/s_oRnmbk2Ig/mqdefault.jpg",
+      "channel": "SEAS UDC"
+    },
+    {
+      "title": "What Is Cyber Security | How It Works? | Cyber Security In 7 Minutes | Cyber Security | Simplilearn",
+      "videoId": "inWWhr5tnEA",
+      "thumbnail": "https://i.ytimg.com/vi/inWWhr5tnEA/mqdefault.jpg",
+      "channel": "Simplilearn"
+    },
+    {
+      "title": "Watching the attackers with a web honeypot - Aurélien Francillon",
+      "videoId": "e-Egd2RJbvc",
+      "thumbnail": "https://i.ytimg.com/vi/e-Egd2RJbvc/mqdefault.jpg",
+      "channel": "secappdev.org"
+    }
+  ]
+}
