@@ -1,7 +1,7 @@
 const HowToUseV = () => {
     return (
       <>
-        <div className="py-24 relative bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out flex items-center justify-center">
+        <div className="py-24 relative bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out flex items-center justify-center min-h-screen">
           <div className="container mx-auto px-5" id="Tutorial">
             <div className="aspect-video relative" >
  

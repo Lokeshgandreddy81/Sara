@@ -18,7 +18,7 @@ const schoolData: Record<
   >
 > = {
   //SCHOOL OF COMPUTING
-    'School of Computing': {
+  'School of Computing': {
     CSE: {
       '1st Sem': [''],
       '2nd Sem': ['Basic-EEE[BEEE]', 'Calculus-T&T[CTT]', 'Discrete-Math-Structures[DMS]','JAVA[OOPJ]','Professional-Ethics&HV[PEHV]'],
@@ -43,7 +43,7 @@ const schoolData: Record<
       '1st Sem': [''],
       '2nd Sem': ['JAVA[OOPJ]', 'Digital-Logic-Design[DLD]','Basic-EEE[BEEE]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]'],
       '3rd Sem': [''],
-      '4th Sem': ['Computer-Networks[CN]', 'Theory-of-Computation[TOC]','R-Programming[RP]','Software-Engineering[SE]'],
+      '4th Sem': ['Computer-Networks[CN]', 'Theory-of-Computation[TOC]','R-Programming[RP]','Software Engineering[SE]'],
       '5th Sem': [''],
       '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Testing&QA[STQA]', 'Computer-Architecture&Organization[CAO]'],
       '7th Sem': [''],
@@ -53,7 +53,7 @@ const schoolData: Record<
       '1st Sem': [''],
       '2nd Sem': ['JAVA[OOPJ]', 'Digital-Logic-Design[DLD]','Basic-EEE[BEEE]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]'],
       '3rd Sem': [''],
-      '4th Sem': ['Computer-Networks[CN]', 'Theory-of-Computation[TOC]','Artificial-Intelligence[AI]','Software-Engineering[SE]'],
+      '4th Sem': ['Computer-Networks[CN]', 'Theory-of-Computation[TOC]','Artificial-Intelligence[AI]','Software Engineering[SE]'],
       '5th Sem': [''],
       '6th Sem': ['Cloud-Computing[CC]', 'Deep-Learning[DL]', 'Compiler-Design[CD]'],
       '7th Sem': [''],
@@ -63,7 +63,7 @@ const schoolData: Record<
       '1st Sem': [''],
       '2nd Sem': ['JAVA[OOPJ]', 'Digital-Logic-Design[DLD]','Basic-EEE[BEEE]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]'],
       '3rd Sem': [''],
-      '4th Sem': ['Data-Mining[DM]','Internet-of-Things[IOT]','Theory-of-Computation[TOC]','Software-Engineering[SE]'],
+      '4th Sem': ['Data-Mining[DM]','Internet-of-Things[IOT]','Theory-of-Computation[TOC]','Software Engineering[SE]'],
       '5th Sem': [''],
       '6th Sem': ['Computer-Organization&Architecture[COA]', 'Cryptography-and-Network-Security[CNS]', 'Ethical-Hacking[EH]', 'Web-Application-Security[WAS]'],
       '7th Sem': [''],
@@ -77,17 +77,17 @@ const schoolData: Record<
   'School of Engineering': {
     CIVIL: {
       '1st Sem': [''],
-      '2nd Sem': [''],
+      '2nd Sem': ['Civil-Engg-Materials-&-Concrete-Tech[CEMCT]','Programming-in-C-&-Data-Structures[PCDS]','Basic-EEE[BEEE]','Transformation-Techniques&Linear-Algebra[TTLA]',],
       '3rd Sem': [''],
-      '4th Sem': [''],
+      '4th Sem': ['Hydrology & Water Resources Engineering[HWRE]','Structural Analysis[SA]','Fire Engineering[FE]','Sustainable Engineering[SE]','Soil Mechanics[SM]'],
       '5th Sem': [''],
-      '6th Sem': [''],
+      '6th Sem': ['Steel Structures[SS]','Geospatial Technologies[GT]'],
       '7th Sem': [''],
       '8th Sem': [''],
     },
     ECE: {
       '1st Sem': [''],
-      '2nd Sem': ['Data-Structures&Algorithms[DSA]','Engineering-Chemistry[EC]','Sensors&Measuring-Instruments[SMT]','Semiconductors-Devices&Circuits[SDC]',],
+      '2nd Sem': ['Data-Structures&Algorithms[DSA]','Engineering-Chemistry[EC]','Sensors&Measuring-Instruments[SMT]','Semiconductors-Devices&Circuits[SDC]','Transformation-Techniques&Linear-Algebra[TTLA]',],
       '3rd Sem': [''],
       '4th Sem': ['Intro-to-ML[IML]','Linear-IC-Applications[LICA]','VLSI-System-Designs[VLSI]',],
       '5th Sem': [''],
@@ -99,15 +99,15 @@ const schoolData: Record<
       '1st Sem': [''],
       '2nd Sem': ['Data-Structures&Algorithms[DSA]','Semiconductors-Devices&Circuits[SDC]','Transformation-Techniques&Linear-Algebra[TTLA]', ],
       '3rd Sem': [''],
-      '4th Sem': [''],
+      '4th Sem': ['Transmission and Distribution[TD]','Electrical Machines-2[EM2]','Control Systems[CS]','Data Structures And Algorithms[DSA]'],
       '5th Sem': [''],
-      '6th Sem': [''],
+      '6th Sem': ['Interfacing with Microcontollers[IWM]','Power Electronics[PE]','Power System Analysis[PSA]'],
       '7th Sem': [''],
       '8th Sem': [''],
 },
     MECH: {
       '1st Sem': [''],
-      '2nd Sem': ['Basic-EEE[BEEE]','Transformation-Techniques&Linear-Algebra[TTLA]','Programming-in-C&dData-Structures[PCDS]','Manufacturing-Technology[MT]','Engineering-Workshop[EW]'],
+      '2nd Sem': ['Basic-EEE[BEEE]','Transformation-Techniques&Linear-Algebra[TTLA]','Programming-in-C-&-Data-Structures[PCDS]','Manufacturing-Technology[MT]','Engineering-Workshop[EW]'],
       '3rd Sem': [''],
       '4th Sem': ['FLUID-MECHANICS[FM]','DYNAMICS-OF-MACHINERY[DOM]','THERMAL-ENGINEERING[TE]'],
       '5th Sem': [''],
@@ -117,7 +117,7 @@ const schoolData: Record<
     },
     EIE: {
       '1st Sem': [''],
-      '2nd Sem': ['Data-Structures&Algorithms[DSA]','Engineering-Chemistry[EC]','Sensors&Transducers[ST]','Semiconductors-Devices&Circuits[SDC]','Network-Analysis[NA]','Transformation-Techniques&Linear-Algebra[TTLA]'],
+      '2nd Sem': ['Data-Structures&Algorithms[DSA]','Engineering-Chemistry[EC]','Sensors&Transducers[ST]','Semiconductors-Devices&Circuits[SDC]','Transformation-Techniques&Linear-Algebra[TTLA]'],
       '3rd Sem': [''],
       '4th Sem': ['Intro-to-ML[IML]','Microelecricalmechanical-Systems[MS]','Linear-IC-Applications[LICA]','VLSI-System-Designs[VLSI]','Industrial-Instrumentation[II]','Linear-Control-Systems[LCS]'],
       '5th Sem': [''],
@@ -166,7 +166,7 @@ const DynamicVid: React.FC = () => {
     setLoading(true);
     try {
       // Make a request to your backend server for videos on the selected topic
-      const response = await fetch(`http://localhost:5000/api/videos?topic=${topic}`);
+      const response = await fetch(`http://192.168.137.1:5000/api/videos?topic=${topic}`);
       const result = await response.json();
       
       // Handle the fetched videos
