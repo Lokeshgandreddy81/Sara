@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 interface Sidebar2Props {
   subject: string;
+  module: string;
   onTopicClick: (topicName: string, moduleName: string, subjectName: string) => void;
 }
 
@@ -344,14 +345,14 @@ const moduleData: Record<string, Record<string, string[]>> = {
   },
   //Artificial-Intelligence[AI] is in DS SEM 6
 
-//IT SEM4
-'Data-Mining[DM]':{
-  'MODULE-1()':[],
-  'MODULE-2()':[],
-  'MODULE-3()':[],
-  'MODULE-4()':[],
-  'MODULE-5()':[],
-},
+  //IT SEM4
+  'Data-Mining[DM]': {
+    'MODULE-1()': [],
+    'MODULE-2()': [],
+    'MODULE-3()': [],
+    'MODULE-4()': [],
+    'MODULE-5()': [],
+  },
 
   //CSE SEM2
   'Calculus-T&T[CTT]': {
@@ -533,18 +534,25 @@ const moduleData: Record<string, Record<string, string[]>> = {
   //SCHOOL OF ENGINEERING
 };
 
-const Sidebar2: React.FC<Sidebar2Props> = ({ subject, onTopicClick }) => {
+const Sidebar2: React.FC<Sidebar2Props> = ({ subject, module, onTopicClick }) => {
   const [openModule, setOpenModule] = useState<string | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
 
   const handleModuleClick = (module: string) => {
     setOpenModule((prev) => (prev === module ? null : module));
   };
 
+  const handleTopicClick = (topic: string, module: string) => {
+    setSelectedTopic(topic);
+    onTopicClick(topic, module, subject);
+  };
   const modules = moduleData[subject] || {};
 
   return (
-    <aside className="min-h-screen w-64 bg-gray-100 dark:bg-[#2c2c2c] p-4 shadow-lg transition-all duration-300 ease-in-out">
-      <h2 className="text-lg font-bold mb-4 text-black dark:text-white">Choose Topics in {subject || 'None Selected'}</h2>
+    <aside className="min-h-screen w-64 bg-gray-100 dark:bg-[#2c2c2c] p-4 shadow-lg transition-all duration-300 ease-in-out rounded-xl">
+      <h2 className="text-lg font-bold mb-4 text-black dark:text-white">  
+        Choose Topics in {subject || "None Selected"}
+      </h2>
       <div>
         {Object.entries(modules).map(([module, topics]) => (
           <div key={module}>
@@ -559,8 +567,12 @@ const Sidebar2: React.FC<Sidebar2Props> = ({ subject, onTopicClick }) => {
                 {topics.map((topic) => (
                   <button
                     key={topic}
-                    onClick={() => onTopicClick(topic, module, subject)}
-                    className="w-full text-left px-2 py-1 rounded hover:bg-indigo-200 dark:hover:bg-orange-900 mb-1 dark:text-gray-300"
+                    onClick={() => handleTopicClick(topic, module)}
+                    className={`w-full text-left px-2 py-1 rounded mb-1 
+                      ${selectedTopic === topic
+                        ? 'bg-indigo-500 dark:bg-orange-700 text-black dark:text-white'
+                        : 'hover:bg-indigo-200 dark:hover:bg-orange-900 dark:text-gray-300'
+                      }`}
                   >
                     {topic}
                   </button>

@@ -20,54 +20,56 @@ const schoolData: Record<
   //SCHOOL OF COMPUTING
   'School of Computing': {
     CSE: {
-      '1st Sem': [''],
+      // '1st Sem': [''],
       '2nd Sem': ['Basic-EEE[BEEE]', 'Calculus-T&T[CTT]', 'Discrete-Math-Structures[DMS]','JAVA[OOPJ]','Professional-Ethics&HV[PEHV]'],
-      '3rd Sem': [''],
+      // '3rd Sem': [''],
       '4th Sem': ['Artificial-Intelligence[AI]', 'Computer-Networks[CN]','Design-Analysis&Algorithms[DAA]','Software Engineering[SE]'],
-      '5th Sem': [''],
+      // '5th Sem': [''],
       '6th Sem': ['Object-Oriented-Modeling-and-Design[OOMD]', 'Artificial-Neural-Networks[ANN]', 'Mobile-Application-Development[MAD]', 'Cyber-Security-Essentials[CSE]'],
-      '7th Sem': [''],
-      '8th Sem': [''],
+      // '7th Sem': [''],
+      // '8th Sem': [''],
     },
     IT: {
-      '1st Sem': [''],
-      '2nd Sem': ['Basic-EEE[BEEE]', 'Calculus-T&T[CTT]', 'Discrete-Math-Structures[DMS]','JAVA[OOPJ]','Python-Programming[PP]'],
-      '3rd Sem': [''],
+      // '1st Sem': [''],
+      '2nd Sem': ['Basic-EEE[BEEE]', 'Calculus-T&T[CTT]', 'Discrete-Math-Structures[DMS]','JAVA[OOPJ]',
+        // 'Python-Programming[PP]'
+      ],
+      // '3rd Sem': [''],
       '4th Sem': ['Data-Mining[DM]','Computer-Networks[CN]','Design-Analysis&Algorithms[DAA]',],
-      '5th Sem': [''],
+      // '5th Sem': [''],
       '6th Sem': ['Artificial-Intelligence[AI]','Deep-Learning[DL]','Distributed-Systems[DS]','Software-Testing&QA[STQA]','Computer-Architecture&Organization[CAO]'],
-      '7th Sem': [''],
-      '8th Sem': [''],
+      // '7th Sem': [''],
+      // '8th Sem': [''],
     },
     DS: {
-      '1st Sem': [''],
+      // '1st Sem': [''],
       '2nd Sem': ['JAVA[OOPJ]', 'Digital-Logic-Design[DLD]','Basic-EEE[BEEE]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]'],
-      '3rd Sem': [''],
+      // '3rd Sem': [''],
       '4th Sem': ['Computer-Networks[CN]', 'Theory-of-Computation[TOC]','R-Programming[RP]','Software Engineering[SE]'],
-      '5th Sem': [''],
+      // '5th Sem': [''],
       '6th Sem': ['Artificial-Intelligence[AI]', 'Distributed-Systems[DS]', 'Deep-Learning[DL]', 'Software-Testing&QA[STQA]', 'Computer-Architecture&Organization[CAO]'],
-      '7th Sem': [''],
-      '8th Sem': [''],
+      // '7th Sem': [''],
+      // '8th Sem': [''],
     },
     AIML: {
-      '1st Sem': [''],
+      // '1st Sem': [''],
       '2nd Sem': ['JAVA[OOPJ]', 'Digital-Logic-Design[DLD]','Basic-EEE[BEEE]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]'],
-      '3rd Sem': [''],
+      // '3rd Sem': [''],
       '4th Sem': ['Computer-Networks[CN]', 'Theory-of-Computation[TOC]','Artificial-Intelligence[AI]','Software Engineering[SE]'],
-      '5th Sem': [''],
+      // '5th Sem': [''],
       '6th Sem': ['Cloud-Computing[CC]', 'Deep-Learning[DL]', 'Compiler-Design[CD]'],
-      '7th Sem': [''],
-      '8th Sem': [''],
+      // '7th Sem': [''],
+      // '8th Sem': [''],
     },
     CS: {
-      '1st Sem': [''],
+      // '1st Sem': [''],
       '2nd Sem': ['JAVA[OOPJ]', 'Digital-Logic-Design[DLD]','Basic-EEE[BEEE]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]'],
-      '3rd Sem': [''],
+      // '3rd Sem': [''],
       '4th Sem': ['Data-Mining[DM]','Internet-of-Things[IOT]','Theory-of-Computation[TOC]','Software Engineering[SE]'],
-      '5th Sem': [''],
+      // '5th Sem': [''],
       '6th Sem': ['Computer-Organization&Architecture[COA]', 'Cryptography-and-Network-Security[CNS]', 'Ethical-Hacking[EH]', 'Web-Application-Security[WAS]'],
-      '7th Sem': [''],
-      '8th Sem': [''],
+      // '7th Sem': [''],
+      // '8th Sem': [''],
     },
 
   },
@@ -304,19 +306,8 @@ const DynamicVid: React.FC = () => {
         <div className="flex min-h-screen w-full my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
           {/* Sidebar (Fixed Width) */}
           <div className="w-64 bg-gray-300 dark:bg-[#2a2a2a] ">
-          <Sidebar2 subject={selectedSubject} onTopicClick={handleTopicClick} />
-            {/* <Sidebar2
-              subject={selectedSubject}
-              onTopicClick={(topicName, moduleName, subjectName) => {
-                console.log("Topic:", topicName);
-                console.log("Module:", moduleName);
-                console.log("Subject:", subjectName);
+          <Sidebar2 subject={selectedSubject} onTopicClick={handleTopicClick} module={''} />
 
-                setSelectedTopic(topicName);
-                setSelectedModule(moduleName);
-                setSelectedSubject(subjectName);
-              }}
-            /> */}
           </div>
 
           {/* Content Area (Flexible Width) */}

@@ -76,7 +76,7 @@ const moduleData: Record<string, string[]> = {
   'Professional-Ethics&HV[PEHV]': ['PHEV-MODULE-1', 'PHEV-MODULE-2', 'PHEV-MODULE-3', 'PHEV-MODULE-4', 'PHEV-MODULE-5'],
 
   //IT SEM2
-  'Python-Programming[PP]': ['PP-MODULE-1', 'PP-MODULE-2', 'PP-MODULE-3', 'PP-MODULE-4', 'PP-MODULE-5'],
+  // 'Python-Programming[PP]': ['PP-MODULE-1', 'PP-MODULE-2', 'PP-MODULE-3', 'PP-MODULE-4', 'PP-MODULE-5'],
   //'Basic-EEE[BEEE]', 'Calculus-T&T[CTT]', 'Discrete-Math-Structures[DMS]','JAVA[OOPJ]' IN CSE SEM2
 
   //DS SEM2
@@ -188,7 +188,7 @@ const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
   const modules = moduleData[subject] || [];
 
   return (
-    <aside className="w-64 bg-gray-100 dark:bg-[#2c2c2c] p-4 shadow-lg transition-all duration-300 ease-in-out">
+    <aside className="w-64 bg-gray-100 dark:bg-[#2c2c2c] p-5 shadow-lg transition-all duration-300 ease-in-out rounded-xl my-1">
       <h2 className="text-lg font-semibold mb-4 text-black dark:text-white">Modules for: {subject || 'None Selected'}</h2>
       <ul className="list-disc list-inside text-black dark:text-gray-300">
         {modules.length > 0 ? (

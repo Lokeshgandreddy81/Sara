@@ -1,3 +1,4 @@
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -19,6 +20,7 @@ let videoCache = {};
 if (fs.existsSync(CACHE_FILE)) {
   videoCache = JSON.parse(fs.readFileSync(CACHE_FILE));
 }
+
 
 // Route to get videos by topic
 app.get('/api/videos', async (req, res) => {
@@ -69,6 +71,36 @@ app.get('/api/videos', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch YouTube videos' });
   }
 });
+// Route to get explanation from Gemini
+app.post('/api/gemini', async (req, res) => {
+  const { topic, module, subject, contentSize } = req.body;
+
+  if (!topic || !module || !subject || !contentSize) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
+
+  try {
+    const prompt = `Explain the following topic: "${topic}" in module "${module}" in the subject "${subject}" in ${contentSize} form.`;
+
+    const response = await axios.post(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      {
+        contents: [{ parts: [{ text: prompt }] }],
+      },
+      {
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
+
+    const generatedText = response.data?.candidates?.[0]?.content?.parts?.[0]?.text || 'No response from Gemini.';
+    res.json({ result: generatedText });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to fetch explanation from Gemini' });
+  }
+});
+
+
 
 app.listen(PORT , HOST, () => {
   console.log(`Server is running on http://${HOST}:${PORT}`);
