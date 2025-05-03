@@ -22,6 +22,7 @@ import ProtectedRoute from './componets/Protected_route';
 import VidSelect1 from './pages/Features/Feature_2/VidSelect';
 import ForgotPassword from './pages/LoginPages/ForgotPassword';
 import FeedbackPage from './pages/Footer_Pages/Feedback';
+import ChatBot from './pages/Features/Feature_3/chatBot';
 import { useEffect, useState } from 'react';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
@@ -83,6 +84,7 @@ function App() {
         {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
         <Route path="/ChangePass" element={<ChangePassword />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
+        <Route path='/chatBot' element={<ChatBot />}/>
 
         <Route
           path="/select-sub"
