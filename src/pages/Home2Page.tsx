@@ -27,19 +27,19 @@ function Home2Page() {
             name: "D V Yogesh",
             role: "Web Developer",
             text: "Teachings of the great explore of truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, pleasure itself.",
-            image: "Public/Yogesh.png"
+            image: "/Yogesh.png"
         },
         {
             name: "Ch Shesheer",
             role: "Web Design",
             text: "Complete account of the system and expound the actual are  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots.",
-            image: "Public/Shesheer.png"
+            image: "/Shesheer.png"
         },
         {
             name: "G Lokesh",
             role: "UI/UX Design",
             text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-            image: "Public/Lokesh.png"
+            image: "/Lokesh.png"
         }
     ];
 
@@ -92,7 +92,7 @@ function Home2Page() {
                         <div className="relative">
                             <div className="bg-[#8494e9] dark:bg-[#4c5bd4] transition-all duration-300 ease-in-out  ">
                                 <img
-                                    src="Public/har.png"
+                                    src="/har.png"
                                     alt="AI Education Illustration"
                                     className="w-full h-auto rounded-lg"
                                 />

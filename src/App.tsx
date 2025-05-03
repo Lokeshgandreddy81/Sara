@@ -38,25 +38,25 @@ import NavBarFeatures from './componets/NavBarFeatures';
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkMobile = () => {
-      const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-      setIsMobile(isMobileDevice);
-    };
-    checkMobile();
-  }, []);
+  // useEffect(() => {
+  //   const checkMobile = () => {
+  //     const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  //     setIsMobile(isMobileDevice);
+  //   };
+  //   checkMobile();
+  // }, []);
 
-  if (isMobile) {
-    return (
-      <div style={{ textAlign: 'center', padding: '1rem', backgroundColor: '#f8f8f8', }}>
-        <h1 className='text-red' >Use a Laptop or Desktop to Access this Website</h1>
-        <h2 className='text-red' style={{ color: 'red' }}>This website is not optimized for Mobile Devices</h2>
-        <h2>If you are using Mobile Device use Desktop mode to Access this website</h2>
-        <h2>Use Landscape Orientation For Better Experience</h2>
-        <h2>😊</h2>
-      </div>
-    );
-  }
+  // if (isMobile) {
+  //   return (
+  //     <div style={{ textAlign: 'center', padding: '1rem', backgroundColor: '#f8f8f8', }}>
+  //       <h1 className='text-red' >Use a Laptop or Desktop to Access this Website</h1>
+  //       <h2 className='text-red' style={{ color: 'red' }}>This website is not optimized for Mobile Devices</h2>
+  //       <h2>If you are using Mobile Device use Desktop mode to Access this website</h2>
+  //       <h2>Use Landscape Orientation For Better Experience</h2>
+  //       <h2>😊</h2>
+  //     </div>
+  //   );
+  // }
 
   return (
     <Router>

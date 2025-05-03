@@ -1,7 +1,6 @@
 import React from 'react';
 import { BookOpen, Video, Brain, HeartPulse, ShieldCheck, Clock } from 'lucide-react';
 import Footer from '../../componets/Footer_FIn';
-import DoubleImg from '../../componets/DoubleImg'
 import NavBar from '../../componets/NavBar';
 
 const services = [

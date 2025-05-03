@@ -1,5 +1,6 @@
 import axios from 'axios';
-
+const res = await fetch("/videoCache.json");
+const videoData = await res.json();
 export interface Video {
   title: string;
   videoId: string;
@@ -7,8 +8,8 @@ export interface Video {
   thumbnailUrl: string;
 }
 
-const BACKEND_URL = 'http://192.168.137.1:5000'; // adjust if hosted elsewhere
-const YOUTUBE_API_KEY = 'AIzaSyDKguNK1hGKO2awxUuY7xqdP7wZlZUPTuQ'; // still needed if no cache
+const BACKEND_URL = 'http://localhost:5000'; // adjust if hosted elsewhere
+const YOUTUBE_API_KEY = 'AIzaSyCuNDW86oMT0yxbLNOeqJPo6bvO0go0MH4'; // still needed if no cache
 
 export const getVideosForTopic = async (topic: string): Promise<Video[]> => {
   try {

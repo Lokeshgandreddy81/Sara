@@ -5,13 +5,13 @@ const ThemeImage: React.FC = () => {
     <div>
       {/* Show img1.jpg in dark mode */}
       <img
-        src="Public/SaraLogo.png"
+        src="/SaraLogo.png"
         alt="SaraAI"
         className="hidden dark:block h-8 w-8"
       />
       {/* Show img2.jpg in light mode */}
       <img
-        src="Public/SaraDarkLogo.png"
+        src="/SaraDarkLogo.png"
         alt="SaraAI"
         className="block dark:hidden h-8 w-8"
       />

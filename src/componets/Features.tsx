@@ -28,7 +28,7 @@ const Features: React.FC = () => {
                                 <Link to='/select-sub'>
                                     <div className="relative">
                                         <img
-                                            src='Public/Smart_Study_Guide_BGImage.png'
+                                            src='/Smart_Study_Guide_BGImage.png'
                                             alt='Smart_Study_Guide_BGImage'
                                             className="w-full h-48 md:h-64 object-cover" />
                                         <div className="absolute inset-0 bg-black/40 hover:bg-black/60 flex items-center justify-center">
@@ -53,7 +53,7 @@ const Features: React.FC = () => {
                                 <Link to='/VidSelect'>
                                     <div className="relative">
                                         <img
-                                            src='Public/Youtube_Video_Tutorials_BGImage.png'
+                                            src='/Youtube_Video_Tutorials_BGImage.png'
                                             alt='Youtube_Video_Tutorials_BGImage'
                                             className="w-full h-48 md:h-64 object-cover" />
                                         <div className="absolute inset-0 bg-black/40 hover:bg-black/60 flex items-center justify-center">
@@ -77,7 +77,7 @@ const Features: React.FC = () => {
                                 <a href='{feature.Target}'>
                                     <div className="relative">
                                         <img
-                                            src='Public/Mental_Health_Support_BGImage.png'
+                                            src='/Mental_Health_Support_BGImage.png'
                                             alt='Mental_Health_Support_BGImage'
                                             className="w-full h-48 md:h-64 object-cover" />
                                         <div className="absolute inset-0 bg-black/40 hover:bg-black/60 flex items-center justify-center">
@@ -104,7 +104,7 @@ const Features: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="relative">
                             <img
-                                src="Public/Smart_Study_Guide_Image.png"
+                                src="/Smart_Study_Guide_Image.png"
                                 alt="Student studying"
                                 className="rounded-lg shadow-xl" />
                             <Clock className="absolute top-4 left-4 text-blue-400 w-8 h-8 animate-float" />
@@ -156,7 +156,7 @@ const Features: React.FC = () => {
                         </div>
                         <div className="relative">
                             <img
-                                src="Public/Youtube_Video_Tutorials_Image.jpg"
+                                src="/Youtube_Video_Tutorials_Image.jpg"
                                 alt="Student studying"
                                 className="rounded-lg shadow-xl" />
                             <Clock className="absolute top-4 left-4 text-blue-400 w-8 h-8 animate-float" />
@@ -171,7 +171,7 @@ const Features: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="relative">
                             <img
-                                src="Public/Mental_Health_Support_Image.jpg"
+                                src="/Mental_Health_Support_Image.jpg"
                                 alt="Student studying"
                                 className="rounded-lg shadow-xl" />
                             <Clock className="absolute top-4 left-4 text-blue-400 w-8 h-8 animate-float" />

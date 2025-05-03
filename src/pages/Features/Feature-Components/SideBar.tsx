@@ -3,7 +3,7 @@ import React from 'react';
 
 interface SidebarProps {
   subject: string;
-  onModuleClick: (moduleName: string) => void;
+  onModuleClick: (module: string) => void;
 }
 
 const moduleData: Record<string, string[]> = {

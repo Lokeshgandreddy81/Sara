@@ -5,7 +5,7 @@ import obfuscator from 'vite-plugin-obfuscator';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '',
+  base: './',
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
