@@ -4,4 +4,5 @@ export interface Member {
     photoUrl: string;
     role: string;
     details: string[]; 
+    Linkeddin: string;
   }

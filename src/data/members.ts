@@ -1,3 +1,4 @@
+import { Linkedin } from 'lucide-react';
 import { Member } from './member';
 
 export const membersData: Member[] = [
@@ -10,8 +11,10 @@ export const membersData: Member[] = [
       '> Project Planning and Coordination',
       '> Leadership and Team Management',
       '> Strategic Product Design and Development',
-      '> Innovation and Feature Ideation',
+      '> Marketing Strategy and Promotion',
+     
     ],
+    Linkeddin:'https://www.linkedin.com/in/shesheer-ch/',
   },
   {
     id: 2,
@@ -21,9 +24,10 @@ export const membersData: Member[] = [
     details: [
       '>  Collabration with UI/UX and Dev teams',
       '>  Web Design and Layout Structuring',
-      '>  Contributes to open-source projects',
-      '>  Designing and Prototyping',
+      '>  Contributes to open-source projects ',
+      '>  Designing and Prototyping & AI Model Training',
     ],
+    Linkeddin:'https://www.linkedin.com/in/lokeshh-hhh',
   },
   {
     id: 3,
@@ -34,13 +38,14 @@ export const membersData: Member[] = [
       '>  Full-Stack Development and Architecture',
       '>  Deployment and Maintenance of Web Applications',
       '>  Building scalable APIs & Server Side Logic',
-      '>  Testing and Debugging'
+      '>  Testing and Debugging & AI Model Integration'
     ],
+    Linkeddin:'https://www.linkedin.com/in/yogeshwarao',
   },
   {
     id: 4,
     name: '- Hemanjali .K',
-    photoUrl: '/diana.jpg',
+    photoUrl: '/hema1.jpg',
     role: 'UI/UX Designer',
     details: [
       '>  User Interface and User Experience Design',
@@ -48,6 +53,7 @@ export const membersData: Member[] = [
       '>  Wireframing and Prototyping',
       '>  Accessibility and Responsive Design',
     ],
+    Linkeddin:'https://www.linkedin.com/in/hemanjalikadamati',
   },
   {
     id: 5,
@@ -60,16 +66,19 @@ export const membersData: Member[] = [
       '>  Complex Query Optimization',
       '>  Data Security and Backup Solutions'
     ],
+    Linkeddin:'https://www.linkedin.com/in/bijjam-gopal-reddy-5b5b15267/',
   },
   {
     id: 6,
     name: '- G ManiKanta',
     photoUrl: '/Mani.jpg',
-    role: 'Data & Marketing Specialist',
+    role: 'Project Support Coordinator',
     details: [
-      '>  Develops and executes marketing strategies',
-      '>  Social media management and content creation',
-      '>  Data-driven approach to marketing',
+      '>  Assisting in Development Workflow',
+      '>  Cross-Functional Team Support',
+      '>  Resource Identification and Validation',
+      '>  Research For Feature Alignment',
     ],
+    Linkeddin:'',
   },
 ];

@@ -37,7 +37,7 @@ const moduleData: Record<string, string[]> = {
 
 
   //CYS SEM6
-  'Computer-Architecture&Organization[CAO]': ['CAO-Module-1', 'CAO-Module-2', 'CAO-Module-3', 'CAO-Module-4', 'CAO-Module-5'],
+  'Computer-Architecture & Organization[CAO]': ['CAO-Module-1', 'CAO-Module-2', 'CAO-Module-3', 'CAO-Module-4', 'CAO-Module-5'],
   'Cryptography-and-Network-Security[CNS]': ['CNS-Module-1', 'CNS-Module-2', 'CNS-Module-3', 'CNS-Module-4', 'CNS-Module-5'],
   'Ethical-Hacking[EH]': ['EH-Module-1', 'EH-Module-2', 'EH-Module-3', 'EH-Module-4', 'EH-Module-5'],
   'Web-Application-Security[WAS]': ['WAS-Module-1', 'WAS-Module-2', 'WAS-Module-3', 'WAS-Module-4', 'WAS-Module-5'],

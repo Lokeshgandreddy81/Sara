@@ -5,6 +5,8 @@ import NavBar from '../../../componets/NavBar';
 import ThemeImageChat from '../../../componets/ThemeImageChat';
 import { Send } from 'lucide-react';
 import ReactMarkdown from "react-markdown";
+import Footer from '../../../componets/Footer_FIn';
+import Markdown from 'markdown-to-jsx';
 
 // Interface for a chat message
 interface ChatMessage {
@@ -22,7 +24,7 @@ const chatBot: React.FC = () => {
     const [messages, setMessages] = useState<ChatMessage[]>([
         {
             sender: 'Wellness Assistant',
-            message: "Hi there! I'm your Wellness Assistant. How are you feeling today?",
+            message: "Hi there! I'm your Wellness Assistant. How are you feeling today?😊🌸",
             time: '12:34 PM',
         },
     ]);
@@ -32,18 +34,35 @@ const chatBot: React.FC = () => {
     // Function to fetch a response from Gemini API
     const fetchBotResponse = async (userMessage: string, chatHistory: ChatMessage[]): Promise<string> => {
         try {
-            // Construct the conversation history for context
-            const history = chatHistory.map((msg) => ({
-                role: msg.sender === 'User' ? 'user' : 'model',
-                parts: [{ text: msg.message }],
-            }));
+            const promptTemplate = `
+You are SARA AI, a warm, humorous mental health companion by Google, trained by SARA Developers, for emotional support.
 
-            // Add the current user message
-            const currentPrompt = [...history, { role: 'user', parts: [{ text: userMessage }] }];
+Instructions:
+1. Start with 1–2 sentences empathetically acknowledging user's feelings or query.
+2. Provide 2–3 tips (bullet points) for self-care, mindfulness, or relaxation.
+3. Keep responses brief, clear, uplifting.
+4. Use emojis when appropriate.
+5. No medical advice.
+6. Greetings (e.g., "hi"): 1–5 words.
+7. Curious/routine queries (e.g., "how are you?"): 1–2 lines.
+8. For non-mental health prompts, say: "I'm trained for emotional support, not that, but here for you! 😊"
+9. If no input or repetitive questions, ask fun questions (e.g., "Wanna crack a Bendakayyy riddle? 😜", "Dondakai story time?", "What’s your bane extralu vibe?").
+10. If funny/random chat, sprinkle in words like "Bendakayyy," "Dondakai," "Bhai fan kadha nuv," "Ammo," "Bane extralu."
+11. If unclear about user’s life, suggest positive habits (e.g., journaling, connecting with friends, hobbies).
 
-            // Call the Gemini API
+Crisis Protocol:
+If suicide, self-harm, or harm mentioned:
+- Express care and urgency.
+- Suggest crisis hotline or professional help.
+- Encourage contacting a trusted friend.
+- Recommend safe self-care (e.g., breathing).
+- Skip tips.
+
+Reply to: "${userMessage}"
+`;
+
             const result = await model.generateContent({
-                contents: currentPrompt,
+                contents: [{ role: 'user', parts: [{ text: promptTemplate }] }],
             });
 
             const response = await result.response;
@@ -101,7 +120,7 @@ const chatBot: React.FC = () => {
                                 setMessages([
                                     {
                                         sender: 'Wellness Assistant',
-                                        message: "Hi there! I'm your Wellness Assistant. How are you feeling today?",
+                                        message: "Hi there! I'm your Wellness Assistant. How are you feeling today?😊🌸",
                                         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                                     },
                                 ])
@@ -147,7 +166,7 @@ const chatBot: React.FC = () => {
                                         : 'bg-[#f1f1f7] text-gray-800 dark:bg-[#262626] dark:text-[#f8f8f8]'
                                         }`}
                                 >
-                                    <ReactMarkdown>{msg.message}</ReactMarkdown>
+                                    <Markdown>{msg.message}</Markdown>
 
                                 </div>
                             </div>
@@ -185,6 +204,8 @@ const chatBot: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 };

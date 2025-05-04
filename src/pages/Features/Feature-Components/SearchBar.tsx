@@ -17,16 +17,35 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubjectSelect }) => {
     // Deep learning[DL] is in AIML SEM 6
 
     //CYBER SEM6
-    'Computer-Architecture-and-Organization[CAO]', 'Cryptography-and-Network-Security[CNS]', 'Ethical-Hacking[EH]', 'Web-Application-Security[WAS]',
+    'Computer-Architecture & Organization[CAO]', 'Cryptography-and-Network-Security[CNS]', 'Ethical-Hacking[EH]', 'Web-Application-Security[WAS]',
+    //IT SEM6
+  'Software-Testing&QA[STQA]',
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  //SEM4
     //CSE SEM4
     'Computer-Networks[CN]', 'Design-Analysis&Algorithms[DAA]', 'Software Engineering[SE]',
     //Artificial-Intelligence[AI] is in DS SEM 6
+    //IT SEM4
+  'Data-Mining[DM]',
 
+  //DS SEM4
+  'Theory-of-Computation[TOC]','R-Programming[RP]',
+
+  //CS SEM4
+  'Internet-of-Things[IOT]',
+
+  //SEM2
     //CSE SEM2
     'Professional-Ethics&HV[PEHV]', 'JAVA[OOPJ]', 'Calculus-T&T[CTT]', 'Basic-EEE[BEEE]',
 
     //IT SEM2
-    'Discrete-Math-Structures[DMS]',
+    'Discrete-Math-Structures[DMS]','Python-Programming[PP]',
+    
+  //DS SEM2
+
+  'Digital-Logic-Design[DLD]','Matrix-Theory[MTLA]','Physics-for-Computing[PC]',
   ];
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredSubjects, setFilteredSubjects] = useState<string[]>([]);

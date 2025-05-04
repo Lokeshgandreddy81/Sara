@@ -23,11 +23,11 @@ const moduleData: Record<string, Record<string, string[]>> = {
       'Logical database schema, Forward and reverse engineering, Introduction to object diagrams',
     ],
     'MODULE 3(Basic Behavioral Modeling )': ['Basic Behavioral Modeling-I: Interactions-Terms and concepts, Modeling a flow of control',
-'Interaction diagramsTerms and concepts, Modeling flows of control by time ordering and control by organization',
-'Forward and reverse engineering. Basic Behavioral Modeling-II: Use casesTerms and concepts',
-'Modeling the behavior of the element; Use case Diagrams-Terms and concepts, Modeling the context of a system, Requirement of a system',
-'Forward and reverse engineering; Activity Diagrams-Terms and concepts, Modeling a workflow',
-'modeling andoperation, Forward and reverse engineering. ',],
+      'Interaction diagramsTerms and concepts, Modeling flows of control by time ordering and control by organization',
+      'Forward and reverse engineering. Basic Behavioral Modeling-II: Use casesTerms and concepts',
+      'Modeling the behavior of the element; Use case Diagrams-Terms and concepts, Modeling the context of a system, Requirement of a system',
+      'Forward and reverse engineering; Activity Diagrams-Terms and concepts, Modeling a workflow',
+      'modeling andoperation, Forward and reverse engineering. ',],
     'MODULE 4(Advanced Behavioral Modeling )': ['Events and signals-Modeling a family of signals & exceptions;', 'State machines-Modeling the lifetime of an object', 'Introduction to processes and threads, Time and space-Modeling timing constraints, Distribution of objects and objects that migrate;', 'State chart diagrams-Modeling reactive objects, Forward and reverse engineering. '],
     'MODULE 5(Architectural Modeling )': ['Component-Terms and concepts, Modeling executables and libraries, Modeling tables, Files and documents, Modeling an API', 'Deployment-Modeling processors and devices, Modeling the distribution of components', 'Component diagrams-Modeling source code, Executable release, Physical database, Adaptable systems, Forward and reverse engineering', 'Deployment diagramsModeling an embedded systems, Client/Server system, Fully distributed systems, Forward and reverse engineering', 'Probability Density Estimation- Parametric methods, Maximum likelihood, Bayesian inference'],
   },
@@ -219,7 +219,7 @@ const moduleData: Record<string, Record<string, string[]>> = {
     ],
 
   },
-  'Software-Testing&QS[STQS]': {
+  'Software-Testing&QA[STQA]': {
     'MODULE-1(Intro)': ['Agile Testing – Traditional vs agile testing - Principles for agile testers – Mind set- Applying principles and values –Adding value'
     ],
     'MODULE-2(Team logistics)': ['Team Structure - Independent QA Teams - Integration of Testers into an Agile Project - Agile Project Teams - Physical Logistics',
@@ -240,28 +240,106 @@ const moduleData: Record<string, Record<string, string[]>> = {
   },
 
   //CYS SEM6
-  'Computer-Organization&Architecture[COA]': {
-    'MODULE-1()': [],
-    'MODULE-2()': [],
-    'MODULE-3()': [],
-    'MODULE-4()': [],
-    'MODULE-5()': [],
+  'Computer-Architecture & Organization[CAO]': {
+    'MODULE-1(introduction)': [
+      'Organization and architecture, Structure and function, IAS computer structure',
+      'Computer function, Interconnection structures, Bus interconnection',],
+    'MODULE-2(central processing unit)': ['Arithmetic logic unit, Integer multiplication- Booth’s algorithm; Floating point representation principles, Machine instruction characteristics',
+      'Addressing modes, Instruction formats – Instruction length, Allocation of bits; Processor organization',
+      'Register organization – User visible registers, Control and status registers; Instruction cycle',
+    ],
+    'MODULE-3(control unit input/output)': ['Control Unit: Micro operations, Control of the processor – Functional requirements, Control signals, Internal processor organization',
+      ' Hardwired implementation, Microinstructions, Microprogrammed control unit',
+      'Micro instruction sequencing – Design considerations, sequencing techniques, Address generation',
+      'Micro instruction sequencing – Design considerations, sequencing techniques, Address generation Microinstruction encoding',
+      'Input/Output: External devices, I/O modules, Direct memory access function, I/O Channels and Processors, PCI Physical and Logical Architecture'
+    ],
+    'MODULE-4(memory systems)': ['Semiconductor Memories: Computer Memory System overview, Semiconductor Main Memory- Organization, DRAM and SRAM',
+      'Types of ROM, Chip logic, Chip packaging, Module organization, Interleaved memory',
+      'DDR DRAM, Flash Memory, Newer Nonvolatile Solid-State Memory Technologies',
+      'Cache Memory: Cache Memory Principles, Elements of Cache Design-Cache Addresses, Mapping Functions ',
+      'External Memory: Solid State Drives'
+    ],
+    'MODULE-5(parallel organization)': ['Parallel Processing: Multiple Processor Organizations, Instruction Pipelining, Symmetric Multiprocessors, Nonuniform Memory Access, Multicore Organization',
+      'Multicore Computers: Hardware performance issues, Software performance issues, Multicore organization, Intel Core i7-990X'
+    ],
   },
   'Cryptography-and-Network-Security[CNS]': {
-    'MODULE-1()': [],
-    'MODULE-2()': [],
-    'MODULE-3()': [],
-    'MODULE-4()': [],
-    'MODULE-5()': [],
+    'MODULE-1(introdution)': ['Computer security concepts, Security attacks, Security services',
+      'Security mechanisms,Model for network security, Symmetric cipher model',
+      'Substitution techniques -Monoalphabetic ciphers and Polyalphabetic ciphers.'
+    ],
+    'MODULE-2(Symmetric ciphers)': ['Stream ciphers and block ciphers, Data Encryption Standard (DES)',
+      'Advanced Encryption Standard (AES) - Structure, Transformation Functions',
+      'Block Cipher Operation - Multiple encryption and triple DES',
+      'Cipher block chaining mode, Cipher feedback mode, Output feedback mode, Counter mode.'
+    ],
+    'MODULE-3(public key & cryptographic data intergrity algorithms)': ['Public Key Cryptography: RSA, Diffie-Hellman key exchange, Elgamal cryptographic system',
+      'Cryptographic Data Integrity Algorithms: Hash Functions - Simple hash functions',
+      'Secure Hash Algorithm SHA-512; Message Authentication Codes – Requirements, Functions',
+      'Security of MACs, HMAC; Digital signatures - Schnorr Digital signature scheme'
+    ],
+    'MODULE-4(mutual trust)': ['Key Management and Distribution: Symmetric key distribution using symmetric and asymmetric encryption',
+      'Distribution of public keys, X.509 certificates, Public key infrastructure.',
+      'User Authentication: Remote user authentication principles, Kerberos, Personal identity verification.'
+    ],
+    'MODULE-5(network and internet security)': ['Transport Level Security: Web security considerations, Transport layer security, HTTPS.;',
+      'Electronic Mail Security: S/MIME, Pretty Good Privacy, DNSSEC.',
+      'IP Security: Overview, Policy, Encapsulating security payload.'
+    ],
   },
   'Ethical-Hacking[EH]': {
-    'MODULE-1()': [],
-    'MODULE-2()': [],
-    'MODULE-3()': [],
-    'MODULE-4()': [],
-    'MODULE-5()': [],
+    'MODULE-1(introduction)': ['Introduction: Hacking Impacts, The Hacker Framework: Planning the test, Sound Operations, Reconnaissance',
+      'Enumeration, Vulnerability Analysis, Exploitation, Final Analysis, Deliverable, Integration',
+      'Information Security Models: Computer Security, Network Security, Service Security, Application Security, Security Architecture',
+      'Information Security Program: The Process of Information Security, Component Parts of Information Security Program, Risk Analysis and Ethical Hacking'
+    ],
+    'MODULE-2(the business perspective and planning for a controlled attack)': ['Business Objectives, Security Policy, Previous Test Results, Business Challenges Inherent Limitations',
+      'Imposed Limitations, timing is Everything, Attack Type, Source Point',
+      'Required Knowledge, Multi-Phased Attacks, Teaming and Attack Structure, Engagement Planner',
+      'The Right Security Consultant, The Tester, Logistics, Intermediates, Law Enforcement'
+    ],
+    'MODULE-3(preparing for a hack and reconnaissance)': ['Technical Preparation, Managing the Engagement',
+      'Social Engineering', 'Physical Security,Internet Reconnaissance'
+    ],
+    'MODULE-4(enumeration and exploitation)': ['Enumeration Techniques, Soft Objective, Looking Around or Attack',
+      'Elements of Enumeration, Preparing for the Next Phase Intutive Testing',
+      'Evasion, Threads and Groups, Operating Systems, Password Crackers, RootKits',
+      'applications, Wardialing, Network, Services and Areas of Concern'
+    ],
+    'MODULE-5(deliverable and integration)': ['The Deliverable, The Document, Overall Structure, Aligning Findings',
+      'Presentation Integrating the Results, Integration Summary',
+      'Mitigation, Defense Planning, Incident Management, Security Policy, Conclusion'
+    ],
   },
   'Web-Application-Security[WAS]': {
+    'MODULE-1(Security Models and Virtual Private Databases)': ['Database Application Security Models: Introduction, Types of users',
+      'Security models, Application types, Application security models.',
+      'Virtual Private Databases: Introduction, Overview of VPD, Implementing VPDs',
+      'Implementing Oracle VPD, Viewing VPD Policies and application context using the data dictionary and policy manager',
+      'Implementing row and column level security with SQL server.'
+    ],
+    'MODULE-2(database security design)': ['Secure DBMS Design: Introduction, Security mechanisms in DBMSs, Secure DBMS architectures.',
+      'Design of Secure Databases: Preliminary analysis, Requirement analysis and security policy selection',
+      'Conceptual design, Logical design, Physical design, Implementation of security mechanisms, Verification, and testing'
+    ],
+    'MODULE-3(data auditing and auditing database activities)': ['Application Data Auditing: Introduction, DML action auditing architecture, Oracle triggers',
+      'SQL server triggers, Fine grained auditing with Oracle, DML statement audit trail, Auditing application errors with Oracle.',
+      'Auditing Database Activities: Using Oracle database activities, Creating DLL triggers with Oracle',
+      'Auditing database activities with Oracle, Auditing server activity with Microsoft SQL server 2000',
+      'Implementing AQL profiler, Security auditing with SQL server, SQL injection.'
+    ],
+    'MODULE-4(the wed security)': ['The Web Security Problem, Risk Analysis and Best Practices, Cryptography',
+      'the Web:Cryptography and Web Security, Working Cryptographic Systems and Protocols',
+      'Legal Restrictions on Cryptography, Digital Identification; Top 10 vulnerabilities in OWAS'
+    ],
+    'MODULE-5(the web Privacy)': ['The Web’s War on Your Privacy, Privacy-Protecting Techniques',
+      'Backups and Antitheft, Web Server Security, Physical Security for Servers',
+      'Host Security for Servers, Securing Web Applications.'
+    ],
+  },
+
+  'Demo': {
     'MODULE-1()': [],
     'MODULE-2()': [],
     'MODULE-3()': [],
@@ -352,13 +430,94 @@ const moduleData: Record<string, Record<string, string[]>> = {
 
   //IT SEM4
   'Data-Mining[DM]': {
-    'MODULE-1()': [],
-    'MODULE-2()': [],
-    'MODULE-3()': [],
-    'MODULE-4()': [],
-    'MODULE-5()': [],
+    'MODULE-1(data mining and data Preprocessing)': ['Introduction to Data Mining, kinds of data, kinds of patterns',
+'major issues in Data Mining, Data Pre-processing, Data Cleaning',
+'Data Integration, Data Reduction, Data Transformation and Discretization.'
+],
+    'MODULE-2(associations and classification)': ['Basic Concepts, Frequent itemset Mining Methods, pattern evaluation methods- From Association Mining to Correlation Analysis',
+'Classification, Decision Tree Introduction, Bayesian Classification Methods',
+'Rule Based Classification, Prediction: Linear Regression.'
+],
+    'MODULE-3(cluster analysis)': ['Cluster Analysis: Types of Data in Cluster Analysis, A Categorization of Major Clustering Methods',
+'Partitioning Methods-k-Means and K-Medoids, Hierarchical methodsAgglomerative and divisive method',
+'Density-Based Method-DBSCAN, Grid-Based MethodSTING, Outlier Analysis'
+],
+    'MODULE-4(data mining trends)': ['Mining Complex Data Types: Mining sequence data, Mining other kinds of data: Spatial, Text, Multimedia and Web data.',
+'Data Mining Trends: Mining Complex Data Types, Methodologies of Data Mining',
+'Data Mining Applications, Data Mining and Society, Data Mining Trends.'
+],
+    'MODULE-5(visualization of multi-dimensional data)': ['Introduction, Diagrams for Multidimensional visualization',
+'Kiviat diagrams, 3D Scattergram, 3D Line Graph',
+'Chernoff Faces, Volume Rendering, Visual Data Mining - Animation'
+],
   },
 
+
+  'Theory-of-Computation[TOC]': {
+    'MODULE-1(finite automata)': ['Introduction to Finite automata, the central concepts of automata theory, Deterministic finite automata',
+      'Nondeterministic Finite automata, the equivalence of DFA and NDFA, Finite automata with epsilon-transitions',
+      'Conversion of epsilon-NFA to NFA and DFA, Mealy and Moore models'
+    ],
+    'MODULE-2(regular expressions and languages)': ['Regular expressions, Identity rules, Finite automata and Regular expressions, Applications of regular expressions',
+      'Pumping lemma for regular languages, Applications of the pumping lemma, Closure properties of regular languages, Equivalence of two regular expressions', 'Equivalence of two finite automata and minimization of automata',
+    ],
+    'MODULE-3(context free grammers)': ['Context-Free Grammars, Parse trees, Applications of context free grammars',
+      'Ambiguity in grammars and languages, Normal forms for context-free grammars, the pumping lemma for context-free languages'
+    ],
+    'MODULE-4(push down automata)': ['Definition of the pushdown automaton, the languages of a PDA, Equivalence of PDA’s and CFG’s',
+      'Deterministic pushdown automata, Chomsky hierarchy of languages, Undecidability'
+    ],
+    'MODULE-5(turing machine)': ['Turing machine model, Representation of Turing machine, Language acceptability by Turing machine',
+      'Design of Turing machine, Techniques for Turing machine construction, Variants of Turing machines, Universal Turing machine',
+      'Recursive and recursively enumerable languages (REL), properties of recursive and recursively enumerable languages, the model of linear bounded automaton'
+    ],
+  },
+  'R-Programming[RP]': {
+    'MODULE-1(introduction to r)': ['Introduction, How to run R, R Sessions and Functions, Basic Math, Variables',
+      'Data Types, Vectors, Conclusion, Advanced Data Structures, Data Frames',
+      'Lists, Matrices, Arrays, Classes'
+    ],
+    'MODULE-2(r programming Structures)': ['R Programming Structures, Control Statements, Loops, -Looping Over Nonvector Sets',
+      'IfElse, Arithmetic and Boolean Operators and values, Default Values for Argument',
+      'Return Values, Deciding Whether to explicitly call return-Returning Complex Objects',
+      'Functions are Objective, No Pointers in R, Recursion, A Quicksort Implementation-Extended Extended Example: A Binary Search Tree.'
+    ],
+    'MODULE-3(doing math and simulation in r)': ['Doing Math and Simulation in R, Math Function, Extended Example Calculating ProbabilityCumulative Sums and Products-Minima and Maxima-Calculus',
+      'Functions Fir Statistical Distribution, Sorting, Linear Algebra Operation on Vectors and Matrices',
+      'Extended Example: Vector cross Product-Extended Example: Finding Stationary Distribution of Markov Chains',
+      'Set Operation, Input /out put, Accessing the Keyboard and Monitor, Reading and writer Files.'
+    ],
+    'MODULE-4(graphics  )': ['Graphics, Creating Graphs, The Workhorse of R Base Graphics',
+      'the plot() Function – Customizing Graphs, Saving Graphs to Files'
+    ],
+    'MODULE-5(probability distributions and regression models)': ['Probability Distributions, Normal Distribution-Binomial Distribution-Poisson Distributions Other Distribution',
+      'Basic Statistics, Correlation and Covariance, T-Tests,-ANOVA. Linear Models',
+      'Simple Linear Regression, -Multiple Regression Generalized Linear Models, Logistic Regression',
+      'Poisson Regression-other Generalized Linear Models-Survival Analysis, Nonlinear Models, Splines-Decision-Random Forests.',
+    ],
+
+  },
+  'Internet-of-Things[IOT]': {
+    'MODULE-1(introduction and domain applications)': [ 'Introduction to Internet of Things: Definition, Conceptual Framework, Architectural View, Technology behind IoT',
+      'Communication Technologies, Data Enrichment, Data consolidation and Device management at Gateway',
+      'IoT and M2M: M2M, Difference between IoT and M2M, SDN and NFV for IoT',
+      'Domain Specific IoTs: Home automation, Cities, Environment, Health and Life Style'
+     ],
+    'MODULE-2(sensors and connectivity)': [ 'Sensor Technology, Actuators, RFID Technology, Internet Connectivity',
+      'Internet-Based Communications, IP Addressing in the IoT, Medium Access Control, Application Layer Protocols'
+     ],
+    'MODULE-3(prototyping and hardware)': [ 'Embedded Computing Basics, Embedded platforms for prototyping, Things always connected to the Internet/Cloud, Amazon Web Services for IoT'
+    ],
+    'MODULE-4(design methodologies and case studies)': [ 'Design Methodology: Purpose and Requirements specifications, Process Specifications, Domain Model Specification',
+      'Information Model Specification, Service Specification, IoT Level Specifications',
+      'Functional View Specification, Operational View Specification, Device and Component integration, Application development',
+      'Case Studies Illustrating IoT Design: Home Automation, Cities'
+     ],
+    'MODULE-5(data analytics for iot and iot security)': [ 'Data Analytics for IoT: Apache Hadoop, Using Hadoop MapReduce for Batch Data Analysis',
+      'IoT Security: Vulnerabilities, Security Requirements and Threat analysis, Security Tomography and Layered Attacker Model',
+      'Identity Management and Establishment, Access Control and Secure Message Communication, Security Models, Profiles and Protocols for IoT'
+     ],
+  },
   //CSE SEM2
   'Calculus-T&T[CTT]': {
     'MODULE-1(Single Variable Calculus)': ['Rolle’s Theorem',
@@ -535,6 +694,72 @@ const moduleData: Record<string, Record<string, string[]>> = {
       'Exception Handling: Errors in a python program, Exceptions, Exception handling, Types of exceptions, Except block, Assert statement, User defined exceptions'
     ],
   },
+  'Physics-for-Computing[PC]': {
+    'MODULE-1(wave optics)': ['Interference: Introduction - Interference in thin films (reflected light) - Newton’s rings - Determination of wavelength.',
+'Diffraction: Introduction - Fraunhofer diffraction - Single slit diffraction (qualitative) - Double slit diffraction (qualitative).',
+'Polarization: Introduction - Polarization by reflection - and double refraction - Nicol prism',
+'Half wave and Quarter wave plate - Engineering applications of interference - diffraction and polarization.'
+],
+    'MODULE-2(introduction to quantum mechanics)': ['Principles of Quantum Mechanics: Introduction – de Broglie’s hypothesis for matter waves',
+'Davison and Germer’s experiment - Schrödinger’s one dimensional wave equation (time independent)',
+'significance of wave function – Fermi Dirac distribution and effect of temperature (qualitative treatment).'
+],
+    'MODULE-3(quantum physics and band theory of solids)': ['Applications of Quantum Physics: Particle in a 1 D box (Eigen Value and Eigen Function)',
+'3 D Analysis (Qualitative) - Tunnelling Effect (Qualitative) - Kronig Penney model (qualitative treatment)',
+'origin of energy bands formation in solids.'
+],
+    'MODULE-4(semiconductors and optoelectronic devices)': ['Introduction - Intrinsic semiconductors - Density of electrons in intrinsic semiconductor',
+'Intrinsic carrier concentration - Fermi energy - Electrical conductivity of intrinsic semiconductors',
+'Extrinsic semiconductors - Density of charge carriers in Extrinsic semiconductors (qualitative)',
+'Drift and Diffusion currents - Direct and Indirect band gap semiconductors - Hall effect',
+'pn junction Optoelectronic devices: Light Emitting Diode (LED) - Photodiode - Semiconductor diode laser'
+],
+    'MODULE-5(fiber optics)': ['Introduction to fiber optics - Total Internal Reflection - Critical angle of propagation',
+'Acceptance angle - Numerical Aperture – V number (qualitative) - Classification of fibers based on Refractive index profile',
+'modes - Applications of optical fibers – Fiber optic Sensors (temperature, displacement).'
+],
+  },
+
+
+  'Digital-Logic-Design[DLD]': {
+    'MODULE-1(binary system and boolean algebra)': ['Introduction, Binary Numbers, Number Base Conversions',
+'Error Detection and Correction, Complements of Numbers, Signed Binary Numbers',
+'Binary Codes, Boolean Algebra, Boolean Functions, Canonical and Standard Forms, Digital Logic Gates.'
+],
+    'MODULE-2(gate level minimization)': ['The Map Method, Four Variable K-Map, Product-of-Sums and Sum-of-Products Simplification',
+'Don’t Care Conditions, NAND and NOR Implementations',
+'Other Two Level Implementations, Exclusive–OR function.'
+],
+    'MODULE-3(combinational logic)': ['Combinational Circuits, Analysis of Combinational Circuits, Design Procedure, Binary AdderSubtractor',
+'Decimal Adder, Binary Multiplier, Magnitude Comparator',
+'Decoders, Encoders, Multiplexers, De-Multiplexers.'
+],
+    'MODULE-4(sequential logic)': ['Latches, Flip-Flops, Analysis of Clocked Sequential Circuits',
+'Design of Synchronous Sequential Circuits, Registers, Shift Registers',
+'Ripple Counters, Synchronous Counters, Ring Counter and Johnson Counter.'
+],
+    'MODULE-5(Programmable logic)': ['RAM, ROM, Programmable Logic Array',
+'Programmable Array Logic, Sequential Programmable Devices.'
+],
+  },
+
+  'Matrix-Theory[MTLA]': {
+    'MODULE-1(matrices and linear system of equations)': [ 'Elementary Row-operations, Elementary Matrices, Echelon form, Rank of a matrix by row- reduction',
+      'Solutions of system of linear equations by row reduction, Matrix Factorization,LU factorization, LDU factorization'
+     ],
+    'MODULE-2(eigen values , eigen vectors and diagonalization)': [ 'Characteristic equation of a matrix, Eigenvalues and Eigenvectors of matrices, Similarity of matrices',
+      'Diagonalization by using Eigenvalues, Cayley-Hamilton Theorem (Without Proof), Evaluation of matrix powers'
+     ],
+    'MODULE-3(vector spaces)': [ 'Vector spaces, Sub-spaces, Four fundamental subspaces of a matrix, Span',
+      'Linearly independent and dependent, Basis, construction of Basis, dimensions, Finite dimensional vector space'
+     ],
+    'MODULE-4(linear transformation)': [ 'Linear transformation, Kernal and range of linear transformation, Basic properties, Invertible linear transformation, Matrix of linear transformation'
+    ],
+    'MODULE-5(inner product spaces)': [ 'Inner product, Norm, Distance, Inner product space, Orthogonal and orthonormal basis',
+      'Gram-Schmidt orthogonalization, Singlular Value Decomposition for square matrices'
+     ],
+  },
+
 
   //SCHOOL OF ENGINEERING
 };
@@ -555,7 +780,7 @@ const Sidebar2: React.FC<Sidebar2Props> = ({ subject, module, onTopicClick }) =>
 
   return (
     <aside className="min-h-screen w-64 bg-gray-100 dark:bg-[#2c2c2c] p-4 shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-      <h2 className="text-lg font-bold mb-4 text-black dark:text-white">  
+      <h2 className="text-lg font-bold mb-4 text-black dark:text-white">
         Choose Topics in {subject || "None Selected"}
       </h2>
       <div>
