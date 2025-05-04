@@ -24,6 +24,7 @@ import ForgotPassword from './pages/LoginPages/ForgotPassword';
 import FeedbackPage from './pages/Footer_Pages/Feedback';
 import ChatBot from './pages/Features/Feature_3/chatBot';
 import { useEffect, useState } from 'react';
+import FAQ from './componets/faq';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
 import { Monitor } from 'lucide-react';
@@ -36,6 +37,7 @@ import ThemeToggle from './componets/ThemeToggle';
 import HomePage from './Dumb_comp/HomePage';
 import NavBarHome from './componets/NavBarFeatures';
 import NavBarFeatures from './componets/NavBarFeatures';
+import FAQs from './componets/faq';
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -84,7 +86,7 @@ function App() {
         {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
         <Route path="/ChangePass" element={<ChangePassword />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
-        {/* <Route path='/chatBot' element={<ChatBot />}/> */}
+        <Route path='/faq' element={<FAQs />} />
 
         <Route
           path="/select-sub"

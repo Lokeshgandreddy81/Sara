@@ -1,5 +1,6 @@
 // Sidebar.tsx
 import React from 'react';
+import { useState } from 'react';
 
 interface SidebarProps {
   subject: string;
@@ -186,17 +187,30 @@ const moduleData: Record<string, string[]> = {
 
 const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
   const modules = moduleData[subject] || [];
+  const [selectedModule, setSelectedModule] = useState<string | null>(null);
+
+  const handleModuleClick = (module: string) => {
+    setSelectedModule(module);
+    onModuleClick(module);
+  };
 
   return (
     <aside className="w-64 bg-gray-100 dark:bg-[#2c2c2c] p-5 shadow-lg transition-all duration-300 ease-in-out rounded-xl my-1">
-      <h2 className="text-lg font-semibold mb-4 text-black dark:text-white">Modules for: {subject || 'None Selected'}</h2>
-      <ul className="list-disc list-inside text-black dark:text-gray-300">
+      <h2 className="text-lg font-semibold mb-4 text-black dark:text-white">
+        Modules for: {subject || 'None Selected'}
+      </h2>
+      <ul className="text-black dark:text-gray-300 space-y-1">
         {modules.length > 0 ? (
           modules.map((module) => (
             <li key={module}>
               <button
-                onClick={() => onModuleClick(module)}
-                className="w-full text-left px-2 py-1 rounded hover:bg-indigo-200 dark:hover:bg-orange-800"
+                onClick={() => handleModuleClick(module)}
+                className={`w-full text-left px-2 py-1 rounded transition-colors
+                  ${
+                    selectedModule === module
+                      ? 'bg-indigo-500 text-white dark:bg-orange-600'
+                      : 'hover:bg-indigo-200 dark:hover:bg-orange-800'
+                  }`}
               >
                 {module}
               </button>
@@ -211,3 +225,4 @@ const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
 };
 
 export default Sidebar;
+

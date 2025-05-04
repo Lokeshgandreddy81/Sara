@@ -5,6 +5,7 @@ import Footer from '../componets/Footer_FIn';
 import BackToTopButton from '../componets/BackToTopButton';
 import HowToUseV from '../componets/HowToUseV';
 import NavBar from '../componets/NavBar';
+import TotalUsers from '../componets/TotalUsers';
 // Reusable floating icon component
 function FloatingIcon({ children, className }: { children: React.ReactNode; className: string }) {
     return (
@@ -24,22 +25,19 @@ function Home2Page() {
     // Testimonial data
     const testimonials = [
         {
-            name: "D V Yogesh",
-            role: "Web Developer",
-            text: "Teachings of the great explore of truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, pleasure itself.",
-            image: "/Yogesh.png"
+            name: "T Sri Santoosh",
+            role: "2nd Year CSE",
+            text: "SARA AI is literally a one-stop solution for students! I can access topic-wise summaries, watch related YouTube tutorials, and even get mental health support when I feel stressed. It’s the smartest tool I’ve used so far."
         },
         {
-            name: "Ch Shesheer",
-            role: "Web Design",
-            text: "Complete account of the system and expound the actual are  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots.",
-            image: "/Shesheer.png"
+            name: "M Venkat Pavan",
+            role: "2nd Year DS",
+            text: "The website is super user-friendly and works great. I love how everything — from subject modules to mental health tips — Everthing has a Perfect Flow. SARA really understands students."
         },
         {
-            name: "G Lokesh",
-            role: "UI/UX Design",
-            text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-            image: "/Lokesh.png"
+            name: "G Rukrut Raj",
+            role: "3rd Year CSE",
+            text: "With SARA AI, I no longer struggle to find the right material. The Smart Study Guide, curated YouTube videos, and the option to get emotional support in one platform makes it stand out from all other tools I’ve tried"
         }
     ];
 
@@ -107,6 +105,8 @@ function Home2Page() {
 
                 {/* Features Section */}
                 <Features />
+        
+                <TotalUsers />
 
                 {/* Testimonials Section */}
                 <div className="py-16 md:py-24 bg-white dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
@@ -121,11 +121,7 @@ function Home2Page() {
                                 <div key={index} className="bg-white dark:bg-[#262626] rounded-xl shadow-lg p-4 md:p-6 hover:shadow-2xl transition-shadow">
                                     <p className="text-gray-600 mb-4 md:mb-6 italic dark:text-[#d4d4d4]">"{testimonial.text}"</p>
                                     <div className="flex items-center space-x-4">
-                                        <img
-                                            src={testimonial.image}
-                                            alt={testimonial.name}
-                                            className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
-                                        />
+                                        
                                         <div>
                                             <h4 className="font-semibold dark:text-white">{testimonial.name}</h4>
                                             <p className="text-gray-500 text-sm dark:text-[#d4d4d4]">{testimonial.role}</p>

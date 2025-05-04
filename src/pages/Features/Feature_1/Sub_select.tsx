@@ -7,8 +7,10 @@ import { onAuthStateChanged, User } from 'firebase/auth';
 import DynamicSelect from '../Feature-Components/DynamicSelect';
 const Sub_select = () => {
     return (
-        <div>
+        <div className='dark:bg-[#1f1f1f] bg-gray-200'>
             <NavBar />
+            <p className='dark:bg-[#1f1f1f] dark:text-orange-500 text-center my-2'> <span className='text-xl'>Smart Study Guide </span> </p>
+            {/* <p>feature is Currently Available for School of compting Students Only...</p> */}
             <DynamicSelect />
         </div>
     );

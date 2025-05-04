@@ -17,7 +17,7 @@ const Features: React.FC = () => {
 
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-orange-500 transition-all duration-300 ease-in-out">Our Features</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-orange-500 transition-all duration-300 ease-in-out">Let's Learn Together</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto text-black dark:text-white transition-all duration-300 ease-in-out">Discover our comprehensive learning tracks designed to help you master new skills and advance your career.</p>
                     </div>
 

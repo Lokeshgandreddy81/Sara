@@ -178,7 +178,7 @@ const DynamicSelect: React.FC = () => {
   return (
     < div className='bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out '>
       <div className='flex max-h-full bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out rounded-xl'>
-        <div className="flex  gap-4 max-w-full p-5 my-3  mx-auto bg-gray-200 shadow-md dark:bg-[#2c2c2c] transition-all duration-300 ease-in-out rounded-xl ">
+        <div className="flex  gap-4 max-w-full p-5  mx-auto bg-gray-200 shadow-md dark:bg-[#2c2c2c] transition-all duration-300 ease-in-out rounded-xl ">
           {/* School Select */}
           <label className="block text-black mb-2 dark:text-gray-200 transition-all duration-300 ease-in-out  ">
             Select School
@@ -278,7 +278,7 @@ const DynamicSelect: React.FC = () => {
         </div>
       </div>
       <div>
-        <p className='mx-10 my-10 font-bold text-2xl text-blue-600 dark:text-orange-600'>Sara AI's Summarizer & Explanation</p>
+        <p className='mx-10 my-10 font-bold text-3xl text-blue-600 dark:text-orange-600 text-center'>Sara AI's Summarizer & Explanation</p>
         <div className="flex min-h-screen w-full my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out p-4">
 
           <div className="w-64 bg-gray-200 dark:bg-[#1f1f1f] rounded-xl ">

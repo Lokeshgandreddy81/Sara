@@ -16,7 +16,7 @@ const Signin: React.FC = () => {
   const [loginError, setLoginError] = useState('');
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  
+
 
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -44,7 +44,7 @@ const Signin: React.FC = () => {
         setLoading(false);
         return;
       }
-      
+
 
       // ✅ Successful login
       navigate('/');
@@ -69,17 +69,23 @@ const Signin: React.FC = () => {
 
   return (<>
     <nav className='bg-[#1e3a8a] dark:bg-[#1f1f1f] p-4 flex justify-between items-center transition-all duration-300 ease-in-out'>
+      {/* Left Side - Logo */}
       <Link to="/" className="flex items-center space-x-2">
-      <ThemeImageLogin />
-        {/* <Monitor className="h-8 w-8 text-white dark:text-orange-600" /> */}
-        {/* <img
-          src="/sara-dark-logo.png"
-          className="h-10 w-10"></img> */}
-        <span className="text-white text-xl font-bold  dark:text-orange-600">Sara AI</span>
+        <ThemeImageLogin />
+        <span className="text-white text-xl font-bold dark:text-orange-600">Sara AI</span>
       </Link>
 
-      <ThemeToggle />
+      {/* Right Side - Toggle and Button */}
+      <div className="flex items-center space-x-4">
+        <ThemeToggle />
+        <Link to="/Signup">
+          <button className="bg-white text-black dark:bg-orange-600 dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
+            Signup
+          </button>
+        </Link>
+      </div>
     </nav>
+
 
 
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#1e3a8a] dark:bg-[#1f1f1f]  transition-all duration-300 ease-in-out my:">
@@ -105,7 +111,7 @@ const Signin: React.FC = () => {
         </div>
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-200 transition-all duration-300 ease-in-out">
+            <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-200 transition-all duration-300 ease-in-out">
               College Mail Address
             </label>
             <input
@@ -157,7 +163,7 @@ const Signin: React.FC = () => {
                   className="absolute top-[12px] right-3 flex items-center text-gray-500 dark:text-gray-200"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  {showPassword ? <EyeOff size={20} className='text-gray-700 dark:text-gray-100'/> : <Eye size={20} className='text-gray-700 dark:text-gray-100' />}
+                  {showPassword ? <EyeOff size={20} className='text-gray-700 dark:text-gray-100' /> : <Eye size={20} className='text-gray-700 dark:text-gray-100' />}
                 </button>
               </div>
             </div>
@@ -173,7 +179,7 @@ const Signin: React.FC = () => {
             className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-orange-600 hover:dark:bg-orange-700 transition-all duration-300 ease-in-out"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Signing in...' : 'Sign in'}
+            {isSubmitting ? 'Logging in...' : 'Log in'}
           </button>
         </form>
         <div className="mt-4 text-center">

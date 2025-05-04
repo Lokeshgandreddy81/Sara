@@ -14,13 +14,13 @@ function Signup() {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [loading,setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate();
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
     setEmailError(null);
-   
+
   };
 
   const handleSignUp = async (e: React.FormEvent) => {
@@ -72,14 +72,18 @@ function Signup() {
       <nav className='bg-[#1e3a8a] dark:bg-[#1f1f1f] p-4 flex justify-between items-center transition-all duration-300 ease-in-out'>
         <Link to="/" className="flex items-center space-x-2">
           <ThemeImageLogin />
-          {/* <Monitor className="h-8 w-8 text-white dark:text-orange-600" /> */}
-          {/* <img
-          src="/sara-dark-logo.png"
-          className="h-10 w-10"></img> */}
-          <span className="text-white text-xl font-bold  dark:text-orange-600">Sara AI</span>
+          <span className="text-white text-xl font-bold dark:text-orange-600">Sara AI</span>
         </Link>
 
-        <ThemeToggle />
+
+        <div className="flex items-center space-x-4">
+          <ThemeToggle />
+          <Link to="/Signin">
+            <button className="bg-white text-black dark:bg-orange-600 dark:text-white px-6 py-2 rounded-full shadow hover:scale-110 transition-all duration-300">
+              Log in
+            </button>
+          </Link>
+        </div>
       </nav>
 
 

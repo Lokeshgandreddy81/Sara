@@ -75,7 +75,7 @@
           >
             Explanation
           </button>
-          <div className='mx-10'>
+          {/* <div className='mx-10'>
             <button
               onClick={() => {
                 const encodedTopic = encodeURIComponent(topic); // Ensure spaces & special chars are handled
@@ -85,10 +85,10 @@
               Related Videos
             </button>
 
-          </div>
+          </div> */}
         </div>
 
-        {loading && <p className="text-blue-500">Loading from SARA AI...</p>}
+        {loading && <p className="text-blue-500 text-xl">Loading from SARA AI...🤖</p>}
         {error && <p className="text-red-500">{error}</p>}
         {output && (
           <div className="prose dark:prose-invert min-w-100 text-gray-600 dark:text-gray-300">

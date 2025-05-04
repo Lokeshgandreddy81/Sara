@@ -33,7 +33,8 @@ const TeamPortfolio: React.FC<TeamPortfolioProps> = () => {
                             <div>
                                 <img src={member.photoUrl} alt={member.name} className="member-photo" />
                                 <h3 className='text-xl text-black dark:text-white'>{member.name}</h3>
-                                <p className="member-role text-orange-500">{member.role}</p>
+                                <h2 className='text-sm text-black dark:text-white '>3rd-Year CSE</h2>
+                                <h2 className=" text-md member-role text-orange-500">{member.role}</h2>
                             </div>
 
                             <ul className="member-details text-gray-900 dark:text-gray-300 mt-4">
