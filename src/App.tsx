@@ -26,6 +26,7 @@ import ChatBot from './pages/Features/Feature_3/chatBot';
 import { useEffect, useState } from 'react';
 import ReportIssue from './pages/Footer_Pages/reportAProblem';
 import Sarav1Insights from './pages/Footer_Pages/Sarav1';
+import EditProfile from './pages/AdminPgs/Profile_pages/EditProfile';
 import FAQ from './componets/faq';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
@@ -127,6 +128,7 @@ function App() {
               < Dashboard />
             </ProtectedRoute>
           } />
+
           <Route
           path='/chatBot'
           element={
@@ -135,6 +137,15 @@ function App() {
             </ProtectedRoute>
           } />
 
+
+<Route
+          path="/Dashboard/EditProfile"
+          element={
+            <ProtectedRoute>
+              <EditProfile />
+            </ProtectedRoute>
+          }
+        />
 
       </Routes>
 

@@ -8,7 +8,7 @@ const AbtSara: React.FC = () => {
           About Us
         </h2>
         <p className="text-gray-700 text-lg text-center max-w-3xl mx-auto mb-10 dark:text-[#d4d4d4] transition-all duration-300 ease-in-out">
-          <strong>Welcome to SARA AI — Your Smart Academic and Wellness Companion</strong><br />
+          <strong>Welcome to SARA AI — <span className="text-blue-600 text-2xl dark:text-orange-600">S</span>mart <span className="text-blue-600 text-2xl dark:text-orange-600">A</span>cademic <span className="text-blue-600 text-2xl dark:text-orange-600">R</span>esource <span className="text-blue-600 text-2xl dark:text-orange-600">A</span>ssistant</strong><br />
           At <strong>SARA AI</strong>, we believe education and mental wellness go hand in hand.
           We’ve built an AI-powered platform designed to support students, educators, and learners
           with tools that make learning more engaging, interactive, and personalized.

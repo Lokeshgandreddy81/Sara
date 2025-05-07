@@ -61,10 +61,10 @@ const ChangePassword: React.FC = () => {
     <div className='bg-white dark:bg-[#1f1f1f] min-h-screen flex items-center justify-center transition-all duration-300 ease-in-out'>
 
       <div className="max-w-md mx-auto p-6 bg-gray-200 dark:bg-[#262626] rounded-xl shadow-md transition-all duration-300 ease-in-out">
-        <Link to='/Dashboard'>
-          <ChevronLeft className='h-8 w-8 text-indigo-700 dark:text-orange-600' />
+        <Link to='/Dashboard' title='Dashboard'>
+          <ChevronLeft className='h-8 w-8 text-blue-600 dark:text-orange-600' />
         </Link>
-        <h2 className="text-3xl font-semibold mb-4 text-center text-indigo-800 dark:text-orange-600 transition-all duration-300 ease-in-out">Change Password</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-center text-blue-600 dark:text-orange-600 transition-all duration-300 ease-in-out">Change Password</h2>
         <form onSubmit={handleChangePassword} className="space-y-5">
           <div className="relative">
             <input
@@ -72,7 +72,7 @@ const ChangePassword: React.FC = () => {
               placeholder="Current Password"
               value={currentPassword}
               onChange={(e) => setCurrentPassword(e.target.value)}
-              className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out"
+              className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out border-blue-500 dark:border-orange-500"
               required
             />
             <button
@@ -92,7 +92,7 @@ const ChangePassword: React.FC = () => {
               placeholder="New Password"
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
-              className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out"
+              className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out border-blue-500 dark:border-orange-500"
               required
             />
           </div>
@@ -102,14 +102,14 @@ const ChangePassword: React.FC = () => {
             placeholder="Confirm New Password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out"
+            className="w-full px-4 py-2 border rounded-md dark:bg-[#1f1f1f] dark:text-gray-200 transition-all duration-300 ease-in-out border-blue-500 dark:border-orange-500"
             required
           />
 
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-2 px-4 text-white rounded-md ${loading ? 'bg-gray-400' : 'bg-orange-600 hover:bg-blue-700 transition-all duration-500 ease-in-out'
+            className={`w-full py-2 px-4 text-white rounded-md ${loading ? 'bg-gray-400' : 'bg-blue-600 hover:bg-blue-800 dark:bg-orange-600 dark:hover:bg-orange-700 transition-all duration-500 ease-in-out'
               }`}
           >
             {loading ? 'Updating...' : 'Change Password'}

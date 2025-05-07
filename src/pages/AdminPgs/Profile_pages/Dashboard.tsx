@@ -3,8 +3,9 @@ import { getAuth, signOut } from 'firebase/auth';
 import { doc, DocumentData, getDoc, getFirestore } from 'firebase/firestore';
 import { db } from '../../../../firebase';
 import NavBar from '../../../componets/NavBar';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import ChangePassword from './Change_pass';
+import { ChevronLeft , SquarePen } from 'lucide-react';
 
 
 interface UserProfile {
@@ -83,10 +84,22 @@ const Dashboard: React.FC = () => {
     if (!userData) return <div className="p-8 text-lg">No profile data found.</div>;
 
     return (
-        <div className='bg-[#fafafa] dark:bg-[#1f1f1f] min-h-screen'>
-            <NavBar />
-            <div className="p-8 max-w-3xl mx-auto bg-gray-200 dark:bg-[#262626] rounded-2xl shadow-lg mt-10">
+        <>
+        <NavBar />
+        <div className='bg-[#fafafa] dark:bg-[#1f1f1f] min-h-screen flex items-center justify-center transition-all duration-300 ease-in-out '>
+           
+            <div className="p-8 max-w-3xl mx-auto bg-gray-200 dark:bg-[#262626] rounded-2xl shadow-lg mb-20 space-y-4 transition-all duration-300 ease-in-out">
+                      <div className="flex items-center gap-2 mb-1 dark:text-orange-500 transition-all duration-300 ease-in-out">
+                    <Link to="/" title='Home'>
+                        <div className="flex items:center gap-2">
+                            <ChevronLeft className="w-9 h-9 text-[#4F46E5] dark:text-orange-500 transition-all duration-300 ease-in-out" />
+                        </div>
+                    </Link>
+                </div>
                 <h2 className="text-3xl font-bold text-center mb-8 dark:text-orange-500">Your Profile</h2>
+                <Link to="/Dashboard/EditProfile" className="text-blue-500 hover:underline mb-4 flex justify-end" title='Edit Profile'>
+                    <SquarePen className='w-7 h-7 dark:text-orange-600' />
+                </Link>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
                     <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>Name:</strong> {userData.name}</div>
                     <div className='text-[#1f1f1f] dark:text-gray-200 '><strong>Year of Study:</strong> {userData.yearOfStudy}</div>
@@ -98,6 +111,7 @@ const Dashboard: React.FC = () => {
                         <button
                             onClick={handleLogout}
                             className="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition-all"
+                            title='Log Out'
                         >
                             Log Out
                         </button>
@@ -108,6 +122,7 @@ const Dashboard: React.FC = () => {
                         <button
                             onClick={() => navigate('/ChangePass')}
                             className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-all"
+                            title='Change Password'
                         >
                             Change Password
                         </button>
@@ -116,6 +131,7 @@ const Dashboard: React.FC = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
