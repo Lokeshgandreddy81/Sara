@@ -31,7 +31,7 @@ const Signin: React.FC = () => {
       const user = userCredential.user;
 
       if (!user.emailVerified) {
-        setLoginError('Please verify your email before signing in.');
+        setLoginError('Please verify your email via the link sent to your college Outlook.');
         await auth.signOut();
         setIsSubmitting(false);
         setLoading(false);
@@ -193,6 +193,8 @@ const Signin: React.FC = () => {
 
         </div>
       </div>
+      <br/><br/>
+      <p className='text-lg text-white dark:text-gray-200 transition-all duration-300 ease-in-out '>Problem Logging In.....<a target='_blank' href='/Report' className='text-red-600 hover:underline dark:text-red-500 transition-all duration-300 ease-in-out'>Report It Here</a></p>
     </div>
   </>
   );

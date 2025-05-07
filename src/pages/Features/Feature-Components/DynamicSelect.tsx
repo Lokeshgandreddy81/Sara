@@ -273,7 +273,7 @@ const DynamicSelect: React.FC = () => {
       <div className="flex min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out p-4">
         <Sidebar subject={selectedSubject}
           onModuleClick={setSelectedModule} />
-        <div className="flex-grow overflow-auto mx-1.5">
+        <div className="flex-1 overflow-auto mx-1.5">
           <ModuleDisplay moduleName={selectedModule} />
         </div>
       </div>

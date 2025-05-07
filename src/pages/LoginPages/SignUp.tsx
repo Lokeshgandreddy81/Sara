@@ -150,6 +150,9 @@ function Signup() {
             </p>
           </div>
         </div>
+        <br/>
+      <p className='text-lg text-white dark:text-gray-200 transition-all duration-300 ease-in-out '>Problem Signing Up.....<a target='_blank' href='/Report' className='text-red-600 hover:underline dark:text-red-500 transition-all duration-300 ease-in-out'>Report It Here</a></p>
+    
       </div>
       {loading && <FullPageLoader />}
     </>

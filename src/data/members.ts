@@ -6,7 +6,7 @@ export const membersData: Member[] = [
     id: 1,
     name: '- Shesheer .Ch',
     photoUrl: '/Shesheer.png', // Ensure these image paths are correct in your `` folder
-    role: 'Co-Founder. Product Designer & Team Lead',
+    role: 'Co-Founder. Product Manager & Team Lead',
     details: [
       '> Project Planning and Coordination',
       '> Leadership and Team Management',
@@ -20,15 +20,17 @@ export const membersData: Member[] = [
     id: 2,
     name: '- Lokesh .G',
     photoUrl: '/Lokesh.png',
-    role: 'Co-Founder. Web Designer',
+    role: 'Co-Founder & Lead Architect',
     details: [
-      '>  Assisting in Development Workflow',
-      '>  Cross-Functional Team Support',
-      '>  Resource Identification and Validation',
-      '>  Research For Feature Alignment',
+      '>  System Design &  Architecture',
+      '>  Scalable Infrastructure Strategy',
+      '>  User-Centric Product Design ',
+      '>   AI Model Training & Oversight',
     ],
     Linkeddin:'https://www.linkedin.com/in/lokeshh-hhh',
   },
+  
+
   {
     id: 3,
     name: '- D. V. Yogeshwara Rao',
@@ -46,7 +48,7 @@ export const membersData: Member[] = [
     id: 4,
     name: '- Hemanjali .K',
     photoUrl: '/hema1.jpg',
-    role: 'UI/UX Designer',
+    role: 'UI/UX Designer & Design Lead',
     details: [
       '>  User Interface and User Experience Design',
       '>  Design Tools: Figma, Adobe XD',
@@ -54,31 +56,35 @@ export const membersData: Member[] = [
       '>  Accessibility and Responsive Design',
     ],
     Linkeddin:'https://www.linkedin.com/in/hemanjalikadamati',
+
   },
+  
   {
     id: 5,
-    name: '- Gopal Reddy .B',
-    photoUrl: '/Gopal.png',
-    role: 'Back-end Developer & Database Management',
-    details: [
-      '>  Database Design and Management',
-      '>  Backend Development',
-      '>  Complex Query Optimization',
-      '>  Data Security and Backup Solutions'
-    ],
-    Linkeddin:'https://www.linkedin.com/in/bijjam-gopal-reddy-5b5b15267/',
-  },
-  {
-    id: 6,
     name: '- G ManiKanta',
     photoUrl: '/Mani.jpg',
-    role: 'Project Support Coordinator',
+    role: 'Web-Developer & Workflow Organizer',
     details: [
-      '>  Collabration with UI/UX and Dev teams',
-      '>  Web Design and Layout Structuring',
-      '>  Contributes to open-source projects ',
-      '>  Designing and Prototyping & AI Model Training',
+      '>  Assisting in Web-Development Workflow',
+      '>  Cross-Functional Team Support',
+      '>  Resource Identification and Validation',
+      '>  Research For Feature Enhancement and Testing',
     ],
     Linkeddin:'',
   },
+  {
+    id: 6,
+    name: '- Gopal Reddy .B',
+    photoUrl: '/Gopal.png',
+    role: ' Database Management & Support Coordinator ',
+    details: [
+      '>  Database Design and Management',
+      '>  Assisting in Development Workflow',
+      '>  Complex Query Optimization',
+      '>  Resource Identification'
+    ],
+    Linkeddin:'https://www.linkedin.com/in/bijjam-gopal-reddy-5b5b15267/',
+  },
+  
+
 ];

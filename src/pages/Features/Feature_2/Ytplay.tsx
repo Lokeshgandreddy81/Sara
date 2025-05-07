@@ -7,38 +7,42 @@ interface PlaylistViewerProps {
 
 const PlaylistViewer: React.FC<PlaylistViewerProps> = ({ moduleName }) => {
   const playlistMap: Record<string, string> = {
-
+    //WAS
     'WAS-Module-1': 'PLb3Ofnw16r2ypuJ7E7KJDsGbX8BGFIYST&si=1D9nifFAoeuU2DgY',
-    'WAS-Module-2': 'PLb3Ofnw16r2xufYXObxnzG4AySLhyfcVx&si=v3gwP5Su6cJXSUCp',
+    'WAS-Module-2': 'PLb3Ofnw16r2xufYXObxnzG4AySLhyfcVx&si=4aHCzVVbGzSH3l7m',
     'WAS-Module-3': 'PLb3Ofnw16r2xTpWxjGiqM5770e0f76ssv&si=4bcRSOUrMtYq9Azm',
     'WAS-Module-4': 'PLb3Ofnw16r2wHDKbXaSUNOATFVfU-kf_9&si=tGFOvJZytUPuPxv7',
     'WAS-Module-5': 'PLb3Ofnw16r2xt6AMyPXSHyD0N01Jf8w1C&si=n_pB3FBOatbqvoUr',
+
+    //CSE
     'CSE-Module-1': 'PLb3Ofnw16r2yddsPGQNdR1RRXJ9ZG-4vD&si=jv9D3TrG-zarIxC_',
     'CSE-Module-2': 'PLb3Ofnw16r2yeAF9r7-ypOET2dTkmi-K6&si=--w-2kK5KtIkvHKl',
     'CSE-Module-3': 'PLb3Ofnw16r2zQT9RbInGtDkK043g5NelZ&si=50OIMbnFCnnyNANX',
     'CSE-Module-4': 'PLb3Ofnw16r2x1PV9WAgRkXii5UVV08Hjm&si=B-9VcZiqXXNbAclR',
-    'CSE-Module-5': '',
+    'CSE-Module-5': 'PLb3Ofnw16r2zCeCpeO8wQ0ggLcQimJz-e&si=PqXC5s7gvbz5i6I0',
+
+    //OOPJ
     'OOPJ-MODULE-1': 'PLb3Ofnw16r2zEWZGXGJxDMgl-xnQXR20J&si=gV1GiF4SnHiF5Ril',
     'OOPJ-MODULE-2': 'PLb3Ofnw16r2wNVSnvAiE05yWX7heP_rbQ&si=Li8BliYWHBr1JfVf',
     'OOPJ-MODULE-3': 'PLb3Ofnw16r2yCsbWL4xMdOAa1h3_qM6FY&si=j9EZrGAXVb741g6a',
     'OOPJ-MODULE-4': 'PLb3Ofnw16r2zZTJ-NXXnwuanG5pOnsQEm&si=CnC_JKFsj1QB5jFz',
     'OOPJ-MODULE-5': 'PLb3Ofnw16r2wgkDD8agK1MEq1fXI8SX3k&si=qTXfBeVq-LVT-Wfd',
+
+    //MAD
     'MAD-Module-1': 'PLb3Ofnw16r2z3HiRiFMv3dScez7LjBPRe&si=O10otXiiYZTcxgvR',
     'MAD-Module-2': 'PLb3Ofnw16r2z3HiRiFMv3dScez7LjBPRe&si=O10otXiiYZTcxgvR',
     'MAD-Module-3': 'PLb3Ofnw16r2ypVJfOFdObXqKs4xiQdAEX&si=X2_5a83Qd2MS97sq',
     'MAD-Module-4': 'PLb3Ofnw16r2wnbR1roi0Itc_3I65WF4KV&si=wX3Yw8haHrVb3v20',
     'MAD-Module-5': 'PLb3Ofnw16r2yZvVWolXcvpIQ4GtotnKKc&si=J0afTuBDpyCX4hWO',
-    'CC-Module-1': 'PLb3Ofnw16r2yIqts8sdWgdIJwWYmzsGf8&si=uF1gzBrgbwATdbIH',
+
+    //CC
+    'CC-Module-1': 'PLb3Ofnw16r2xhjQXorLJPVlC5nHtYzRm9&si=Qg0v0gGJLdZ2y7Oe',  
     'CC-Module-2': 'PLb3Ofnw16r2zkz2Of6SIP0wVTdmN6NnPd&si=AMQf0pARPja-cJOm',
     'CC-Module-3': 'PLb3Ofnw16r2xoT9f_Bqs1TeIY390xlR_D&si=fH-VhDMleBNyNPpU',
     'CC-Module-4': 'PLb3Ofnw16r2xhjQXorLJPVlC5nHtYzRm9&si=I_qDKTaoDG5EK9Rj',
     'CC-Module-5': 'PLb3Ofnw16r2y2rzWyOgoW7cl_94naJb4R&si=5UayaYR76AJ8rH5n',
-    // 'RP-MODULE-1': 'PLb3Ofnw16r2ztQ2WcHtFyMre6rb4BSY6I&si=Jw0DVc6dLE-ys6EL',
-    // 'RP-MODULE-2': 'PLb3Ofnw16r2xtfYareLf-t7ptO4jN13YB&si=ZyQaqkL2e4nwGgsw',
-    // 'RP-MODULE-3': 'PLb3Ofnw16r2yOxjWCivd_G9Vdb5yExybr&si=k9kECYs-5K33f6Vk',
-    // 'RP-MODULE-4': 'PLb3Ofnw16r2y5Gi9uu-6319ZvomoslIfW&si=MrQl00muDCS2-ODm',
-    // 'RP-MODULE-5': 'PLb3Ofnw16r2zLfdSjBMKGczFXS3PxGKwu&si=2KurIReclKGT8fa5',
-    // // DAA
+
+    // DAA
     'DAA-MODULE-1': 'PLb3Ofnw16r2xMzyfXoZlvRx7BO9R4OddJ&si=klbHeleIiyefoqGh',
     'DAA-MODULE-2': 'PLb3Ofnw16r2wjZkADYjjC4Tp2p6iRaKRp&si=VSzOkn1H0bssQy7P',
     'DAA-MODULE-3': 'PLb3Ofnw16r2zw2Jskjw-Kbnwqr1w4Z4Le&si=sn3ygQE24gVC8mK0',
@@ -52,9 +56,9 @@ const PlaylistViewer: React.FC<PlaylistViewerProps> = ({ moduleName }) => {
     'IOT-MODULE-5': 'PLb3Ofnw16r2wQRt-vd06-NK_SFUUkWDVd&si=-0r7WKLIZgQ1eM-e',
     //  DLD
     'DLD-MODULE-1': 'PLb3Ofnw16r2z-UhvnSV0QGSSQE4yUUz2z&si=9Jbw7WqhbFXshreg',
-    'DLD-MODULE-2': 'PLb3Ofnw16r2xzCEMCtj3Kbl9d_izCb-LL&si=nOzTDOp1_XFkYWBT',
+    'DLD-MODULE-2': 'PLb3Ofnw16r2wb0_nbhIeNpCd6mj0qddJs&si=euNCJtbXsGJVbPd3',
     'DLD-MODULE-3': 'PLb3Ofnw16r2wb0_nbhIeNpCd6mj0qddJs&si=L9PYXdG7FK_SmHZb',
-    'DLD-MODULE-4': 'PLb3Ofnw16r2wB635_kwXvNym1oNmLGD_j&si=Fo736FpqrSCfxEPs',
+    'DLD-MODULE-4': 'PLb3Ofnw16r2wB635_kwXvNym1oNmLGD_j&si=oBVfrUGXT9shE4Qj',
     'DLD-MODULE-5': 'PLb3Ofnw16r2ylyBmXXM3ByNFLFHGzkJOJ&si=mJ8xEzid1UiHOWFU',
     //  CN
     'CN-MODULE-1': 'PLb3Ofnw16r2w_BREVaaMpcMC5XC5K_VXI&si=XqxsUzT9YYR0zmth',
@@ -88,35 +92,35 @@ const PlaylistViewer: React.FC<PlaylistViewerProps> = ({ moduleName }) => {
     'DMS-MODULE-5': 'PLb3Ofnw16r2ym49aLX356Q7GDsrAqBdHg&si=ISWFJJMrvH6pXsjy',
 
     // AI
-    'AI-Module-1': 'PLb3Ofnw16r2wwDZptC3hJ5Zzg8v_u39xu&si=UbpkyP_eG6OpXZX9',
+    'AI-Module-1': 'PLb3Ofnw16r2wwDZptC3hJ5Zzg8v_u39xu&si=jKoaxudFA1xgzPAs',
     'AI-Module-2': 'PLb3Ofnw16r2xlzbsBHi9_cW4P8YJYAYEp&si=zXNfMhGfs6ARFKIt',
     'AI-Module-3': 'PLb3Ofnw16r2wqLQnfXaW6hYijdBvAgP4k&si=v3CWhAMelIyEl87b',
     'AI-Module-4': 'PLb3Ofnw16r2wJNf0jYYkhZeYUWKn-MOrN&si=BHMusSR2PaDq08RR',
     'AI-Module-5': 'PLb3Ofnw16r2xpHJ0a7ANvaUOpbdKm1hd1&si=WcIT1mhsUOIRehIV',
     //  CTT
-    'CTT-MODULE-1': 'PLb3Ofnw16r2yvYMCoM88vbkvHmQ7YiO78&si=HkNSReSAVLEoCY-Z',
-    'CTT-MODULE-2': 'PLb3Ofnw16r2zWaqIx4R-RQFVQ_wNuAiYH&si=X4iXB4g8OzJhLqzI',
-    'CTT-MODULE-3': 'PLb3Ofnw16r2wyPcAV7ujmhCJkaoMLnxk5&si=FU1ylkCjDXipGKq-',
-    'CTT-MODULE-4': 'PLb3Ofnw16r2y-IjWDPo8P-ffKLJZ33IRR&si=wZytyjgRKo4tFMu-',
-    'CTT-MODULE-5': 'PLb3Ofnw16r2xjjfzyW2-dDy8OZvSd7AH4&si=PNmAB41WK32O7_Yu',
+    'CTT-MODULE-1': 'PLb3Ofnw16r2yvYMCoM88vbkvHmQ7YiO78&si=gqrnC1A0O5FmicbS',
+    'CTT-MODULE-2': 'PLb3Ofnw16r2zWaqIx4R-RQFVQ_wNuAiYH&si=GLbp1Bh4GN5ExEZi',
+    'CTT-MODULE-3': 'PLb3Ofnw16r2wyPcAV7ujmhCJkaoMLnxk5&si=ibYSrzr0SU-0BxOn',
+    'CTT-MODULE-4': 'PLb3Ofnw16r2y-IjWDPo8P-ffKLJZ33IRR&si=TApbJG7oVmAySTOF',
+    'CTT-MODULE-5': 'PLb3Ofnw16r2xjjfzyW2-dDy8OZvSd7AH4&si=caQ-IUH9HnpsfbXG',
     //  DIS
     'DiS-Module-1': 'PLb3Ofnw16r2xaGd35YD3vyv5vTqdAbM8w&si=KQSuWsySregmuZ2M',
     'DiS-Module-2': 'PLb3Ofnw16r2wxrSjQ3LTjXulh4vZit_7w&si=jDHaYddfj6gv-Q6G',
-    'DiS-Module-3': 'PLb3Ofnw16r2yKpS8U96DDQjxuHsDkRS5w&si=nAS8D36auwgaTVHq',
-    'DiS-Module-4': 'PLb3Ofnw16r2yft4lFU8byLQ6q7tM4DCY_&si=EEPUsE-Fqv9lF-uW',
+    'DiS-Module-3': 'PLb3Ofnw16r2yKpS8U96DDQjxuHsDkRS5w&si=T9cPAmAZNPUwugYj',
+    'DiS-Module-4': 'PLb3Ofnw16r2yft4lFU8byLQ6q7tM4DCY_&si=4M5EAEHsgbAKt8KZ',
     'DiS-Module-5': 'PLb3Ofnw16r2xQf7L5w6wL1FugrUqgK94E&si=mSmirENiB5BTqE12',
     //  OOMD
-    'OOMD-Module-1': 'PLb3Ofnw16r2xR3Kqx7_Sk3KnRTuVmz3Km&si=1WeikdkPTCmwNezR',
-    'OOMD-Module-2': 'PLb3Ofnw16r2ykokugt5hMxHrawjdElAR_&si=wwPtho75cgUrSABD',
-    'OOMD-Module-3': 'PLb3Ofnw16r2wkBCGffnzO0I2DsbBoj3jm&si=oV-C_S9HzA9ZSndX',
-    'OOMD-Module-4': 'PLb3Ofnw16r2zYhmZuiLcJcAeMYF0XtGQ8&si=qMZKx16euYNhwMG3',
-    'OOMD-Module-5': 'PLb3Ofnw16r2xOqefBynE4A7AofzeiVAAF&si=MmCUZ1rtv35iF913',
+    'OOMD-Module-1': 'PLb3Ofnw16r2xOqefBynE4A7AofzeiVAAF&si=_nRSobEEgTRUBuf9',
+    'OOMD-Module-2': 'PLb3Ofnw16r2wkBCGffnzO0I2DsbBoj3jm&si=oi098MeuG8m5Z6C4',
+    'OOMD-Module-3': 'PLb3Ofnw16r2zYhmZuiLcJcAeMYF0XtGQ8&si=6mSlgpd43Im8CItb',
+    'OOMD-Module-4': 'PLb3Ofnw16r2ykokugt5hMxHrawjdElAR_&si=TUc8VqvM-MYOnzG0',
+    'OOMD-Module-5': 'PLb3Ofnw16r2xR3Kqx7_Sk3KnRTuVmz3Km&si=ZYNULPrcGjA0Tqvq',
     //  SE
-    'SE-MODULE-1': 'PLa2p_z_H1rA42Li6EAQmXQU8O0Oq4Mj-p&si=hRtDDW4XT9yITjZo',
-    'SE-MODULE-2': 'PLa2p_z_H1rA702wT4fP6jL4btrUWZvcEB&si=MxMpkDVVxp4CA1WD',
-    'SE-MODULE-3': '',
-    'SE-MODULE-4': '',
-    'SE-MODULE-5': '',
+    'SE-MODULE-1': 'PLb3Ofnw16r2xG5Crmf5i9BFMGHrH8WHOb&si=gqepJxdAyv2a4H4P',
+    'SE-MODULE-2': 'PLb3Ofnw16r2z6KU1Chq6nBrQm0EgzW4Iy&si=N5e9RXyhWurxSHg-',
+    'SE-MODULE-3': 'PLb3Ofnw16r2xLg7fL-O6b_ZHamJDbUVK_&si=YQ9fAdB4872Hq8AX',
+    'SE-MODULE-4': 'PLb3Ofnw16r2zEXmxXvot1IaANDviwvDKu&si=Gaq4f9NqM4KEp3u4',
+    'SE-MODULE-5': 'PLb3Ofnw16r2zuzk6jfP0tmJmc0xKDoJvD&si=J5qXJpfVVbiZH6Jn',
     // Coa
     'CAO-Module-1': 'PLa2p_z_H1rA55dCGMf1A9ab5XdrRrkMQV&si=H68BUa3byHk0O9JU',
     'CAO-Module-2': 'PLa2p_z_H1rA6F-WU9FplGld1ccrmtBMLa&si=mvTxpzNFFuPps8To',
@@ -147,49 +151,49 @@ const PlaylistViewer: React.FC<PlaylistViewerProps> = ({ moduleName }) => {
     'ANN-Module-3': 'PLa2p_z_H1rA6WeERLQ5qWJQl63BK4Bh2b&si=TLol1bVcw6aAMUKC',
     'ANN-Module-4': 'PLa2p_z_H1rA5MQ17n0nf5-aK7m6aUJIV3&si=m0OOrvMEGkekS_mH',
     'ANN-Module-5': 'PLb3Ofnw16r2xDoj-0IM4oWaWf-rI06kTI&si=Nmn70MF7EAbTPjAo',
-// python
+    // python
     'PP-Module-1': 'PLa2p_z_H1rA6yIwFpZ8VRVIJ9z_O9DU2d&si=8C93pbCCVkqEggJn',
     'PP-Module-2': 'PLa2p_z_H1rA6l0Zxe7uufrcqt2JBu8HK9&si=29H-Pkov1ecTq_r6',
     'PP-Module-3': 'PLb3Ofnw16r2zWDpS908Z4Sccw6HZs8oeQ&si=vQLQa24QSguupaLW',
     'PP-Module-4': 'PLb3Ofnw16r2xMeTrYyAIodlqQY5UdRjIn&si=vj1ul42K7R9pjIuW',
     'PP-Module-5': 'PLa2p_z_H1rA7Nrtr_ZbNISp3wFdoeFNtK&si=i8aZ7wxz3QoNI8_L',
-    
+
     // PC 
 
-    'PC-MODULE-1':'PLb3Ofnw16r2zvlu4WN5mnAJ9tL-I_F1Fb&si=M_8AhZGaT8mx7oze',
-    'PC-MODULE-2':'PLb3Ofnw16r2xZBbDy_i1wzm3JsanZ1EjU&si=5ck641AfI4yJ5FkC',
-    'PC-MODULE-3':'PLb3Ofnw16r2ypwahnSvIh3G6SqDkypuLI&si=3MaYwvUPaWO8MAKl',
-    'PC-MODULE-4':'PLb3Ofnw16r2yLpEHwLDXaOLwr7neD9RMI&si=biqszAXXPi2gjk1n',
-    'PC-MODULE-5':'PLb3Ofnw16r2ycBfG6XUNzqy5erwMFdYqH&si=Y5eciDMhdjPPl61I',
-    
+    'PC-MODULE-1': 'PLb3Ofnw16r2zvlu4WN5mnAJ9tL-I_F1Fb&si=M_8AhZGaT8mx7oze',
+    'PC-MODULE-2': 'PLb3Ofnw16r2xZBbDy_i1wzm3JsanZ1EjU&si=5ck641AfI4yJ5FkC',
+    'PC-MODULE-3': 'PLb3Ofnw16r2xMeTrYyAIodlqQY5UdRjIn&si=mX8EaBYubtpZk9dp',
+    'PC-MODULE-4': 'PLb3Ofnw16r2zWDpS908Z4Sccw6HZs8oeQ&si=LKNgyKDGiXeRzVtK',
+    'PC-MODULE-5': 'PLb3Ofnw16r2ycBfG6XUNzqy5erwMFdYqH&si=Y5eciDMhdjPPl61I',
+
     // PPS 
-    'PPS-Module-1':'PLb3Ofnw16r2xjErqPxFlWWEnBVIcplS3O&si=AawSbZU2moTo1svL',
-    'PPS-Module-2':'PLb3Ofnw16r2ySK_CKu9A22OkBM4d3pkZ4&si=yqGLCPnWo0gk6JYs',
-    'PPS-Module-3':'PLb3Ofnw16r2ySK_CKu9A22OkBM4d3pkZ4&si=ODi9IQnZxo97ThMA',
-    'PPS-Module-4':'PLb3Ofnw16r2zmJGIwMwOzf2A9t6YBe8PV&si=_Wcl-PyoVowsl-hF',
-    'PPS-Module-5':'PLb3Ofnw16r2xxaKc5FLAvAsM9Dpjh1aHA&si=Yzh3VK6_-cBqi483',
-    
+    'PPS-Module-1': 'PLb3Ofnw16r2xjErqPxFlWWEnBVIcplS3O&si=AawSbZU2moTo1svL',
+    'PPS-Module-2': 'PLb3Ofnw16r2ySK_CKu9A22OkBM4d3pkZ4&si=yqGLCPnWo0gk6JYs',
+    'PPS-Module-3': 'PLb3Ofnw16r2ySK_CKu9A22OkBM4d3pkZ4&si=ODi9IQnZxo97ThMA',
+    'PPS-Module-4': 'PLb3Ofnw16r2zmJGIwMwOzf2A9t6YBe8PV&si=_Wcl-PyoVowsl-hF',
+    'PPS-Module-5': 'PLb3Ofnw16r2xxaKc5FLAvAsM9Dpjh1aHA&si=Yzh3VK6_-cBqi483',
+
     // RP 
-    'RP-MODULE-1':'PLb3Ofnw16r2ztQ2WcHtFyMre6rb4BSY6I&si=x-ARskmkOYhxxjBT',
-    'RP-MODULE-2':'PLb3Ofnw16r2xtfYareLf-t7ptO4jN13YB&si=6DtdZyWCDmFLm-2R',
-    'RP-MODULE-3':'PLb3Ofnw16r2yOxjWCivd_G9Vdb5yExybr&si=jc_ZK2vZL7YERPOk',
-    'RP-MODULE-4':'PLb3Ofnw16r2y5Gi9uu-6319ZvomoslIfW&si=WfAyEtDiEO6-5bdS',
-    'RP-MODULE-5':'PLb3Ofnw16r2zLfdSjBMKGczFXS3PxGKwu&si=XbjhiKS43QC0OFa_',
-    
+    'RP-MODULE-1': 'PLb3Ofnw16r2ztQ2WcHtFyMre6rb4BSY6I&si=x-ARskmkOYhxxjBT',
+    'RP-MODULE-2': 'PLb3Ofnw16r2xtfYareLf-t7ptO4jN13YB&si=6DtdZyWCDmFLm-2R',
+    'RP-MODULE-3': 'PLb3Ofnw16r2yOxjWCivd_G9Vdb5yExybr&si=jc_ZK2vZL7YERPOk',
+    'RP-MODULE-4': 'PLb3Ofnw16r2y5Gi9uu-6319ZvomoslIfW&si=WfAyEtDiEO6-5bdS',
+    'RP-MODULE-5': 'PLb3Ofnw16r2zLfdSjBMKGczFXS3PxGKwu&si=XbjhiKS43QC0OFa_',
+
     // BEEE 
-    'BEEE-MODULE-1':'PLb3Ofnw16r2wmkOlvmYB3tFTL7Hk_f8Hi&si=fAQxaGwjcCAQ27Ya',
-    'BEEE-MODULE-2':'PLb3Ofnw16r2zDoKbt4MYy7sod16IfuuN3&si=KeJwMEzeBbzHnOZN',
-    'BEEE-MODULE-3':'PLb3Ofnw16r2y2amZY_2WLksPIWSz-W7JC&si=V3b1s8n8WeY6Gm-b',
-    'BEEE-MODULE-4':'PLb3Ofnw16r2wme_z-OsZDgCrp328ijzY7&si=i9UO264pTBhnRVHA',
-    'BEEE-MODULE-5':'PLb3Ofnw16r2x1Qring0CnPJk9fAEogxnW&si=oT-QvrOyTn77W5wG',
-    
+    'BEEE-MODULE-1': 'PLb3Ofnw16r2wmkOlvmYB3tFTL7Hk_f8Hi&si=fAQxaGwjcCAQ27Ya',
+    'BEEE-MODULE-2': 'PLb3Ofnw16r2zDoKbt4MYy7sod16IfuuN3&si=KeJwMEzeBbzHnOZN',
+    'BEEE-MODULE-3': 'PLb3Ofnw16r2y2amZY_2WLksPIWSz-W7JC&si=V3b1s8n8WeY6Gm-b',
+    'BEEE-MODULE-4': 'PLb3Ofnw16r2wme_z-OsZDgCrp328ijzY7&si=i9UO264pTBhnRVHA',
+    'BEEE-MODULE-5': 'PLb3Ofnw16r2x1Qring0CnPJk9fAEogxnW&si=oT-QvrOyTn77W5wG',
+
     // CNS 
-    'CNS-Module-1':'PLb3Ofnw16r2xZ1Ww2kZCgU3cO8mYF4TBq&si=kk4IL_-gaXmXna8Y',
-    'CNS-Module-2':'PLb3Ofnw16r2wHLyk7rBCwb3_oYASKXz7-&si=kiC8nJ1XqRBvsMd6',
-    'CNS-Module-3':'PLb3Ofnw16r2z80Fvtzj63NECSlcZs9_xh&si=VTq5XDmzB5nIFKFl',
-    'CNS-Module-4':'PLb3Ofnw16r2wSksNAiYCrbnPl_ZxqECNX&si=JrfUWf3hpIjwN2JS',
-    'CNS-Module-5':'PLb3Ofnw16r2zcZVYGwdNKTu7APf0H5EyK&si=nmQXYMmCVrPcbp16',
-    
+    'CNS-Module-1': 'PLb3Ofnw16r2xZ1Ww2kZCgU3cO8mYF4TBq&si=kk4IL_-gaXmXna8Y',
+    'CNS-Module-2': 'PLb3Ofnw16r2wHLyk7rBCwb3_oYASKXz7-&si=kiC8nJ1XqRBvsMd6',
+    'CNS-Module-3': 'PLb3Ofnw16r2z80Fvtzj63NECSlcZs9_xh&si=VTq5XDmzB5nIFKFl',
+    'CNS-Module-4': 'PLb3Ofnw16r2wSksNAiYCrbnPl_ZxqECNX&si=JrfUWf3hpIjwN2JS',
+    'CNS-Module-5': 'PLb3Ofnw16r2zcZVYGwdNKTu7APf0H5EyK&si=nmQXYMmCVrPcbp16',
+
     // Add all your module-to-playlist mappings here
   };
 

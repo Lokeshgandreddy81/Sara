@@ -1,6 +1,7 @@
 // Sidebar.tsx
 import React from 'react';
 import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface SidebarProps {
   subject: string;
@@ -188,6 +189,7 @@ const moduleData: Record<string, string[]> = {
 const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
   const modules = moduleData[subject] || [];
   const [selectedModule, setSelectedModule] = useState<string | null>(null);
+  const [collapsed, setCollapsed] = useState<boolean>(false);
 
   const handleModuleClick = (module: string) => {
     setSelectedModule(module);
@@ -195,34 +197,48 @@ const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
   };
 
   return (
-    <aside className="w-64 bg-gray-100 dark:bg-[#2c2c2c] p-5 shadow-lg transition-all duration-300 ease-in-out rounded-xl my-1">
-      <h2 className="text-lg font-semibold mb-4 text-black dark:text-white">
-        Modules for: {subject || 'None Selected'}
-      </h2>
-      <ul className="text-black dark:text-gray-300 space-y-1">
-        {modules.length > 0 ? (
-          modules.map((module) => (
-            <li key={module}>
-              <button
-                onClick={() => handleModuleClick(module)}
-                className={`w-full text-left px-2 py-1 rounded transition-colors
-                  ${
-                    selectedModule === module
-                      ? 'bg-indigo-500 text-white dark:bg-orange-600'
-                      : 'hover:bg-indigo-200 dark:hover:bg-orange-800'
-                  }`}
-              >
-                {module}
-              </button>
-            </li>
-          ))
-        ) : (
-          <li>No modules available</li>
-        )}
-      </ul>
-    </aside>
+    <div
+      className={`transition-all  ease-in-out bg-gray-100 dark:bg-[#2c2c2c] rounded-xl shadow-lg h-full
+         ${collapsed ? 'h-15':'h-screen'} ${collapsed ? 'w-15' : 'w-64'}${collapsed ? 'duration-100':'duration-300'}
+       p-2 flex flex-col`}
+    >
+      <button
+        onClick={() => setCollapsed(!collapsed)}
+        className={`bg-indigo-500 dark:bg-orange-600 text-white p-2 rounded mb-2 ${collapsed ? 'mr-0':'w-10'}`}
+        title={collapsed ? 'Expand' : 'Collapse'}
+      >
+        {collapsed ? <ChevronRight /> : <ChevronLeft/>}
+      </button>
+
+      {!collapsed && (
+        <>
+          <h2 className="text-lg font-semibold mb-2 text-black dark:text-white">
+            Modules for: {subject || 'None Selected'}
+          </h2>
+          <ul className="space-y-1 text-black dark:text-gray-300 overflow-auto">
+            {modules.length > 0 ? (
+              modules.map((module) => (
+                <li key={module}>
+                  <button
+                    onClick={() => handleModuleClick(module)}
+                    className={`w-full text-left px-2 py-1 rounded transition-colors ${
+                      selectedModule === module
+                        ? 'bg-indigo-500 text-white dark:bg-orange-600'
+                        : 'hover:bg-indigo-200 dark:hover:bg-orange-800'
+                    }`}
+                  >
+                    {module}
+                  </button>
+                </li>
+              ))
+            ) : (
+              <li>No modules available</li>
+            )}
+          </ul>
+        </>
+      )}
+    </div>
   );
 };
 
 export default Sidebar;
-

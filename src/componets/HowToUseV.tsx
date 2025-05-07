@@ -14,12 +14,12 @@ const HowToUseV = () => {
               </iframe>
               <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center rounded-xl p-4 sm:p-0">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 text-center">
-              How to Use This Website ?
+              How to Use SARA AI ?
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-2xl text-center">
               Watch this quick guide to understand the platform better
             </p>
-            <a href="https://youtu.be/ZvYvk4AuNXc" target="_blank" rel="noopener noreferrer">
+            <a href="https://youtu.be/kulGpku0nCgc" target="_blank" rel="noopener noreferrer">
               <button className="mt-6 sm:mt-8 bg-white/20 hover:bg-white/50 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full backdrop-blur-sm transition-all duration-300 flex items-center hover:text-black">
                 Watch Tutorial
                 <svg className="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -24,6 +24,8 @@ import ForgotPassword from './pages/LoginPages/ForgotPassword';
 import FeedbackPage from './pages/Footer_Pages/Feedback';
 import ChatBot from './pages/Features/Feature_3/chatBot';
 import { useEffect, useState } from 'react';
+import ReportIssue from './pages/Footer_Pages/reportAProblem';
+import Sarav1Insights from './pages/Footer_Pages/Sarav1';
 import FAQ from './componets/faq';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
@@ -87,6 +89,12 @@ function App() {
         <Route path="/ChangePass" element={<ChangePassword />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
         <Route path='/faq' element={<FAQs />} />
+        <Route path='/Report' element={<ReportIssue/>}/>
+        <Route path="/Sarav1" element={<Sarav1Insights/>}/>
+
+
+
+
 
         <Route
           path="/select-sub"

@@ -77,7 +77,7 @@ function Home2Page() {
                                     </button>
                                 </a>
                                 <a href='#Tutorial'>
-                                    <button className="bg-white text-black dark:text-white dark:bg-black px-6 md:px-8 py-2 md:py-3 rounded-full  flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105">
+                                    <button  className="bg-white text-black dark:text-white dark:bg-black px-6 md:px-8 py-2 md:py-3 rounded-full  flex items-center group transform transition-all duration-300 ease-in-out hover:-translate-y-1  hover:scale-105">
                                         How to Use It ?
                                         <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14M12 5l7 7-7 7" />
@@ -106,14 +106,14 @@ function Home2Page() {
                 {/* Features Section */}
                 <Features />
         
-                <TotalUsers />
+                {/* <TotalUsers /> */}
 
                 {/* Testimonials Section */}
                 <div className="py-16 md:py-24 bg-white dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-12 md:mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-[#d4d4d4] transition-all duration-300 ease-in-out">What Student's Say</h2>
-                            <p className="text-gray-600 dark:text-[#d4d4d4] transition-all duration-300 ease-in-out">Lorem Ipsum is simply dummy text of the printing.</p>
+                            <p className="text-gray-600 dark:text-[#d4d4d4] transition-all duration-300 ease-in-out"></p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">

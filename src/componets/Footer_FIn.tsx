@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
       <h3 className="font-bold text-lg mb-4 text-orange-500">Company</h3>
       <ul className="space-y-2">
         <li><Link to='/About_us' className="text-gray-600 hover:text-gray-900  dark:text-[#d4d4d4] dark:hover:text-white">About Us</Link></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">How to work?</a></li>
+        <li><Link to="/Sarav1" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">SARA v1 Insights</Link></li>
         {/* <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Popular Course</a></li> */}
         <li><Link to='/Service' className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Service</Link></li>
       </ul>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         <li><Link to="/faq" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">FAQ</Link></li>
         {/* <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Help Center</a></li> */}
         <li><Link to="/Feedback" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Feedback</Link></li>
-        <li><a href="#" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Report an Issue</a></li>
+        <li><Link to  ="/Report" className="text-gray-600 hover:text-gray-900 dark:text-[#d4d4d4] dark:hover:text-white">Report an Issue</Link></li>
       </ul>
     </div>
 
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
   </div>
 
   <div className="border-t border-gray-800 dark:border-gray-200 pt-8 text-center  dark:bg-[#1f1f1f] transition-colors duration-300">
-    <p className="text-black dark:text-white mt-4">© Sara_AI All Right Reserved, 2023-2025</p>
+    <p className="text-black dark:text-white mt-4">© Sara-AI All Right Reserved, 2023-2025</p>
   </div>
 </div>
 </footer>

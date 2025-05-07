@@ -13,7 +13,7 @@
     const [output, setOutput] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const [contentSize, setContentSize] = useState<'short' | 'medium'>('short');
+    const [contentSize, setContentSize] = useState<'7to10_lines' | 'short'>('7to10_lines');
 
     useEffect(() => {
       if (!topic || !module || !subject) return;
@@ -58,9 +58,9 @@
 
         <div className="flex items-center gap-4 mb-4">
           <button
-            onClick={() => setContentSize('short')}
+            onClick={() => setContentSize('7to10_lines')}
             disabled={loading} // Disable  loading
-            className={`px-4 py-2 rounded-md font-semibold transition ${contentSize === 'short' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
+            className={`px-4 py-2 rounded-md font-semibold transition ${contentSize === '7to10_lines' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
               } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // disabled style
           >
             Summary
@@ -68,9 +68,9 @@
 
 
           <button
-            onClick={() => setContentSize('medium')}
+            onClick={() => setContentSize('short')}
             disabled={loading} // when loading
-            className={`px-4 py-2 rounded-md font-semibold transition ${contentSize === 'medium' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
+            className={`px-4 py-2 rounded-md font-semibold transition ${contentSize === 'short' ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-700 dark:text-white'
               } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // Button  style
           >
             Explanation

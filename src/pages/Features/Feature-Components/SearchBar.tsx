@@ -80,14 +80,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubjectSelect }) => {
 
   return (
     <div>
-      <h2 className='relative w-full max-w-md mx-auto items-center justify-center text-black dark:text-white'>Search Subject</h2>
+      <h2 className='relative w-full max-w-md mx-auto items-center justify-center text-black text-center dark:text-white'>Search Subject</h2>
       <div className="relative w-full max-w-md mx-auto">
         <form onSubmit={handleSearchSubmit} className="flex space-x-2">
           <div></div>
           <input
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-[#1f1f1f] dark:text-white transition-all duration-300 ease-in-out"
+            className="w-full px-4 text-lg py-2 border rounded-xl border-[#000000] dark:border-[#ffffff] focus:ring-2 text-bold focus:ring-[#4F46E5] focus:border-transparent dark:focus:ring-orange-600 dark:bg-gray-200 bg-[#8494e9] dark:text-black transition-all duration-300 ease-in-out"
             type="text"
-            placeholder="Here..."
+            placeholder="Search Subject Here..."
             value={searchQuery}
             onChange={handleSearchChange}
           />

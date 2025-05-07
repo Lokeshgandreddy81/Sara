@@ -154,9 +154,8 @@ function USchemaWithAD() {
             // Send email verification
             await sendEmailVerification(user);
 
-            if (window.confirm(`A verification email has been sent to "${formData.email}". Please check your inbox and verify it before signing in.`)) {
-                navigate('/Signin');
-            }
+            window.alert(`A verification email has been sent to "${formData.email}". Please check your inbox and verify it before signing in.`);
+            navigate('/Signin');
         } catch (error) {
             if (error instanceof Error) {
                 console.error("Error creating user:", error.message);
@@ -353,7 +352,7 @@ function USchemaWithAD() {
 
                                 </label>
                             </div>
-
+                            <p className='text-md text-center text-black dark:text-white'>A verification email will be sent to your college Outlook account.</p>
                             <button
                                 type="submit"
                                 className="w-full bg-[#4F46E5] dark:bg-orange-500 text-white py-3 rounded-lg hover:bg-[#4338CA] hover:dark:bg-orange-700 transition-colors transition -all Duration-300 ease-in-out"
