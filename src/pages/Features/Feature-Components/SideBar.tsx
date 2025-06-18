@@ -25,9 +25,10 @@ const moduleData: Record<string, string[]> = {
 
 
   // DS SEM6
-  'Software-Testing&QS[STQS]': ['STQS-Module-1', 'STQS-Module-2', 'STQS-Module-3', 'STQS-Module-4', 'STQS-Module-5'],
-  'Distributed-Systems[DS]': ['DiS-Module-1', 'DiS-Module-2', 'DiS-Module-3', 'DiS-Module-4', 'DiS-Module-5'],
-  'Artificial-Intelligence[AI]': ['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5'],
+  'Software-Testing&QS[STQS]': ['STQS-Module-1', 'STQS-Module-2', 'STQS-Module-3', 'STQS-Module-4', 'STQS-Module-5','Mid Papers'],
+  'Distributed-Systems[DS]': ['DiS-Module-1', 'DiS-Module-2', 'DiS-Module-3', 'DiS-Module-4', 'DiS-Module-5','Mid Papers'],
+  'Artificial-Intelligence[AI]': ['AI-Module-1', 'AI-Module-2', 'AI-Module-3', 'AI-Module-4', 'AI-Module-5','Mid Papers'],
+
   // Deep learning[DL] is in AIML SEM 6
   //Computer-Organization&Architecture[CAO] IS IN CYS SEM6
 
@@ -143,45 +144,45 @@ const moduleData: Record<string, string[]> = {
   'THERMAL-ENGINEERING[TE]': ['TE-MODULE-1', 'TE-MODULE-2', 'TE-MODULE-3', 'TE-MODULE-4', 'TE-MODULE-5'],
 
   //EIE SEM 4
-  'Microelecricalmechanical-Systems[MS]':['MS-MODULE-1', 'MS-MODULE-2', 'MS-MODULE-3', 'MS-MODULE-4', 'MS-MODULE-5'],
-  'Industrial-Instrumentation[II]':['II-MODULE-1', 'II-MODULE-2', 'II-MODULE-3', 'II-MODULE-4', 'II-MODULE-5'],
-  'Linear-Control-Systems[LCS]':['LCS-MODULE-1', 'LCS-MODULE-2', 'LCS-MODULE-3', 'LCS-MODULE-4', 'LCS-MODULE-5'],
-    // 'Linear-IC-Applications[LICA]','VLSI-System-Designs[VLSI]' IS IN ECE SEM4
+  'Microelecricalmechanical-Systems[MS]': ['MS-MODULE-1', 'MS-MODULE-2', 'MS-MODULE-3', 'MS-MODULE-4', 'MS-MODULE-5'],
+  'Industrial-Instrumentation[II]': ['II-MODULE-1', 'II-MODULE-2', 'II-MODULE-3', 'II-MODULE-4', 'II-MODULE-5'],
+  'Linear-Control-Systems[LCS]': ['LCS-MODULE-1', 'LCS-MODULE-2', 'LCS-MODULE-3', 'LCS-MODULE-4', 'LCS-MODULE-5'],
+  // 'Linear-IC-Applications[LICA]','VLSI-System-Designs[VLSI]' IS IN ECE SEM4
 
   //CIVIL SEM2
-  'Civil-Engg-Materials-&-Concrete-Tech[CEMCT]':['CEMCT-MODULE-1', 'CEMCT-MODULE-2', 'CEMCT-MODULE-3', 'CEMCT-MODULE-4', 'CEMCT-MODULE-5'],
-  'Programming-in-C-&-Data-Structures[PCDS]':['PCDS-MODULE-1', 'PCDS-MODULE-2', 'PCDS-MODULE-3', 'PCDS-MODULE-4', 'PCDS-MODULE-5'],
-  'Transformation-Techniques&Linear-Algebra[TTLA]':['TTLA-MODULE-1', 'TTLA-MODULE-2', 'TTLA-MODULE-3', 'TTLA-MODULE-4', 'TTLA-MODULE-5'],
-    // 'Basic-EEE[BEEE]', IS IN CSE SEM2
+  'Civil-Engg-Materials-&-Concrete-Tech[CEMCT]': ['CEMCT-MODULE-1', 'CEMCT-MODULE-2', 'CEMCT-MODULE-3', 'CEMCT-MODULE-4', 'CEMCT-MODULE-5'],
+  'Programming-in-C-&-Data-Structures[PCDS]': ['PCDS-MODULE-1', 'PCDS-MODULE-2', 'PCDS-MODULE-3', 'PCDS-MODULE-4', 'PCDS-MODULE-5'],
+  'Transformation-Techniques&Linear-Algebra[TTLA]': ['TTLA-MODULE-1', 'TTLA-MODULE-2', 'TTLA-MODULE-3', 'TTLA-MODULE-4', 'TTLA-MODULE-5'],
+  // 'Basic-EEE[BEEE]', IS IN CSE SEM2
 
   //ECE SEM2
   // 'Data-Structures&Algorithms[DSA]', IN ECE SEM4
-  'Engineering-Chemistry[EC]':['EC-MODULE-1', 'EC-MODULE-2', 'EC-MODULE-3', 'EC-MODULE-4', 'EC-MODULE-5'],
-  'Sensors&Measuring-Instruments[SMT]':['SMT-MODULE-1', 'SMT-MODULE-2', 'SMT-MODULE-3', 'SMT-MODULE-4', 'SMT-MODULE-5'],
-  'Semiconductors-Devices&Circuits[SDC]':['SDC-MODULE-1', 'SDC-MODULE-2', 'SDC-MODULE-3', 'SDC-MODULE-4', 'SDC-MODULE-5'],
+  'Engineering-Chemistry[EC]': ['EC-MODULE-1', 'EC-MODULE-2', 'EC-MODULE-3', 'EC-MODULE-4', 'EC-MODULE-5'],
+  'Sensors&Measuring-Instruments[SMT]': ['SMT-MODULE-1', 'SMT-MODULE-2', 'SMT-MODULE-3', 'SMT-MODULE-4', 'SMT-MODULE-5'],
+  'Semiconductors-Devices&Circuits[SDC]': ['SDC-MODULE-1', 'SDC-MODULE-2', 'SDC-MODULE-3', 'SDC-MODULE-4', 'SDC-MODULE-5'],
 
   //EEE SEM2
- 
+
   // 'Semiconductors-Devices&Circuits[SDC]', IN ECE SEM2
   // 'Transformation-Techniques&Linear-Algebra[TTLA]' IN CIVIL SEM2
-   // 'Data-Structures&Algorithms[DSA]',IN ECE SEM4
+  // 'Data-Structures&Algorithms[DSA]',IN ECE SEM4
 
-   //MECH SEM2
-'Manufacturing-Technology[MT]':['MT-MODULE-1', 'MT-MODULE-2', 'MT-MODULE-3', 'MT-MODULE-4', 'MT-MODULE-5'],
-'Engineering-Workshop[EW]':['EW-MODULE-1', 'EEW-MODULE-2', 'EW-MODULE-3', 'EW-MODULE-4', 'EW-MODULE-5'],
-'ENGINEERING CHEMISTRY[EC]':['EC-MODULE-1', 'EC-MODULE-2', 'EC-MODULE-3', 'EC-MODULE-4', 'EC-MODULE-5'],
-'BASIC ENGG MECHANICS[BE]':['BEE-MODULE-1', 'BE-MODULE-2', 'BE-MODULE-3', 'BE-MODULE-4', 'BE-MODULE-5'],
-'MATERIAL SCIENCE AND ENGG[MSE]':['MSE-MODULE-1', 'MSE-MODULE-2', 'MSE-MODULE-3', 'MSE-MODULE-4', 'MSE-MODULE-5'],
-// 'Transformation-Techniques&Linear-Algebra[TTLA]' IS IN CIVIL SEM2
+  //MECH SEM2
+  'Manufacturing-Technology[MT]': ['MT-MODULE-1', 'MT-MODULE-2', 'MT-MODULE-3', 'MT-MODULE-4', 'MT-MODULE-5'],
+  'Engineering-Workshop[EW]': ['EW-MODULE-1', 'EEW-MODULE-2', 'EW-MODULE-3', 'EW-MODULE-4', 'EW-MODULE-5'],
+  'ENGINEERING CHEMISTRY[EC]': ['EC-MODULE-1', 'EC-MODULE-2', 'EC-MODULE-3', 'EC-MODULE-4', 'EC-MODULE-5'],
+  'BASIC ENGG MECHANICS[BE]': ['BEE-MODULE-1', 'BE-MODULE-2', 'BE-MODULE-3', 'BE-MODULE-4', 'BE-MODULE-5'],
+  'MATERIAL SCIENCE AND ENGG[MSE]': ['MSE-MODULE-1', 'MSE-MODULE-2', 'MSE-MODULE-3', 'MSE-MODULE-4', 'MSE-MODULE-5'],
+  // 'Transformation-Techniques&Linear-Algebra[TTLA]' IS IN CIVIL SEM2
 
-//EIE SEM2
+  //EIE SEM2
 
-'Sensors&Transducers[ST]':['ST-MODULE-1', 'ST-MODULE-2', 'ST-MODULE-3', 'ST-MODULE-4', 'ST-MODULE-5'],
-'Network-Analysis[NA]':['NA-MODULE-1', 'NA-MODULE-2', 'NA-MODULE-3', 'NA-MODULE-4', 'NA-MODULE-5'],
-// 'Transformation-Techniques&Linear-Algebra[TTLA]' IN CIVIL SEM2
-// 'Data-Structures&Algorithms[DSA]'IN SCE SEM4
-// 'Engineering-Chemistry[EC]', IN ECE SEM2
-// 'Semiconductors-Devices&Circuits[SDC]', IN ECE SEM2
+  'Sensors&Transducers[ST]': ['ST-MODULE-1', 'ST-MODULE-2', 'ST-MODULE-3', 'ST-MODULE-4', 'ST-MODULE-5'],
+  'Network-Analysis[NA]': ['NA-MODULE-1', 'NA-MODULE-2', 'NA-MODULE-3', 'NA-MODULE-4', 'NA-MODULE-5'],
+  // 'Transformation-Techniques&Linear-Algebra[TTLA]' IN CIVIL SEM2
+  // 'Data-Structures&Algorithms[DSA]'IN SCE SEM4
+  // 'Engineering-Chemistry[EC]', IN ECE SEM2
+  // 'Semiconductors-Devices&Circuits[SDC]', IN ECE SEM2
 
 };
 
@@ -199,15 +200,15 @@ const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
   return (
     <div
       className={`transition-all  ease-in-out bg-gray-100 dark:bg-[#2c2c2c] rounded-xl shadow-lg h-full
-         ${collapsed ? 'h-15':'h-screen'} ${collapsed ? 'w-15' : 'w-64'}${collapsed ? 'duration-100':'duration-300'}
+         ${collapsed ? 'h-15' : 'h-screen'} ${collapsed ? 'w-15' : 'w-64'}${collapsed ? 'duration-100' : 'duration-300'}
        p-2 flex flex-col`}
     >
       <button
         onClick={() => setCollapsed(!collapsed)}
-        className={`bg-indigo-500 dark:bg-orange-600 text-white p-2 rounded mb-2 ${collapsed ? 'mr-0':'w-10'}`}
+        className={`bg-indigo-500 dark:bg-orange-600 text-white p-2 rounded mb-2 ${collapsed ? 'mr-0' : 'w-10'}`}
         title={collapsed ? 'Expand' : 'Collapse'}
       >
-        {collapsed ? <ChevronRight /> : <ChevronLeft/>}
+        {collapsed ? <ChevronRight /> : <ChevronLeft />}
       </button>
 
       {!collapsed && (
@@ -221,11 +222,10 @@ const Sidebar: React.FC<SidebarProps> = ({ subject, onModuleClick }) => {
                 <li key={module}>
                   <button
                     onClick={() => handleModuleClick(module)}
-                    className={`w-full text-left px-2 py-1 rounded transition-colors ${
-                      selectedModule === module
+                    className={`w-full text-left px-2 py-1 rounded transition-colors ${selectedModule === module
                         ? 'bg-indigo-500 text-white dark:bg-orange-600'
                         : 'hover:bg-indigo-200 dark:hover:bg-orange-800'
-                    }`}
+                      }`}
                   >
                     {module}
                   </button>

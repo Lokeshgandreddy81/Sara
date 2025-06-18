@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .runtimeconfig.json
+.firebase
+firebase.json
+firebase.ts
+firestore.rules
+.env
+Backend/

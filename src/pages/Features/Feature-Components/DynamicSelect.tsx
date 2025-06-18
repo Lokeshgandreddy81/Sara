@@ -270,7 +270,7 @@ const DynamicSelect: React.FC = () => {
 
         </div>
       </div>
-      <div className="flex min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out p-4">
+      <div className="flex  min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out p-4">
         <Sidebar subject={selectedSubject}
           onModuleClick={setSelectedModule} />
         <div className="flex-1 overflow-auto mx-1.5">
@@ -281,7 +281,7 @@ const DynamicSelect: React.FC = () => {
         <p className='mx-10 my-10 font-bold text-3xl text-blue-600 dark:text-orange-600 text-center'>Sara AI's Summarizer & Explanation</p>
         <div className="flex min-h-screen w-full my-2 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out p-4">
 
-          <div className="w-64 bg-gray-200 dark:bg-[#1f1f1f] rounded-xl ">
+          <div className="w-64 bg-gray-200 dark:bg-[#1f1f1f] rounded-xl flex min-h-screen min-w-30 bg-gray-200 dark:bg-[#1f1f1f] transition-all duration-300 ease-in-out p-4">
             <Sidebar2
               subject={selectedSubject}
               onTopicClick={(topicName, moduleName, subjectName) => {

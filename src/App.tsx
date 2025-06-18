@@ -27,6 +27,7 @@ import { useEffect, useState } from 'react';
 import ReportIssue from './pages/Footer_Pages/reportAProblem';
 import Sarav1Insights from './pages/Footer_Pages/Sarav1';
 import EditProfile from './pages/AdminPgs/Profile_pages/EditProfile';
+import FAQs from './componets/faq';
 import FAQ from './componets/faq';
 import UserList from './pages/AdminPgs/Userdata';
 import React from 'react';
@@ -40,7 +41,6 @@ import ThemeToggle from './componets/ThemeToggle';
 import HomePage from './Dumb_comp/HomePage';
 import NavBarHome from './componets/NavBarFeatures';
 import NavBarFeatures from './componets/NavBarFeatures';
-import FAQs from './componets/faq';
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -69,7 +69,7 @@ function App() {
       {/* <NavBar /> */}
       {/* <UserList /> */}
       {/* <VidSelect1 /> */}
-      <NoInternetOverlay />
+      {/* <NoInternetOverlay /> */}
       {/* <NavBarFeatures /> */}
       <RouteChangeProgress />
       <ScrollToTop />
@@ -90,8 +90,8 @@ function App() {
         <Route path="/ChangePass" element={<ChangePassword />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
         <Route path='/faq' element={<FAQs />} />
-        <Route path='/Report' element={<ReportIssue/>}/>
-        <Route path="/Sarav1" element={<Sarav1Insights/>}/>
+        <Route path='/Report' element={<ReportIssue />} />
+        <Route path="/Sarav1" element={<Sarav1Insights />} />
 
 
 
@@ -100,17 +100,17 @@ function App() {
         <Route
           path="/select-sub"
           element={
-            <ProtectedRoute>
-              <Sub_select />
-            </ProtectedRoute>
+
+            <Sub_select />
+
           }
         />
         <Route
           path="/VidSelect"
           element={
-            <ProtectedRoute>
-              <VidSelect1 />
-            </ProtectedRoute>
+
+            <VidSelect1 />
+
           }
         />
         <Route
@@ -129,16 +129,16 @@ function App() {
             </ProtectedRoute>
           } />
 
-          <Route
+        <Route
           path='/chatBot'
           element={
-            <ProtectedRoute>
-              < ChatBot />
-            </ProtectedRoute>
+
+            < ChatBot />
+
           } />
 
 
-<Route
+        <Route
           path="/Dashboard/EditProfile"
           element={
             <ProtectedRoute>

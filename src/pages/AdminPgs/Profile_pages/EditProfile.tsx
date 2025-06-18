@@ -17,7 +17,7 @@ export default function EditProfile() {
 
     const auth = getAuth();
     const navigate = useNavigate();
-    const user = auth.currentUser;
+    const user = auth.currentUser;  
 
     useEffect(() => {
         const fetchUser = async () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 interface Sidebar2Props {
   subject: string;
   module: string;
@@ -431,25 +431,25 @@ const moduleData: Record<string, Record<string, string[]>> = {
   //IT SEM4
   'Data-Mining[DM]': {
     'MODULE-1(data mining and data Preprocessing)': ['Introduction to Data Mining, kinds of data, kinds of patterns',
-'major issues in Data Mining, Data Pre-processing, Data Cleaning',
-'Data Integration, Data Reduction, Data Transformation and Discretization.'
-],
+      'major issues in Data Mining, Data Pre-processing, Data Cleaning',
+      'Data Integration, Data Reduction, Data Transformation and Discretization.'
+    ],
     'MODULE-2(associations and classification)': ['Basic Concepts, Frequent itemset Mining Methods, pattern evaluation methods- From Association Mining to Correlation Analysis',
-'Classification, Decision Tree Introduction, Bayesian Classification Methods',
-'Rule Based Classification, Prediction: Linear Regression.'
-],
+      'Classification, Decision Tree Introduction, Bayesian Classification Methods',
+      'Rule Based Classification, Prediction: Linear Regression.'
+    ],
     'MODULE-3(cluster analysis)': ['Cluster Analysis: Types of Data in Cluster Analysis, A Categorization of Major Clustering Methods',
-'Partitioning Methods-k-Means and K-Medoids, Hierarchical methodsAgglomerative and divisive method',
-'Density-Based Method-DBSCAN, Grid-Based MethodSTING, Outlier Analysis'
-],
+      'Partitioning Methods-k-Means and K-Medoids, Hierarchical methodsAgglomerative and divisive method',
+      'Density-Based Method-DBSCAN, Grid-Based MethodSTING, Outlier Analysis'
+    ],
     'MODULE-4(data mining trends)': ['Mining Complex Data Types: Mining sequence data, Mining other kinds of data: Spatial, Text, Multimedia and Web data.',
-'Data Mining Trends: Mining Complex Data Types, Methodologies of Data Mining',
-'Data Mining Applications, Data Mining and Society, Data Mining Trends.'
-],
+      'Data Mining Trends: Mining Complex Data Types, Methodologies of Data Mining',
+      'Data Mining Applications, Data Mining and Society, Data Mining Trends.'
+    ],
     'MODULE-5(visualization of multi-dimensional data)': ['Introduction, Diagrams for Multidimensional visualization',
-'Kiviat diagrams, 3D Scattergram, 3D Line Graph',
-'Chernoff Faces, Volume Rendering, Visual Data Mining - Animation'
-],
+      'Kiviat diagrams, 3D Scattergram, 3D Line Graph',
+      'Chernoff Faces, Volume Rendering, Visual Data Mining - Animation'
+    ],
   },
 
 
@@ -498,25 +498,25 @@ const moduleData: Record<string, Record<string, string[]>> = {
 
   },
   'Internet-of-Things[IOT]': {
-    'MODULE-1(introduction and domain applications)': [ 'Introduction to Internet of Things: Definition, Conceptual Framework, Architectural View, Technology behind IoT',
+    'MODULE-1(introduction and domain applications)': ['Introduction to Internet of Things: Definition, Conceptual Framework, Architectural View, Technology behind IoT',
       'Communication Technologies, Data Enrichment, Data consolidation and Device management at Gateway',
       'IoT and M2M: M2M, Difference between IoT and M2M, SDN and NFV for IoT',
       'Domain Specific IoTs: Home automation, Cities, Environment, Health and Life Style'
-     ],
-    'MODULE-2(sensors and connectivity)': [ 'Sensor Technology, Actuators, RFID Technology, Internet Connectivity',
-      'Internet-Based Communications, IP Addressing in the IoT, Medium Access Control, Application Layer Protocols'
-     ],
-    'MODULE-3(prototyping and hardware)': [ 'Embedded Computing Basics, Embedded platforms for prototyping, Things always connected to the Internet/Cloud, Amazon Web Services for IoT'
     ],
-    'MODULE-4(design methodologies and case studies)': [ 'Design Methodology: Purpose and Requirements specifications, Process Specifications, Domain Model Specification',
+    'MODULE-2(sensors and connectivity)': ['Sensor Technology, Actuators, RFID Technology, Internet Connectivity',
+      'Internet-Based Communications, IP Addressing in the IoT, Medium Access Control, Application Layer Protocols'
+    ],
+    'MODULE-3(prototyping and hardware)': ['Embedded Computing Basics, Embedded platforms for prototyping, Things always connected to the Internet/Cloud, Amazon Web Services for IoT'
+    ],
+    'MODULE-4(design methodologies and case studies)': ['Design Methodology: Purpose and Requirements specifications, Process Specifications, Domain Model Specification',
       'Information Model Specification, Service Specification, IoT Level Specifications',
       'Functional View Specification, Operational View Specification, Device and Component integration, Application development',
       'Case Studies Illustrating IoT Design: Home Automation, Cities'
-     ],
-    'MODULE-5(data analytics for iot and iot security)': [ 'Data Analytics for IoT: Apache Hadoop, Using Hadoop MapReduce for Batch Data Analysis',
+    ],
+    'MODULE-5(data analytics for iot and iot security)': ['Data Analytics for IoT: Apache Hadoop, Using Hadoop MapReduce for Batch Data Analysis',
       'IoT Security: Vulnerabilities, Security Requirements and Threat analysis, Security Tomography and Layered Attacker Model',
       'Identity Management and Establishment, Access Control and Secure Message Communication, Security Models, Profiles and Protocols for IoT'
-     ],
+    ],
   },
   //CSE SEM2
   'Calculus-T&T[CTT]': {
@@ -696,68 +696,68 @@ const moduleData: Record<string, Record<string, string[]>> = {
   },
   'Physics-for-Computing[PC]': {
     'MODULE-1(wave optics)': ['Interference: Introduction - Interference in thin films (reflected light) - Newton’s rings - Determination of wavelength.',
-'Diffraction: Introduction - Fraunhofer diffraction - Single slit diffraction (qualitative) - Double slit diffraction (qualitative).',
-'Polarization: Introduction - Polarization by reflection - and double refraction - Nicol prism',
-'Half wave and Quarter wave plate - Engineering applications of interference - diffraction and polarization.'
-],
+      'Diffraction: Introduction - Fraunhofer diffraction - Single slit diffraction (qualitative) - Double slit diffraction (qualitative).',
+      'Polarization: Introduction - Polarization by reflection - and double refraction - Nicol prism',
+      'Half wave and Quarter wave plate - Engineering applications of interference - diffraction and polarization.'
+    ],
     'MODULE-2(introduction to quantum mechanics)': ['Principles of Quantum Mechanics: Introduction – de Broglie’s hypothesis for matter waves',
-'Davison and Germer’s experiment - Schrödinger’s one dimensional wave equation (time independent)',
-'significance of wave function – Fermi Dirac distribution and effect of temperature (qualitative treatment).'
-],
+      'Davison and Germer’s experiment - Schrödinger’s one dimensional wave equation (time independent)',
+      'significance of wave function – Fermi Dirac distribution and effect of temperature (qualitative treatment).'
+    ],
     'MODULE-3(quantum physics and band theory of solids)': ['Applications of Quantum Physics: Particle in a 1 D box (Eigen Value and Eigen Function)',
-'3 D Analysis (Qualitative) - Tunnelling Effect (Qualitative) - Kronig Penney model (qualitative treatment)',
-'origin of energy bands formation in solids.'
-],
+      '3 D Analysis (Qualitative) - Tunnelling Effect (Qualitative) - Kronig Penney model (qualitative treatment)',
+      'origin of energy bands formation in solids.'
+    ],
     'MODULE-4(semiconductors and optoelectronic devices)': ['Introduction - Intrinsic semiconductors - Density of electrons in intrinsic semiconductor',
-'Intrinsic carrier concentration - Fermi energy - Electrical conductivity of intrinsic semiconductors',
-'Extrinsic semiconductors - Density of charge carriers in Extrinsic semiconductors (qualitative)',
-'Drift and Diffusion currents - Direct and Indirect band gap semiconductors - Hall effect',
-'pn junction Optoelectronic devices: Light Emitting Diode (LED) - Photodiode - Semiconductor diode laser'
-],
+      'Intrinsic carrier concentration - Fermi energy - Electrical conductivity of intrinsic semiconductors',
+      'Extrinsic semiconductors - Density of charge carriers in Extrinsic semiconductors (qualitative)',
+      'Drift and Diffusion currents - Direct and Indirect band gap semiconductors - Hall effect',
+      'pn junction Optoelectronic devices: Light Emitting Diode (LED) - Photodiode - Semiconductor diode laser'
+    ],
     'MODULE-5(fiber optics)': ['Introduction to fiber optics - Total Internal Reflection - Critical angle of propagation',
-'Acceptance angle - Numerical Aperture – V number (qualitative) - Classification of fibers based on Refractive index profile',
-'modes - Applications of optical fibers – Fiber optic Sensors (temperature, displacement).'
-],
+      'Acceptance angle - Numerical Aperture – V number (qualitative) - Classification of fibers based on Refractive index profile',
+      'modes - Applications of optical fibers – Fiber optic Sensors (temperature, displacement).'
+    ],
   },
 
 
   'Digital-Logic-Design[DLD]': {
     'MODULE-1(binary system and boolean algebra)': ['Introduction, Binary Numbers, Number Base Conversions',
-'Error Detection and Correction, Complements of Numbers, Signed Binary Numbers',
-'Binary Codes, Boolean Algebra, Boolean Functions, Canonical and Standard Forms, Digital Logic Gates.'
-],
+      'Error Detection and Correction, Complements of Numbers, Signed Binary Numbers',
+      'Binary Codes, Boolean Algebra, Boolean Functions, Canonical and Standard Forms, Digital Logic Gates.'
+    ],
     'MODULE-2(gate level minimization)': ['The Map Method, Four Variable K-Map, Product-of-Sums and Sum-of-Products Simplification',
-'Don’t Care Conditions, NAND and NOR Implementations',
-'Other Two Level Implementations, Exclusive–OR function.'
-],
+      'Don’t Care Conditions, NAND and NOR Implementations',
+      'Other Two Level Implementations, Exclusive–OR function.'
+    ],
     'MODULE-3(combinational logic)': ['Combinational Circuits, Analysis of Combinational Circuits, Design Procedure, Binary AdderSubtractor',
-'Decimal Adder, Binary Multiplier, Magnitude Comparator',
-'Decoders, Encoders, Multiplexers, De-Multiplexers.'
-],
+      'Decimal Adder, Binary Multiplier, Magnitude Comparator',
+      'Decoders, Encoders, Multiplexers, De-Multiplexers.'
+    ],
     'MODULE-4(sequential logic)': ['Latches, Flip-Flops, Analysis of Clocked Sequential Circuits',
-'Design of Synchronous Sequential Circuits, Registers, Shift Registers',
-'Ripple Counters, Synchronous Counters, Ring Counter and Johnson Counter.'
-],
+      'Design of Synchronous Sequential Circuits, Registers, Shift Registers',
+      'Ripple Counters, Synchronous Counters, Ring Counter and Johnson Counter.'
+    ],
     'MODULE-5(Programmable logic)': ['RAM, ROM, Programmable Logic Array',
-'Programmable Array Logic, Sequential Programmable Devices.'
-],
+      'Programmable Array Logic, Sequential Programmable Devices.'
+    ],
   },
 
   'Matrix-Theory[MTLA]': {
-    'MODULE-1(matrices and linear system of equations)': [ 'Elementary Row-operations, Elementary Matrices, Echelon form, Rank of a matrix by row- reduction',
+    'MODULE-1(matrices and linear system of equations)': ['Elementary Row-operations, Elementary Matrices, Echelon form, Rank of a matrix by row- reduction',
       'Solutions of system of linear equations by row reduction, Matrix Factorization,LU factorization, LDU factorization'
-     ],
-    'MODULE-2(eigen values , eigen vectors and diagonalization)': [ 'Characteristic equation of a matrix, Eigenvalues and Eigenvectors of matrices, Similarity of matrices',
-      'Diagonalization by using Eigenvalues, Cayley-Hamilton Theorem (Without Proof), Evaluation of matrix powers'
-     ],
-    'MODULE-3(vector spaces)': [ 'Vector spaces, Sub-spaces, Four fundamental subspaces of a matrix, Span',
-      'Linearly independent and dependent, Basis, construction of Basis, dimensions, Finite dimensional vector space'
-     ],
-    'MODULE-4(linear transformation)': [ 'Linear transformation, Kernal and range of linear transformation, Basic properties, Invertible linear transformation, Matrix of linear transformation'
     ],
-    'MODULE-5(inner product spaces)': [ 'Inner product, Norm, Distance, Inner product space, Orthogonal and orthonormal basis',
+    'MODULE-2(eigen values , eigen vectors and diagonalization)': ['Characteristic equation of a matrix, Eigenvalues and Eigenvectors of matrices, Similarity of matrices',
+      'Diagonalization by using Eigenvalues, Cayley-Hamilton Theorem (Without Proof), Evaluation of matrix powers'
+    ],
+    'MODULE-3(vector spaces)': ['Vector spaces, Sub-spaces, Four fundamental subspaces of a matrix, Span',
+      'Linearly independent and dependent, Basis, construction of Basis, dimensions, Finite dimensional vector space'
+    ],
+    'MODULE-4(linear transformation)': ['Linear transformation, Kernal and range of linear transformation, Basic properties, Invertible linear transformation, Matrix of linear transformation'
+    ],
+    'MODULE-5(inner product spaces)': ['Inner product, Norm, Distance, Inner product space, Orthogonal and orthonormal basis',
       'Gram-Schmidt orthogonalization, Singlular Value Decomposition for square matrices'
-     ],
+    ],
   },
 
 
@@ -767,7 +767,7 @@ const moduleData: Record<string, Record<string, string[]>> = {
 const Sidebar2: React.FC<Sidebar2Props> = ({ subject, module, onTopicClick }) => {
   const [openModule, setOpenModule] = useState<string | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
-
+  const [collapsed, setCollapsed] = useState<boolean>(false);
   const handleModuleClick = (module: string) => {
     setOpenModule((prev) => (prev === module ? null : module));
   };
@@ -779,40 +779,58 @@ const Sidebar2: React.FC<Sidebar2Props> = ({ subject, module, onTopicClick }) =>
   const modules = moduleData[subject] || {};
 
   return (
-    <aside className="min-h-screen w-64 bg-gray-100 dark:bg-[#2c2c2c] p-4 shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-      <h2 className="text-lg font-bold mb-4 text-black dark:text-white">
-        Choose Topics in {subject || "None Selected"}
-      </h2>
-      <div>
-        {Object.entries(modules).map(([module, topics]) => (
-          <div key={module}>
-            <button
-              onClick={() => handleModuleClick(module)}
-              className="w-full text-left px-2 py-1 font-semibold rounded hover:bg-indigo-200 dark:hover:bg-orange-900 mb-2 dark:text-white"
-            >
-              {module}
-            </button>
-            {openModule === module && (
-              <div className="pl-4">
-                {topics.map((topic) => (
-                  <button
-                    key={topic}
-                    onClick={() => handleTopicClick(topic, module)}
-                    className={`w-full text-left px-2 py-1 rounded mb-1 
+    <div
+      className={`transition-all  ease-in-out bg-gray-100 dark:bg-[#2c2c2c] rounded-xl shadow-lg h-full
+      ${collapsed ? 'h-15' : 'h-screen'} ${collapsed ? 'w-15' : 'w-64'}${collapsed ? 'duration-100' : 'duration-300'}
+    p-2 flex flex-col`}
+    >
+
+      <button
+        onClick={() => setCollapsed(!collapsed)}
+        className={`bg-indigo-500 dark:bg-orange-600 text-white p-2 rounded mb-2 ${collapsed ? 'mr-0' : 'w-10'}`}
+        title={collapsed ? 'Expand' : 'Collapse'}
+      >
+        {collapsed ? <ChevronRight /> : <ChevronLeft />}
+      </button>
+      {! collapsed && (
+        <>
+      <aside className="min-h-screen w-64 bg-gray-100 dark:bg-[#2c2c2c] p-4 shadow-lg transition-all duration-300 ease-in-out rounded-xl">
+        <h2 className="text-lg font-bold mb-4 text-black dark:text-white">
+          Choose Topics in {subject || "None Selected"}
+        </h2>
+        <div>
+          {Object.entries(modules).map(([module, topics]) => (
+            <div key={module}>
+              <button
+                onClick={() => handleModuleClick(module)}
+                className="w-full text-left px-2 py-1 font-semibold rounded hover:bg-indigo-200 dark:hover:bg-orange-900 mb-2 dark:text-white"
+              >
+                {module}
+              </button>
+              {openModule === module && (
+                <div className="pl-4">
+                  {topics.map((topic) => (
+                    <button
+                      key={topic}
+                      onClick={() => handleTopicClick(topic, module)}
+                      className={`w-full text-left px-2 py-1 rounded mb-1 
                       ${selectedTopic === topic
-                        ? 'bg-indigo-500 dark:bg-orange-700 text-black dark:text-white'
-                        : 'hover:bg-indigo-200 dark:hover:bg-orange-900 dark:text-gray-300'
-                      }`}
-                  >
-                    {topic}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </aside>
+                          ? 'bg-indigo-500 dark:bg-orange-700 text-black dark:text-white'
+                          : 'hover:bg-indigo-200 dark:hover:bg-orange-900 dark:text-gray-300'
+                        }`}
+                    >
+                      {topic}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </aside>
+      </>)
+      }
+    </div>
   );
 };
 
